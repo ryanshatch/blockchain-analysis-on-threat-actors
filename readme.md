@@ -30,6 +30,7 @@
             <a href="https://thegeorgiasun.com/crime/scam-alert/augusta-woman-arrested-in-phone-scam-targeting-richmond-county-residents">The Georgia Sun</a><br>
             <a href="https://mylolowcountry.com/sullivan-s-island/arrest-made-in-phone-fraud-probe-in-richmond-county/">My Lowcountry</a><br>
             <a href="https://www.wrdw.com/2026/03/20/augusta-woman-arrested-jail-bond-phone-scam/">WRDW</a>
+            <h4><code>Just a note that these attacks are getting more and more in depth by the day and closer and closer to home. If you are reading this, I want you to take this as a personal warning from one to another, I dont want to see ANYONE fall for any types of these scams. Whether they are impersonating real officers or officials, if you dont remember the incident chances are it isnt real. Javascript is just as real as BTC ATM's. It breaks my heart to see this database grow and for each wallet to have grown in txn history. Americans deserve the money they work for, please stay safe out there anon.</code></h4>
         </p>
         <hr>
         <p>
