@@ -23,8 +23,8 @@
         <p>
             <strong>Wallets currently under analysis:</strong><br>
             <h4>Local Spear phishing treat actor:</h4>
-            <code>bc1qexnz95lqaj6dje92wrsevv9tljrgws8c79znfw</code><br>
-            <p>Currently empty because of a failed attack. I still plan on keeping them under heavy surveilance due to how close to home this scammer is, chances are high they are local using a mule based out of Macon GA. I will release more details in time, currently keeping this as vague as possible.</p><br>
+            <code>bc1qexnz95lqaj6dje92wrsevv9tljrgws8c79znfw</code>:<br>
+            <br><p>Currently empty because of a failed attack. I still plan on keeping them under heavy surveilance due to how close to home this scammer is, chances are high they are local using a mule based out of Macon GA. I will release more details in time, currently keeping this as vague as possible.</p><br>
             <h3><strong>Related coverage: 3/20/2026 - 3/23/2026</strong></h3>
             <a href="https://theaugustapress.com/rcso-make-arrest-in-fraudulent-bail-payment-scheme/">The Augusta Press</a><br>
             <a href="https://thegeorgiasun.com/crime/scam-alert/augusta-woman-arrested-in-phone-scam-targeting-richmond-county-residents">The Georgia Sun</a><br>
