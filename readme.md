@@ -32,6 +32,10 @@
             <a href="https://www.wrdw.com/2026/03/20/augusta-woman-arrested-jail-bond-phone-scam/">WRDW</a>
             <h4>Just a note that these attacks are getting more and more in depth by the day and closer and closer to home. If you are reading this, I want you to take this as a personal warning from one to another, I dont want to see ANYONE fall for any types of these scams. Whether they are impersonating real officers or officials, if you dont remember the incident chances are it isnt real. Javascript is just as real as BTC ATM's. It breaks my heart to see this database grow and for each wallet to have grown in txn history. Americans deserve the money they work for, please stay safe out there anon.</h4>
             <br><p>small update: Recieved a letter in the mail from Social Security about Scam Alerts. I'm beyond happy that this problem is finally being delivered to everyones doorsteps. Anyone who partakes in deciet and exploiting deserves no reconciliation and a life sentence.</p>
+            <div style="text-align: center;">
+                <img
+                    alt="Sub Header Image"
+                    src="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/blob/main/img/mail.png">
         </p>
         <hr>
         <p>
