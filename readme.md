@@ -19,7 +19,6 @@
         <p><strong>I consistently add, maintain, and follow all of the data parsed into this repo.</strong></p>
         <hr>
     </div>
-    <hr>
     <div style="text-align: center;">
         <p>
             <strong>Wallets currently under analysis:</strong><br>

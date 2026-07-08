@@ -1,4 +1,4 @@
-    <div style="text-align: center;">
+<div style="text-align: center;">
         <p>
             <h2>DPRK / TraderTraitor / Lazarus:</h2> The FBI officially attributed the February 2025 Bybit theft to DPRK-linked “TraderTraitor” actors and published Ethereum addresses that either held, or previously held, stolen Bybit assets.
             <br>TRM also supported the attribution and traced the movement of those funds, noting that a large portion of the stolen value was moved across chains, including into BTC.
