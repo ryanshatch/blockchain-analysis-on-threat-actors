@@ -170,6 +170,7 @@
     </ul>
   </li>
 </ul>
+<hr>
     <div style="text-align: center;">
         <p>
             <strong>Wallets currently under analysis:</strong><br>
