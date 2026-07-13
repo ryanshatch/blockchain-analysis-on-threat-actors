@@ -149,3 +149,35 @@
     </ul>
   </li>
 </ul><hr>
+<h2>In other words:</h2>
+<p>
+BonkDAO was drained for roughly $20 million, but this was not a smart contract exploit.
+
+The attacker simply bought around $4 million worth of BONK, gained enough voting power, and pushed a malicious proposal through the DAO’s normal governance process.
+
+That is what makes this attack so important:
+
+The protocol did not break.
+
+It worked exactly as designed.
+
+The problem was that BonkDAO allowed token ownership to translate directly into control without enough safeguards to stop one newly accumulated position from authorizing a massive treasury transfer.
+
+After the theft, BonkDAO contacted law enforcement and began coordinating with exchanges to trace and freeze the funds. Upbit also suspended related deposits and withdrawals.
+
+BONK dropped moderately, while the broader Solana market remained relatively stable.
+
+TLDR:
+
+The attacker did not hack the code.
+
+They bought the vote.
+
+BonkDAO’s governance system allowed someone with enough money to temporarily purchase control of the treasury and approve a legitimate transaction for an illegitimate purpose.
+
+This is why DAOs need more than token-weighted voting.
+
+Large treasury proposals should require time locks, meaningful quorum thresholds, withdrawal limits, emergency veto powers, and monitoring for sudden token accumulation.
+
+Decentralized governance is not secure when control can simply be rented by the highest bidder.
+</p>
