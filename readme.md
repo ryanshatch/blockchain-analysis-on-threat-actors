@@ -15,8 +15,8 @@
     </div>
     <div align="center" style="text-align: center;">
         <h1>Wallet Database</h1>
-        <p>This is a database of crypto wallets that include all fraud related scammers that I encounter.<br></p>
-        <p><strong>I consistently add, maintain, and follow all of the data parsed into this repo.</strong></p>
+        <p>This is a database of crypto wallets that include both public alerts (new addition to my research and parsing) along with all fraud related scammers that I encounter.<br></p>
+        <p><strong>I consistently add, maintain, and or follow all of the data parsed into this repo.</strong></p>
         <hr>
     </div>
     <div style="text-align: center;">
