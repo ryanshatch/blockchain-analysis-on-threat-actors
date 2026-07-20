@@ -72,7 +72,6 @@ Entries range from **official, high-confidence attributions** to **provisional i
 | [`readme.md`](./readme.md) | Main repository overview and navigation. |
 | [`wallets.md`](./wallets.md) | General wallet index and individual wallet records. |
 | [`scammer DB.html`](./scammer%20DB.html) | Legacy HTML-format scammer and wallet database. |
-| [`.gitattributes`](./.gitattributes) | Git file-handling configuration. |
 
 ---
 
