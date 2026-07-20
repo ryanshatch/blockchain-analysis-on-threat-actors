@@ -13,7 +13,198 @@
         >
         <hr>
     </div>
-    <div align="center" style="text-align: center;">
+    <div align="center">
+
+# Blockchain Analysis on Threat Actors
+
+**A defensive on-chain intelligence repository for tracking sanctioned wallets, threat actors, exploit flows, scams, rug pulls, and suspicious cryptocurrency activity.**
+
+</div>
+
+---
+
+## Overview
+
+This repository contains cryptocurrency addresses and transaction data collected through:
+
+- Official government and law-enforcement disclosures
+- Public blockchain explorers
+- Security researchers and threat-intelligence providers
+- Public reporting
+- Personally encountered fraud and scam-baiting investigations
+- Independent on-chain analysis
+
+Entries range from **official, high-confidence attributions** to **provisional investigative leads**. Each case should be evaluated according to its listed source type, confidence level, and supporting evidence.
+
+> Inclusion in this repository does not independently prove criminal activity. Addresses associated with active investigations, suspected incidents, or third-party reporting should be treated as provisional unless confirmed by an authoritative source.
+
+---
+
+## Repository Structure
+
+### Analysis Directories
+
+| Directory | Description |
+|---|---|
+| [`1VPNS/`](./1VPNS/) | OFAC-designated wallets associated with Dmytro Rashevskyi and First VPN Service / 1VPNS across BTC, ETH, and SOL. |
+| [`FTX/`](./FTX/) | Historical FTX and Alameda Research wallet analysis, balances, addresses, and transaction activity. |
+| [`HBAR/`](./HBAR/) | Hedera-to-Ethereum suspected theft and bridge-flow analysis. |
+| [`HOPE/`](./HOPE/) | Analysis of the Solana-based HOPE token, wallet concentration, transfers, sales, and suspected rug activity. |
+| [`Lazarus/`](./Lazarus/) | DPRK TraderTraitor / Lazarus Group wallets, including addresses connected to the Bybit theft and earlier incidents. |
+| [`SOL/`](./SOL/) | Solana-specific threat-actor, governance, exploit, and suspicious-wallet investigations. |
+| [`SOL/BonkDAO/`](./SOL/BonkDAO/) | Analysis of the BonkDAO governance attack and associated on-chain activity. |
+| [`TRON/`](./TRON/) | TRON-specific sanctions, state-linked attribution, and threat-wallet investigations. |
+| [`TRON/Central-Bank-of-Iran/`](./TRON/Central-Bank-of-Iran/) | OFAC attribution involving TRON addresses associated with the Central Bank of Iran. |
+
+
+### Notable Subdirectories
+
+| Directory | Description |
+|---|---|
+| [`parsing/`](./parsing/) | Transaction exports, CSV datasets, combined transfer records, parsing scripts, and analysis notes. |
+| [`img/`](./img/) | Images and supporting visual evidence used by repository documentation. |
+| [`parsing/sol tx history/`](./parsing/sol%20tx%20history/) | Raw and processed Solana transaction-history exports. |
+
+### Root Files
+
+| File | Purpose |
+|---|---|
+| [`readme.md`](./readme.md) | Main repository overview and navigation. |
+| [`wallets.md`](./wallets.md) | General wallet index and individual wallet records. |
+| [`scammer DB.html`](./scammer%20DB.html) | Legacy HTML-format scammer and wallet database. |
+| [`.gitattributes`](./.gitattributes) | Git file-handling configuration. |
+
+---
+
+## Current Research Coverage
+
+| Category | Examples |
+|---|---|
+| Sanctions intelligence | OFAC-designated infrastructure, state-linked wallets, and sanctioned actors |
+| State-sponsored activity | DPRK TraderTraitor / Lazarus Group |
+| Cybercrime infrastructure | First VPN Service / 1VPNS |
+| Exchange and protocol incidents | FTX, Alameda Research, Bybit, and Hedera-related flows |
+| Governance attacks | BonkDAO |
+| Rug pulls and token manipulation | HOPE and other Solana ecosystem cases |
+| Personally encountered fraud | Spear-phishing, impersonation, hacked-account, and payment scams |
+| Transaction analysis | Wallet clustering, bridge activity, swaps, consolidation, and exchange deposits |
+
+---
+
+## Chain Coverage
+
+| Chain | Coverage |
+|---|---|
+| Bitcoin | Sanctioned wallets, fraud payments, DPRK-linked addresses, and scam-related transfers |
+| Ethereum and EVM chains | Theft flows, sanctioned wallets, bridge destinations, token swaps, and consolidation activity |
+| Solana | Rug pulls, governance attacks, NFT-related fraud, token concentration, and scam wallets |
+| TRON | Sanctions attribution and state-linked financial infrastructure |
+| Hedera | Suspected exploit and cross-chain bridge activity |
+
+---
+
+## Confidence Levels
+
+| Confidence | Meaning |
+|---|---|
+| **High** | Official attribution from OFAC, FBI, DOJ, law enforcement, a court filing, or another authoritative source |
+| **Medium** | Supported by multiple reputable researchers, security firms, blockchain records, or reporting sources |
+| **Low** | Preliminary lead, personally encountered wallet, unconfirmed attribution, or incomplete transaction evidence |
+| **Unknown** | Address retained for monitoring but attribution has not been sufficiently established |
+
+Confidence describes the strength of the attribution, not the certainty that every transaction involving the address is malicious.
+
+---
+
+## Recommended Case Format
+
+Each investigation directory should contain a `README.md` with the following information:
+
+| Field | Description |
+|---|---|
+| Incident or actor | Name of the actor, organization, protocol, scam, or incident |
+| Published date | Date the attribution or alert was published |
+| Source type | OFAC, FBI, security researcher, public reporting, personal investigation, or other source |
+| Confidence | High, medium, low, or unknown |
+| Classification | Sanctioned wallet, theft address, bridge-flow wallet, scam wallet, exchange deposit, or another role |
+| Chain | BTC, ETH, SOL, TRON, HBAR, or another supported network |
+| Address | Complete blockchain address |
+| Address role | Seed wallet, consolidation wallet, deposit address, theft wallet, intermediary, or suspected counterparty |
+| Monitoring action | Recommended analytical or alerting use |
+| Evidence | Source links, transaction hashes, screenshots, exports, or supporting notes |
+| Limitations | Unresolved questions, conflicting evidence, or provisional assumptions |
+
+---
+
+## Research Workflow
+
+1. Identify an address through an authoritative disclosure, reputable alert, public report, or direct investigation.
+2. Confirm the address and chain using an appropriate blockchain explorer.
+3. Record the original source and publication date.
+4. Assign an attribution confidence level.
+5. Document the address role without overstating unsupported conclusions.
+6. Review direct counterparties, token transfers, bridge activity, swaps, and consolidation behavior.
+7. Store raw transaction exports in [`parsing/`](./parsing/).
+8. Add material attribution changes or newly discovered addresses to the relevant case directory.
+9. Preserve previous findings when an attribution changes instead of silently replacing them.
+
+---
+
+## Common Monitoring Uses
+
+Addresses in this repository may be useful for:
+
+- Sanctions-exposure screening
+- Wallet and counterparty monitoring
+- Graph-expansion seeds
+- Bridge-flow analysis
+- Exchange-deposit detection
+- Mixer-interaction analysis
+- Theft-fund tracing
+- Scam-pattern comparison
+- Threat-intelligence enrichment
+- Historical incident research
+
+---
+
+## Source Standards
+
+Preferred sources include:
+
+- U.S. Department of the Treasury and OFAC
+- FBI and IC3
+- U.S. Department of Justice
+- Court filings and official seizure notices
+- Blockchain explorers
+- Established blockchain-security firms
+- Reputable on-chain researchers
+- Exchange-security disclosures
+- Protocol postmortems
+- Transaction-level evidence
+
+Social-media posts, anonymous claims, and unverified community reports should be treated as leads rather than confirmed attribution.
+
+---
+
+## Data Handling
+
+- Preserve addresses exactly as published.
+- Record the correct blockchain for every address.
+- Separate confirmed facts from analytical conclusions.
+- Clearly identify provisional or disputed attribution.
+- Avoid publishing unnecessary personally identifiable information.
+- Link to original sources whenever possible.
+- Do not assume every counterparty of a malicious wallet is also malicious.
+- Reassess older entries when new attribution or transaction evidence becomes available.
+
+---
+
+## Disclaimer
+
+This repository is maintained for defensive security research, fraud analysis, threat intelligence, education, and historical documentation.
+
+The information may be incomplete, outdated, provisional, or dependent on third-party reporting. Users should independently verify addresses, transactions, and attribution before relying on the data for legal, compliance, enforcement, or financial decisions.
+    <!-- <div align="center" style="text-align: center;">
         <h1>Wallet Database</h1>
         <p>This is a database of crypto wallets that include both public alerts (new addition to my research and parsing) along with all fraud related scammers that I encounter.<br></p>
         <p><strong>I consistently add, maintain, and or follow all of the data parsed into this repo.</strong></p>
@@ -25,7 +216,6 @@
             <h4>Local Spear phishing treat actor:</h4>
             <code>bc1qexnz95lqaj6dje92wrsevv9tljrgws8c79znfw</code>:<br>
             <br><p>Currently empty because of a failed attack. I still plan on keeping them under heavy surveilance due to how close to home this scammer is, chances are high they are local using a mule based out of Macon GA. I will release more details in time, currently keeping this as vague as possible.</p>
-        <!-- <br> -->
             <h3><strong>Related coverage: 3/20/2026 - 3/23/2026</strong></h3>
             <a href="https://theaugustapress.com/rcso-make-arrest-in-fraudulent-bail-payment-scheme/">The Augusta Press</a><br>
             <a href="https://thegeorgiasun.com/crime/scam-alert/augusta-woman-arrested-in-phone-scam-targeting-richmond-county-residents">The Georgia Sun</a><br>
@@ -172,6 +362,6 @@
         <ul style="display: inline-block; text-align: left;">
             <li>solscan: <a href="https://solscan.io/account/3YaGKXSuxwfvKiJ83V92hKRvh23w1RdYgrwY7C5CSNG6#portfolio">View Portfolio</a></li>
         </ul>
-    </div>
+    </div> -->
 </body>
 </html>
