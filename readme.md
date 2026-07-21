@@ -13,9 +13,530 @@
         >
         <hr>
     </div>
-    <div align="center">
 
-# Blockchain Analysis on Threat Actors
+<div align="center">
+  <h1>Blockchain Analysis on Threat Actors</h1>
+
+  <p>
+    <strong>
+      A defensive on-chain intelligence repository for tracking sanctioned wallets,
+      threat actors, exploit flows, scams, rug pulls, and suspicious cryptocurrency activity.
+    </strong>
+  </p>
+
+</div>
+
+<hr>
+
+<h2>Overview</h2>
+
+<p>
+  This repository contains cryptocurrency addresses and transaction data collected through:
+</p>
+
+<ul>
+  <li>Official government and law-enforcement disclosures</li>
+  <li>Public blockchain explorers</li>
+  <li>Security researchers and threat-intelligence providers</li>
+  <li>Public reporting</li>
+  <li>Personally encountered fraud and scam-baiting investigations</li>
+  <li>Independent on-chain analysis</li>
+</ul>
+
+<p>
+  Entries range from <strong>official, high-confidence attributions</strong> to
+  <strong>provisional investigative leads</strong>. Each case should be evaluated
+  according to its listed source type, confidence level, and supporting evidence.
+</p>
+
+<blockquote>
+  <p>
+    Inclusion in this repository does not independently prove criminal activity.
+    With that said, addresses associated with active investigations, suspected incidents, or
+    third-party reporting should be treated as provisional unless confirmed by
+    an authoritative source.
+  </p>
+</blockquote>
+
+<hr>
+
+<h2>Repository Structure</h2>
+
+<h3>Analysis Directories</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Directory</th>
+      <th align="left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="./1VPNS/"><code>1VPNS/</code></a></td>
+      <td>
+        OFAC-designated wallets associated with Dmytro Rashevskyi and First VPN
+        Service / 1VPNS across BTC, ETH, and SOL.
+      </td>
+    </tr>
+    <tr>
+      <td><a href="./FTX/"><code>FTX/</code></a></td>
+      <td>
+        Historical FTX and Alameda Research wallet analysis, balances, addresses,
+        and transaction activity.
+      </td>
+    </tr>
+    <tr>
+      <td><a href="./HBAR/"><code>HBAR/</code></a></td>
+      <td>Hedera-to-Ethereum suspected theft and bridge-flow analysis.</td>
+    </tr>
+    <tr>
+      <td><a href="./Lazarus/"><code>Lazarus/</code></a></td>
+      <td>
+        DPRK TraderTraitor / Lazarus Group wallets, including addresses connected
+        to the Bybit theft and earlier incidents.
+      </td>
+    </tr>
+    <tr>
+      <td><a href="./SOL/"><code>SOL/</code></a></td>
+      <td>
+        Solana-specific threat-actor, governance, exploit, and suspicious-wallet
+        investigations.
+      </td>
+    </tr>
+    <tr>
+      <td><a href="./SOL/BonkDAO/"><code>SOL/BonkDAO/</code></a></td>
+      <td>
+        Analysis of the BonkDAO governance attack and associated on-chain activity.
+      </td>
+    </tr>
+    <tr>
+      <td><a href="./SOL/HOPE/"><code>SOL/HOPE/</code></a></td>
+      <td>
+        Analysis of the Solana-based HOPE token, wallet concentration, transfers,
+        sales, and suspected rug activity.
+      </td>
+    </tr>
+    <tr>
+      <td><a href="./TRON/"><code>TRON/</code></a></td>
+      <td>
+        TRON-specific sanctions, state-linked attribution, and threat-wallet
+        investigations.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="./TRON/Central-Bank-of-Iran/">
+          <code>TRON/Central-Bank-of-Iran/</code>
+        </a>
+      </td>
+      <td>
+        OFAC attribution involving TRON addresses associated with the Central Bank
+        of Iran.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Notable Subdirectories</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Directory</th>
+      <th align="left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="./parsing/sol%20tx%20history/">
+          <code>parsing/sol tx history/</code>
+        </a>
+      </td>
+      <td>Raw and processed Solana transaction-history exports.</td>
+    </tr>
+    <tr>
+      <td><a href="./parsing/"><code>parsing/</code></a></td>
+      <td>
+        Transaction exports, CSV datasets, combined transfer records, parsing
+        scripts, and analysis notes.
+      </td>
+    </tr>
+    <tr>
+      <td><a href="./img/"><code>img/</code></a></td>
+      <td>
+        Images and supporting visual evidence used by repository documentation.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Root Files</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">File</th>
+      <th align="left">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="./readme.md"><code>readme.md</code></a></td>
+      <td>Main repository overview and navigation.</td>
+    </tr>
+    <tr>
+      <td><a href="./wallets.md"><code>wallets.md</code></a></td>
+      <td>General wallet index and individual wallet records.</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="./scammer%20DB.html"><code>scammer DB.html</code></a>
+      </td>
+      <td>Legacy HTML-format scammer and wallet database.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Current Research Coverage</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="left">Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sanctions intelligence</td>
+      <td>
+        OFAC-designated infrastructure, state-linked wallets, and sanctioned actors
+      </td>
+    </tr>
+    <tr>
+      <td>State-sponsored activity</td>
+      <td>DPRK TraderTraitor / Lazarus Group</td>
+    </tr>
+    <tr>
+      <td>Cybercrime infrastructure</td>
+      <td>First VPN Service / 1VPNS</td>
+    </tr>
+    <tr>
+      <td>Exchange and protocol incidents</td>
+      <td>FTX, Alameda Research, Bybit, and Hedera-related flows</td>
+    </tr>
+    <tr>
+      <td>Governance attacks</td>
+      <td>BonkDAO</td>
+    </tr>
+    <tr>
+      <td>Rug pulls and token manipulation</td>
+      <td>HOPE and other Solana ecosystem cases</td>
+    </tr>
+    <tr>
+      <td>Personally encountered fraud</td>
+      <td>
+        Spear-phishing, impersonation, hacked-account, and payment scams
+      </td>
+    </tr>
+    <tr>
+      <td>Transaction analysis</td>
+      <td>
+        Wallet clustering, bridge activity, swaps, consolidation, and exchange deposits
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Chain Coverage</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Chain</th>
+      <th align="left">Coverage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bitcoin</td>
+      <td>
+        Sanctioned wallets, fraud payments, DPRK-linked addresses, and scam-related
+        transfers
+      </td>
+    </tr>
+    <tr>
+      <td>Ethereum and EVM chains</td>
+      <td>
+        Theft flows, sanctioned wallets, bridge destinations, token swaps, and
+        consolidation activity
+      </td>
+    </tr>
+    <tr>
+      <td>Solana</td>
+      <td>
+        Rug pulls, governance attacks, NFT-related fraud, token concentration, and
+        scam wallets
+      </td>
+    </tr>
+    <tr>
+      <td>TRON</td>
+      <td>Sanctions attribution and state-linked financial infrastructure</td>
+    </tr>
+    <tr>
+      <td>Hedera</td>
+      <td>Suspected exploit and cross-chain bridge activity</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Confidence Levels</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Confidence</th>
+      <th align="left">Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>High</strong></td>
+      <td>
+        Official attribution from OFAC, FBI, DOJ, law enforcement, a court filing,
+        or another authoritative source
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Medium</strong></td>
+      <td>
+        Supported by multiple reputable researchers, security firms, blockchain
+        records, or reporting sources
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Low</strong></td>
+      <td>
+        Preliminary lead, personally encountered wallet, unconfirmed attribution,
+        or incomplete transaction evidence
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Unknown</strong></td>
+      <td>
+        Address retained for monitoring but attribution has not been sufficiently
+        established
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Confidence describes the strength of the attribution, not the certainty that
+  every transaction involving the address is malicious.
+</p>
+
+<hr>
+
+<h2>Recommended Case Format</h2>
+
+<p>
+  Each investigation directory should contain a <code>README.md</code> with the
+  following information:
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Field</th>
+      <th align="left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Incident or actor</td>
+      <td>Name of the actor, organization, protocol, scam, or incident</td>
+    </tr>
+    <tr>
+      <td>Published date</td>
+      <td>Date the attribution or alert was published</td>
+    </tr>
+    <tr>
+      <td>Source type</td>
+      <td>
+        OFAC, FBI, security researcher, public reporting, personal investigation,
+        or other source
+      </td>
+    </tr>
+    <tr>
+      <td>Confidence</td>
+      <td>High, medium, low, or unknown</td>
+    </tr>
+    <tr>
+      <td>Classification</td>
+      <td>
+        Sanctioned wallet, theft address, bridge-flow wallet, scam wallet, exchange
+        deposit, or another role
+      </td>
+    </tr>
+    <tr>
+      <td>Chain</td>
+      <td>BTC, ETH, SOL, TRON, HBAR, or another supported network</td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td>Complete blockchain address</td>
+    </tr>
+    <tr>
+      <td>Address role</td>
+      <td>
+        Seed wallet, consolidation wallet, deposit address, theft wallet,
+        intermediary, or suspected counterparty
+      </td>
+    </tr>
+    <tr>
+      <td>Monitoring action</td>
+      <td>Recommended analytical or alerting use</td>
+    </tr>
+    <tr>
+      <td>Evidence</td>
+      <td>
+        Source links, transaction hashes, screenshots, exports, or supporting notes
+      </td>
+    </tr>
+    <tr>
+      <td>Limitations</td>
+      <td>
+        Unresolved questions, conflicting evidence, or provisional assumptions
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Research Workflow</h2>
+
+<ol>
+  <li>
+    Identify an address through an authoritative disclosure, reputable alert,
+    public report, or direct investigation.
+  </li>
+  <li>
+    Confirm the address and chain using an appropriate blockchain explorer.
+  </li>
+  <li>Record the original source and publication date.</li>
+  <li>Assign an attribution confidence level.</li>
+  <li>
+    Document the address role without overstating unsupported conclusions.
+  </li>
+  <li>
+    Review direct counterparties, token transfers, bridge activity, swaps, and
+    consolidation behavior.
+  </li>
+  <li>
+    Store raw transaction exports in
+    <a href="./parsing/"><code>parsing/</code></a>.
+  </li>
+  <li>
+    Add material attribution changes or newly discovered addresses to the relevant
+    case directory.
+  </li>
+  <li>
+    Preserve previous findings when an attribution changes instead of silently
+    replacing them.
+  </li>
+</ol>
+
+<hr>
+
+<h2>Common Monitoring Uses</h2>
+
+<p>Addresses in this repository may be useful for:</p>
+
+<ul>
+  <li>Sanctions-exposure screening</li>
+  <li>Wallet and counterparty monitoring</li>
+  <li>Graph-expansion seeds</li>
+  <li>Bridge-flow analysis</li>
+  <li>Exchange-deposit detection</li>
+  <li>Mixer-interaction analysis</li>
+  <li>Theft-fund tracing</li>
+  <li>Scam-pattern comparison</li>
+  <li>Threat-intelligence enrichment</li>
+  <li>Historical incident research</li>
+</ul>
+
+<hr>
+
+<h2>Source Standards</h2>
+
+<p>Preferred sources include:</p>
+
+<ul>
+  <li>U.S. Department of the Treasury and OFAC</li>
+  <li>FBI and IC3</li>
+  <li>U.S. Department of Justice</li>
+  <li>Court filings and official seizure notices</li>
+  <li>Blockchain explorers</li>
+  <li>Established blockchain-security firms</li>
+  <li>Reputable on-chain researchers</li>
+  <li>Exchange-security disclosures</li>
+  <li>Protocol postmortems</li>
+  <li>Transaction-level evidence</li>
+</ul>
+
+<p>
+  Social-media posts, anonymous claims, and unverified community reports should
+  be treated as leads rather than confirmed attribution.
+</p>
+
+<hr>
+
+<h2>Data Handling</h2>
+
+<ul>
+  <li>Preserve addresses exactly as published.</li>
+  <li>Record the correct blockchain for every address.</li>
+  <li>Separate confirmed facts from analytical conclusions.</li>
+  <li>Clearly identify provisional or disputed attribution.</li>
+  <li>Avoid publishing unnecessary personally identifiable information.</li>
+  <li>Link to original sources whenever possible.</li>
+  <li>
+    Do not assume every counterparty of a malicious wallet is also malicious.
+  </li>
+  <li>
+    Reassess older entries when new attribution or transaction evidence becomes
+    available.
+  </li>
+</ul>
+
+<hr>
+
+<h2>Disclaimer</h2>
+
+<p>
+  <bold>This repository is maintained for defensive security research, fraud analysis,
+  threat intelligence, education, and historical documentation.</bold>
+</p>
+
+<p>
+  <blockquote>The information may be incomplete, outdated, provisional, or dependent on
+  third-party reporting. Users should independently verify addresses,
+  transactions, and attribution before relying on the data for legal, compliance,
+  enforcement, or financial decisions.</blockquote>
+</p>
+
+
+<!-- # Blockchain Analysis on Threat Actors
 
 **A defensive on-chain intelligence repository for tracking sanctioned wallets, threat actors, exploit flows, scams, rug pulls, and suspicious cryptocurrency activity.**
 
@@ -202,8 +723,10 @@ Social-media posts, anonymous claims, and unverified community reports should be
 
 This repository is maintained for defensive security research, fraud analysis, threat intelligence, education, and historical documentation.
 
-The information may be incomplete, outdated, provisional, or dependent on third-party reporting. Users should independently verify addresses, transactions, and attribution before relying on the data for legal, compliance, enforcement, or financial decisions.
-    <!-- <div align="center" style="text-align: center;">
+The information may be incomplete, outdated, provisional, or dependent on third-party reporting. Users should independently verify addresses, transactions, and attribution before relying on the data for legal, compliance, enforcement, or financial decisions. -->
+
+<!-- Version 1.0 
+    <div align="center" style="text-align: center;">
         <h1>Wallet Database</h1>
         <p>This is a database of crypto wallets that include both public alerts (new addition to my research and parsing) along with all fraud related scammers that I encounter.<br></p>
         <p><strong>I consistently add, maintain, and or follow all of the data parsed into this repo.</strong></p>
@@ -361,6 +884,7 @@ The information may be incomplete, outdated, provisional, or dependent on third-
         <ul style="display: inline-block; text-align: left;">
             <li>solscan: <a href="https://solscan.io/account/3YaGKXSuxwfvKiJ83V92hKRvh23w1RdYgrwY7C5CSNG6#portfolio">View Portfolio</a></li>
         </ul>
-    </div> -->
-</body>
+    </div> 
+<!-- </body>
 </html>
+-->
