@@ -1,0 +1,4 @@
+address,network,chain_id,address_type,classification,analyst_role,monitoring_action,confidence,threat_label,explorer_label,source,source_date,notes
+0xD1794196f0fc99c7f27970e661597d77d9a85869,Arbitrum One,42161,EOA,Exploit execution / transaction-origin wallet,direct_execution_seed,watch_directly,high,true,Ostium Exploiter 2,DeFi Prime and Arbiscan,2026-07-15,Originated the atomic exploit batch through the entry contract
+0x321Df194646029e7A6193Ea05573d4B9c398bfD9,Arbitrum One,42161,EOA,Primary trader / payout wallet,direct_payout_seed,highest_priority_watch,high,true,Ostium Exploiter 1,DeFi Prime and Arbiscan,2026-07-15,Received approximately 11.86 million USDC in the confirmed primary transaction
+0xfE12F6360000dE49D5506d52eE5aC4bC9Dd5bd2E,Arbitrum One,42161,Contract,Exploit entry contract,infrastructure_pivot,graph_expansion_only,high,false,,Arbiscan transaction analysis,2026-07-15,Contract used in the exploit execution path; do not treat as an EOA
