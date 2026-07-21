@@ -1,0 +1,7 @@
+address,network,chain_id,address_type,classification,analyst_role,monitoring_action,confidence,threat_label,source,source_date,notes
+0x5f4C21c9Bb73c8B4a296cC256C0cDe324dB146DF,Ethereum,1,EOA,2023 attacker EOA / exploit seed,direct_threat_seed,watch_directly,medium,true,Rekt Zunami Protocol Case File,2026-07-16,Associated with the 2023 exploit
+0x051370419b871F7C05dEE8f7134401530832e250,Ethereum,1,EOA,2025 attacker EOA / privileged-access drain,direct_threat_seed,watch_directly,medium,true,Rekt Zunami Protocol Case File,2026-07-16,Associated with the 2025 privileged-access drain
+0xF00d0e11AcCe1eA37658f428d947C3FFFAeaDe70,Ethereum,1,EOA,Pre-exploit staging and operational wallet,direct_threat_seed,watch_directly,medium,true,Rekt Zunami Protocol Case File,2026-07-16,Reported interaction with the 2023 attacker on exploit day
+0x12e98c4EBD742ca9465789570e5cf4Df9EEd0Fb0,Ethereum,1,EOA,Accumulation and cash-out wallet,direct_threat_seed,watch_directly,medium,true,Rekt Zunami Protocol Case File,2026-07-16,Reportedly routed funds toward Coinbase deposit addresses
+0xe9b2B067eE106A6E518fB0552F3296d22b82b32B,Ethereum,1,EOA,Zunami deployer / privileged wallet,operational_pivot,graph_expansion_only,medium,false,Rekt Zunami Protocol Case File,2026-07-16,Anomalous relationship but attacker control is unproven
+0xF9605D8c4c987d7Cb32D0d11FbCb8EeeB1B22D5d,Ethereum,1,EOA,sterx.eth linked operationally to deployer,operational_pivot,graph_expansion_only,medium,false,Rekt Zunami Protocol Case File,2026-07-16,Operational relationship remains inferential
