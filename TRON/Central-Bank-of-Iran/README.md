@@ -187,7 +187,7 @@
 
 <tr>
   <td>
-    <a href="./TRON/El-Kahira/">
+    <a href="/TRON/El-Kahira/">
       <code>TRON/El-Kahira/</code>
     </a>
   </td>
