@@ -8,7 +8,7 @@
   <strong>Designated person:</strong> Zaid Issam Ahmed Al-Jebouri<br>
   <strong>Linked entity:</strong> El-Kahira for General Trading<br>
   <strong>Case file:</strong>
-  <a href="./TRON/El-Kahira/">
+  <a href="/TRON/El-Kahira/">
     TRON/El-Kahira
   </a>
 </p>
