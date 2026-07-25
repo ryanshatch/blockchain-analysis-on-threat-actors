@@ -183,6 +183,22 @@
   The six listed addresses are direct-watch sanctioned seeds. Connected wallets should initially be treated as investigative graph pivots unless independently attributed.
 </blockquote>
 
+<hr>
+
+<tr>
+  <td>
+    <a href="./TRON/El-Kahira/">
+      <code>TRON/El-Kahira/</code>
+    </a>
+  </td>
+  <td>
+    Official OFAC attribution for seven TRON addresses associated with
+    Zaid Issam Ahmed Al-Jebouri and the El-Kahira Hamas-financing and
+    underground-banking network.
+  </td>
+</tr>
+
+
 <h2>Source</h2>
 
 <p>
