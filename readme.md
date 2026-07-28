@@ -140,6 +140,14 @@
     <tr><td>Solana</td><td>Rug pulls, governance attacks, NFT-related fraud, token concentration, and scam wallets</td></tr>
     <tr><td>TRON</td><td>Sanctions attribution and state-linked financial infrastructure</td></tr>
     <tr><td>Hedera</td><td>Suspected exploit and cross-chain bridge activity</td></tr>
+    <tr>
+      <td>Multi-chain incidents</td>
+      <td>
+        Coordinated treasury-wallet drains, cross-chain swaps, bridge movements,
+        consolidated destination wallets, and related indicators spanning multiple
+        blockchain ecosystems
+      </td>
+    </tr>
   </tbody>
 </table>
 
