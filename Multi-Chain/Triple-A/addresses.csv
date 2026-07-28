@@ -1,0 +1,3 @@
+address,network,chain_id,address_type,classification,analyst_role,monitoring_action,incident_linkage_confidence,control_confidence,threat_label,watchlist_eligible,named_actor,source,source_date,notes
+0x01F83B5d4fb30E8AA3daC1681B4048D9135253b1,Ethereum,1,EOA,Primary stolen-fund consolidation and holding address,direct_consolidation_seed,highest_priority_direct_watch,high,medium-high,true,true,,"Specter; Etherscan; PeckShield; CryptoSlate",2026-07-25,"Received 5287.08568411 ETH across 12 inbound transfers exceeding 0.01 ETH on July 24-25 2026; Triple-A confirmed the treasury-wallet compromise but did not formally publish or attribute this address"
+
