@@ -1,0 +1,8 @@
+network,chain_family,reported_role,reporting_status,confidence,source_date,notes
+Ethereum,EVM,Affected treasury-wallet network and primary proceeds destination,Investigator-reported,high,2026-07-25,"Assets were reportedly swapped or bridged into Ethereum; 5287.08568411 ETH was observed entering the primary consolidation address"
+Solana,Solana,Affected treasury-wallet network with one published related address,Investigator-reported,medium,2026-07-25,"Specter published EdtthafhQA23if9PcZvBLhKb9uJM7M6TeyNXozDDon3K but did not clearly specify whether it was attacker-controlled compromised infrastructure or an intermediate"
+TRON,TRON,Affected treasury-wallet network with two published related addresses and later additional movements,Investigator-reported,medium,2026-07-26,"Specter published TRSr81kTZAL2zMoWBsjE4QBc9B4v8WpSkw and TNLLM9z6b1TtpcXXaAg4Gb9dFyG11x187a; exact roles remain under review"
+TON,TON,Affected treasury-wallet network,Investigator-reported,medium,2026-07-25,"Triple-A did not enumerate the affected networks or publish a TON address"
+Polygon,EVM,Affected treasury-wallet network,Investigator-reported,medium,2026-07-25,"At least one published EVM address may relate to Polygon but the exact network assignment has not been independently resolved"
+Arbitrum,EVM,Affected treasury-wallet network,Investigator-reported,medium,2026-07-25,"At least one published EVM address may relate to Arbitrum but the exact network assignment has not been independently resolved"
+Bitcoin,Bitcoin,Later additional outflow network,Later investigator update,medium,2026-07-26,"Included in the later approximately 11.8 million dollar investigator estimate; no complete incident address is included in this case file yet"
