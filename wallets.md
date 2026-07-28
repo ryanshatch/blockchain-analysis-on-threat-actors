@@ -71,3 +71,100 @@ This document provides a compact index of cryptocurrency wallets retained for on
 | Address | Classification | Handling |
 |---|---|---|
 | `0xfE12F6360000dE49D5506d52eE5aC4bC9Dd5bd2E` | Exploit entry contract | Control-path and graph-expansion pivot only |
+
+---
+
+<h2>Triple-A Treasury-Wallet Compromise</h2>
+
+<p>
+  <strong>Incident window:</strong> July 24–25, 2026<br>
+  <strong>Primary network:</strong> Ethereum<br>
+  <strong>Incident confidence:</strong> High<br>
+  <strong>Address-linkage confidence:</strong> High<br>
+  <strong>Direct-control confidence:</strong> Medium to high<br>
+  <strong>Named actor:</strong> None identified<br>
+  <strong>Case file:</strong>
+  <a href="./Multi-Chain/Triple-A/">
+    Multi-Chain/Triple-A
+  </a>
+</p>
+
+<h3>Direct-Watch Address</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Address</th>
+      <th align="left">Classification</th>
+      <th align="left">Monitoring</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="https://etherscan.io/address/0x01F83B5d4fb30E8AA3daC1681B4048D9135253b1">
+          <code>0x01F83B5d4fb30E8AA3daC1681B4048D9135253b1</code>
+        </a>
+      </td>
+      <td>
+        Primary stolen-fund consolidation and holding address
+      </td>
+      <td>
+        Highest-priority direct monitoring and graph expansion
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  The address received approximately 5,287.08568411 ETH across 12 inbound
+  transfers on July 24–25, 2026. Triple-A confirmed unauthorized access
+  to its treasury wallets but did not formally publish or attribute this
+  address.
+</p>
+
+<h3>Related Indicators Under Review</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Network</th>
+      <th align="left">Address</th>
+      <th align="left">Handling</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EVM network unresolved</td>
+      <td><code>0x8335D258438E47Cd8EB1532C04Cfe445E011aEf6</code></td>
+      <td>Graph-expansion pivot; do not automatically threat-label</td>
+    </tr>
+    <tr>
+      <td>Solana</td>
+      <td><code>EdtthafhQA23if9PcZvBLhKb9uJM7M6TeyNXozDDon3K</code></td>
+      <td>Graph-expansion pivot; do not automatically threat-label</td>
+    </tr>
+    <tr>
+      <td>TRON</td>
+      <td><code>TRSr81kTZAL2zMoWBsjE4QBc9B4v8WpSkw</code></td>
+      <td>Graph-expansion pivot; do not automatically threat-label</td>
+    </tr>
+    <tr>
+      <td>TRON</td>
+      <td><code>TNLLM9z6b1TtpcXXaAg4Gb9dFyG11x187a</code></td>
+      <td>Graph-expansion pivot; do not automatically threat-label</td>
+    </tr>
+    <tr>
+      <td>EVM network unresolved</td>
+      <td><code>0x6caC9dB6A61bC4bEA37086DD6DaA6eCa35Dbc1d7</code></td>
+      <td>Graph-expansion pivot; do not automatically threat-label</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  The five related addresses were disclosed in connection with the
+  incident, but their exact roles have not been sufficiently established.
+  They may represent attacker wallets, compromised Triple-A source
+  wallets, or intermediate routing addresses.
+</p>
