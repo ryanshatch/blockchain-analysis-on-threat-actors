@@ -46,6 +46,14 @@
   <tbody>
     <tr><td><a href="./1VPNS/"><code>1VPNS/</code></a></td><td>OFAC-designated wallets associated with Dmytro Rashevskyi and First VPN Service / 1VPNS across BTC, ETH, and SOL.</td></tr>
     <tr><td><a href="./EVM/"><code>EVM/</code></a></td><td>Ethereum and EVM-compatible threat-wallet, exploit, sanctions, bridge-flow, and protocol-incident investigations.</td></tr>
+    <tr>
+      <td><a href="./Multi-Chain/"><code>Multi-Chain/</code></a></td>
+      <td>Incidents spanning multiple blockchain ecosystems, including cross-chain theft flows, treasury-wallet compromises, bridges, swaps, and consolidated destination wallets.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/Triple-A/"><code>Multi-Chain/Triple-A/</code></a></td>
+      <td>Triple-A treasury-wallet compromise spanning multiple networks, with a verified Ethereum proceeds-consolidation address and additional related addresses under review.</td>
+    </tr>
     <tr><td><a href="./FTX/"><code>FTX/</code></a></td><td>Historical FTX and Alameda Research wallet analysis, balances, addresses, and transaction activity.</td></tr>
     <tr><td><a href="./HBAR/"><code>HBAR/</code></a></td><td>Hedera-to-Ethereum suspected theft and bridge-flow analysis.</td></tr>
     <tr><td><a href="./Lazarus/"><code>Lazarus/</code></a></td><td>DPRK TraderTraitor / Lazarus Group wallets, including addresses connected to the Bybit theft and earlier incidents.</td></tr>
@@ -116,6 +124,7 @@
     <tr><td>State-sponsored activity</td><td>DPRK TraderTraitor / Lazarus Group</td></tr>
     <tr><td>Cybercrime infrastructure</td><td>First VPN Service / 1VPNS</td></tr>
     <tr><td>Exchange and protocol incidents</td><td>FTX, Alameda Research, Bybit, Hedera, Zunami Protocol, Ostium, and related exploit or theft flows</td></tr>
+    <tr><td>Treasury and hot-wallet compromises</td><td>Triple-A multi-chain treasury-wallet compromise, Ethereum consolidation activity, and cross-chain routing analysis</td></tr>
     <tr><td>Oracle and privileged-access exploits</td><td>Ostium oracle manipulation and Zunami privileged-wallet relationships</td></tr>
     <tr><td>Governance attacks</td><td>BonkDAO</td></tr>
     <tr><td>Rug pulls and token manipulation</td><td>HOPE and other Solana ecosystem cases</td></tr>
