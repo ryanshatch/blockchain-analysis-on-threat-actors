@@ -1,0 +1,14 @@
+metric_name,value,unit,accounting_basis,confidence,as_of_date,source,notes
+fabricated_deposit_events,1627,count,Attack attempts,high,2026-07-17,Across post-incident reporting,"One fabricated event was reportedly created from each single-use Solana wallet"
+single_use_solana_wallets,1627,count,Attack infrastructure,high,2026-07-17,Across post-incident reporting,"Wallets were reportedly used once to submit fabricated deposit representations"
+destination_chains_targeted,18,count,Nominal attack scope,high,2026-07-17,Across post-incident reporting,"Destination chains named collectively; individual chain-level amounts require transaction exports"
+nominal_fabricated_deposits,41700000,USD,Face value of all forged requests,medium-high,2026-07-17,Across post-incident reporting,"Most requests were not filled after Solana-origin routing was disabled"
+fraudulent_requests_filled,581,count,Requests paid by Risk Labs relayer,high,2026-07-17,Across post-incident reporting,"Remaining fabricated requests were reportedly invalidated or expired"
+gross_relayer_payout,4500000,USD,Gross funds advanced by relayer,medium-high,2026-07-17,Across post-incident reporting,"Gross paid is not the same as successfully consolidated proceeds or net loss"
+initially_trapped_attacker_funds,500000,USD,Funds unavailable to attacker,medium,2026-07-25,Across post-incident reporting,"Contributed to the initial net-loss estimate being below four million dollars"
+initial_net_loss_upper_bound,4000000,USD,Initial net-loss description,medium,2026-07-25,Across post-incident reporting,"Should not be treated as the final net loss after later recoveries"
+early_consolidated_proceeds_low,3350000,USD,Early on-chain consolidation estimate,medium,2026-07-18,Public on-chain reporting,"Different from gross relayer payout and later recovery-adjusted loss"
+early_consolidated_proceeds_high,3600000,USD,Early on-chain consolidation estimate,medium,2026-07-18,Public on-chain reporting,"Different from gross relayer payout and later recovery-adjusted loss"
+returned_funds,331.8,ETH,Reported recovery transfer,high,2026-07-28,PeckShield recovery update,"Reportedly returned to the Across Hub Pool Owner multisig"
+returned_funds_usd_value,624000,USD,Approximate value at reporting time,medium,2026-07-28,PeckShield recovery update,"USD value changes with ETH market price"
+
