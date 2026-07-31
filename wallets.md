@@ -168,3 +168,33 @@ This document provides a compact index of cryptocurrency wallets retained for on
   They may represent attacker wallets, compromised Triple-A source
   wallets, or intermediate routing addresses.
 </p>
+
+---
+
+## Across Protocol Solana Relayer Exploit
+
+**Incident date:** July 17, 2026  
+**Origin network:** Solana  
+**Destination scope:** 18 reported chains  
+**Incident confidence:** High  
+**Address-linkage confidence:** High  
+**Named actor:** None identified  
+**Case file:** [`Multi-Chain/Across-Protocol/`](./Multi-Chain/Across-Protocol/)
+
+### Direct Incident-Watch Seeds
+
+| Network | Address | Classification | Monitoring |
+|---|---|---|---|
+| Solana | `8bkoZToaTBBtAPczgHqD4XVxWtvBkiy4crtexEtYDYSL` | Incident-linked Solana investigation and orchestration seed | Watch directly and expand through source transactions and program calls |
+| EVM role under review | `0xa0C0e9f307b5A26cA3FB5891c19154fc7A02BeF7` | Incident-linked EVM investigation seed | Watch directly and review destination fills and proceeds flows |
+| EVM role under review | `0xA6fb971F3B7a9b9F76EdA76bc89268fe26560189` | Incident-linked EVM investigation seed | Watch directly and review destination fills and proceeds flows |
+
+### Recovery and Protocol Infrastructure — Do Not Threat-Label
+
+| Network | Address | Classification | Handling |
+|---|---|---|---|
+| Ethereum | `0xB524735356985D2f267FA010D681f061DfF03715` | Across Protocol Hub Pool Owner multisig and reported recovery destination | Preserve as protocol infrastructure and recovery evidence only |
+
+The attack exploited off-chain event-reading software rather than directly draining an Across smart contract. The parser accepted forged Solana deposit event representations and caused the Risk Labs relayer to advance its own destination-chain funds.
+
+The three published investigation addresses are suitable for direct incident monitoring. No named attacker attribution has been established, and connected protocol, bridge, exchange, token, router, or counterparty addresses should not be automatically threat-labeled.
