@@ -1,0 +1,13 @@
+network,address,address_type,classification,confidence,monitoring_action,notes
+Solana,9ytGWP8tCRF1keREJ5VHqBpSuM9MZYwm3oFQQa1SvESb,account,attacker / orchestration seed,high,watch directly and expand funding and transaction sequence,Published by CertiK as Attacker 1
+Solana,917DKTphW3rhBG5gsJpwKsNGisNV2dx74uUFd8HBEjtg,account or pool,attacker / fake pool,high,watch directly and review pool creation and withdrawals,Published by CertiK as Attacker 2 and Fake Pool
+Solana,7hiHL8AgDuLNVDQLfN3GHdLAEeCN1F7uz6nSANRvFJst,account,malicious limit-order owner,high,watch directly and trace Mayan bridge activity,Owned one of two positions that received routed USDC
+Solana,BK9aTnKfPNnnj45Me5ACrky2vexzUrZHRzr4BjmQpH3c,account,malicious limit-order owner,high,watch directly and trace Mayan bridge activity,Owned one of two positions that received routed USDC
+Solana,8P3H7Hy98LWhw5QhuXdoigVdAzPCYRTYjdtQQKhGwvqD,account,incident-linked attacker address,medium-high,retain as graph-expansion seed,Published by CertiK as Attacker 5
+Solana,GrXBhM6Ty6YxubFp8zubtJF12WXmKj1dhMyakRPeaDpo,account,incident-linked attacker address,medium-high,retain as graph-expansion seed,Published by CertiK as Attacker 6
+Solana,F4xUroPaHro4gb2JAqa3e93E7DdZytRQJ4L2cHT5E53p,account,incident-linked attacker address,medium-high,retain as graph-expansion seed,Published by CertiK as Attacker 7
+Solana,ETGhosPrFApbiiKXDpxrhBz7J2MdTA3dxnL2Nkio9vEX,account,incident-linked attacker address,medium-high,retain as graph-expansion seed,Published by CertiK as Attacker 8
+Solana,4ZKkGZuoXqgSHbmsJXUib3dgn5WNhzbPEXrxuMYJ5oQ3,account,incident-linked attacker address,medium-high,retain as graph-expansion seed,Published by CertiK as Attacker 9
+Ethereum,0x509B9D094A6C26D716aaC131E8aDee5B16B86d3e,EOA,proceeds wallet,high,watch directly for dispersal exchanges bridges and privacy interactions,CertiK reported remaining DAI and ETH in this wallet as of July 20 2026
+Solana,tuna4uSQZncNeeiAMKbstuxA9CUkHH6HmC64wgmnogD,program,DeFiTuna protocol infrastructure,high,do not threat-label use for program interaction filtering,Victim protocol program
+Solana,D76dDcSU5HnAGqVEZCDLyGgLpTp4xZuqeZyVDtUdDv55,token account,damaged USDC vault,high,do not threat-label use as victim and loss source,USDC lending vault left with bad debt

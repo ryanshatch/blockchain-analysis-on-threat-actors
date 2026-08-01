@@ -1,0 +1,7 @@
+incident,incident_date,exploit_origin,canonical_case_path,classification,reported_impact,address_dataset
+BonkDAO,2026-07-10,Solana,SOL/BonkDAO,governance takeover and treasury drain,approximately 19.3 million USD equivalent,case report
+DeFiTuna,2026-07-16,Solana,SOL/DeFiTuna,health-check and solvency-validation exploit,569601 USDC,SOL/DeFiTuna/addresses.csv
+Across Protocol,2026-07-17,Solana,Multi-Chain/Across-Protocol,off-chain event-parser and relayer exploit,reported figures vary by gross payout recovery and net loss,Multi-Chain/Across-Protocol/addresses.csv
+Allbridge Core,2026-07-19,Solana,Multi-Chain/Allbridge-Core,stablecoin-pool account-aliasing and accounting exploit,approximately 1.65 million USD,Multi-Chain/Allbridge-Core/addresses.csv
+FlashTrade,2026-07-21,Solana,SOL/FlashTrade,ephemeral undelegation PDA-validation exploit,98000 USDC fully covered,unresolved
+Raydium Legacy AMM V3,2026-06-10,Solana,SOL/Raydium,counterfeit LP mint validation bypass,approximately 1.34 million USD,SOL/Raydium/addresses.csv

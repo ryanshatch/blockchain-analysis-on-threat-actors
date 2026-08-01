@@ -1,0 +1,8 @@
+network,address,address_type,classification,confidence,monitoring_action,notes
+Solana,FhffBraZsGn4H2LxLNToEcaHWEfWwT2UcSz4oRHb7Qdc,account,primary attacker and exploit signer,high,watch directly and expand funding program calls and bridge preparation,Publicly linked to the primary exploit transaction
+Ethereum,0x651591b68A9c9650FB23F642162353306281ffDe,EOA,proceeds consolidation wallet,high,watch directly for dispersal exchange privacy and bridge activity,Publicly linked to Solana-to-Ethereum stolen-fund flow
+Solana,BrdgN2RPzEMWF96ZbnnJaUtQDQx7VRXYaHHbYCBvceWB,program,Allbridge Core protocol infrastructure,high,do not threat-label use for exploit-call filtering,Official Solana program address
+Solana,7DyZQw3iV5zhHssnNA6Nopi5zc8NGLbYjHMcaok6NN66,account,victim account,high,do not threat-label preserve as incident evidence,Published by GoPlus as victim account
+Solana,2xY9TDMjfvdoXQPYMATQLEY6z55KpJrHf8NpkNdAvohV,token account,affected USDT vault,high,do not threat-label use for loss reconstruction,Affected protocol token account
+Solana,G6Qo3WW7RbWpSmACAocTBVgx6JW5kgRpUhABphEoDMfP,token account,affected USDC vault,high,do not threat-label use for loss reconstruction,Official Allbridge Solana USDC pool address
+Ethereum,0x01a494079DCB715f622340301463cE50cd69A4D0,EOA or recovery account,official LP compensation return address,high,do not threat-label monitor only for recovery evidence,Published by Allbridge for voluntary returns
