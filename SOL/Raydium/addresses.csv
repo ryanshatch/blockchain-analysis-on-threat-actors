@@ -1,0 +1,4 @@
+network,address,address_type,classification,confidence,monitoring_action,notes
+Solana,4WnPebowR4HHfumvNPaDjG6Pa5Hi1jxLm6xmmBq33QVk,account,primary attacker wallet,high,watch directly and expand funding exploit calls swaps and bridges,Publicly linked to the June 10 2026 legacy AMM V3 exploit
+Ethereum,0x0EaBAAb9a56011c6158D4aA7f2E49A82fB34E609,EOA,proceeds wallet,high,watch directly for Tornado Cash FixedFloat exchange and cross-chain activity,Publicly linked to bridged Raydium proceeds
+Solana,2snHHreXbpJ7UwZxPe37gnUNf7Wx7wv6UKDSR2JckKuS,account,bridge-preparation and consolidation pivot,medium,retain as graph-expansion seed and validate each edge,Independent forensic reporting identifies this as a bridge-preparation hub
