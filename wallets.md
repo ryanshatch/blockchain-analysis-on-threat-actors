@@ -201,14 +201,14 @@ The three published investigation addresses are suitable for direct incident mon
 
 ---
 
-## Verus–Ethereum Bridge Exploit — July 2026
+## Verus–Ethereum Bridge Exploit
 
 **Incident date:** July 23, 2026  
 **Networks:** Verus and Ethereum  
 **Incident confidence:** High  
 **Address-linkage confidence:** High  
 **Named actor:** None identified  
-**Case file:** [`Multi-Chain/Verus-Ethereum-Bridge-July-2026/`](./Multi-Chain/Verus-Ethereum-Bridge-July-2026/)
+**Case file:** [`Multi-Chain/Verus-Ethereum-Bridge/`](./Multi-Chain/Verus-Ethereum-Bridge/)
 
 ### Direct Threat-Wallet Seeds
 
