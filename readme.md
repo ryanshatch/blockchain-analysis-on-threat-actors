@@ -60,8 +60,8 @@
     </tr>
     <tr>
       <td>
-        <a href="./Multi-Chain/Verus-Ethereum-Bridge-July-2026/">
-          <code>Multi-Chain/Verus-Ethereum-Bridge-July-2026/</code>
+        <a href="./Multi-Chain/Verus-Ethereum-Bridge/">
+          <code>Multi-Chain/Verus-Ethereum-Bridge/</code>
         </a>
       </td>
       <td>
