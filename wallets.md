@@ -198,3 +198,34 @@ This document provides a compact index of cryptocurrency wallets retained for on
 The attack exploited off-chain event-reading software rather than directly draining an Across smart contract. The parser accepted forged Solana deposit event representations and caused the Risk Labs relayer to advance its own destination-chain funds.
 
 The three published investigation addresses are suitable for direct incident monitoring. No named attacker attribution has been established, and connected protocol, bridge, exchange, token, router, or counterparty addresses should not be automatically threat-labeled.
+
+---
+
+## Verus–Ethereum Bridge Exploit — July 2026
+
+**Incident date:** July 23, 2026  
+**Networks:** Verus and Ethereum  
+**Incident confidence:** High  
+**Address-linkage confidence:** High  
+**Named actor:** None identified  
+**Case file:** [`Multi-Chain/Verus-Ethereum-Bridge-July-2026/`](./Multi-Chain/Verus-Ethereum-Bridge-July-2026/)
+
+### Direct Threat-Wallet Seeds
+
+| Network | Address | Classification | Monitoring |
+|---|---|---|---|
+| Ethereum | `0xBda71b58cEc0b1C20A8f87cCD52FA0679747855c` | Exploit execution and malicious proof-relay wallet | Watch directly |
+| Ethereum | `0xCFd0A20703cD11E0b9f665e1C3F1Ef989C142D54` | Profit, consolidation, swap, and laundering wallet | Highest-priority direct watch |
+| Verus | `RXo2PqXjgRVJ8w8QVDErVqVLavz4TToyuu` | Source-chain export and cross-chain exploit seed | Watch directly |
+
+### Victim, Technical, and Laundering Infrastructure
+
+| Network | Address | Classification | Handling |
+|---|---|---|---|
+| Ethereum | `0x71518580f36FeCEFfE0721F06bA4703218cD7F63` | Compromised Verus–Ethereum Bridge | Victim infrastructure; graph-expansion only |
+| Ethereum | `0x54e03a1682fd0bb065b669f6296f97028dcfd4ce` | VerusProof contract | Technical pivot only; not attacker-controlled |
+| Ethereum | `0xd90e2f925DA726b50C4Ed8D0Fb90Ad053324F31b` | Tornado Cash router | Laundering-path infrastructure; do not label as attacker |
+
+The July attack used the same bridge contract, entry path, and general vulnerability class reported in the May 2026 incident, but public reporting described a different attacker and new wallet set.
+
+Do not merge the May and July wallet clusters without independent evidence of shared funding, control, infrastructure, or laundering activity.
