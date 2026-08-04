@@ -1,6 +1,7 @@
-# Treat Markdown documentation as Markdown
-*.md linguist-language=Markdown
-*.md linguist-detectable=true
-*.md linguist-documentation=false
-*.md linguist-generated=false
-*.md linguist-vendored=false
+# Normalize text files
+* text=auto
+
+# Force documentation files to be classified as Markdown by GitHub Linguist
+*.md linguist-language=Markdown linguist-detectable=true linguist-documentation=false linguist-generated=false linguist-vendored=false
+*.html linguist-language=Markdown linguist-detectable=true linguist-documentation=false linguist-generated=false linguist-vendored=false
+*.css linguist-language=Markdown linguist-detectable=true linguist-documentation=false linguist-generated=false linguist-vendored=false
