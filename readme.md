@@ -58,6 +58,18 @@
       <td><a href="./Multi-Chain/Across-Protocol/"><code>Multi-Chain/Across-Protocol/</code></a></td>
       <td>Across Protocol Solana relayer exploit involving forged deposit events, off-chain event-parser validation failures, fraudulent multi-chain fills, attacker-linked investigation seeds, and partial fund recovery.</td>
     </tr>
+    <tr>
+      <td>
+        <a href="./Multi-Chain/Verus-Ethereum-Bridge-July-2026/">
+          <code>Multi-Chain/Verus-Ethereum-Bridge-July-2026/</code>
+        </a>
+      </td>
+      <td>
+        July 2026 Verus–Ethereum Bridge exploit involving poisoned notarizations,
+        duplicate state-root interpretation, forged import proofs, direct
+        attacker-wallet seeds, and Tornado Cash fund flows.
+      </td>
+    </tr>
     <tr><td><a href="./FTX/"><code>FTX/</code></a></td><td>Historical FTX and Alameda Research wallet analysis, balances, addresses, and transaction activity.</td></tr>
     <tr><td><a href="./HBAR/"><code>HBAR/</code></a></td><td>Hedera-to-Ethereum suspected theft and bridge-flow analysis.</td></tr>
     <tr><td><a href="./Lazarus/"><code>Lazarus/</code></a></td><td>DPRK TraderTraitor / Lazarus Group wallets, including addresses connected to the Bybit theft and earlier incidents.</td></tr>
@@ -130,6 +142,14 @@
     <tr><td>Exchange and protocol incidents</td><td>FTX, Alameda Research, Bybit, Hedera, Zunami Protocol, Ostium, and related exploit or theft flows</td></tr>
     <tr><td>Treasury and hot-wallet compromises</td><td>Triple-A multi-chain treasury-wallet compromise, Ethereum consolidation activity, and cross-chain routing analysis</td></tr>
     <tr><td>Off-chain parser and relayer exploits</td><td>Across Protocol forged Solana deposit events, missing Anchor event-type validation, fraudulent destination-chain fills, and relayer-capital loss</td></tr>
+    <tr>
+      <td>Cross-chain proof-validation exploits</td>
+      <td>
+        Verus–Ethereum Bridge notarization poisoning, semantic inconsistency,
+        fabricated import proofs, unbacked Ethereum withdrawals, and
+        laundering-path analysis
+      </td>
+    </tr>
     <tr><td>Oracle and privileged-access exploits</td><td>Ostium oracle manipulation and Zunami privileged-wallet relationships</td></tr>
     <tr><td>Governance attacks</td><td>BonkDAO</td></tr>
     <tr><td>Rug pulls and token manipulation</td><td>HOPE and other Solana ecosystem cases</td></tr>
