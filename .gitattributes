@@ -1,5 +1,5 @@
 # Normalize text files
-* text=auto
+#* text=auto
 
 # Force documentation files to be classified as Markdown by GitHub Linguist
 *.md linguist-language=Markdown linguist-detectable=true linguist-documentation=false linguist-generated=false linguist-vendored=false
