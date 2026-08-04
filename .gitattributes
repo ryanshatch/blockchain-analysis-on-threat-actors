@@ -14,3 +14,10 @@
 *.html linguist-documentation=false
 *.html linguist-generated=false
 *.html linguist-vendored=false
+
+# CSS documents that should be treated as Markdown
+*.css linguist-language=Markdown
+*.css linguist-detectable=true
+*.css linguist-documentation=false
+*.css linguist-generated=false
+*.css linguist-vendored=false
