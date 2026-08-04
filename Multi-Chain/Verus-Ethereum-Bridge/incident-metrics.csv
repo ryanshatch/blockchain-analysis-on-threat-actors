@@ -1,0 +1,7 @@
+metric_name,value,unit,accounting_basis,confidence,as_of_date,source,notes
+certik_estimated_loss,7440000,USD,Estimated bridge reserves withdrawn,high,2026-07-30,CertiK,"Includes ETH tBTC stablecoins and MKR"
+blockaid_related_estimated_loss,7540000,USD,Estimated bridge reserves withdrawn,medium-high,2026-07-23,"Blockaid via The Block","Preserve separately from the CertiK estimate"
+source_chain_export,0.01,VRSC,Legitimate Verus export initiated by attacker,high,2026-07-23,CertiK,"Used to create the legitimate-looking basis for the fabricated Ethereum import"
+ethereum_direct_eth_payout,1137.45281584,ETH,Internal ETH transfer during forged import,high,2026-07-23,Etherscan,"Transferred from the bridge contract to the profit wallet in the submitImports transaction"
+certik_relay_swap_total,2778.8662,ETH,Amount CertiK reports swapped through Relay,high,2026-07-30,CertiK,"Do not assume this equals all withdrawn or ultimately consolidated ETH"
+blockaid_related_eth_total,3916.1,ETH,Reported post-conversion ETH total,medium-high,2026-07-23,"Blockaid via The Block","May use a broader accounting scope than the CertiK Relay total"
