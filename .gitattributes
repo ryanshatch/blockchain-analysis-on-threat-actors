@@ -1,1 +1,16 @@
+# Normalize text files
+* text=auto
 
+# Markdown files
+*.md linguist-language=Markdown
+*.md linguist-detectable=true
+*.md linguist-documentation=false
+*.md linguist-generated=false
+*.md linguist-vendored=false
+
+# HTML documents that should be treated as Markdown
+*.html linguist-language=Markdown
+*.html linguist-detectable=true
+*.html linguist-documentation=false
+*.html linguist-generated=false
+*.html linguist-vendored=false
