@@ -40,7 +40,7 @@
     <img src="https://img.shields.io/badge/TRON-CASES-0D1117?style=flat-square" alt="Browse TRON cases">
   </a>
   <a href="./Multi-Chain/">
-    <img src="https://img.shields.io/badge/MULTI--CHAIN-CASES-0D1117?style=flat-square" alt="Browse multi-chain cases">
+    <img src="https://img.shields.io/badge/MULTI-CHAIN-CASES-0D1117?style=flat-square" alt="Browse multi-chain cases">
   </a>
 </div>
 
@@ -52,9 +52,9 @@
   </a>
   <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues">
     <img src="https://img.shields.io/github/issues/ryanshatch/blockchain-analysis-on-threat-actors?style=flat-square&amp;color=007EC6" alt="Open issues">
-  </a>
+  </a><br>
   <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/LICENSE-ALL%20RIGHTS%20RESERVED-Ryanshatch-555555?style=flat-square" alt="All rights reserved">
+    <img src="https://img.shields.io/badge/ALL%20RIGHTS%20RESERVED-Ryanshatch-555555?style=flat-square" alt="All rights reserved">
   </a>
 </div>
 
