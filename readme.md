@@ -30,17 +30,18 @@
 <hr>
 
 <div align="center">
+  <h3>Cases:</h3>
   <a href="./EVM/">
-    <img src="https://img.shields.io/badge/EVM-CASES-0D1117?style=flat-square" alt="Browse EVM cases">
+    <img src="https://img.shields.io/badge/EVM-0D1117?style=flat-square" alt="Browse EVM cases">
   </a>
   <a href="./SOL/">
-    <img src="https://img.shields.io/badge/SOLANA-CASES-0D1117?style=flat-square" alt="Browse Solana cases">
+    <img src="https://img.shields.io/badge/SOLANA-0D1117?style=flat-square" alt="Browse Solana cases">
   </a>
   <a href="./TRON/">
-    <img src="https://img.shields.io/badge/TRON-CASES-0D1117?style=flat-square" alt="Browse TRON cases">
+    <img src="https://img.shields.io/badge/TRON-0D1117?style=flat-square" alt="Browse TRON cases">
   </a>
   <a href="./Multi-Chain/">
-    <img src="https://img.shields.io/badge/MULTI%20CHAIN-CASES-0D1117?style=flat-square" alt="Browse multi-chain cases">
+    <img src="https://img.shields.io/badge/MULTI%20CHAIN-0D1117?style=flat-square" alt="Browse multi-chain cases">
   </a>
 </div>
 
