@@ -40,7 +40,7 @@
     <img src="https://img.shields.io/badge/TRON-CASES-0D1117?style=flat-square" alt="Browse TRON cases">
   </a>
   <a href="./Multi-Chain/">
-    <img src="https://img.shields.io/badge/MULTI-CHAIN-CASES-0D1117?style=flat-square" alt="Browse multi-chain cases">
+    <img src="https://img.shields.io/badge/MULTI%20CHAIN-CASES-0D1117?style=flat-square" alt="Browse multi-chain cases">
   </a>
 </div>
 
