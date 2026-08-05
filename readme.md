@@ -27,7 +27,7 @@
   </a>
 </div>
 
-<br>
+<hr>
 
 <div align="center">
   <a href="./EVM/">
@@ -44,7 +44,7 @@
   </a>
 </div>
 
-<br>
+<hr>
 
 <div align="center">
   <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/commits/main">
