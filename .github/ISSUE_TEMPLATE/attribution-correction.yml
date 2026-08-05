@@ -1,0 +1,78 @@
+name: Request an attribution correction
+description: Report a potentially incorrect, outdated, disputed, or insufficiently supported repository entry.
+title: "[Correction]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Corrections are evaluated against the cited evidence and preserved transparently when findings change. Submit public, verifiable information only and do not include private personal information or secrets.
+
+  - type: input
+    id: case-reference
+    attributes:
+      label: Case file or repository link
+      description: Link the exact case report, wallet index section, file, or line of analysis being disputed.
+      placeholder: https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: disputed-entry
+    attributes:
+      label: Address or statement requiring correction
+      description: Quote the relevant statement or provide the complete address and its current classification.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: correction-type
+    attributes:
+      label: Correction type
+      options:
+        - Incorrect actor attribution
+        - Incorrect address role or classification
+        - Incorrect network or chain
+        - Incomplete or truncated address
+        - Outdated material information
+        - Broken, retracted, or unreliable source
+        - Duplicate indicator or case
+        - Other factual correction
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-correction
+    attributes:
+      label: Proposed correction
+      description: State exactly what should change and provide replacement wording or classification when possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: supporting-evidence
+    attributes:
+      label: Supporting evidence
+      description: Provide explorer links, official disclosures, transaction hashes, security reports, retractions, or other public evidence supporting the correction.
+      placeholder: One source URL per line, followed by a short explanation
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Why the correction matters
+      description: Explain how the current entry could misstate attribution, monitoring priority, address ownership, incident scope, or another material fact.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Request verification
+      options:
+        - label: I identified the exact entry being disputed and supplied public supporting evidence.
+          required: true
+        - label: I understand that interaction with a threat-linked address does not by itself establish control, ownership, or malicious intent.
+          required: true
+        - label: I did not include secrets or unnecessary personal information.
+          required: true
