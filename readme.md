@@ -12,6 +12,52 @@
   <p><strong>A defensive on-chain intelligence repository for tracking sanctioned wallets, threat actors, exploit flows, scams, rug pulls, and suspicious cryptocurrency activity.</strong></p>
 </div>
 
+<div align="center">
+  <a href="./wallets.md">
+    <img src="https://img.shields.io/badge/WALLET%20INDEX-OPEN-007EC6?style=for-the-badge" alt="Open wallet index">
+  </a>
+  <a href="#repository-structure">
+    <img src="https://img.shields.io/badge/BROWSE%20CASES-EXPLORE-007EC6?style=for-the-badge" alt="Browse case files">
+  </a>
+  <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues/new?template=new-intelligence.yml">
+    <img src="https://img.shields.io/badge/SUBMIT%20INTEL-NEW%20REPORT-007EC6?style=for-the-badge" alt="Submit threat intelligence">
+  </a>
+  <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues/new?template=attribution-correction.yml">
+    <img src="https://img.shields.io/badge/REQUEST%20CORRECTION-OPEN%20REPORT-007EC6?style=for-the-badge" alt="Request an attribution correction">
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <a href="./EVM/">
+    <img src="https://img.shields.io/badge/EVM-CASES-0D1117?style=flat-square" alt="Browse EVM cases">
+  </a>
+  <a href="./SOL/">
+    <img src="https://img.shields.io/badge/SOLANA-CASES-0D1117?style=flat-square" alt="Browse Solana cases">
+  </a>
+  <a href="./TRON/">
+    <img src="https://img.shields.io/badge/TRON-CASES-0D1117?style=flat-square" alt="Browse TRON cases">
+  </a>
+  <a href="./Multi-Chain/">
+    <img src="https://img.shields.io/badge/MULTI--CHAIN-CASES-0D1117?style=flat-square" alt="Browse multi-chain cases">
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/commits/main">
+    <img src="https://img.shields.io/github/last-commit/ryanshatch/blockchain-analysis-on-threat-actors?style=flat-square&amp;label=REPO%20UPDATED&amp;color=007EC6" alt="Repository last updated">
+  </a>
+  <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues">
+    <img src="https://img.shields.io/github/issues/ryanshatch/blockchain-analysis-on-threat-actors?style=flat-square&amp;color=007EC6" alt="Open issues">
+  </a>
+  <a href="./LICENSE">
+    <img src="https://img.shields.io/badge/LICENSE-ALL%20RIGHTS%20RESERVED-555555?style=flat-square" alt="All rights reserved">
+  </a>
+</div>
+
 <hr>
 
 <h2>Overview</h2>
