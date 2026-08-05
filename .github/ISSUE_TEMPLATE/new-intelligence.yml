@@ -1,0 +1,121 @@
+name: Submit threat intelligence
+description: Submit a source-cited incident, wallet, transaction, or material attribution update for review.
+title: "[Intelligence]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing defensive blockchain intelligence. Submit public, verifiable evidence only. Do not include private personal information, credentials, seed phrases, or other secrets.
+
+  - type: dropdown
+    id: submission-type
+    attributes:
+      label: Submission type
+      description: Select the option that best describes the intelligence.
+      options:
+        - New incident or actor
+        - New threat-controlled address
+        - New transaction or fund-flow evidence
+        - Material update to an existing case
+        - New sanctions or law-enforcement attribution
+        - Other defensive intelligence
+    validations:
+      required: true
+
+  - type: input
+    id: incident-actor
+    attributes:
+      label: Incident or actor
+      description: Name the protocol, organization, actor, campaign, scam, or incident.
+      placeholder: "Example: Protocol exploit or named threat actor"
+    validations:
+      required: true
+
+  - type: input
+    id: published-date
+    attributes:
+      label: Publication or incident date
+      description: Use YYYY-MM-DD when the exact date is known.
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+
+  - type: input
+    id: network
+    attributes:
+      label: Network and chain ID
+      description: Identify the exact network and include its chain ID where applicable.
+      placeholder: "Example: Arbitrum One — chain ID 42161"
+    validations:
+      required: true
+
+  - type: textarea
+    id: addresses
+    attributes:
+      label: Complete addresses and roles
+      description: Provide complete, untruncated addresses. State whether each is an EOA, contract, custodial address, token contract, or other type, and explain its suspected role.
+      placeholder: |
+        Address:
+        Address type:
+        Classification or role:
+        Recommended monitoring action:
+    validations:
+      required: true
+
+  - type: textarea
+    id: transactions
+    attributes:
+      label: Relevant transactions
+      description: Provide complete transaction hashes and explorer links when available.
+      placeholder: Transaction hash, explorer URL, and why it matters
+
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: Proposed confidence
+      description: Rate the strength of the address or incident attribution, not every transaction involving it.
+      options:
+        - High — official attribution or direct, well-corroborated transaction evidence
+        - Medium — reputable reporting or multiple sources with material questions remaining
+        - Low — preliminary or incomplete investigative lead
+        - Unknown — retained for review without sufficient attribution
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary sources
+      description: Link the original disclosure, explorer evidence, official notice, security report, protocol postmortem, or researcher publication.
+      placeholder: One source URL per line, followed by a short explanation
+    validations:
+      required: true
+
+  - type: textarea
+    id: analysis
+    attributes:
+      label: Analysis and attribution rationale
+      description: Separate confirmed facts from your analytical conclusions and explain how the evidence connects the indicators to the incident.
+    validations:
+      required: true
+
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations and unresolved questions
+      description: Identify conflicting evidence, uncertain address roles, missing data, or other reasons the attribution may need qualification.
+      placeholder: State "None identified" only if you have actively considered the limitations.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Submission verification
+      options:
+        - label: I provided complete addresses and identified the exact network wherever possible.
+          required: true
+        - label: I separated direct threat indicators from exchanges, bridges, protocols, mixers, victims, and other infrastructure.
+          required: true
+        - label: I used public evidence and did not include secrets or unnecessary personal information.
+          required: true
