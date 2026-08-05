@@ -14,16 +14,16 @@
 
 <div align="center">
   <a href="./wallets.md">
-    <img src="https://img.shields.io/badge/WALLET%20INDEX-OPEN-007EC6?style=for-the-badge" alt="Open wallet index">
+    <img src="https://img.shields.io/badge/WALLET%20INDEX-007EC6?style=for-the-badge" alt="Open wallet index">
   </a>
   <a href="#repository-structure">
-    <img src="https://img.shields.io/badge/BROWSE%20CASES-EXPLORE-007EC6?style=for-the-badge" alt="Browse case files">
+    <img src="https://img.shields.io/badge/BROWSE%20CASES--007EC6?style=for-the-badge" alt="Browse case files">
   </a>
   <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues/new?template=new-intelligence.yml">
-    <img src="https://img.shields.io/badge/SUBMIT%20INTEL-NEW%20REPORT-007EC6?style=for-the-badge" alt="Submit threat intelligence">
+    <img src="https://img.shields.io/badge/SUBMIT-REPORT-007EC6?style=for-the-badge" alt="Submit threat intelligence">
   </a>
   <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues/new?template=attribution-correction.yml">
-    <img src="https://img.shields.io/badge/REQUEST%20CORRECTION-OPEN%20REPORT-007EC6?style=for-the-badge" alt="Request an attribution correction">
+    <img src="https://img.shields.io/badge/REQUEST-CORRECTION-007EC6?style=for-the-badge" alt="Request an attribution correction">
   </a>
 </div>
 
