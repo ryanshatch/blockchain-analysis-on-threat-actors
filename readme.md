@@ -35,7 +35,7 @@
     <img src="https://img.shields.io/badge/EVM-0D1117?style=flat-square" alt="Browse EVM cases">
   </a>
   <a href="./SOL/">
-    <img src="https://img.shields.io/badge/SOLANA-0D1117?style=flat-square" alt="Browse Solana cases">
+    <img src="https://img.shields.io/badge/SOLANA-0D1117?style=flat-square&logo=solana" alt="Browse Solana cases">
   </a>
   <a href="./TRON/">
     <img src="https://img.shields.io/badge/TRON-0D1117?style=flat-square" alt="Browse TRON cases">
