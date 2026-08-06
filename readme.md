@@ -14,16 +14,16 @@
 
 <div align="center">
   <a href="./wallets.md">
-    <img src="https://img.shields.io/badge/WALLET-INDEX-007EC6?style=for-the-badge" alt="Open wallet index">
+    <img src="https://img.shields.io/badge/Wallet%20Index-black?style=for-the-badge&amp;logo=walletconnect&amp;logoColor=007EC6" alt="Open wallet index">
   </a>
   <a href="#repository-structure">
-    <img src="https://img.shields.io/badge/BROWSE-CASES-007EC6?style=for-the-badge" alt="Browse case files">
+    <img src="https://img.shields.io/badge/Browse%20Cases-black?style=for-the-badge&amp;logo=gitbook&amp;logoColor=007EC6" alt="Browse case files">
   </a>
   <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues/new?template=new-intelligence.yml">
-    <img src="https://img.shields.io/badge/SUBMIT-REPORT-007EC6?style=for-the-badge" alt="Submit threat intelligence">
+    <img src="https://img.shields.io/badge/Submit%20Report-black?style=for-the-badge&amp;logo=github&amp;logoColor=007EC6" alt="Submit threat intelligence">
   </a>
   <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues/new?template=attribution-correction.yml">
-    <img src="https://img.shields.io/badge/REQUEST-CORRECTION-007EC6?style=for-the-badge" alt="Request an attribution correction">
+    <img src="https://img.shields.io/badge/Request%20Correction-black?style=for-the-badge&amp;logo=github&amp;logoColor=007EC6" alt="Request an attribution correction">
   </a>
 </div>
 
@@ -32,16 +32,16 @@
 <div align="center">
   <h3>Cases:</h3>
   <a href="./EVM/">
-    <img src="https://img.shields.io/badge/EVM-0D1117?style=flat-square" alt="Browse EVM cases">
+    <img src="https://img.shields.io/badge/Ethereum%20%2F%20EVM-black?style=for-the-badge&amp;logo=ethereum&amp;logoColor=007EC6" alt="Browse Ethereum and EVM cases">
   </a>
   <a href="./SOL/">
-    <img src="https://img.shields.io/badge/SOLANA-0D1117?style=flat-square&logo=solana" alt="Browse Solana cases">
+    <img src="https://img.shields.io/badge/Solana-black?style=for-the-badge&amp;logo=solana&amp;logoColor=007EC6" alt="Browse Solana cases">
   </a>
   <a href="./TRON/">
-    <img src="https://img.shields.io/badge/TRON-0D1117?style=flat-square" alt="Browse TRON cases">
+    <img src="https://img.shields.io/badge/TRON-black?style=for-the-badge&amp;logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI%2BPHBhdGggZmlsbD0iIzAwN0VDNiIgZD0iTTE2IDBjOC44MzcgMCAxNiA3LjE2MyAxNiAxNnMtNy4xNjMgMTYtMTYgMTZTMCAyNC44MzcgMCAxNiA3LjE2MyAwIDE2IDB6TTcuNSA3LjI1N2w3LjU5NSAxOS4xMTIgMTAuNTgzLTEyLjg5NC0zLjc0Ni0zLjU2Mkw3LjUgNy4yNTd6bTE2LjI1MiA2Ljk3N2wtNy42NyA5LjM0NC45ODMtOC4xMzMgNi42ODctMS4yMXpNOS40NzIgOS40ODhsNi42MzMgNS41MDItMS4wMzggOC41OEw5LjQ3MiA5LjQ4N3pNMjEuNyAxMS4wODNsMi4yMDggMi4wOTktNi4wMzggMS4wOTMgMy44My0zLjE5MnpNMTAuMTk0IDguNzc4bDEwLjQwMiAxLjkxNC00LjAzOCAzLjM2NC02LjM2NC01LjI3OHoiLz48L3N2Zz4%3D" alt="Browse TRON cases">
   </a>
   <a href="./Multi-Chain/">
-    <img src="https://img.shields.io/badge/MULTI%20CHAIN-0D1117?style=flat-square" alt="Browse multi-chain cases">
+    <img src="https://img.shields.io/badge/Multi--Chain-black?style=for-the-badge&amp;logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iIzAwN0VDNiIgZD0iTTEwLjU5IDEzLjQxYTIgMiAwIDAgMCAyLjgyIDBMMTcgOS44MkEyIDIgMCAxIDAgMTQuMTcgN2wtMS44OCAxLjg4LTEuNDItMS40MiAxLjg5LTEuODhhNCA0IDAgMSAxIDUuNjYgNS42NmwtMy41OSAzLjU5YTQgNCAwIDAgMS01LjY2IDBsMS40Mi0xLjQyWk0xMy40MSAxMC41OWEyIDIgMCAwIDAtMi44MiAwTDcgMTQuMThBMiAyIDAgMSAwIDkuODMgMTdsMS44OC0xLjg4IDEuNDIgMS40Mi0xLjg5IDEuODhhNCA0IDAgMSAxLTUuNjYtNS42NmwzLjU5LTMuNTlhNCA0IDAgMCAxIDUuNjYgMGwtMS40MiAxLjQyWiIvPjwvc3ZnPg%3D%3D" alt="Browse multi-chain cases">
   </a>
 </div>
 
