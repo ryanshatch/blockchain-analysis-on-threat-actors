@@ -30,7 +30,7 @@
 <hr>
 
 <div align="center">
-  <h3>Cases:</h3>
+  <!-- <h3>Cases:</h3> -->
   <a href="./EVM/">
     <img src="https://img.shields.io/badge/Ethereum%20%2F%20EVM-black?style=for-the-badge&amp;logo=ethereum&amp;logoColor=007EC6" alt="Browse Ethereum and EVM cases">
   </a>
