@@ -55,7 +55,7 @@
     <img src="https://img.shields.io/github/issues/ryanshatch/blockchain-analysis-on-threat-actors?style=flat-square&amp;color=007EC6" alt="Open issues">
   </a>
   <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/(c)%20ALL%20RIGHTS%20RESERVED%20by%20Ryanshatch-555555?style=flat-square" alt="All rights reserved">
+    <img src="https://img.shields.io/badge/(c)%20All%20Rights%20Reserved20by%20Ryanshatch-555555?style=flat-square" alt="All rights reserved">
   </a>
 </div>
 
