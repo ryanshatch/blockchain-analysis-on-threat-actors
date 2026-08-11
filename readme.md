@@ -27,7 +27,7 @@
   </a>
 </div>
 
-<!-- <hr> -->
+<hr>
 
 <div align="center">
   <!-- <h3>Cases:</h3> -->
@@ -45,7 +45,7 @@
   </a>
 </div>
 
-<hr>
+<!-- <hr> -->
 
 <div align="center">
   <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/commits/main">
