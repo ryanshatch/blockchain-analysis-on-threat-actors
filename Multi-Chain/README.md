@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Multi-Chain Threat and Incident Index</h1>
-<p><strong>Incidents whose exploit execution, treasury compromise, bridge movement, proceeds flow, or recovery activity spans more than one blockchain ecosystem.</strong></p>
+<p><strong>Incidents and threat campaigns whose exploit execution, treasury compromise, bridge movement, proceeds flow, recovery activity, or malicious infrastructure spans more than one blockchain ecosystem.</strong></p>
 </div>
 
 <hr>
@@ -21,6 +21,11 @@
       <td>Stablecoin-pool account-aliasing and accounting manipulation</td>
     </tr>
     <tr>
+      <td><a href="./SpaceX-FIFA-Drainers/"><code>SpaceX-FIFA-Drainers/</code></a></td>
+      <td>Solana and EVM users; broader campaign set also used direct Bitcoin and Ethereum deposit scams</td>
+      <td>Wallet-drainer, malicious dApp, fake-token, impersonation, and investment-scam campaign</td>
+    </tr>
+    <tr>
       <td><a href="./Triple-A/"><code>Triple-A/</code></a></td>
       <td>Ethereum, Solana, TRON, TON, Polygon, Arbitrum, Bitcoin, and related routing</td>
       <td>Multi-chain treasury-wallet compromise and proceeds consolidation</td>
@@ -31,16 +36,17 @@
 <h2>Storage Rule</h2>
 
 <p>
-A case is stored under <code>Multi-Chain/</code> when the full investigation cannot be accurately represented by one chain directory. Each report still records the exact exploit-origin chain, vulnerable deployment, destination networks, proceeds chains, recovery networks, and address roles separately.
+A case is stored under <code>Multi-Chain/</code> when the full investigation cannot be accurately represented by one chain directory. Each report still records the exact exploit-origin chain, vulnerable deployment, destination networks, proceeds chains, recovery networks, campaign targets, and address roles separately.
 </p>
 
 <p>
-Solana-origin cases are also cross-listed in <a href="../SOL/"><code>SOL/README.md</code></a> so chain-specific incident counts do not omit cross-chain cases such as Across Protocol or Allbridge Core.
+Solana-origin cases are also cross-listed in <a href="../SOL/"><code>SOL/README.md</code></a> so chain-specific incident counts do not omit cross-chain cases such as Across Protocol or Allbridge Core. Multi-victim campaigns such as the SpaceX/FIFA drainer wave are cross-referenced there but are not counted as single Solana protocol incidents.
 </p>
 
 <h2>Attribution Boundaries</h2>
 <ul>
   <li>Bridge, relayer, exchange, router, protocol, victim, vault, and recovery addresses are not automatically classified as threat-controlled.</li>
   <li>Attacker seeds and proceeds wallets require a complete address and evidence-supported role.</li>
-  <li>Origin-chain classification describes where the exploit began; proceeds-chain classification describes where stolen assets later moved.</li>
+  <li>Origin-chain classification describes where an exploit or drain began; proceeds-chain classification describes where stolen assets later moved.</li>
+  <li>Campaign domains, token lures, commercial drainer-kit names, and receiving addresses should remain separate indicator classes rather than being collapsed into a single actor attribution.</li>
 </ul>

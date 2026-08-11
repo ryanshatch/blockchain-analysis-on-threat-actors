@@ -1,0 +1,6 @@
+indicator,type,classification,confidence,monitoring_action,notes
+roobet-worldcup.vercel.app,domain,World Cup-themed malicious dApp,high,block and investigate retain as campaign IOC,Published by Blockaid
+worldcupvp.app,domain,World Cup-themed malicious dApp,high,block and investigate retain as campaign IOC,Published by Blockaid
+watchfifa2026.xyz,domain,fake tournament or streaming infrastructure,high,block and investigate retain as campaign IOC,Published by Blockaid
+vote-worldcuponpump.com,domain,World Cup or token-themed malicious dApp,high,block and investigate retain as campaign IOC,Published by Blockaid
+fifaworldc.com,domain,World Cup impersonation infrastructure,high,block and investigate retain as campaign IOC,Published by Blockaid

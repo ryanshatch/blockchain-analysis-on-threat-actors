@@ -1,0 +1,3 @@
+network,address,address_type,classification,confidence,monitoring_action,notes
+Solana,BUrnPq1dRv7gxjdh5MM2mF51GYBkfLSUyAWx2zcgot6j,program or contract,malicious burn contract / delegate-authority pivot,medium-high,watch directly and expand deployer funding authority grants and victim interactions,Published in SMC Researchers analysis and linked to Solscan
+Solana,Ah4mTqci95qbiydovW8123q2WQzMSCP3MiCzGR2Pje7n,account,attacker / proceeds wallet,medium-high,watch directly for SUNUSI sales SOL consolidation exchange deposits and related campaigns,Published in SMC Researchers analysis and linked to Solscan

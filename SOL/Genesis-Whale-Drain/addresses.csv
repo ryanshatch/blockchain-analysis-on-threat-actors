@@ -1,0 +1,7 @@
+network,address,address_type,classification,confidence,monitoring_action,notes
+Solana,HwtbQBNnLERakdUDuCCLWmUs2oETLFQZeHUWeQdPads,account,victim Genesis-era source wallet,high,do not threat-label preserve for source-flow reconstruction,Published by ZachXBT as victim
+Solana,Ffd1oB2aYM5UzMYUM7TmxULDRQb6KzgrBwmgj9U1C2bE,account,theft-linked address,high,watch directly and expand victim transfers swaps consolidation and bridge preparation,Published by ZachXBT as theft address
+Solana,653pnn5fzF51FfotBwxua55Es4QXxTdaXJLbPczVmswp,account,theft-linked address,high,watch directly and expand Solana-side graph and bridge flow,Published by ZachXBT as theft address
+Ethereum,0xaa5cfa4e96dda0f9aa30f4dc948b542a9b5817c6,EOA,theft-linked address,high,watch directly for consolidation swaps bridge reuse exchange and privacy interactions,Published by ZachXBT as theft address
+Ethereum,0x536b4ee7507c41143e1b0bd1bf3f2b84be404836,EOA,theft-linked address,high,watch directly for consolidation swaps bridge reuse exchange and privacy interactions,Published by ZachXBT as theft address
+Ethereum,0xbf11bdfbeb9ed137c352c81e45d191cacae6b0cf,EOA,theft-linked address,high,watch directly for consolidation swaps bridge reuse exchange and privacy interactions,Published by ZachXBT as theft address
