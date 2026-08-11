@@ -1,0 +1,21 @@
+network,address,address_type,classification,confidence,monitoring_action,notes
+Bitcoin,1MTndG4K51RRMvkzyvguaHnQpiMLnxFGzM,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Bitcoin,1DfyWkiXVVqWfcSduj23qTDis9kb2qvRDa,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Ethereum,0x1d19b52b54e7ef5ea1a4b40b616165e798eac9f8,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Ethereum,0x2C7DcD774b33e10367F7d6385479e04F97d179dc,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Litecoin,LcP1DumXkNJbBtSYD3XxAfsJ2nZR5hLdpM,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Litecoin,LbPAqHvemZBv3pvAqiAtDnZ3U1t6EziaL1,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Zcash,t1LHesgnkapziGQCJtrfZWYXhyjfTVo1dvh,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Dash,XcuGqRfrR85zyDrzVr1gSL5RNjwwpbu2KS,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Dash,XowUeMFa1FkEUnAHL78E5oqpezMfSB6xP1,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+TRON,TTLRNgLpz5H5tLPuNU4FViUs7zmmAtyvzW,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+TRON,TBFW9gF4oDX5cG44gS7AoxQeujScmm3z6h,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Dogecoin,DHzAVdEoL3PjGeLWNdEJwwMA1CeQ9J9Cpo,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Dogecoin,DTqpKQ96rqkTvHcohQQd9BksmgRjasHgGo,address,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Solana,Fc1EwQUZyTEagaDvA1utHXCcZNyG1x2PLt2DfNu1cJdH,account,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Solana,FuCC7GoYwt5TsNTjWL23Xx9UKCvC18chjMEFPL3vJDCC,account,sanctioned Dmytro Rashevskyi seed,high,watch directly and use for sanctions graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Bitcoin,bc1qdnr88f4d2yqunnc4mjsguezm6g3mlwe44z5dw8,address,sanctioned First VPN Service payment seed,high,watch directly and use for infrastructure graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Bitcoin,bc1qr4ankqmvmrhce3ydvzse86dfx5s3zhehfr9tg9,address,sanctioned First VPN Service payment seed,high,watch directly and use for infrastructure graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Ethereum,0x2711d73d559f62f4f855ee21f38378f528e07985,address,sanctioned First VPN Service payment seed,high,watch directly and use for infrastructure graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+Litecoin,ltc1qr8ntsedq8tv0svmxqhzvdcdl5k7kntdmnhwep7,address,sanctioned First VPN Service payment seed,high,watch directly and use for infrastructure graph expansion,Official OFAC CYBER4 identifier added July 13 2026
+TRON,TUuaxBAWfA5nmsqNfycxYrzEvz4a5GJMGY,address,sanctioned First VPN Service payment seed,high,watch directly and use for infrastructure graph expansion,Official OFAC CYBER4 identifier added July 13 2026
