@@ -229,3 +229,52 @@ The three published investigation addresses are suitable for direct incident mon
 The July attack used the same bridge contract, entry path, and general vulnerability class reported in the May 2026 incident, but public reporting described a different attacker and new wallet set.
 
 Do not merge the May and July wallet clusters without independent evidence of shared funding, control, infrastructure, or laundering activity.
+
+---
+
+## Genesis-Era Solana Whale Drain
+
+**Incident window:** July 10–13, 2026  
+**Origin network:** Solana  
+**Downstream network:** Ethereum  
+**Incident confidence:** High for the published flow; medium-high for theft characterization  
+**Compromise vector:** Unknown  
+**Named actor:** None identified  
+**Case file:** [`SOL/Genesis-Whale-Drain/`](./SOL/Genesis-Whale-Drain/)
+
+### Direct Incident-Watch Seeds
+
+| Network | Address | Classification | Monitoring |
+|---|---|---|---|
+| Solana | `Ffd1oB2aYM5UzMYUM7TmxULDRQb6KzgrBwmgj9U1C2bE` | Theft-linked address published by ZachXBT | Watch directly and expand victim transfers, swaps, consolidation, and bridge preparation |
+| Solana | `653pnn5fzF51FfotBwxua55Es4QXxTdaXJLbPczVmswp` | Theft-linked address published by ZachXBT | Watch directly and expand Solana-side graph and bridge activity |
+| Ethereum | `0xaa5cfa4e96dda0f9aa30f4dc948b542a9b5817c6` | Theft-linked address published by ZachXBT | Watch directly for downstream proceeds activity |
+| Ethereum | `0x536b4ee7507c41143e1b0bd1bf3f2b84be404836` | Theft-linked address published by ZachXBT | Watch directly for downstream proceeds activity |
+| Ethereum | `0xbf11bdfbeb9ed137c352c81e45d191cacae6b0cf` | Theft-linked address published by ZachXBT | Watch directly for downstream proceeds activity |
+
+### Victim Address — Do Not Threat-Label
+
+| Network | Address | Classification | Handling |
+|---|---|---|---|
+| Solana | `HwtbQBNnLERakdUDuCCLWmUs2oETLFQZeHUWeQdPads` | Genesis-era victim wallet | Preserve for source-flow reconstruction; do not classify as attacker-controlled |
+
+No public evidence currently establishes how the victim wallet was compromised. Do not describe this as a Solana protocol exploit or assert a stolen key, seed phrase, compromised hardware wallet, or malicious signer without additional evidence.
+
+---
+
+## SUNUSI Permanent-Delegate Drain
+
+**Incident date:** July 13, 2026  
+**Network:** Solana  
+**Incident confidence:** Medium-high  
+**Named actor:** None identified  
+**Case file:** [`SOL/SUNUSI/`](./SOL/SUNUSI/)
+
+### Direct Incident-Watch Seeds
+
+| Address | Classification | Monitoring |
+|---|---|---|
+| `BUrnPq1dRv7gxjdh5MM2mF51GYBkfLSUyAWx2zcgot6j` | Malicious burn contract / Permanent Delegate authority pivot | Watch directly and expand deployer funding, authority grants, and victim interactions |
+| `Ah4mTqci95qbiydovW8123q2WQzMSCP3MiCzGR2Pje7n` | Attacker / proceeds wallet | Highest-priority direct watch for token sales, SOL consolidation, exchange deposits, and related campaigns |
+
+The reviewed on-chain analysis supports malicious authorization abuse rather than a private-key compromise. SUNUSI is not currently classified as a confirmed rug pull or a Solana protocol exploit.
