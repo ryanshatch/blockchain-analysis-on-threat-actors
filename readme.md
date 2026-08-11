@@ -27,7 +27,7 @@
   </a>
 </div>
 
-<hr>
+<!-- <hr> -->
 
 <div align="center">
   <!-- <h3>Cases:</h3> -->
