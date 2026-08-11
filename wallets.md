@@ -278,3 +278,127 @@ No public evidence currently establishes how the victim wallet was compromised. 
 | `Ah4mTqci95qbiydovW8123q2WQzMSCP3MiCzGR2Pje7n` | Attacker / proceeds wallet | Highest-priority direct watch for token sales, SOL consolidation, exchange deposits, and related campaigns |
 
 The reviewed on-chain analysis supports malicious authorization abuse rather than a private-key compromise. SUNUSI is not currently classified as a confirmed rug pull or a Solana protocol exploit.
+
+---
+
+## Dmytro Rashevskyi / First VPN Service (1VPNS)
+
+**Designation date:** July 13, 2026  
+**Networks:** Bitcoin, Ethereum, Solana, Litecoin, Zcash, Dash, TRON, Dogecoin  
+**Source type:** Official OFAC SDN List update  
+**Confidence:** High  
+**Case file:** [`1VPNS/`](./1VPNS/)
+
+### BTC / ETH / SOL Direct Sanctions-Watch Seeds
+
+| Network | Address | Attribution | Monitoring |
+|---|---|---|---|
+| Bitcoin | `1MTndG4K51RRMvkzyvguaHnQpiMLnxFGzM` | Dmytro Rashevskyi | Watch directly |
+| Bitcoin | `1DfyWkiXVVqWfcSduj23qTDis9kb2qvRDa` | Dmytro Rashevskyi | Watch directly |
+| Ethereum | `0x1d19b52b54e7ef5ea1a4b40b616165e798eac9f8` | Dmytro Rashevskyi | Watch directly |
+| Ethereum | `0x2C7DcD774b33e10367F7d6385479e04F97d179dc` | Dmytro Rashevskyi | Watch directly |
+| Solana | `Fc1EwQUZyTEagaDvA1utHXCcZNyG1x2PLt2DfNu1cJdH` | Dmytro Rashevskyi | Watch directly |
+| Solana | `FuCC7GoYwt5TsNTjWL23Xx9UKCvC18chjMEFPL3vJDCC` | Dmytro Rashevskyi | Watch directly |
+| Bitcoin | `bc1qdnr88f4d2yqunnc4mjsguezm6g3mlwe44z5dw8` | First VPN Service / 1VPNS | Watch directly |
+| Bitcoin | `bc1qr4ankqmvmrhce3ydvzse86dfx5s3zhehfr9tg9` | First VPN Service / 1VPNS | Watch directly |
+| Ethereum | `0x2711d73d559f62f4f855ee21f38378f528e07985` | First VPN Service / 1VPNS | Watch directly |
+
+### Cross-Chain High-Confidence Sanctions Seeds
+
+| Network | Address | Attribution | Monitoring |
+|---|---|---|---|
+| Litecoin | `LcP1DumXkNJbBtSYD3XxAfsJ2nZR5hLdpM` | Dmytro Rashevskyi | Watch directly |
+| Litecoin | `LbPAqHvemZBv3pvAqiAtDnZ3U1t6EziaL1` | Dmytro Rashevskyi | Watch directly |
+| Zcash | `t1LHesgnkapziGQCJtrfZWYXhyjfTVo1dvh` | Dmytro Rashevskyi | Watch directly |
+| Dash | `XcuGqRfrR85zyDrzVr1gSL5RNjwwpbu2KS` | Dmytro Rashevskyi | Watch directly |
+| Dash | `XowUeMFa1FkEUnAHL78E5oqpezMfSB6xP1` | Dmytro Rashevskyi | Watch directly |
+| TRON | `TTLRNgLpz5H5tLPuNU4FViUs7zmmAtyvzW` | Dmytro Rashevskyi | Watch directly |
+| TRON | `TBFW9gF4oDX5cG44gS7AoxQeujScmm3z6h` | Dmytro Rashevskyi | Watch directly |
+| Dogecoin | `DHzAVdEoL3PjGeLWNdEJwwMA1CeQ9J9Cpo` | Dmytro Rashevskyi | Watch directly |
+| Dogecoin | `DTqpKQ96rqkTvHcohQQd9BksmgRjasHgGo` | Dmytro Rashevskyi | Watch directly |
+| Litecoin | `ltc1qr8ntsedq8tv0svmxqhzvdcdl5k7kntdmnhwep7` | First VPN Service / 1VPNS | Watch directly |
+| TRON | `TUuaxBAWfA5nmsqNfycxYrzEvz4a5GJMGY` | First VPN Service / 1VPNS | Watch directly |
+
+All listed identifiers are official OFAC digital-currency identifiers. Connected customer wallets, exchanges, hosting providers, routers, or counterparties should initially be treated as graph-expansion pivots unless separately attributed.
+
+---
+
+## DeFiTuna Lending Exploit
+
+**Incident date:** July 16, 2026  
+**Origin network:** Solana  
+**Downstream network:** Ethereum  
+**Incident confidence:** High  
+**Named actor:** None identified  
+**Case file:** [`SOL/DeFiTuna/`](./SOL/DeFiTuna/)
+
+### Direct Incident-Watch Seeds
+
+| Network | Address | Classification | Monitoring |
+|---|---|---|---|
+| Solana | `9ytGWP8tCRF1keREJ5VHqBpSuM9MZYwm3oFQQa1SvESb` | Attacker 1 / orchestration seed | Watch directly |
+| Solana | `917DKTphW3rhBG5gsJpwKsNGisNV2dx74uUFd8HBEjtg` | Attacker 2 / fake pool | Watch directly; preserve dual role |
+| Solana | `7hiHL8AgDuLNVDQLfN3GHdLAEeCN1F7uz6nSANRvFJst` | Attacker 3 / malicious limit-order owner | Watch directly and trace Mayan bridge activity |
+| Solana | `BK9aTnKfPNnnj45Me5ACrky2vexzUrZHRzr4BjmQpH3c` | Attacker 4 / malicious limit-order owner | Watch directly and trace Mayan bridge activity |
+| Solana | `8P3H7Hy98LWhw5QhuXdoigVdAzPCYRTYjdtQQKhGwvqD` | Attacker 5 | Direct incident seed; confirm narrower role transaction-by-transaction |
+| Solana | `GrXBhM6Ty6YxubFp8zubtJF12WXmKj1dhMyakRPeaDpo` | Attacker 6 | Direct incident seed; confirm narrower role transaction-by-transaction |
+| Solana | `F4xUroPaHro4gb2JAqa3e93E7DdZytRQJ4L2cHT5E53p` | Attacker 7 | Direct incident seed; confirm narrower role transaction-by-transaction |
+| Solana | `ETGhosPrFApbiiKXDpxrhBz7J2MdTA3dxnL2Nkio9vEX` | Attacker 8 | Direct incident seed; confirm narrower role transaction-by-transaction |
+| Solana | `4ZKkGZuoXqgSHbmsJXUib3dgn5WNhzbPEXrxuMYJ5oQ3` | Attacker 9 | Direct incident seed; confirm narrower role transaction-by-transaction |
+| Ethereum | `0x509B9D094A6C26D716aaC131E8aDee5B16B86d3e` | Cross-chain proceeds / consolidation wallet | Watch directly for dispersal, exchange deposits, bridge reuse, and privacy interactions |
+
+### Victim and Protocol Infrastructure — Do Not Threat-Label
+
+| Network | Address | Classification | Handling |
+|---|---|---|---|
+| Solana | `tuna4uSQZncNeeiAMKbstuxA9CUkHH6HmC64wgmnogD` | DeFiTuna program | Protocol infrastructure; graph filtering only |
+| Solana | `D76dDcSU5HnAGqVEZCDLyGgLpTp4xZuqeZyVDtUdDv55` | Damaged USDC vault | Victim infrastructure; preserve for loss reconstruction |
+
+CertiK reported that proceeds from the two malicious liquidity-position owners were bridged through Mayan to Ethereum, with 140 ETH deposited into Railgun and 291,696 DAI plus 5 ETH remaining in the published Ethereum wallet as of July 20, 2026.
+
+---
+
+## Central Bank of Iran — TRON Address Expansion
+
+**Material update date:** July 14, 2026  
+**Network:** TRON  
+**Source type:** Official OFAC SDN List update  
+**Confidence:** High  
+**Case file:** [`TRON/Central-Bank-of-Iran/`](./TRON/Central-Bank-of-Iran/)
+
+### Direct Sanctions-Watch Seeds
+
+| Address | Status | Monitoring |
+|---|---|---|
+| `TNiq9AXBp9EjUqhDhrwrfvAA8U3GUQZH81` | Existing OFAC identifier retained | Watch directly |
+| `TTiDLWE6fZK8okMJv6ijg42yrH6W2pjSr9` | Existing OFAC identifier retained | Watch directly |
+| `TAhwhFv3JpK39Nc2m8W5LPCcoTisutiRfp` | Newly added July 14, 2026 | Watch directly and prioritize historical-flow review |
+| `TJdgB1k6ot3f2nLuZug6D8eD3HavTmzmSK` | Newly added July 14, 2026 | Watch directly and prioritize historical-flow review |
+| `TXGHxdYbGy574z5hBu4LNzq9NzjZQ9bhUf` | Newly added July 14, 2026 | Watch directly and prioritize historical-flow review |
+| `TFQbqaNbmq2xsVor2NbufLkYZvxFC9wC7k` | Newly added July 14, 2026 | Watch directly and prioritize historical-flow review |
+
+The July action materially expanded an existing sanctioned-wallet attribution. Transactional proximity to these addresses should not automatically transfer the Central Bank of Iran or OFAC label to counterparties.
+
+---
+
+## El-Kahira / Zaid Issam Ahmed Al-Jebouri
+
+**Designation date:** July 23, 2026  
+**Network:** TRON  
+**Source type:** Official OFAC SDN List update  
+**Confidence:** High  
+**Case file:** [`TRON/El-Kahira/`](./TRON/El-Kahira/)
+
+### Direct Sanctions-Watch Seeds
+
+| Address | Classification | Monitoring |
+|---|---|---|
+| `TPyE2oSoaysrXfLzwf9wetBVr9JudLwjtD` | Official OFAC blocked identifier | Watch directly |
+| `TVgUsVzA7mpFExP4zS7HHbtKti6UuBDuwZ` | Official OFAC blocked identifier | Watch directly |
+| `TLoG3vbjDgqmTD5bM7w9rMgA6ysaNReuRy` | Official OFAC blocked identifier | Watch directly |
+| `TAhHpxPRwo1Bmm1A9m51uZ31tcB7EPq7SY` | Official OFAC blocked identifier | Watch directly |
+| `TScXZTbDjjZ6a6jiC7dZjgCqfNo4vm7atV` | Official OFAC blocked identifier | Watch directly |
+| `TGr2i8ZQiiMRjP3mWyQUH2MQBfKu8GJNqm` | Official OFAC blocked identifier | Watch directly |
+| `THJUJFyTnrBWb1ijWav7qfRBrjUuKgP49Z` | Official OFAC blocked identifier | Watch directly |
+
+OFAC directly attributed these TRON identifiers to Zaid Issam Ahmed Al-Jebouri and linked him to El-Kahira for General Trading. Connected exchanges, OTC services, bridges, token contracts, and counterparties should initially remain graph-expansion pivots unless separately attributed.
