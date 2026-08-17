@@ -1,0 +1,14 @@
+network,address,entity,classification,source_type,confidence,monitoring,priority,notes
+Bitcoin,15Zt2mKuQ5Qy6DEXfDcbtsEVneoGQQXrS4,Siavash Kayvanpour,sanctioned actor seed,OFAC,high,watch directly,P1,named actor identifier
+Bitcoin,1BUXxhcwzFukm9CUxnhag85sSXDkMRbXse,Siavash Kayvanpour,sanctioned actor seed,OFAC,high,watch directly,P1,named actor identifier
+Ethereum,0x8d79c73daae8630c88de372ba8f57592fa987607,Siavash Kayvanpour,sanctioned actor seed,OFAC,high,watch directly,P1,named actor identifier
+TRON,TPgxjjB6AJeMSQFngbUM6dMMxPHa9GEtYa,Siavash Kayvanpour,sanctioned actor seed,OFAC,high,watch directly,P1,named actor identifier
+Bitcoin,bc1qjzk63wwatq2f638psymq3qapn00aqgksyx56l3t8eg7zuuccwasq498khf,Shelbit Exchange,sanctioned exchange infrastructure seed,OFAC,high,watch directly,P1,official Shelbit identifier
+Bitcoin,bc1qz654h5qcqzalv6ltpxsk4ksdcc3e20wkedqntgnarv3a0t2e2p7scr48pl,Shelbit Exchange,sanctioned exchange infrastructure seed,OFAC,high,watch directly,P1,official Shelbit identifier
+Ethereum,0xe05f529f5284d75624eba386cb716928c3b54a2a,Shelbit Exchange,sanctioned exchange infrastructure seed,OFAC,high,watch directly,P1,official Shelbit identifier
+Ethereum,0x6b69e2a7545c166417a80c61a77562052bffa9c5,Shelbit Exchange,sanctioned exchange infrastructure seed,OFAC,high,watch directly,P1,official Shelbit identifier
+Solana,6wjqWWra8ombzaw6VHrG5xpQ972jCYF6bbHiFCbWmr4U,Shelbit Exchange,sanctioned exchange infrastructure seed,OFAC,high,watch directly,P1,official Shelbit Solana identifier
+TRON,TXN3hVukebhyYR31YPCYd7aJAvmUeXu1ab,Shelbit Exchange,sanctioned exchange infrastructure seed,OFAC,high,watch directly,P1,official Shelbit TRON identifier
+Bitcoin,1G1V1b9s9uPsFCNL15ibZk44xsVygKsP2u,Crypto Home DMCC,sanctioned digital asset service infrastructure seed,OFAC,high,watch directly,P2,official Crypto Home identifier
+Ethereum,0xbb69e01921b17cd22080968bcc96ba6115da6062,Crypto Home DMCC,sanctioned digital asset service infrastructure seed,OFAC,high,watch directly,P2,official Crypto Home identifier
+TRON,TTVJuXWCusAURrpNShiypauagEH1N4CrxV,Crypto Home DMCC,sanctioned digital asset service infrastructure seed,OFAC,high,watch directly,P2,official Crypto Home identifier
