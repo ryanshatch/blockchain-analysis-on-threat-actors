@@ -1,12 +1,12 @@
 <div align="center">
 <h1>Solana Threat and Incident Index</h1>
-<p><strong>Solana-specific exploits, governance attacks, suspicious wallets, authorization drains, rug investigations, and Solana-origin multi-chain incidents.</strong></p>
+<p><strong>Solana-specific exploits, governance attacks, suspicious wallets, authorization drains, rug investigations, sanctions attributions, and Solana-origin multi-chain incidents.</strong></p>
 </div>
 
 <hr>
 
 <p>
-<strong>Recent tracked set:</strong> Eight individually identifiable Solana-origin security incidents from June 10 through July 21, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. Multi-victim drainer campaigns are tracked separately and are not counted as individual protocol incidents.
+<strong>Recent tracked set:</strong> Eight individually identifiable Solana-origin security incidents from June 10 through July 21, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. Multi-victim drainer campaigns and sanctions attributions are tracked separately and are not counted as individual protocol incidents.
 </p>
 
 <h2>Solana Case Directories</h2>
@@ -81,6 +81,22 @@
   </tbody>
 </table>
 
+<h2>Related Solana Sanctions Cases</h2>
+
+<table>
+  <thead>
+    <tr><th align="left">Case</th><th align="left">Date</th><th align="left">Solana indicator</th><th align="left">Classification</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../Multi-Chain/Shelbit-Network/"><code>Multi-Chain/Shelbit-Network/</code></a></td>
+      <td>August 7, 2026</td>
+      <td><code>6wjqWWra8ombzaw6VHrG5xpQ972jCYF6bbHiFCbWmr4U</code></td>
+      <td>High-confidence OFAC-sanctioned Shelbit Exchange infrastructure seed; watch directly</td>
+    </tr>
+  </tbody>
+</table>
+
 <h2>Related Solana-Targeting Campaigns</h2>
 
 <table>
@@ -99,21 +115,22 @@
 <h2>Classification Rule</h2>
 
 <p>
-Cases are indexed here when the vulnerable program, governance system, execution environment, victim wallet, authorization path, or initial exploit transaction was on Solana. A case may remain canonically stored under <code>Multi-Chain/</code> when its protocol scope, fraudulent payouts, bridge movement, proceeds tracing, recovery activity, or campaign infrastructure spans several networks.
+Cases are indexed here when the vulnerable program, governance system, execution environment, victim wallet, authorization path, sanctioned identifier, or initial exploit transaction was on Solana. A case may remain canonically stored under <code>Multi-Chain/</code> when its protocol scope, sanctions attribution, fraudulent payouts, bridge movement, proceeds tracing, recovery activity, or campaign infrastructure spans several networks.
 </p>
 
 <p>
-The exploit-origin chain and the later proceeds chains are recorded separately. Bridging stolen funds to Ethereum does not reclassify the original vulnerability or wallet drain as an Ethereum incident.
+The exploit-origin chain and the later proceeds chains are recorded separately. Bridging stolen funds to Ethereum does not reclassify the original vulnerability or wallet drain as an Ethereum incident. Sanctions cases remain distinct from exploit counts.
 </p>
 
 <h2>Monitoring Boundaries</h2>
 
 <ul>
-  <li>Direct-watch attacker and proceeds addresses are separated from victim, protocol, bridge, exchange, router, vault, and recovery infrastructure.</li>
+  <li>Direct-watch attacker, proceeds, and officially sanctioned addresses are separated from victim, protocol, bridge, exchange, router, vault, recovery, and transactional-counterparty infrastructure.</li>
   <li>Incomplete or truncated addresses are not added as monitoring seeds.</li>
+  <li>The Shelbit Solana identifier is an official sanctions seed and should be watched directly; connected wallets do not automatically inherit the Shelbit or IRGC label.</li>
   <li>The Genesis-era whale case includes the complete victim and theft-linked addresses published by ZachXBT, but the compromise vector remains unknown.</li>
   <li>SUNUSI is classified as malicious authorization and Permanent Delegate abuse, not as a confirmed rug pull or private-key compromise.</li>
   <li>FlashTrade currently has no machine-readable attacker-address file because no complete public attacker address was resolved in the reviewed evidence.</li>
   <li>The SpaceX/FIFA drainer wave is tracked as a campaign because its domains, tokens, receiving addresses, and operator infrastructure rotate rapidly.</li>
-  <li>Cross-chain counterparties are not automatically threat-labeled merely because they interacted with incident proceeds.</li>
+  <li>Cross-chain counterparties are not automatically threat-labeled merely because they interacted with incident proceeds or sanctioned seeds.</li>
 </ul>
