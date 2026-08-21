@@ -95,6 +95,10 @@
       <td>Incidents spanning multiple blockchain ecosystems, including cross-chain theft flows, treasury-wallet compromises, bridges, swaps, and consolidated destination wallets.</td>
     </tr>
     <tr>
+      <td><a href="./Multi-Chain/August-2026-Security-Sweep/"><code>Multi-Chain/August-2026-Security-Sweep/</code></a></td>
+      <td>Point-in-time August 20, 2026 security sweep covering Maya Protocol, fake AML checkers, FoxMarket, Hyperliquid impersonation, an Ethereum whale drain, Harmony, ODY, Coldcard, address poisoning, and a Vultisig investigative lead.</td>
+    </tr>
+    <tr>
       <td><a href="./Multi-Chain/Triple-A/"><code>Multi-Chain/Triple-A/</code></a></td>
       <td>Triple-A treasury-wallet compromise spanning multiple networks, with a verified Ethereum proceeds-consolidation address and additional related addresses under review.</td>
     </tr>
