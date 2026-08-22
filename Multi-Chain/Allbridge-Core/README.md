@@ -181,11 +181,14 @@ No complete attacker EOA or contract address was available in the reviewed autho
 </ul>
 
 <hr>
-<h2>In other words:</h2>
+<h2>Incident 1 in other words:</h2>
 <p>
 The attacker borrowed about $1.12 million for one transaction, repeatedly asked Allbridge to process USDT as both the asset being sent and the asset being received, and supplied overlapping accounts where the program expected separate state. Those calls damaged the pool's internal accounting. The attacker then traded only a few thousand USDT for roughly $2.24 million USDC, repaid the temporary loan, and kept the difference.
 </p>
 <p>
 This was not a stolen key and the bridge did not accept a forged cross-chain message. It was a Solana account-validation and accounting failure inside Allbridge Core's liquidity-pool model.
+</p>
+<p>
+For Incident 2, the attacker created a validly attested but economically unbacked CCTP-style message, waited for legitimate USDC to reach the Base Router, and used a flash loan to satisfy the Router's manipulated accounting condition before extracting the difference.
 </p>
 <p><strong>TLDR:</strong> July's Solana incident used aliased swap accounts to corrupt liquidity-pool accounting and extract approximately $1.65 million. A separate August 19 incident abused CCTP message validation and unverified Router credit on Base for approximately $189,751.55 in profit. Only the July incident currently has complete direct-watch addresses in this case.</p>
