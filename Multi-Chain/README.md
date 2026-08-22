@@ -17,13 +17,13 @@
     </tr>
     <tr>
       <td><a href="./Allbridge-Core/"><code>Allbridge-Core/</code></a></td>
-      <td>Solana exploit origin; Ethereum proceeds flow</td>
-      <td>Stablecoin-pool account-aliasing and accounting manipulation</td>
+      <td>Two 2026 incidents across Solana, Ethereum, Polygon, and Base</td>
+      <td>July Solana pool-accounting exploit plus distinct August Base/CCTP message-validation exploit</td>
     </tr>
     <tr>
       <td><a href="./August-2026-Security-Sweep/"><code>August-2026-Security-Sweep/</code></a></td>
       <td>MAYAChain, Bitcoin, Ethereum, BNB Chain, Harmony, and multi-chain users</td>
-      <td>August 20, 2026 cross-ecosystem exploit, wallet-compromise, phishing, rug-pull, laundering, and poisoning intelligence sweep</td>
+      <td>August 20-21, 2026 cross-ecosystem sweep with Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP follow-up, and prior exploit, phishing, rug-pull, laundering, and poisoning intelligence</td>
     </tr>
     <tr>
       <td><a href="./Shelbit-Network/"><code>Shelbit-Network/</code></a></td>

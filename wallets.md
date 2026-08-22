@@ -450,3 +450,17 @@ The native and hexadecimal strings in each row are alternate representations of 
 | Vultisig-related outflow | No complete source address retained | Exploit status and direct attribution remain unresolved |
 
 Fake AMLBot and AML-checker sites are tracked as a high-confidence wallet-drainer TTP without an invented address cluster. Hyperliquid itself was not exploited; that case concerns a fraudulent sponsored result and impersonation site targeting a user.
+
+### August 21 Follow-Up: External-L1 and Coinsbuy Seeds
+
+| Incident | Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|---|
+| Maya Protocol | Bitcoin | `bc1q0hsgwunccczelq05ucpmfz268eyy5jr2y5l646` | Exploit-proceeds consolidation address; approximately 20.83 BTC | High | P1 direct watch |
+| Maya Protocol | Arbitrum | `0xa2f246f82995CBcCA8eD0d9F251383881A5E423e` | Secondary exploit-proceeds address | Medium-high | P2 direct watch |
+| Coinsbuy | Ethereum | `0x4d1bEF2Fe998B3E3C4029EF9EA6A0534d95661d3` | Theft/proceeds address | High incident linkage | P1 direct watch |
+| Coinsbuy | Ethereum | `0x66790b54B891e2ebdef58a15B969Ff6fb4374b17` | Theft/proceeds address | High incident linkage | P1 direct watch |
+| Coinsbuy | TRON | `TVpX9xCzrj6KHeNhhDJoqjzEqFMxdgubGR` | Theft/proceeds address | High incident linkage | P1 direct watch |
+
+The Coinsbuy access vector remains unresolved; simultaneous Ethereum/TRON activity does not by itself prove private-key compromise, API compromise, or insider access. The Allbridge August Base/CCTP incident is documented as a second exploit but contributes no direct-watch seed because no complete attacker identifier was available in authoritative reporting.
+
+The Harmony native and hex identifiers above remain four underlying accounts, not eight. No new complete qualifying Solana threat address was identified in the follow-up scan. Truncated Lazarus BTC destinations and other incomplete identifiers remain excluded.

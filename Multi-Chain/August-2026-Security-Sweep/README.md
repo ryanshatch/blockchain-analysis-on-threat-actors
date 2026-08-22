@@ -1,8 +1,9 @@
-# August 20, 2026 Crypto Security Sweep
+# August 20-21, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
+| Follow-up cutoff | August 21, 2026 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
 | Networks | MAYAChain, Bitcoin, Ethereum, BNB Chain, Harmony, and other EVM environments |
 | Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, SEAL/Security Alliance, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, protocol disclosures, public explorers, and corroborating reporting |
@@ -15,11 +16,13 @@
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
 |---|---|---|---:|---|
 | Maya Protocol / MAYAChain | August 18 | Chained protocol accounting and state-management exploit | About $1.7M direct | High |
+| Allbridge CCTP / Allbridge Next | August 19 | Base-side cross-chain message-validation and accounting exploit | About $189,752 attacker profit / $191K victim liquidity | High |
 | Fake AMLBot / AML-checker sites | Reported August 19 | Wallet drainer, brand impersonation, and malicious approvals | Unknown | High campaign; unknown aggregate loss |
 | FoxMarket | August 15 | Flash-loan-assisted spot-oracle manipulation | About $118.7K | High |
 | Hyperliquid impersonation | August 13 | Google Ads phishing and wallet drain; not a Hyperliquid protocol exploit | About 550,019 USDC | High loss; medium-high attacker attribution |
 | Ethereum whale drain | August 12 | Wallet or signing-environment compromise; exact vector unresolved | About $25.6M | High incident; medium root cause |
 | Harmony | August 11-12 | Cross-shard receipt and quorum-validation flaw causing unauthorized minting | About $3.2M initial cash-loss estimate; token issuance estimates remain disputed | High |
+| Coinsbuy | August 9 | Coordinated Ethereum and TRON wallet drain; exact access vector unresolved | More than $7.9M / about $8.07M | High incident linkage; unknown attacker identity |
 | ODY / Odyssey / Ody DeFi | July 28; highlighted August 11-13 | Privileged mint, market dump, liquidity extraction, and exit scam | About $15M-$15.67M USDT | Medium-high |
 | Coldcard | July 30 onward | Weak seed entropy and offline private-key brute forcing | About 1,816 BTC / $116M | High vulnerability and loss; medium actor clustering |
 | Address-poisoning theft | Reported August 2026 | Automated look-alike address poisoning | About $100K USDT | High |
@@ -41,11 +44,13 @@ The estimates describe different effects and should remain separate:
 - Approximately **$1.7 million** is the commonly reported direct incident loss.
 - Approximately **$10.9M-$11M** describes broader pool and market deterioration, including CACAO repricing and arbitrage; it should not be labeled as the amount stolen.
 
-### Direct Incident-Watch Seed
+### Direct Incident-Watch Seeds
 
 | Network | Address | Role | Monitoring |
 |---|---|---|---|
 | MAYAChain | `maya1dl3yrfpedyr5jfr0r86s2apjltnjqgszmwsv8x` | Researcher-identified attacker address | Watch directly and expand L1 extraction, swaps, bridge routes, and recovery activity |
+| Bitcoin | `bc1q0hsgwunccczelq05ucpmfz268eyy5jr2y5l646` | Exploit-proceeds consolidation address; approximately 20.83 BTC | Watch directly; high-confidence external-L1 proceeds seed |
+| Arbitrum | `0xa2f246f82995CBcCA8eD0d9F251383881A5E423e` | Secondary exploit-proceeds address; approximately 6.03 ARB.ETH plus other assets | Watch directly; medium-high attribution based on AMLBot monitoring |
 
 ## 2. Fake AMLBot and AML-Checker Sites
 
@@ -186,12 +191,46 @@ CertiK reported a suspicious 1.284M USDC outflow from a Vultisig-related address
 
 This item remains investigative intelligence and is intentionally excluded from the confirmed-hack count and machine-readable threat-address file.
 
+## 11. Coinsbuy Cross-Chain Drain
+
+**Incident date:** August 9, 2026  
+**Networks:** Ethereum and TRON  
+**Classification:** Coordinated wallet drain and laundering; exact access vector unresolved  
+**Loss:** More than $7.9 million; later reporting calculated approximately $8.07 million  
+**Confidence:** High for incident linkage and the three published theft/proceeds addresses; attacker identity and root cause unknown
+
+Specter published two Ethereum and one TRON theft/proceeds address after wallets associated with crypto payment processor Coinsbuy were drained across both networks. Subsequent reporting described approximately 6.04M USDT leaving eight TRON wallets and roughly 1.89M USDT plus 77 ETH leaving Ethereum wallets in under an hour. On-chain researchers linked the two network legs through Bridgers routing, while proceeds moved through services including FixedFloat, ChangeNOW, and BingX.
+
+| Network | Address | Role | Treatment |
+|---|---|---|---|
+| Ethereum | `0x4d1bEF2Fe998B3E3C4029EF9EA6A0534d95661d3` | Published theft/proceeds address | Watch directly |
+| Ethereum | `0x66790b54B891e2ebdef58a15B969Ff6fb4374b17` | Published theft/proceeds address | Watch directly |
+| TRON | `TVpX9xCzrj6KHeNhhDJoqjzEqFMxdgubGR` | Published theft/proceeds address | Watch directly |
+
+The simultaneous multi-chain activity is consistent with privileged withdrawal or wallet-management access, but it does not prove private-key theft, API compromise, insider access, or any other specific mechanism. Coinsbuy later said the incident was contained and customer losses were covered, but did not disclose the technical cause.
+
+## 12. Allbridge CCTP / Base — Second Distinct 2026 Incident
+
+**Incident date:** August 19, 2026  
+**Networks:** Polygon preparation and Base execution  
+**Classification:** Cross-chain message-validation and internal-accounting exploit  
+**Loss:** Approximately $189,751.55 attacker profit; approximately $191,112 of legitimate user liquidity was present in the Router  
+**Confidence:** High for the incident and reconstructed mechanism
+
+This was distinct from Allbridge's July 19 Solana pool exploit. SlowMist's reconstruction describes missing `sender` and `recipient` validation in `CCTPTokenMessenger`, combined with Router accounting that trusted a recorded `receivedTokenAmount` without proving the corresponding USDC had arrived.
+
+The attacker prepared a malicious CCTP-style message on Polygon on July 26, then waited approximately 24 days. After a legitimate transfer placed about 191,112 USDC in the Base Router on August 19, the attacker acted roughly six seconds later. An Aave flash loan temporarily added about 808,844 USDC; the manipulated internal record then authorized a 999,000 USDC transfer. After repayment and fees, the reported profit was approximately 189,751.55 USDC.
+
+No complete attacker EOA or contract address was available from the reviewed authoritative reporting. The incident is therefore documented without adding a direct-watch seed. See the expanded [`Allbridge-Core`](../Allbridge-Core/) case for the two-incident comparison.
+
+No new confirmed Solana protocol exploit or complete qualifying Solana threat address was identified in the follow-up scan.
+
 ## Monitoring Priorities
 
 | Priority | Indicators | Action |
 |---|---|---|
-| P1 | Maya attacker; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge and exchange-deposit alerts |
-| P2 | Coldcard-linked Ethereum laundering pivot; poisoning address | Direct monitoring with narrower incident-role labels |
+| P1 | Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge and exchange-deposit alerts |
+| P2 | Maya Arbitrum proceeds address; Coldcard-linked Ethereum laundering pivot; poisoning address | Direct monitoring with narrower incident-role labels |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
 | Case only | ODY | Preserve rug-pull report; withhold truncated identifiers |
 | Investigative | Vultisig-related outflow | Monitor for a protocol statement, complete IOCs, root-cause evidence, and confirmation of unauthorized activity |
@@ -204,6 +243,8 @@ This item remains investigative intelligence and is intentionally excluded from 
 - The Hyperliquid case is phishing against a user, not a Hyperliquid protocol breach.
 - The Coldcard Ethereum address is a laundering pivot, not proof of one actor controlling every theft wave.
 - The 2026 Ethereum whale drain's exact compromise vector remains unresolved.
+- The Coinsbuy drain's exact compromise vector remains unresolved; cross-chain timing alone does not prove private-key compromise.
+- The Allbridge CCTP/Base incident has no complete authoritative attacker identifier in this update and contributes no machine-readable seed.
 - ODY and Vultisig identifiers remain withheld where public evidence is truncated or attribution is incomplete.
 
 ## Sources
@@ -213,6 +254,18 @@ This item remains investigative intelligence and is intentionally excluded from 
 - [SlowMist Hacked — live incident tracker](https://hacked.slowmist.io/)
 - [CertiK Alert — Maya Protocol loss and asset estimate](https://x.com/CertiKAlert/status/2089900489752318181)
 - [Vini Barbosa — six-bug technical reconstruction and attacker address](https://x.com/vinibarbosabr/status/2089827189768212659)
+- [Bitcoin.com News — PeckShield-attributed Bitcoin proceeds address](https://news.bitcoin.com/security/maya-protocol-exploit-1-7-million-peckshield/)
+- [AMLBot monitoring reproduced by KuCoin — Arbitrum proceeds address](https://www.kucoin.com/ar/news/community/BTC/6a85cb0bec098c0007113843)
+
+### Coinsbuy
+
+- [Specter Investigation — published theft addresses](https://t.me/specterinvestigation/222)
+- [CoinDesk — cross-chain incident reconstruction and Coinsbuy response](https://www.coindesk.com/business/2026/08/10/crypto-exchange-coinsbuy-loses-usd8-million-in-coordinated-two-blockchain-attack)
+
+### Allbridge CCTP / Base
+
+- [SlowMist reconstruction reproduced by KuCoin/MetaEra](https://www.kucoin.com/news/flash/allbridge-cross-chain-bridge-hacked-for-190-000-after-month-long-attack)
+- [The Block — July Solana incident and planned move to CCTP/LayerZero](https://www.theblock.co/news/defi/2026-07-19-allbridge-core-exploit-408855)
 
 ### Fake AML Checkers
 
@@ -260,4 +313,4 @@ This item remains investigative intelligence and is intentionally excluded from 
 
 ## TLDR
 
-Maya Protocol is the newest confirmed protocol exploit in the reviewed tracker window. The sweep adds complete direct-watch seeds for Maya, FoxMarket, Hyperliquid phishing, the Ethereum whale drain, Harmony, Coldcard-linked laundering, and address poisoning. Fake AML-checker sites are retained as a high-confidence TTP without an invented wallet cluster. ODY receives a documented rug-pull backfill without truncated IOCs, while the Vultisig-related outflow remains an unresolved investigative lead.
+The follow-up adds Maya's Bitcoin and Arbitrum proceeds addresses plus three Coinsbuy theft/proceeds addresses across Ethereum and TRON. It also records Allbridge's separate August 19 Base/CCTP exploit without inventing an attacker address. Harmony remains four underlying accounts despite dual native/hex representations, and no new complete qualifying Solana threat address was identified.

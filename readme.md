@@ -96,7 +96,7 @@
     </tr>
     <tr>
       <td><a href="./Multi-Chain/August-2026-Security-Sweep/"><code>Multi-Chain/August-2026-Security-Sweep/</code></a></td>
-      <td>Point-in-time August 20, 2026 security sweep covering Maya Protocol, fake AML checkers, FoxMarket, Hyperliquid impersonation, an Ethereum whale drain, Harmony, ODY, Coldcard, address poisoning, and a Vultisig investigative lead.</td>
+      <td>August 20-21, 2026 security sweep covering Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP, fake AML checkers, FoxMarket, Hyperliquid impersonation, an Ethereum whale drain, Harmony, ODY, Coldcard, address poisoning, and a Vultisig investigative lead.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/Triple-A/"><code>Multi-Chain/Triple-A/</code></a></td>

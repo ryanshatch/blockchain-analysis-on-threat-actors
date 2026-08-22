@@ -1,7 +1,25 @@
 <div align="center" style="text-align: center;">
-<h1>New Multi-Chain Threat-Wallet Alert</h1>
-<h2>Allbridge Core Solana Pool Exploit</h2>
+<h1>Allbridge 2026 Security Case History</h1>
+<h2>Two Distinct Incidents: Solana Core and Base CCTP</h2>
 </div>
+
+<h2>Incident Comparison</h2>
+
+<table>
+  <thead>
+    <tr><th align="left">Incident</th><th align="left">Date</th><th align="left">Environment</th><th align="left">Classification</th><th align="left">Estimated impact</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Allbridge Core Solana pool</td><td>July 19, 2026</td><td>Solana origin; Ethereum proceeds</td><td>Account aliasing and liquidity-pool accounting manipulation</td><td>Approximately $1.65M</td></tr>
+    <tr><td>Allbridge CCTP / Next</td><td>August 19, 2026</td><td>Polygon preparation; Base execution</td><td>Cross-chain message-validation and internal-accounting exploit</td><td>Approximately $189,751.55 attacker profit; approximately $191K legitimate Router liquidity</td></tr>
+  </tbody>
+</table>
+
+<blockquote>
+These are separate incidents in different implementations. Do not merge their attacker attribution, mechanics, or loss figures.
+</blockquote>
+
+<h2>Incident 1 — July 19 Solana Pool Exploit</h2>
 
 <table>
   <thead>
@@ -19,7 +37,7 @@
   </tbody>
 </table>
 
-<h2>Incident Summary</h2>
+<h2>Incident 1 Summary</h2>
 
 <p>
 On July 19, 2026, the attacker borrowed approximately 1.12 million USDC through a Kamino flash loan and interacted with Allbridge Core's Solana USDC/USDT liquidity system. The attacker executed repeated USDT-to-USDT self-swaps using aliased send and receive accounts, progressively distorting the protocol's internal virtual balances.
@@ -33,7 +51,7 @@ After the accounting state had been skewed, the attacker exchanged approximately
 Allbridge paused Core, asked liquidity providers to withdraw from affected pools, requested that positive-arbitrage recipients return funds for LP compensation, and later relaunched Core using CCTP and LayerZero routing without the liquidity-pool model that had been attacked.
 </p>
 
-<h2>Direct Incident-Watch Seeds</h2>
+<h2>Incident 1 Direct Incident-Watch Seeds</h2>
 
 <h3>Primary Solana Attacker Address</h3>
 <p><a href="https://solscan.io/account/FhffBraZsGn4H2LxLNToEcaHWEfWwT2UcSz4oRHb7Qdc"><code>FhffBraZsGn4H2LxLNToEcaHWEfWwT2UcSz4oRHb7Qdc</code></a></p>
@@ -113,6 +131,44 @@ Further swaps, dispersion, privacy routes, and exchange-related paths
   <li>No confirmed attacker fund return or law-enforcement attribution was identified in the reviewed sources at the time of this report.</li>
 </ul>
 
+<h2>Incident 2 — August 19 Base CCTP Message-Validation Exploit</h2>
+
+<table>
+  <thead>
+    <tr><th align="left">Field</th><th align="left">Details</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Preparation chain</strong></td><td>Polygon</td></tr>
+    <tr><td><strong>Execution chain</strong></td><td>Base</td></tr>
+    <tr><td><strong>Incident date</strong></td><td>August 19, 2026; malicious message prepared July 26</td></tr>
+    <tr><td><strong>Classification</strong></td><td>Cross-chain message-validation and internal-accounting exploit</td></tr>
+    <tr><td><strong>Estimated impact</strong></td><td>Approximately 189,751.55 USDC attacker profit; approximately 191,112 USDC of legitimate user liquidity was present in the Router</td></tr>
+    <tr><td><strong>Confidence</strong></td><td>High for the incident and reconstructed mechanism</td></tr>
+  </tbody>
+</table>
+
+<p>
+SlowMist's reconstruction found that Allbridge's <code>CCTPTokenMessenger</code> did not adequately validate the CCTP message-header <code>sender</code> and <code>recipient</code>. The Router then trusted an internally recorded <code>receivedTokenAmount</code> without proving that the corresponding USDC had actually arrived.
+</p>
+
+<ol>
+  <li>On July 26, the attacker created a CCTP-style message on Polygon without the normal USDC burn and precomputed the Router message hash.</li>
+  <li>The attacker waited approximately 24 days because the forwarding Router normally held little liquidity.</li>
+  <li>On August 19, a legitimate user's CCTP transfer placed about 191,112 USDC in the Base Router.</li>
+  <li>Roughly six seconds later, the attacker presented the crafted message and obtained a false internal credit of 1,000,000 USDC.</li>
+  <li>An Aave flash loan temporarily supplied about 808,844 USDC, satisfying the manipulated accounting condition.</li>
+  <li>The Router transferred 999,000 USDC to the attack contract. After flash-loan repayment and approximately 404 USDC in fees, the reported profit was about 189,751.55 USDC.</li>
+</ol>
+
+<blockquote>
+This was not a recurrence of the July Solana pool exploit. July involved aliased accounts and corrupted liquidity-pool accounting on Solana; August involved forged CCTP-style message state and unverified internal credit on Base.
+</blockquote>
+
+<h3>Address Handling</h3>
+<p>
+No complete attacker EOA or contract address was available in the reviewed authoritative reporting. No new direct-watch seed is added to <code>addresses.csv</code> for this incident. Protocol contracts, the Base Router, Circle infrastructure, Aave, and the legitimate user's transfer must not be threat-labeled merely because they appear in the exploit path.
+</p>
+
 <h2>Sources</h2>
 <ul>
   <li><a href="https://x.com/Allbridge_io/status/2078932561036722319">Allbridge — initial security notice</a></li>
@@ -120,6 +176,8 @@ Further swaps, dispersion, privacy routes, and exchange-related paths
   <li><a href="https://blog.autosec.dev/security-events/allbridge-core-solana-pool-manipulation-165m-exploit/">AUTOSEC — incident addresses and primary transaction</a></li>
   <li><a href="https://docs-core.allbridge.io/product/how-does-allbridge-core-work/allbridge-core-contracts">Allbridge documentation — Solana program and pool addresses</a></li>
   <li><a href="https://solscan.io/tx/3LNLaGi36bqoSBFBqcQ3ZvDbnGCxrxu4rqahZrnfHZjKSYxfR1mqiCXtBXjjeBmoRQDeSiKxZ7c1nFb8pBgTY39Q">Solscan — primary exploit transaction</a></li>
+  <li><a href="https://www.kucoin.com/news/flash/allbridge-cross-chain-bridge-hacked-for-190-000-after-month-long-attack">SlowMist reconstruction reproduced by KuCoin/MetaEra — August Base/CCTP incident</a></li>
+  <li><a href="https://www.theblock.co/news/defi/2026-07-19-allbridge-core-exploit-408855">The Block — July Solana incident and planned migration to CCTP/LayerZero</a></li>
 </ul>
 
 <hr>
@@ -130,4 +188,4 @@ The attacker borrowed about $1.12 million for one transaction, repeatedly asked 
 <p>
 This was not a stolen key and the bridge did not accept a forged cross-chain message. It was a Solana account-validation and accounting failure inside Allbridge Core's liquidity-pool model.
 </p>
-<p><strong>TLDR:</strong> Aliased swap accounts corrupted Allbridge's Solana pool accounting, a Kamino flash loan amplified the extraction, and approximately $1.65 million was bridged to an Ethereum proceeds wallet.</p>
+<p><strong>TLDR:</strong> July's Solana incident used aliased swap accounts to corrupt liquidity-pool accounting and extract approximately $1.65 million. A separate August 19 incident abused CCTP message validation and unverified Router credit on Base for approximately $189,751.55 in profit. Only the July incident currently has complete direct-watch addresses in this case.</p>
