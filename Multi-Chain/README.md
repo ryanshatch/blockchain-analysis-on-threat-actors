@@ -21,6 +21,11 @@
       <td>Stablecoin-pool account-aliasing and accounting manipulation</td>
     </tr>
     <tr>
+      <td><a href="./August-2026-Security-Sweep/"><code>August-2026-Security-Sweep/</code></a></td>
+      <td>MAYAChain, Bitcoin, Ethereum, BNB Chain, Harmony, and multi-chain users</td>
+      <td>August 20, 2026 cross-ecosystem exploit, wallet-compromise, phishing, rug-pull, laundering, and poisoning intelligence sweep</td>
+    </tr>
+    <tr>
       <td><a href="./Shelbit-Network/"><code>Shelbit-Network/</code></a></td>
       <td>Bitcoin, Ethereum, Solana, and TRON</td>
       <td>August 7, 2026 OFAC counterterrorism sanctions attribution covering Siavash Kayvanpour, Shelbit Exchange, and Crypto Home DMCC</td>

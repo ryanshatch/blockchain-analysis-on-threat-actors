@@ -402,3 +402,51 @@ The July action materially expanded an existing sanctioned-wallet attribution. T
 | `THJUJFyTnrBWb1ijWav7qfRBrjUuKgP49Z` | Official OFAC blocked identifier | Watch directly |
 
 OFAC directly attributed these TRON identifiers to Zaid Issam Ahmed Al-Jebouri and linked him to El-Kahira for General Trading. Connected exchanges, OTC services, bridges, token contracts, and counterparties should initially remain graph-expansion pivots unless separately attributed.
+---
+
+## August 20, 2026 Multi-Chain Security Sweep
+
+**Review cutoff:** August 20, 2026 at 2:31 a.m. ET  
+**Case file:** [`Multi-Chain/August-2026-Security-Sweep/`](./Multi-Chain/August-2026-Security-Sweep/)  
+**Machine-readable seeds:** [`addresses.csv`](./Multi-Chain/August-2026-Security-Sweep/addresses.csv)
+
+### Direct Incident-Watch Seeds
+
+| Incident | Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|---|
+| Maya Protocol | MAYAChain | `maya1dl3yrfpedyr5jfr0r86s2apjltnjqgszmwsv8x` | Attacker address | High | P1 direct watch |
+| FoxMarket | BNB Chain | `0x5670d36f00bc7f6860b6afddb288e3668efc0ef9` | Attacker controller | High | P1 direct watch |
+| Hyperliquid impersonation | Ethereum | `0x98b2761559A348968C994D9856dCfc96B6f13C55` | Phishing proceeds recipient | Medium-high attribution | P1 direct watch |
+| Hyperliquid impersonation | Ethereum | `0x93b6B24DC6E6a1D5d72399e3A35498c4DbA1d6D1` | Phishing proceeds recipient | Medium-high attribution | P1 direct watch |
+| Hyperliquid impersonation | Ethereum | `0x6fE314fD4CF845f35fc461eD98e2FB8d9356B566` | Phishing proceeds recipient; appears in other phishing reporting | Medium-high attribution | P1 direct watch; do not assume campaign exclusivity |
+| Ethereum whale drain | Ethereum | `0x8fEB0c6eF08B20bA19C04F951d4408bB5A1F95Ae` | Theft and consolidation address | High | P1 direct watch |
+| Address-poisoning theft | Ethereum | `0xAe7c08afAD91db18666EEAC055D7562c9f4e2c85` | Look-alike poisoning address | High | P2 direct watch |
+
+### Harmony Incident Accounts
+
+The native and hexadecimal strings in each row are alternate representations of one Harmony account. This table contains four accounts, not eight wallets.
+
+| Harmony address | Hex equivalent | Classification | Monitoring |
+|---|---|---|---|
+| `one1uap8dx2z0qsjxqthm5flgcxkeepsz3gsrghnfn` | `0xe7427699427821230177dd13f460d6ce43014510` | Unauthorized-mint incident account | P1 direct watch |
+| `one17u300a40ll5wphd8kj5hktryhdjq3ml9f4phy4` | `0xf722f7f6afffe8e0dda7b4a97b2c64bb6408efe5` | Unauthorized-mint incident account | P1 direct watch |
+| `one1a5hur07z5vtvzhr35zkw8tfqedemkz8t88xgd7` | `0xed2fc1bfc2a316c15c71a0ace3ad20cb73bb08eb` | Unauthorized-mint incident account | P1 direct watch |
+| `one1h56hkxmua0uzfv07fu04cudvtrl35u96pq47vy` | `0xbd357b1b7cebf824b1fe4f1f5c71ac58ff1a70ba` | Unauthorized-mint incident account | P1 direct watch |
+
+### Incident-Linked Laundering Pivot
+
+| Incident | Network | Address | Classification | Confidence | Handling |
+|---|---|---|---|---|---|
+| Coldcard weak-entropy theft | Ethereum | `0x41B7529a411EeA979a8d468bdEBd36b0ad703268` | BTC-to-ETH bridge and Tornado Cash pivot | High linkage; medium actor clustering | Watch directly as a laundering pivot; do not label as the sole Coldcard attacker |
+
+### Explicit Exclusions
+
+| Incident | Indicator | Why excluded from threat seeds |
+|---|---|---|
+| FoxMarket | `0x9fa6d8a13b35e051bfc145918db0111dec13d1a0` | Victim contract |
+| Address poisoning | `0x9B4Ded0ab7754428F7eC0f63a42bAe70D2f51D83` | Victim address |
+| Address poisoning | `0xae7C0ffAB6e77BE2D7d7880a4Ce433F59A4e2c85` | Intended legitimate recipient |
+| ODY | `0x486f…` and `0xd2c85d49b…` | Truncated identifiers; insufficient for machine-readable attribution |
+| Vultisig-related outflow | No complete source address retained | Exploit status and direct attribution remain unresolved |
+
+Fake AMLBot and AML-checker sites are tracked as a high-confidence wallet-drainer TTP without an invented address cluster. Hyperliquid itself was not exploited; that case concerns a fraudulent sponsored result and impersonation site targeting a user.
