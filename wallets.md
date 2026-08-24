@@ -464,3 +464,28 @@ Fake AMLBot and AML-checker sites are tracked as a high-confidence wallet-draine
 The Coinsbuy access vector remains unresolved; simultaneous Ethereum/TRON activity does not by itself prove private-key compromise, API compromise, or insider access. The Allbridge August Base/CCTP incident is documented as a second exploit but contributes no direct-watch seed because no complete attacker identifier was available in authoritative reporting.
 
 The Harmony native and hex identifiers above remain four underlying accounts, not eight. No new complete qualifying Solana threat address was identified in the follow-up scan. Truncated Lazarus BTC destinations and other incomplete identifiers remain excluded.
+
+---
+
+## August 22 Follow-Up: Bofur Capital Address Poisoning
+
+**Case file:** [`Multi-Chain/August-2026-Security-Sweep/`](./Multi-Chain/August-2026-Security-Sweep/)  
+**Incident:** Approximately $2 million stolen after a look-alike address was seeded into the victim's transaction history; proceeds were converted into approximately 2 million DAI.
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Ethereum | `0xf0e6a49668de1195b931a3717c9cc36fc19721af` | Spoofed destination used in the theft | High | P1 direct watch |
+| Ethereum | `0x692729bcd0887b8d02b8ff3169220ba0f4e17251` | Stolen-funds swap and consolidation account | High | P1 direct watch |
+| Ethereum | `0xe2ebfd6f329a6330ab7eee68ce1328c21d31816a` | Final DAI storage and consolidation address | High | P1 direct watch; highest-priority proceeds endpoint |
+| Ethereum | `0xedda4e01669d30faa04a9cb75488abc366ee4143` | Address-poisoning campaign controller | Medium-high | P1 direct watch and graph expansion |
+| Ethereum | `0xde39ef679e12574279e3ed35de4b0721beae27de` | Forgery and poisoning contract | Medium-high | P2 infrastructure monitoring |
+
+### Explicit Exclusions and Graph-Only Pivot
+
+| Address | Role | Treatment |
+|---|---|---|
+| `0x7ba7f4773fa7890bad57879f0a1faa0edffb3520` | Victim wallet | Do not threat-label |
+| `0xf0e67a1896e814e30c011e36174de28caa9ab1af` | Legitimate intended payee | Do not threat-label |
+| `0xe2ebba3e64f25f8badf35d2760473748d673416a` | Separate self-poisoning look-alike | Graph expansion only; exclude from primary threat-address CSV |
+
+The real and spoofed destinations share a similar visible prefix and suffix (`0xf0e67a...a9ab1af` versus `0xf0e6a4...19721af`). The controller and contract are retained at medium-high confidence for broader campaign attribution; the theft path and final DAI endpoint are high confidence.

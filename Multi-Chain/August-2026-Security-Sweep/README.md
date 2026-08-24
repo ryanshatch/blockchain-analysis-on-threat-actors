@@ -1,9 +1,9 @@
-# August 20-21, 2026 Crypto Security Sweep
+# August 20-22, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
-| Follow-up cutoff | August 21, 2026 |
+| Follow-up cutoff | August 22, 2026 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
 | Networks | MAYAChain, Bitcoin, Ethereum, BNB Chain, Harmony, and other EVM environments |
 | Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, SEAL/Security Alliance, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, protocol disclosures, public explorers, and corroborating reporting |
@@ -15,6 +15,7 @@
 
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
 |---|---|---|---:|---|
+| Bofur Capital wallet | August 22 | Automated look-alike address poisoning and proceeds consolidation | About $2M / about 2M DAI | High theft; medium-high campaign attribution |
 | Maya Protocol / MAYAChain | August 18 | Chained protocol accounting and state-management exploit | About $1.7M direct | High |
 | Allbridge CCTP / Allbridge Next | August 19 | Base-side cross-chain message-validation and accounting exploit | About $189,752 attacker profit / $191K victim liquidity | High |
 | Fake AMLBot / AML-checker sites | Reported August 19 | Wallet drainer, brand impersonation, and malicious approvals | Unknown | High campaign; unknown aggregate loss |
@@ -225,12 +226,47 @@ No complete attacker EOA or contract address was available from the reviewed aut
 
 No new confirmed Solana protocol exploit or complete qualifying Solana threat address was identified in the follow-up scan.
 
+## 13. Bofur Capital Address-Poisoning Campaign
+
+**Incident date:** August 22, 2026  
+**Network:** Ethereum  
+**Classification:** Automated look-alike address poisoning, stolen-funds swapping, and proceeds consolidation  
+**Loss:** Approximately $2 million; proceeds converted into approximately 2 million DAI  
+**Confidence:** High for the theft, poisoned destination, and proceeds flow; medium-high for the broader controller and campaign-infrastructure attribution
+
+After a wallet labeled Bofur Capital withdrew funds from Compound, the attacker seeded its transaction history with a 0.0002 USDC dust transfer from a look-alike address. The victim later copied the poisoned destination instead of the intended payee. The reported transaction-level path moved the stolen assets through a swap/consolidation account and into DAI held at the final proceeds address.
+
+### Direct-Watch Seeds
+
+| Address | Role | Confidence | Monitoring |
+|---|---|---|---|
+| `0xf0e6a49668de1195b931a3717c9cc36fc19721af` | Spoofed destination used in the theft | High | P1 direct watch |
+| `0x692729bcd0887b8d02b8ff3169220ba0f4e17251` | Stolen-funds swap and consolidation account | High | P1 direct watch |
+| `0xe2ebfd6f329a6330ab7eee68ce1328c21d31816a` | Final DAI storage and consolidation address | High | P1 direct watch; highest-priority current proceeds endpoint |
+| `0xedda4e01669d30faa04a9cb75488abc366ee4143` | Address-poisoning campaign controller | Medium-high | P1 direct watch and historical graph expansion |
+| `0xde39ef679e12574279e3ed35de4b0721beae27de` | Forgery and poisoning contract | Medium-high | P2 infrastructure monitoring |
+
+The controller was reported as generating more than 126,000 dust transfers against over 80,000 distinct addresses since late May. Explorer activity independently shows repeated tiny token transfers consistent with the reported poisoning pattern. This supports campaign-level monitoring, but the controller and contract retain medium-high confidence because their broader attribution rests on fewer independent role-specific sources than the theft path.
+
+### Address-Similarity Mechanism and Exclusions
+
+```text
+Legitimate: 0xf0e67a1896e814e30c011e36174de28caa9ab1af
+Spoofed:    0xf0e6a49668de1195b931a3717c9cc36fc19721af
+```
+
+| Indicator | Role | Treatment |
+|---|---|---|
+| `0x7ba7f4773fa7890bad57879f0a1faa0edffb3520` | Bofur Capital victim wallet | Do not threat-label |
+| `0xf0e67a1896e814e30c011e36174de28caa9ab1af` | Legitimate intended payee | Do not threat-label |
+| `0xe2ebba3e64f25f8badf35d2760473748d673416a` | Separate look-alike reportedly used to poison the attacker's own proceeds wallet | Graph-expansion-only infrastructure pivot; exclude from primary direct-watch CSV |
+
 ## Monitoring Priorities
 
 | Priority | Indicators | Action |
 |---|---|---|
-| P1 | Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge and exchange-deposit alerts |
-| P2 | Maya Arbitrum proceeds address; Coldcard-linked Ethereum laundering pivot; poisoning address | Direct monitoring with narrower incident-role labels |
+| P1 | Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge and exchange-deposit alerts |
+| P2 | Bofur poisoning contract; Maya Arbitrum proceeds address; Coldcard-linked Ethereum laundering pivot; poisoning address | Direct monitoring with narrower incident-role labels |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
 | Case only | ODY | Preserve rug-pull report; withhold truncated identifiers |
 | Investigative | Vultisig-related outflow | Monitor for a protocol statement, complete IOCs, root-cause evidence, and confirmation of unauthorized activity |
@@ -245,6 +281,7 @@ No new confirmed Solana protocol exploit or complete qualifying Solana threat ad
 - The 2026 Ethereum whale drain's exact compromise vector remains unresolved.
 - The Coinsbuy drain's exact compromise vector remains unresolved; cross-chain timing alone does not prove private-key compromise.
 - The Allbridge CCTP/Base incident has no complete authoritative attacker identifier in this update and contributes no machine-readable seed.
+- The Bofur Capital victim, legitimate payee, and secondary self-poisoning look-alike are excluded from primary threat labels; campaign-controller and contract roles remain medium-high confidence.
 - ODY and Vultisig identifiers remain withheld where public evidence is truncated or attribution is incomplete.
 
 ## Sources
@@ -309,8 +346,14 @@ No new confirmed Solana protocol exploit or complete qualifying Solana threat ad
 - [GoPlus — $100K address-poisoning incident](https://x.com/GoPlusSecurity/status/2087521393558876545)
 - [CertiK Alert — Vultisig-related USDC outflow and Tornado Cash routing](https://x.com/CertiKAlert/status/2089531153904718110)
 
+### Bofur Capital Address Poisoning
+
+- [CoinNess — PeckShield-attributed theft and final DAI endpoint](https://coinness.com/en/news/1084945)
+- [CoinGabbar — transaction-level reconstruction and campaign pivots](https://www.coingabbar.com/en/crypto-currency-news/crypto-hack-news-bofur-capital-2m-address-poisoning)
+- [RouteScan — controller-linked dust-transfer transaction evidence](https://ethereum.routescan.io/tx/0x4f968f22c94eb1affcdfe1796aeec8f16b21bb5a7c7513ce458843e8ab9a1b4c/eventlog?chainid=1)
+
 ---
 
 ## TLDR
 
-The follow-up adds Maya's Bitcoin and Arbitrum proceeds addresses plus three Coinsbuy theft/proceeds addresses across Ethereum and TRON. It also records Allbridge's separate August 19 Base/CCTP exploit without inventing an attacker address. Harmony remains four underlying accounts despite dual native/hex representations, and no new complete qualifying Solana threat address was identified.
+The August 22 follow-up adds five Bofur Capital direct-watch seeds spanning the poisoned destination, theft path, final DAI endpoint, campaign controller, and poisoning contract. The victim, legitimate payee, and secondary self-poisoning look-alike remain excluded from primary threat labels. Earlier follow-ups added Maya external-L1 and Coinsbuy addresses and recorded Allbridge's distinct Base/CCTP exploit without inventing an attacker address.
