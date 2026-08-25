@@ -508,3 +508,46 @@ The real and spoofed destinations share a similar visible prefix and suffix (`0x
 - Approximately 2 ETH sourced from Tornado Cash is funding-path evidence, not identity attribution.
 - Tornado Cash contracts, Term and Yearn infrastructure, ordinary governance participants, and later exchange or service counterparties remain graph pivots unless separately attributed.
 - The Sandbox SAND bridge indicators `0xAbE0...4D22` and `0x638C...F296` are truncated and are not added to the wallet dataset.
+
+---
+
+## CYBERLEEK / GTA VI Leak-and-Token Campaign
+
+**Assessment date:** August 25, 2026  
+**Network:** Solana  
+**Status:** Active; real-world identity and initial-access vector unresolved  
+**Case file:** [`SOL/CYBERLEEK/`](./SOL/CYBERLEEK/)  
+**Machine-readable indicators:** [`addresses.csv`](./SOL/CYBERLEEK/addresses.csv)
+
+### Direct Actor-Linked Wallet
+
+| Address | Classification | Confidence | Monitoring |
+|---|---|---|---|
+| `Hok9nbV89yBSKCttxe3goqajwbiqQa9mtHvQBsbJH3Np` | CYBERLEEK token creator and Raydium pool creator | High | P1 direct watch for new deployments, funding, exchange deposits, consolidation, and Fee Key interactions |
+
+### Strongly Linked Financial Pivot — Ownership Unresolved
+
+| Address | Classification | Confidence | Monitoring |
+|---|---|---|---|
+| `Ec2qmcpCCD9hjahAcquiQf5JkZWCK68BUahCje1izYC7` | Purpose-built funding funnel that sent 10 SOL and 311.42 SOL to the deployer | High transaction linkage; unknown common control | P1 financial-support monitoring; do not automatically inherit the actor label |
+
+### Campaign Infrastructure — Do Not Threat-Label as Wallets
+
+| Address | Type | Handling |
+|---|---|---|
+| `ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg` | Primary token mint | Watch exact mint; separate from same-ticker copycats |
+| `EVQ9RCaHggai12cje6vTtFfNkhBuJfFZHhbgB3yyprVw` | Original 1B-token account | Historical evidence; current balance reported zero |
+| `CbfbaNpCGV64g2fbLBC2NXKSygeJJuC7S6i36cy8RMPo` | 270M allocation account and burn source | Historical evidence; retained balance was burned rather than sold |
+| `G8kgi7aUpeX8EVR8VMkrth9SKEv5BietWC33UjAiiMGh` | Primary Raydium CPMM pool | Monitor liquidity, volume, and fee activity; protocol infrastructure |
+| `44isRZNypWAsseobWTKLcQP56A3STe8Um7XdstgFttrS` | Raydium Fee Key NFT | Critical revenue indicator; alert on transfer or fee collection |
+| `CMLqxbQU7CDKqzWPpAbKTgiQKuPV1tzYZNLyDjr1BwZz` | Secondary Meteora pool | Cross-pool market pivot; protocol infrastructure |
+
+### Attribution Boundaries
+
+- Public evidence supports playable-build access but does not establish that CYBERLEEK personally breached Rockstar or retained access to its systems.
+- The 270M creator allocation was burned; the reviewed evidence does not support a developer-allocation dump.
+- Approximately 98.43% of the creator-origin Raydium LP supply was reported permanently locked, while the Fee Key preserves an ongoing fee claim.
+- The approximately $128,809 fee figure is an accrual estimate; no fee harvest was found by the cited analysis at its cutoff.
+- Five high-profit early traders and four same-ticker copycat mints are retained in the case CSV as explicit non-actor rows and must not inherit the CYBERLEEK label.
+- Upstream hubs, relays, feeder wallets, services, pools, exchanges, token accounts, and look-alike dust addresses remain graph context unless independently attributed.
+- No named person, nationality, or link to the 2022 LAPSUS$ or April 2026 ShinyHunters cases is established.

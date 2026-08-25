@@ -121,7 +121,8 @@
     <tr><td><a href="./FTX/"><code>FTX/</code></a></td><td>Historical FTX and Alameda Research wallet analysis, balances, addresses, and transaction activity.</td></tr>
     <tr><td><a href="./HBAR/"><code>HBAR/</code></a></td><td>Hedera-to-Ethereum suspected theft and bridge-flow analysis.</td></tr>
     <tr><td><a href="./Lazarus/"><code>Lazarus/</code></a></td><td>DPRK TraderTraitor / Lazarus Group wallets, including addresses connected to the Bybit theft and earlier incidents.</td></tr>
-    <tr><td><a href="./SOL/"><code>SOL/</code></a></td><td>Solana-specific threat-actor, governance, exploit, and suspicious-wallet investigations.</td></tr>
+    <tr><td><a href="./SOL/"><code>SOL/</code></a></td><td>Solana-specific threat-actor, governance, exploit, leak-and-token campaign, and suspicious-wallet investigations.</td></tr>
+    <tr><td><a href="./SOL/CYBERLEEK/"><code>SOL/CYBERLEEK/</code></a></td><td>CYBERLEEK / GTA VI leak-and-token campaign report covering the creator wallet, token and pool mechanics, locked-liquidity Fee Key, funding pivots, explicit trader and copycat exclusions, and unresolved real-world attribution.</td></tr>
     <tr><td><a href="./SOL/BonkDAO/"><code>SOL/BonkDAO/</code></a></td><td>Analysis of the BonkDAO governance attack and associated on-chain activity.</td></tr>
     <tr><td><a href="./SOL/HOPE/"><code>SOL/HOPE/</code></a></td><td>Analysis of the Solana-based HOPE token, wallet concentration, transfers, sales, and suspected rug activity.</td></tr>
     <tr><td><a href="./TRON/"><code>TRON/</code></a></td><td>TRON-specific sanctions, state-linked attribution, and threat-wallet investigations.</td></tr>
@@ -201,6 +202,7 @@
     <tr><td>Oracle and privileged-access exploits</td><td>Ostium oracle manipulation and Zunami privileged-wallet relationships</td></tr>
     <tr><td>Governance attacks</td><td>BonkDAO</td></tr>
     <tr><td>Rug pulls and token manipulation</td><td>HOPE and other Solana ecosystem cases</td></tr>
+    <tr><td>Leak-and-monetization campaigns</td><td>CYBERLEEK pre-positioned Solana event token, staged IP disclosure, fee-right monitoring, and attribution-safe funding analysis</td></tr>
     <tr><td>Personally encountered fraud</td><td>Spear-phishing, impersonation, hacked-account, and payment scams</td></tr>
     <tr><td>Transaction analysis</td><td>Wallet clustering, bridge activity, swaps, consolidation, exchange deposits, and contract-control paths</td></tr>
   </tbody>
@@ -219,7 +221,7 @@
     <tr><td>Ethereum</td><td>Exploit seeds, staging wallets, sanctioned addresses, cash-out paths, token swaps, and privileged-wallet pivots</td></tr>
     <tr><td>Arbitrum</td><td>L2 exploit execution, oracle manipulation, malicious contract paths, payout wallets, and downstream laundering activity</td></tr>
     <tr><td>Other EVM chains</td><td>Bridge destinations, contract interactions, exchange deposits, and consolidation activity</td></tr>
-    <tr><td>Solana</td><td>Rug pulls, governance attacks, NFT-related fraud, token concentration, and scam wallets</td></tr>
+    <tr><td>Solana</td><td>Rug pulls, governance attacks, NFT-related fraud, token concentration, scam wallets, and leak-driven event-token campaigns</td></tr>
     <tr><td>TRON</td><td>Sanctions attribution and state-linked financial infrastructure</td></tr>
     <tr><td>Hedera</td><td>Suspected exploit and cross-chain bridge activity</td></tr>
     <tr>

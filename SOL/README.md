@@ -6,7 +6,7 @@
 <hr>
 
 <p>
-<strong>Recent tracked set:</strong> Eight individually identifiable Solana-origin security incidents from June 10 through July 21, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. Multi-victim drainer campaigns and sanctions attributions are tracked separately and are not counted as individual protocol incidents.
+<strong>Recent tracked set:</strong> Eight individually identifiable Solana-origin security incidents from June 10 through July 21, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. The active CYBERLEEK leak-and-token operation is tracked as a threat-actor campaign and is not counted as a Solana protocol incident. Multi-victim drainer campaigns and sanctions attributions are also tracked separately.
 </p>
 
 <h2>Solana Case Directories</h2>
@@ -51,6 +51,12 @@
       <td>July 21–22, 2026</td>
       <td>Forged ephemeral buffer / missing canonical PDA validation</td>
       <td>98,000 USDC; amount covered by FlashTrade and MagicBlock</td>
+    </tr>
+    <tr>
+      <td><a href="./CYBERLEEK/"><code>CYBERLEEK/</code></a></td>
+      <td>August 18, 2026–ongoing</td>
+      <td>Active IP-disclosure and monetization campaign with a pre-positioned Solana event token</td>
+      <td>No Solana protocol loss; material IP, market-manipulation, copycat, and malware-lure risk</td>
     </tr>
     <tr>
       <td><a href="./HOPE/"><code>HOPE/</code></a></td>
@@ -115,7 +121,7 @@
 <h2>Classification Rule</h2>
 
 <p>
-Cases are indexed here when the vulnerable program, governance system, execution environment, victim wallet, authorization path, sanctioned identifier, or initial exploit transaction was on Solana. A case may remain canonically stored under <code>Multi-Chain/</code> when its protocol scope, sanctions attribution, fraudulent payouts, bridge movement, proceeds tracing, recovery activity, or campaign infrastructure spans several networks.
+Cases are indexed here when the vulnerable program, governance system, execution environment, victim wallet, authorization path, sanctioned identifier, campaign-financing infrastructure, or initial exploit transaction was on Solana. Active campaigns may be included when Solana is central to the operation even without a protocol exploit; those campaigns remain outside the protocol-incident count. A case may remain canonically stored under <code>Multi-Chain/</code> when its protocol scope, sanctions attribution, fraudulent payouts, bridge movement, proceeds tracing, recovery activity, or campaign infrastructure spans several networks.
 </p>
 
 <p>
@@ -128,6 +134,7 @@ The exploit-origin chain and the later proceeds chains are recorded separately. 
   <li>Direct-watch attacker, proceeds, and officially sanctioned addresses are separated from victim, protocol, bridge, exchange, router, vault, recovery, and transactional-counterparty infrastructure.</li>
   <li>Incomplete or truncated addresses are not added as monitoring seeds.</li>
   <li>The Shelbit Solana identifier is an official sanctions seed and should be watched directly; connected wallets do not automatically inherit the Shelbit or IRGC label.</li>
+  <li>For CYBERLEEK, only the creator / pool-creator address is labeled as a direct actor-linked wallet. The mint, token accounts, pools, Fee Key NFT, funding relays, external traders, and copycat mints retain narrower infrastructure or exclusion labels.</li>
   <li>The Genesis-era whale case includes the complete victim and theft-linked addresses published by ZachXBT, but the compromise vector remains unknown.</li>
   <li>SUNUSI is classified as malicious authorization and Permanent Delegate abuse, not as a confirmed rug pull or private-key compromise.</li>
   <li>FlashTrade currently has no machine-readable attacker-address file because no complete public attacker address was resolved in the reviewed evidence.</li>
