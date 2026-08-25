@@ -1,9 +1,9 @@
-# August 20-22, 2026 Crypto Security Sweep
+# August 20-24, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
-| Follow-up cutoff | August 22, 2026 |
+| Follow-up cutoff | August 24, 2026 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
 | Networks | MAYAChain, Bitcoin, Ethereum, BNB Chain, Harmony, and other EVM environments |
 | Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, SEAL/Security Alliance, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, protocol disclosures, public explorers, and corroborating reporting |
@@ -15,7 +15,9 @@
 
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
 |---|---|---|---:|---|
+| Term Finance / Term Meta Vaults | August 23 | Governance-layer takeover and malicious vault asset movements | About $8.5M | High |
 | Bofur Capital wallet | August 22 | Automated look-alike address poisoning and proceeds consolidation | About $2M / about 2M DAI | High theft; medium-high campaign attribution |
+| The Sandbox SAND bridge | August 22 | Unauthorized minting of unbacked SAND on Base and BNB Smart Chain | 14.9B unbacked SAND reported; realized loss unresolved | High incident; incomplete IOCs |
 | Maya Protocol / MAYAChain | August 18 | Chained protocol accounting and state-management exploit | About $1.7M direct | High |
 | Allbridge CCTP / Allbridge Next | August 19 | Base-side cross-chain message-validation and accounting exploit | About $189,752 attacker profit / $191K victim liquidity | High |
 | Fake AMLBot / AML-checker sites | Reported August 19 | Wallet drainer, brand impersonation, and malicious approvals | Unknown | High campaign; unknown aggregate loss |
@@ -261,11 +263,57 @@ Spoofed:    0xf0e6a49668de1195b931a3717c9cc36fc19721af
 | `0xf0e67a1896e814e30c011e36174de28caa9ab1af` | Legitimate intended payee | Do not threat-label |
 | `0xe2ebba3e64f25f8badf35d2760473748d673416a` | Separate look-alike reportedly used to poison the attacker's own proceeds wallet | Graph-expansion-only infrastructure pivot; exclude from primary direct-watch CSV |
 
+## 14. Term Finance / Term Meta Vault Governance Exploit
+
+**Incident date:** August 23, 2026  
+**Network:** Ethereum  
+**Classification:** Governance-layer takeover affecting Term Strategy/Meta Vaults  
+**Loss:** Approximately $8.5 million  
+**Confidence:** High for the incident, loss estimate, and proceeds address; unknown attacker identity and unresolved governance-control path
+
+Term Labs confirmed a governance exploit affecting Term vaults. PeckShield and CertiK independently estimated that approximately $8.5 million was removed. Term later irreversibly shut down all Meta Vaults, revoked their DAO governance roles, permanently stopped new deposits, and left withdrawals open. Based on Term's preliminary investigation, the underlying Term protocol and direct borrowing and lending markets were not affected.
+
+The affected vaults use Yearn V3 architecture, but Yearn stated that the incident involved Term's custom governance wrapper and did not apply to standard Yearn vault deployments. Available evidence supports a governance-control exploit; it does not yet establish the exact path by which the attacker obtained or exercised sufficient authority.
+
+### Asset Flow and Direct-Watch Seed
+
+| Asset | Reported amount | Handling |
+|---|---:|---|
+| ETH | Approximately 2,843 ETH / about $6.9M | Consolidated at the address below |
+| USDC | Approximately 1.68M USDC | Swapped into approximately 1.68M DAI and consolidated at the same address |
+
+| Network | Address | Role | Confidence | Monitoring |
+|---|---|---|---|---|
+| Ethereum | `0xD5183d8BfC65a50863C62aF2538198A8288FFc13` | Exploit-proceeds and consolidation address | High | P1 direct watch; highest priority |
+
+At Ethereum block 25,822,718 on August 24, public reporting placed approximately 2,843.20 ETH and 1,679,642 DAI at the address. Monitor outbound dispersion, DEX swaps, bridges, exchange deposits, privacy-protocol interactions, recovery activity, and any later actor attribution.
+
+PeckShield traced the incident's initial funding to approximately 2 ETH withdrawn from Tornado Cash. That is useful graph evidence, not attribution to a named person or group. Tornado Cash contracts, Term and Yearn infrastructure, ordinary governance participants, and later exchange or service counterparties must not be threat-labeled merely because they appear in the flow.
+
+## 15. The Sandbox SAND Bridge — IOC Withheld
+
+**Incident date:** August 22, 2026  
+**Networks:** Base and BNB Smart Chain  
+**Classification:** Cross-chain bridge exploit enabling unauthorized minting of unbacked SAND  
+**Reported mint:** Approximately 14.9 billion unbacked SAND across two attacker addresses  
+**Confidence:** High for the incident and containment; incomplete address intelligence and unresolved realized loss
+
+The Sandbox confirmed that an attacker minted unbacked SAND on Base and BNB Smart Chain and disabled bridging to and from both networks. The project reported that SAND on Ethereum and Polygon, user wallets, and Ethereum reserves backing legitimate bridged SAND were unaffected. The large minted-token total is not equivalent to cash stolen or realized loss.
+
+The reviewed high-confidence reports expose only truncated attacker identifiers:
+
+```text
+0xAbE0...4D22
+0x638C...F296
+```
+
+Neither identifier is retained in `addresses.csv`. The case remains documented with zero direct seeds until complete 42-character addresses are independently verified.
+
 ## Monitoring Priorities
 
 | Priority | Indicators | Action |
 |---|---|---|
-| P1 | Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge and exchange-deposit alerts |
+| P1 | Term Finance proceeds address; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge and exchange-deposit alerts |
 | P2 | Bofur poisoning contract; Maya Arbitrum proceeds address; Coldcard-linked Ethereum laundering pivot; poisoning address | Direct monitoring with narrower incident-role labels |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
 | Case only | ODY | Preserve rug-pull report; withhold truncated identifiers |
@@ -282,6 +330,8 @@ Spoofed:    0xf0e6a49668de1195b931a3717c9cc36fc19721af
 - The Coinsbuy drain's exact compromise vector remains unresolved; cross-chain timing alone does not prove private-key compromise.
 - The Allbridge CCTP/Base incident has no complete authoritative attacker identifier in this update and contributes no machine-readable seed.
 - The Bofur Capital victim, legitimate payee, and secondary self-poisoning look-alike are excluded from primary threat labels; campaign-controller and contract roles remain medium-high confidence.
+- The Term Finance address is a high-confidence proceeds seed, but no named actor or exact governance-control path is established; Tornado Cash and ordinary protocol counterparties remain graph context only.
+- The Sandbox attacker identifiers are truncated and withheld; the 14.9B unbacked-token mint is not labeled as realized theft value.
 - ODY and Vultisig identifiers remain withheld where public evidence is truncated or attribution is incomplete.
 
 ## Sources
@@ -352,8 +402,21 @@ Spoofed:    0xf0e6a49668de1195b931a3717c9cc36fc19721af
 - [CoinGabbar — transaction-level reconstruction and campaign pivots](https://www.coingabbar.com/en/crypto-currency-news/crypto-hack-news-bofur-capital-2m-address-poisoning)
 - [RouteScan — controller-linked dust-transfer transaction evidence](https://ethereum.routescan.io/tx/0x4f968f22c94eb1affcdfe1796aeec8f16b21bb5a7c7513ce458843e8ab9a1b4c/eventlog?chainid=1)
 
+### Term Finance
+
+- [Term Labs — protocol confirmation and vault shutdown update](https://x.com/term_labs/status/2091428394130886740)
+- [PeckShield Alert — asset accounting, funding trail, and proceeds address](https://x.com/PeckShieldAlert/status/2091452165932175659)
+- [CertiK Alert — independent loss estimate and proceeds-address linkage](https://x.com/CertiKAlert/status/2091433962795106499)
+- [Etherscan — proceeds and consolidation address](https://etherscan.io/address/0xD5183d8BfC65a50863C62aF2538198A8288FFc13)
+- [Yearn — custom governance-wrapper scope clarification](https://x.com/yearnfi/status/2091599858323075144)
+- [The Block — corroborating incident report](https://www.theblock.co/news/defi/2026-08-23-defi-lending-protocol-term-finance-loses-an-estimated-8-5-million-to-governance-exploit-412543)
+
+### The Sandbox SAND Bridge
+
+- [The Sandbox bridge-incident reporting and IOC truncation context](https://www.ccn.com/news/crypto/sandbox-exploit-14-9b-sand-korean-exchanges-freeze-transfers/)
+
 ---
 
 ## TLDR
 
-The August 22 follow-up adds five Bofur Capital direct-watch seeds spanning the poisoned destination, theft path, final DAI endpoint, campaign controller, and poisoning contract. The victim, legitimate payee, and secondary self-poisoning look-alike remain excluded from primary threat labels. Earlier follow-ups added Maya external-L1 and Coinsbuy addresses and recorded Allbridge's distinct Base/CCTP exploit without inventing an attacker address.
+The August 24 follow-up adds the high-confidence Term Finance ETH/DAI proceeds address after the approximately $8.5M vault-governance exploit, while preserving the unknown actor and unresolved control-acquisition path. It also records The Sandbox's Base/BSC unbacked-SAND bridge incident without ingesting truncated attacker addresses. Earlier follow-ups added Bofur Capital, Maya external-L1, Coinsbuy, and Allbridge intelligence with explicit victim and infrastructure exclusions.
