@@ -137,6 +137,18 @@ No credible public evidence currently links CYBERLEEK to the September 2022 LAPS
 | August 23 ATH | CoinGecko high near $0.03436 | Approximately 625x the implied launch price before retracement. |
 | August 25 snapshot | About $0.0178-$0.0182; market cap about $12.9M-$13.2M; high turnover relative to liquidity | Approximately 48% below the ATH; snapshot values are volatile. |
 
+### Market Chart Snapshots
+
+#### 30-Minute CYBERLEEK / USDT
+
+[![CYBERLEEK / USDT 30-minute KCEX chart showing price, volume, RSI, and MACD on August 25, 2026](./images/cyberleek-usdt-30m-2026-08-25.png)](./images/cyberleek-usdt-30m-2026-08-25.png)
+
+#### 1-Hour CYBERLEEK / USDT
+
+[![CYBERLEEK / USDT 1-hour KCEX chart showing price, volume, RSI, and MACD on August 25, 2026](./images/cyberleek-usdt-1h-2026-08-25.png)](./images/cyberleek-usdt-1h-2026-08-25.png)
+
+> These user-supplied KCEX charts are static market snapshots captured on August 25, 2026. They document the displayed price action and technical indicators but are not evidence of wallet control, actor identity, or on-chain attribution.
+
 ### Burns, Liquidity, and Gains
 
 | Party or event | Amount | Attribution treatment |
