@@ -23,7 +23,7 @@
     <tr>
       <td><a href="./August-2026-Security-Sweep/"><code>August-2026-Security-Sweep/</code></a></td>
       <td>MAYAChain, Bitcoin, Ethereum, Arbitrum, BNB Chain, Harmony, TRON, Polygon, Base, and multi-chain users</td>
-      <td>August 20-22, 2026 cross-ecosystem sweep adding the Bofur Capital Ethereum address-poisoning theft path and campaign pivots to Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence</td>
+      <td>August 20-24, 2026 cross-ecosystem sweep adding the Term Finance Ethereum governance-exploit proceeds wallet and a zero-seed Sandbox Base/BSC bridge case to Bofur Capital, Maya external-L1, Coinsbuy Ethereum/TRON, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence</td>
     </tr>
     <tr>
       <td><a href="./Shelbit-Network/"><code>Shelbit-Network/</code></a></td>

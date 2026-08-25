@@ -489,3 +489,22 @@ The Harmony native and hex identifiers above remain four underlying accounts, no
 | `0xe2ebba3e64f25f8badf35d2760473748d673416a` | Separate self-poisoning look-alike | Graph expansion only; exclude from primary threat-address CSV |
 
 The real and spoofed destinations share a similar visible prefix and suffix (`0xf0e67a...a9ab1af` versus `0xf0e6a4...19721af`). The controller and contract are retained at medium-high confidence for broader campaign attribution; the theft path and final DAI endpoint are high confidence.
+
+---
+
+## August 24 Follow-Up: Term Finance Vault Governance Exploit
+
+**Case file:** [`Multi-Chain/August-2026-Security-Sweep/`](./Multi-Chain/August-2026-Security-Sweep/)  
+**Incident:** Approximately $8.5 million removed from Term Strategy/Meta Vaults after a governance-layer takeover; roughly 2,843 ETH and approximately 1.68 million DAI were consolidated at one address.
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Ethereum | `0xD5183d8BfC65a50863C62aF2538198A8288FFc13` | Exploit-proceeds and consolidation address | High | P1 direct watch; highest priority |
+
+### Attribution and Infrastructure Boundaries
+
+- No named threat actor is established.
+- The exact path used to obtain or exercise sufficient vault-governance authority remains unresolved.
+- Approximately 2 ETH sourced from Tornado Cash is funding-path evidence, not identity attribution.
+- Tornado Cash contracts, Term and Yearn infrastructure, ordinary governance participants, and later exchange or service counterparties remain graph pivots unless separately attributed.
+- The Sandbox SAND bridge indicators `0xAbE0...4D22` and `0x638C...F296` are truncated and are not added to the wallet dataset.

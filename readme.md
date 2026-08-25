@@ -96,7 +96,7 @@
     </tr>
     <tr>
       <td><a href="./Multi-Chain/August-2026-Security-Sweep/"><code>Multi-Chain/August-2026-Security-Sweep/</code></a></td>
-      <td>August 20-22, 2026 security sweep covering the Bofur Capital Ethereum address-poisoning theft path and campaign pivots, Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP, fake AML checkers, FoxMarket, Hyperliquid impersonation, an Ethereum whale drain, Harmony, ODY, Coldcard, and a Vultisig investigative lead.</td>
+      <td>August 20-24, 2026 security sweep covering the Term Finance Ethereum governance-exploit proceeds wallet, a zero-seed Sandbox Base/BSC bridge case, Bofur Capital address poisoning, Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP, fake AML checkers, FoxMarket, Hyperliquid impersonation, an Ethereum whale drain, Harmony, ODY, Coldcard, and a Vultisig investigative lead.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/Triple-A/"><code>Multi-Chain/Triple-A/</code></a></td>
