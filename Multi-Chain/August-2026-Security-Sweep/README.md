@@ -1,13 +1,13 @@
-# August 20-24, 2026 Crypto Security Sweep
+# August 20-25, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
-| Follow-up cutoff | August 24, 2026 |
+| Follow-up cutoff | August 25, 2026 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
-| Networks | MAYAChain, Bitcoin, Ethereum, BNB Chain, Harmony, and other EVM environments |
-| Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, SEAL/Security Alliance, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, protocol disclosures, public explorers, and corroborating reporting |
-| Latest confirmed protocol incident at cutoff | Maya Protocol, August 18, 2026 |
+| Networks | MAYAChain, Bitcoin, Ethereum, Solana, BNB Chain, Harmony, and other EVM environments |
+| Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, SEAL/Security Alliance, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, Protos, protocol disclosures, public explorers, and corroborating reporting |
+| Latest confirmed protocol incident in the follow-up window | Term Finance, August 23, 2026 on Ethereum; no new confirmed Solana protocol exploit identified for August 24-25 |
 
 > SlowMist's live tracker listed Maya Protocol as its newest incident at the review cutoff. No protocol exploit dated August 19 or August 20 appeared above it. This is a point-in-time observation, not proof that no undisclosed or later-indexed incident occurred.
 
@@ -15,7 +15,7 @@
 
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
 |---|---|---|---:|---|
-| Term Finance / Term Meta Vaults | August 23 | Governance-layer takeover and malicious vault asset movements | About $8.5M | High |
+| Term Finance / Term Meta Vaults | August 23; laundering update August 25 | Governance-layer takeover, malicious vault asset movements, and active Tornado Cash dispersal | About $8.5M; 300 ETH later deposited to Tornado Cash | High |
 | Bofur Capital wallet | August 22 | Automated look-alike address poisoning and proceeds consolidation | About $2M / about 2M DAI | High theft; medium-high campaign attribution |
 | The Sandbox SAND bridge | August 22 | Unauthorized minting of unbacked SAND on Base and BNB Smart Chain | 14.9B unbacked SAND reported; realized loss unresolved | High incident; incomplete IOCs |
 | Maya Protocol / MAYAChain | August 18 | Chained protocol accounting and state-management exploit | About $1.7M direct | High |
@@ -288,6 +288,21 @@ The affected vaults use Yearn V3 architecture, but Yearn stated that the inciden
 
 At Ethereum block 25,822,718 on August 24, public reporting placed approximately 2,843.20 ETH and 1,679,642 DAI at the address. Monitor outbound dispersion, DEX swaps, bridges, exchange deposits, privacy-protocol interactions, recovery activity, and any later actor attribution.
 
+### August 25 Laundering Update
+
+PeckShield monitoring reported that the proceeds address deposited **300 ETH**, worth approximately **$741,000** at the time, into Tornado Cash on August 25. The movement was reported as three 100 ETH deposits. This changes the address's operational role from passive proceeds storage to active dispersal and privacy-protocol routing.
+
+```text
+0xD5183d8BfC65a50863C62aF2538198A8288FFc13
+
+Exploit seed
+→ proceeds consolidation
+→ active dispersal
+→ Tornado Cash laundering source
+```
+
+The Term address remains a P1 direct-watch seed. Tornado Cash pool, router, and relayer contracts are laundering-infrastructure pivots and must not inherit the attacker label.
+
 PeckShield traced the incident's initial funding to approximately 2 ETH withdrawn from Tornado Cash. That is useful graph evidence, not attribution to a named person or group. Tornado Cash contracts, Term and Yearn infrastructure, ordinary governance participants, and later exchange or service counterparties must not be threat-labeled merely because they appear in the flow.
 
 ## 15. The Sandbox SAND Bridge — IOC Withheld
@@ -309,15 +324,61 @@ The reviewed high-confidence reports expose only truncated attacker identifiers:
 
 Neither identifier is retained in `addresses.csv`. The case remains documented with zero direct seeds until complete 42-character addresses are independently verified.
 
+## 16. August 24-25 Solana Watch — Investigative Items
+
+No new high-confidence Solana protocol exploit, confirmed rug pull, or complete attacker-wallet disclosure cleared the repository's direct-watch threshold in this follow-up. The following items are retained as disputed activity, campaign intelligence, or contextual IOCs rather than threat-wallet attributions.
+
+### FOMO iOS Wallet-Drain Allegations
+
+| Field | Assessment |
+|---|---|
+| Report window | August 23-24, 2026 |
+| Classification | Disputed wallet-drain allegation / possible client-side compromise |
+| Verified artifact | A 662 SOL transfer, approximately $62,000 at the reported valuation |
+| Claimed aggregate loss | Approximately $6 million; unverified |
+| Confidence | High that the transfer occurred; low that FOMO caused it; low on the aggregate-loss estimate |
+| Repository treatment | Investigative only; zero direct wallet seeds |
+
+Protos independently confirmed that the cited 662 SOL transaction exists but could not establish that it was unauthorized or caused by FOMO. The allegation originated from a third-party trader rather than the cited wallet owner. FOMO co-founder Prashan Dharmasena denied an exploit and said the account had no transaction signed by FOMO's fee payer.
+
+No complete victim/attacker pair, common recipient cluster, exploit path, affected-wallet list, or methodology supporting the $6 million estimate has been published. FOMO must not be classified as a confirmed exploiter on the current evidence.
+
+### Fake Solana Seeker / SKR and `$WAR` Reward Pages
+
+The fake Solana Seeker / SKR page at `skr.solplanet[.]cc/early` and separately documented fake `$WAR` reward pages impersonate legitimate ecosystem names and attempt to induce wallet connections or signatures. They are wallet-drainer phishing campaigns, not vulnerabilities in Solana, Solana Mobile, Seeker, SKR, War On USD, or their underlying tokens.
+
+| Indicator | Type | Classification | Confidence | Treatment |
+|---|---|---|---|---|
+| `skr.solplanet.cc/early` | URL | Fake Seeker / SKR claim page | Medium-high | Block and investigate as a campaign IOC; not a wallet seed |
+
+No defensible aggregate loss or complete attacker-wallet cluster was available. The URL is retained in [`investigative_iocs.csv`](./investigative_iocs.csv); no wallet address is added to `addresses.csv`.
+
+### Kylie Jenner X Account / `$KYLIE` Token Promotion
+
+Public reporting described Kylie Jenner's verified X account promoting a newly created Solana token on August 24 before the posts disappeared. The token reportedly reached approximately $1.2 million in market capitalization and then fell approximately 68%-90%, depending on the observation point.
+
+| Indicator | Type | Classification | Confidence | Treatment |
+|---|---|---|---|---|
+| `6b7KQsXqb6JR5Nmeer5zGRmo51dwDfttM5b5Nu2rpump` | Solana token mint | Contextual malicious-token-promotion pivot | Medium-high for the event; low for rug and actor attribution | Retain in `investigative_iocs.csv`; do not threat-label as an attacker wallet |
+
+The current evidence supports reported social-account compromise and malicious token promotion. It does not establish a quantified confirmed rug pull, a verified deployer/proceeds cluster, or the identity of the person controlling the token.
+
+### Reviewed Exclusions
+
+- Automated token-risk failures are not proof that an executed rug pull occurred and are excluded from confirmed-incident counts.
+- No new complete BTC or Solana attacker wallet was published in the reviewed August 24-25 material.
+- No new qualifying OFAC, FBI, or DOJ BTC/ETH/SOL wallet disclosure was identified. The August 24 Profit Connect conviction is material criminal-case reporting but publishes no wallet identifiers.
+
 ## Monitoring Priorities
 
 | Priority | Indicators | Action |
 |---|---|---|
-| P1 | Term Finance proceeds address; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge and exchange-deposit alerts |
+| P1 | Term Finance active laundering source; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge, exchange-deposit, and privacy-protocol alerts |
 | P2 | Bofur poisoning contract; Maya Arbitrum proceeds address; Coldcard-linked Ethereum laundering pivot; poisoning address | Direct monitoring with narrower incident-role labels |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
+| Campaign IOCs | Fake Seeker / SKR domain and fake `$WAR` rewards activity | Block known domains, monitor replacements, and preserve the distinction from legitimate projects and tokens |
 | Case only | ODY | Preserve rug-pull report; withhold truncated identifiers |
-| Investigative | Vultisig-related outflow | Monitor for a protocol statement, complete IOCs, root-cause evidence, and confirmation of unauthorized activity |
+| Investigative | Vultisig-related outflow; FOMO iOS allegations; Kylie Jenner / `$KYLIE` promotion | Monitor for complete IOCs, root-cause evidence, victim confirmation, deployer/proceeds attribution, and authoritative statements |
 
 ## Attribution Boundaries
 
@@ -330,8 +391,11 @@ Neither identifier is retained in `addresses.csv`. The case remains documented w
 - The Coinsbuy drain's exact compromise vector remains unresolved; cross-chain timing alone does not prove private-key compromise.
 - The Allbridge CCTP/Base incident has no complete authoritative attacker identifier in this update and contributes no machine-readable seed.
 - The Bofur Capital victim, legitimate payee, and secondary self-poisoning look-alike are excluded from primary threat labels; campaign-controller and contract roles remain medium-high confidence.
-- The Term Finance address is a high-confidence proceeds seed, but no named actor or exact governance-control path is established; Tornado Cash and ordinary protocol counterparties remain graph context only.
+- The Term Finance address is a high-confidence proceeds and active-laundering seed, but no named actor or exact governance-control path is established; Tornado Cash and ordinary protocol counterparties remain graph context only.
 - The Sandbox attacker identifiers are truncated and withheld; the 14.9B unbacked-token mint is not labeled as realized theft value.
+- The verified 662 SOL transfer does not establish that FOMO caused or authorized a wallet drain; FOMO receives no threat-wallet label.
+- Fake Seeker / SKR and `$WAR` pages are phishing infrastructure, not Solana protocol exploits or evidence against the legitimate projects and tokens.
+- The `$KYLIE` mint is a contextual token-promotion IOC, not an attacker wallet or a confirmed rug classification.
 - ODY and Vultisig identifiers remain withheld where public evidence is truncated or attribution is incomplete.
 
 ## Sources
@@ -410,13 +474,22 @@ Neither identifier is retained in `addresses.csv`. The case remains documented w
 - [Etherscan — proceeds and consolidation address](https://etherscan.io/address/0xD5183d8BfC65a50863C62aF2538198A8288FFc13)
 - [Yearn — custom governance-wrapper scope clarification](https://x.com/yearnfi/status/2091599858323075144)
 - [The Block — corroborating incident report](https://www.theblock.co/news/defi/2026-08-23-defi-lending-protocol-term-finance-loses-an-estimated-8-5-million-to-governance-exploit-412543)
+- [BBX — PeckShield-attributed 300 ETH Tornado Cash deposit update](https://beta.bbx.com/news-detail/3046354)
 
 ### The Sandbox SAND Bridge
 
 - [The Sandbox bridge-incident reporting and IOC truncation context](https://www.ccn.com/news/crypto/sandbox-exploit-14-9b-sand-korean-exchanges-freeze-transfers/)
 
+### August 24-25 Solana Watch
+
+- [Protos — FOMO iOS allegations, verified 662 SOL transfer, and denial](https://protos.com/crypto-trading-platform-fomo-denies-hack-of-its-ios-app/)
+- [MalwareTips — fake Solana Seeker / SKR claim page](https://malwaretips.com/blogs/solana-seeker-skr-airdrop-scam/)
+- [MalwareTips — fake `$WAR` reward pages](https://malwaretips.com/blogs/war-on-usd-rewards-scam/)
+- [BeInCrypto — Kylie Jenner X account and `$KYLIE` promotion](https://beincrypto.com/kylie-jenner-x-account-hack-meme-coin/)
+- [U.S. Department of Justice — Profit Connect conviction; no wallet identifiers published](https://www.justice.gov/usao-nv/pr/jury-convicts-las-vegas-business-owner-cryptocurrency-ponzi-scheme)
+
 ---
 
 ## TLDR
 
-The August 24 follow-up adds the high-confidence Term Finance ETH/DAI proceeds address after the approximately $8.5M vault-governance exploit, while preserving the unknown actor and unresolved control-acquisition path. It also records The Sandbox's Base/BSC unbacked-SAND bridge incident without ingesting truncated attacker addresses. Earlier follow-ups added Bofur Capital, Maya external-L1, Coinsbuy, and Allbridge intelligence with explicit victim and infrastructure exclusions.
+The August 25 follow-up upgrades the Term Finance proceeds address to an active Tornado Cash laundering source after a reported 300 ETH deposit. It also records FOMO as a disputed Solana wallet-drain allegation, preserves fake Seeker / SKR and `$WAR` pages as non-wallet campaign intelligence, and retains the `$KYLIE` mint as a contextual promotion IOC rather than a confirmed rug or attacker wallet. No new high-confidence Solana protocol exploit or qualifying new BTC/Solana threat-wallet seed was identified.
