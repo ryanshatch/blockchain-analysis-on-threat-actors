@@ -115,6 +115,21 @@
       <td>Solana and EVM users; observed May–July 2026</td>
       <td>Wallet-drainer, malicious dApp, fake-token, impersonation, and investment-scam campaign. Not counted as a single Solana protocol exploit.</td>
     </tr>
+    <tr>
+      <td><a href="../Multi-Chain/August-2026-Security-Sweep/"><code>FOMO iOS allegations</code></a></td>
+      <td>August 23–24, 2026; one 662 SOL transfer verified; $6M aggregate loss claimed but unverified</td>
+      <td>Disputed wallet-drain allegation / possible client-side compromise. Investigative only; no direct threat-wallet seed.</td>
+    </tr>
+    <tr>
+      <td><a href="../Multi-Chain/August-2026-Security-Sweep/"><code>Fake Seeker / SKR and $WAR rewards</code></a></td>
+      <td>Reported August 20–22, 2026; one fake SKR URL retained</td>
+      <td>Wallet-drainer phishing and brand impersonation. Not a Solana, Seeker, SKR, or legitimate-token vulnerability.</td>
+    </tr>
+    <tr>
+      <td><a href="../Multi-Chain/August-2026-Security-Sweep/"><code>Kylie Jenner / $KYLIE promotion</code></a></td>
+      <td>August 24, 2026; contextual Solana token mint retained</td>
+      <td>Reported social-account compromise and malicious-token promotion; not yet a confirmed rug or attributed wallet cluster.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -139,5 +154,8 @@ The exploit-origin chain and the later proceeds chains are recorded separately. 
   <li>SUNUSI is classified as malicious authorization and Permanent Delegate abuse, not as a confirmed rug pull or private-key compromise.</li>
   <li>FlashTrade currently has no machine-readable attacker-address file because no complete public attacker address was resolved in the reviewed evidence.</li>
   <li>The SpaceX/FIFA drainer wave is tracked as a campaign because its domains, tokens, receiving addresses, and operator infrastructure rotate rapidly.</li>
+  <li>FOMO remains a disputed wallet-drain allegation; the verified 662 SOL transfer does not establish app causation and adds no direct threat-wallet seed.</li>
+  <li>The fake Seeker / SKR URL and the <code>$KYLIE</code> mint are retained as non-wallet investigative IOCs. Fake <code>$WAR</code> pages remain campaign intelligence without a complete retained IOC.</li>
+  <li>None of the August 24–25 Solana watch items are counted as confirmed Solana protocol exploits or confirmed rug pulls.</li>
   <li>Cross-chain counterparties are not automatically threat-labeled merely because they interacted with incident proceeds or sanctioned seeds.</li>
 </ul>

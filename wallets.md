@@ -499,7 +499,13 @@ The real and spoofed destinations share a similar visible prefix and suffix (`0x
 
 | Network | Address | Classification | Confidence | Monitoring |
 |---|---|---|---|---|
-| Ethereum | `0xD5183d8BfC65a50863C62aF2538198A8288FFc13` | Exploit-proceeds and consolidation address | High | P1 direct watch; highest priority |
+| Ethereum | `0xD5183d8BfC65a50863C62aF2538198A8288FFc13` | Exploit proceeds, consolidation, active dispersal, and Tornado Cash laundering source | High | P1 direct watch; highest priority |
+
+### August 25 Laundering Update
+
+PeckShield monitoring reported that the same P1 address deposited **300 ETH**, approximately **$741,000**, into Tornado Cash in three 100 ETH transfers. Its operational role has therefore progressed from proceeds storage to active dispersal and privacy-protocol routing.
+
+Tornado Cash pool, router, and relayer contracts remain laundering-infrastructure pivots and must not be labeled as attacker-controlled.
 
 ### Attribution and Infrastructure Boundaries
 
@@ -508,6 +514,22 @@ The real and spoofed destinations share a similar visible prefix and suffix (`0x
 - Approximately 2 ETH sourced from Tornado Cash is funding-path evidence, not identity attribution.
 - Tornado Cash contracts, Term and Yearn infrastructure, ordinary governance participants, and later exchange or service counterparties remain graph pivots unless separately attributed.
 - The Sandbox SAND bridge indicators `0xAbE0...4D22` and `0x638C...F296` are truncated and are not added to the wallet dataset.
+
+---
+
+## August 25 Solana Investigative Watch — No New Threat-Wallet Seeds
+
+**Case file:** [`Multi-Chain/August-2026-Security-Sweep/`](./Multi-Chain/August-2026-Security-Sweep/)  
+**Non-wallet IOCs:** [`investigative_iocs.csv`](./Multi-Chain/August-2026-Security-Sweep/investigative_iocs.csv)
+
+| Item | Evidence status | Repository handling |
+|---|---|---|
+| FOMO iOS allegations | 662 SOL transfer verified; FOMO causation and $6M estimate unverified | Investigative only; no victim/attacker pair or direct seed |
+| Fake Seeker / SKR page | Malicious claim-page classification at medium-high confidence | Domain IOC only; no wallet label |
+| Fake `$WAR` reward pages | Wallet-drainer phishing campaign at medium-high confidence | Campaign intelligence only; no complete retained wallet or domain |
+| Kylie Jenner / `$KYLIE` promotion | Reported account compromise and token promotion; rug/deployer attribution unresolved | Token-mint context only; not an attacker wallet |
+
+These items are not counted as confirmed Solana protocol exploits or confirmed rug pulls.
 
 ---
 
