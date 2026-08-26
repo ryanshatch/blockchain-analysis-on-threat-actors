@@ -2,6 +2,10 @@
 #* text=auto
 
 # Force documentation files to be classified as Markdown by GitHub Linguist
-*.md linguist-language=Markdown linguist-detectable=true linguist-documentation=false linguist-generated=false linguist-vendored=false
-*.html linguist-language=Markdown linguist-detectable=true linguist-documentation=false linguist-generated=false linguist-vendored=false
-*.css linguist-language=Markdown linguist-detectable=true linguist-documentation=false linguist-generated=false linguist-vendored=false
+#*.md linguist-language=Markdown linguist-detectable=true linguist-documentation=false linguist-generated=false linguist-vendored=false
+#*.html linguist-language=Markdown linguist-detectable=true linguist-documentation=false linguist-generated=false linguist-vendored=false
+#*.css linguist-language=Markdown linguist-detectable=true linguist-documentation=false linguist-generated=false linguist-vendored=false
+
+*.md linguist-language=Markdown
+*.html linguist-language=Markdown
+*.css linguist-language=Markdown
