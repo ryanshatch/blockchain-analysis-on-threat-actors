@@ -535,7 +535,7 @@ These items are not counted as confirmed Solana protocol exploits or confirmed r
 
 ## CYBERLEEK / GTA VI Leak-and-Token Campaign
 
-**Assessment date:** August 25, 2026  
+**Assessment date:** August 28, 2026
 **Network:** Solana  
 **Status:** Active; real-world identity and initial-access vector unresolved  
 **Case file:** [`SOL/CYBERLEEK/`](./SOL/CYBERLEEK/)  
@@ -569,7 +569,83 @@ These items are not counted as confirmed Solana protocol exploits or confirmed r
 - Public evidence supports playable-build access but does not establish that CYBERLEEK personally breached Rockstar or retained access to its systems.
 - The 270M creator allocation was burned; the reviewed evidence does not support a developer-allocation dump.
 - Approximately 98.43% of the creator-origin Raydium LP supply was reported permanently locked, while the Fee Key preserves an ongoing fee claim.
-- The approximately $128,809 fee figure is an accrual estimate; no fee harvest was found by the cited analysis at its cutoff.
+- The approximately $128,809 fee figure was an August 23 accrual estimate. August 27 reporting later established a creator-fee claim, token sale, dispersal across four fresh wallets, and at least 91 SOL routed to KuCoin; researchers estimated aggregate proceeds near $270,000.
+- The four downstream wallets are not added as direct seeds because the reviewed reporting did not publish their complete addresses. Two complete transaction signatures are retained in the case transaction dataset.
 - Five high-profit early traders and four same-ticker copycat mints are retained in the case CSV as explicit non-actor rows and must not inherit the CYBERLEEK label.
 - Upstream hubs, relays, feeder wallets, services, pools, exchanges, token accounts, and look-alike dust addresses remain graph context unless independently attributed.
 - No named person, nationality, or link to the 2022 LAPSUS$ or April 2026 ShinyHunters cases is established.
+
+---
+
+## August 24 OFAC Alert: Iranian MOIS-Linked Cyber-Actor Network
+
+**Case file:** [`Multi-Chain/Iranian-MOIS-Cyber-Network/`](./Multi-Chain/Iranian-MOIS-Cyber-Network/)
+**Machine-readable addresses:** [`addresses.csv`](./Multi-Chain/Iranian-MOIS-Cyber-Network/addresses.csv)
+**Source:** Official OFAC / U.S. Treasury
+**Confidence:** High
+**Treatment:** Watch every listed identifier directly; preserve counterparties as graph-expansion pivots unless separately attributed.
+
+OFAC's August 24 action publishes 30 BTC, ETH, and TRON identifiers for four named members of a cyber group Treasury says operates on behalf of, or for the benefit of, Iran's MOIS. The separate Tsoris USDT/TRON address is an official direct-watch seed but is not part of the MOIS cyber cluster.
+
+### Keyvan Fayyaz Ghareh Blagh — 10 P1 Seeds
+
+| Network | Address | Classification |
+|---|---|---|
+| Bitcoin | `bc1qf6zxs4lkp9umh6hf087mh70w0ymcyt8cunp58r` | Sanctioned MOIS-linked cyber actor |
+| Bitcoin | `bc1qr2pwmvkpq5tc5um2g9uh34yyu6wepwx89rts70` | Sanctioned MOIS-linked cyber actor |
+| Bitcoin | `bc1q4ktvxxhhvf8qhs9qkdsm9arcxfmmeex6rl7n50` | Sanctioned MOIS-linked cyber actor |
+| Ethereum | `0x4060cbf80734193f521a3cc6fd4e985df2825279` | Sanctioned MOIS-linked cyber actor |
+| Ethereum | `0x56de1527136f76a809e5b14ded6103eecd072ba7` | Sanctioned MOIS-linked cyber actor |
+| Ethereum | `0x8694ed130432be2cd3efff2e4d9dc52351dc7423` | Sanctioned MOIS-linked cyber actor |
+| Ethereum | `0xbd3276f265b83b5e828c05f46cde9d10a1521a24` | Sanctioned MOIS-linked cyber actor |
+| Ethereum | `0xf1c4c44d2dcbcfa704349e3b57628dbd8404e597` | Sanctioned MOIS-linked cyber actor |
+| TRON | `TXR4FDAZZLDSvuRxveW9aBMybbaS12WWHk` | Sanctioned MOIS-linked cyber actor |
+| TRON | `TP3kVtnFgDSoSqzw178nLJtGWNjrbKNgB6` | Sanctioned MOIS-linked cyber actor |
+
+### Mojtaba Ghal'eh-Kuhi — 2 P1 Seeds
+
+| Network | Address | Classification |
+|---|---|---|
+| Bitcoin | `1GXeCkFQq7SYo6B7wdLAPkkri6NFTFB7No` | Sanctioned MOIS-linked cyber group leader |
+| Ethereum | `0x1b8579cf6ab12ea6b74ac5fa41f3829a3cb61e6e` | Sanctioned MOIS-linked cyber group leader |
+
+### Arman Kahzadian — 3 P1 Digital-Asset-Theft Seeds
+
+| Network | Address | Classification |
+|---|---|---|
+| Bitcoin | `1JGPiQGK78xTxAVoxA1MjK3Z15M84Rj6BL` | Sanctioned cyber actor; Treasury-described digital-asset theft focus |
+| Ethereum | `0xeb507efa9ee692a4c774ad1de9f3cb26fc459da3` | Sanctioned cyber actor; Treasury-described digital-asset theft focus |
+| Ethereum | `0xef85a6fafa5942a964dc618e94e230881d29ce2a` | Sanctioned cyber actor; Treasury-described digital-asset theft focus |
+
+### Behzad Mesri — 15 Materially Updated P1 Seeds
+
+| Network | Address | Classification |
+|---|---|---|
+| Bitcoin | `12aNKp2iDKuhEde2YfPdd4DFGenRUTKupL` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x252a8bd2319d8a555b872990601221b3a2053bce` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x1CAb8177ACe78b1B6B1c393371F4f2dCAE40CbEB` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x6Fac4D18c912343BF86fa7049364Dd4E424Ab9C0` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0xA40cFBFc8534FFC84E20a7d8bBC3729B26a35F6f` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x7F03679B56d8772530EFA516b58Bb83d4829E881` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x8ac5381FCD9e7395D14e02986c344aADA84B4bC6` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x9697749A9e8D6C119D8EEb0d6268a1b99C40684c` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x9DD7fA4B4950154F7e75BdD8A77266B99b94Ec08` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0xb5A69Da691670F62510793F79a9B36c7db1A7b7c` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x6B0736Fed0634e15E19CC57fBA19cd179c13AbCA` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0xd81414ABc631C6CADAe1C6198b0c2b15a9B4fDe5` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0xF45Ecc3a59C7911181C659cE9115854c6175Be91` | Newly published identifier on existing sanctioned cyber-actor entry |
+| TRON | `TAbbVaBKgH4VBLXgWqACuwoKF4cH1HinQh` | Newly published identifier on existing sanctioned cyber-actor entry |
+| TRON | `TEsxMcVocweTM82Mdmc5diKC6qyCWqSpPv` | Newly published identifier on existing sanctioned cyber-actor entry |
+
+### Separate Iran Sanctions-Finance Seed
+
+| Network | Address | Entity | Treatment |
+|---|---|---|---|
+| TRON / USDT | `TJCBpxZ3yC7C7oegSRZMFxBcscmUVeSA36` | Almpertos Tsoris | P1 direct watch; do not merge into the MOIS cyber cluster |
+
+### Attribution Boundaries
+
+- OFAC publication makes the listed identifiers direct sanctions-watch seeds; it does not automatically sanction or actor-label their counterparties.
+- Exchange, bridge, router, mixer, protocol, and service addresses remain infrastructure pivots unless independently attributed.
+- Kahzadian's Treasury-described Bitcoin-wallet theft does not establish that the stolen wallet is one of his three published sanctions identifiers.
+- Mesri's 15-address set is an authoritative common-entity attribution, but specific operational roles require separate transaction analysis.

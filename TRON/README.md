@@ -44,6 +44,11 @@
       <td><code>TPgxjjB6AJeMSQFngbUM6dMMxPHa9GEtYa</code>, <code>TXN3hVukebhyYR31YPCYd7aJAvmUeXu1ab</code>, <code>TTVJuXWCusAURrpNShiypauagEH1N4CrxV</code></td>
       <td>August 7, 2026 OFAC counterterrorism sanctions attribution covering Siavash Kayvanpour, Shelbit Exchange, and Crypto Home DMCC</td>
     </tr>
+    <tr>
+      <td><a href="../Multi-Chain/Iranian-MOIS-Cyber-Network/"><code>Multi-Chain/Iranian-MOIS-Cyber-Network/</code></a></td>
+      <td><code>TXR4FDAZZLDSvuRxveW9aBMybbaS12WWHk</code>, <code>TP3kVtnFgDSoSqzw178nLJtGWNjrbKNgB6</code>, <code>TAbbVaBKgH4VBLXgWqACuwoKF4cH1HinQh</code>, <code>TEsxMcVocweTM82Mdmc5diKC6qyCWqSpPv</code>, and separate Tsoris seed <code>TJCBpxZ3yC7C7oegSRZMFxBcscmUVeSA36</code></td>
+      <td>August 24, 2026 OFAC action: four direct MOIS-linked cyber-actor TRON seeds plus one separately classified Iran sanctions-finance USDT seed</td>
+    </tr>
   </tbody>
 </table>
 
@@ -55,4 +60,5 @@
   <li>Use connected addresses as graph-expansion pivots until independent attribution supports a stronger label.</li>
   <li>Preserve publication and update dates so newly disclosed identifiers are distinguishable from previously known addresses.</li>
   <li>Do not infer direct IRGC ownership of the full Shelbit transaction graph solely from transactional proximity.</li>
+  <li>The Tsoris USDT/TRON identifier is an official direct-watch seed but must remain separate from the MOIS cyber-actor cluster.</li>
 </ul>

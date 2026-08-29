@@ -96,7 +96,11 @@
     </tr>
     <tr>
       <td><a href="./Multi-Chain/August-2026-Security-Sweep/"><code>Multi-Chain/August-2026-Security-Sweep/</code></a></td>
-      <td>August 20-24, 2026 security sweep covering the Term Finance Ethereum governance-exploit proceeds wallet, a zero-seed Sandbox Base/BSC bridge case, Bofur Capital address poisoning, Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP, fake AML checkers, FoxMarket, Hyperliquid impersonation, an Ethereum whale drain, Harmony, ODY, Coldcard, and a Vultisig investigative lead.</td>
+      <td>August 20-28, 2026 security sweep covering Term Finance laundering, Solana investigative items, the zero-seed Moonwell/MAMO Base exploit, Sandbox Base/BSC, Bofur Capital address poisoning, Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/Iranian-MOIS-Cyber-Network/"><code>Multi-Chain/Iranian-MOIS-Cyber-Network/</code></a></td>
+      <td>August 24, 2026 OFAC attribution covering 30 BTC, ETH, and TRON seeds for four MOIS-linked Iranian cyber actors plus one separately classified Tsoris sanctions-finance seed.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/Triple-A/"><code>Multi-Chain/Triple-A/</code></a></td>
@@ -122,7 +126,7 @@
     <tr><td><a href="./HBAR/"><code>HBAR/</code></a></td><td>Hedera-to-Ethereum suspected theft and bridge-flow analysis.</td></tr>
     <tr><td><a href="./Lazarus/"><code>Lazarus/</code></a></td><td>DPRK TraderTraitor / Lazarus Group wallets, including addresses connected to the Bybit theft and earlier incidents.</td></tr>
     <tr><td><a href="./SOL/"><code>SOL/</code></a></td><td>Solana-specific threat-actor, governance, exploit, leak-and-token campaign, and suspicious-wallet investigations.</td></tr>
-    <tr><td><a href="./SOL/CYBERLEEK/"><code>SOL/CYBERLEEK/</code></a></td><td>CYBERLEEK / GTA VI leak-and-token campaign report covering the creator wallet, token and pool mechanics, locked-liquidity Fee Key, funding pivots, explicit trader and copycat exclusions, and unresolved real-world attribution.</td></tr>
+    <tr><td><a href="./SOL/CYBERLEEK/"><code>SOL/CYBERLEEK/</code></a></td><td>CYBERLEEK / GTA VI leak-and-token campaign report covering the creator wallet, token and pool mechanics, locked-liquidity Fee Key, August 27 creator-fee cash-out, funding pivots, explicit trader and copycat exclusions, and unresolved real-world attribution.</td></tr>
     <tr><td><a href="./SOL/BonkDAO/"><code>SOL/BonkDAO/</code></a></td><td>Analysis of the BonkDAO governance attack and associated on-chain activity.</td></tr>
     <tr><td><a href="./SOL/HOPE/"><code>SOL/HOPE/</code></a></td><td>Analysis of the Solana-based HOPE token, wallet concentration, transfers, sales, and suspected rug activity.</td></tr>
     <tr><td><a href="./TRON/"><code>TRON/</code></a></td><td>TRON-specific sanctions, state-linked attribution, and threat-wallet investigations.</td></tr>
