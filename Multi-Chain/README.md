@@ -23,7 +23,12 @@
     <tr>
       <td><a href="./August-2026-Security-Sweep/"><code>August-2026-Security-Sweep/</code></a></td>
       <td>MAYAChain, Bitcoin, Ethereum, Arbitrum, BNB Chain, Harmony, TRON, Polygon, Base, and multi-chain users</td>
-      <td>August 20-24, 2026 cross-ecosystem sweep adding the Term Finance Ethereum governance-exploit proceeds wallet and a zero-seed Sandbox Base/BSC bridge case to Bofur Capital, Maya external-L1, Coinsbuy Ethereum/TRON, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence</td>
+      <td>August 20-28, 2026 cross-ecosystem sweep covering Term Finance laundering, Solana investigative items, the zero-seed Moonwell/MAMO Base exploit, Sandbox Base/BSC, Bofur Capital, Maya external-L1, Coinsbuy Ethereum/TRON, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence</td>
+    </tr>
+    <tr>
+      <td><a href="./Iranian-MOIS-Cyber-Network/"><code>Iranian-MOIS-Cyber-Network/</code></a></td>
+      <td>Bitcoin, Ethereum, and TRON</td>
+      <td>August 24, 2026 OFAC attribution: 30 direct seeds for four MOIS-linked cyber actors plus one separate Iran sanctions-finance USDT/TRON seed</td>
     </tr>
     <tr>
       <td><a href="./Shelbit-Network/"><code>Shelbit-Network/</code></a></td>
@@ -50,7 +55,7 @@ A case is stored under <code>Multi-Chain/</code> when the full investigation can
 </p>
 
 <p>
-Solana-origin cases are also cross-listed in <a href="../SOL/"><code>SOL/README.md</code></a> so chain-specific incident counts do not omit cross-chain cases such as Across Protocol or Allbridge Core. Multi-victim campaigns such as the SpaceX/FIFA drainer wave are cross-referenced there but are not counted as single Solana protocol incidents. Official multi-chain sanctions cases such as the Shelbit network are cross-linked from the affected chain indexes but are not counted as exploit incidents.
+Solana-origin cases are also cross-listed in <a href="../SOL/"><code>SOL/README.md</code></a> so chain-specific incident counts do not omit cross-chain cases such as Across Protocol or Allbridge Core. Multi-victim campaigns such as the SpaceX/FIFA drainer wave are cross-referenced there but are not counted as single Solana protocol incidents. Official multi-chain sanctions cases such as the Shelbit and Iranian MOIS cyber-actor networks are cross-linked from the affected chain indexes but are not counted as exploit incidents.
 </p>
 
 <h2>Attribution Boundaries</h2>

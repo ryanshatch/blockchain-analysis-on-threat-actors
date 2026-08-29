@@ -2,7 +2,7 @@
 
 | Field | Assessment |
 |---|---|
-| Assessment date | August 25, 2026 UTC |
+| Assessment date | August 28, 2026 UTC |
 | Status | Active; identity unresolved |
 | Primary target | Rockstar Games / Take-Two Interactive |
 | Primary blockchain | Solana |
@@ -23,7 +23,8 @@ The creator's financial position is more nuanced than a conventional developer d
 - The retained 270 million tokens were burned on August 22 rather than sold. Their contemporaneous headline value was unrealized mark-to-market value, not cash received by the creator.
 - Approximately 98.43% of the live Raydium LP supply originating from the creator was permanently locked through Raydium Burn & Earn. The locked principal cannot be conventionally withdrawn.
 - A Fee Key NFT preserves the right to claim trading fees associated with the locked position. Permanent liquidity does not eliminate the creator's continuing fee interest.
-- A reproducible community analysis estimated approximately $128,809 in gross LP-fee accrual through August 23. It found no fee-harvest transaction by its cutoff, so that figure is accrued or potential revenue, not confirmed realized profit.
+- A reproducible community analysis estimated approximately $128,809 in gross LP-fee accrual through August 23. It found no fee-harvest transaction by that cutoff; this was an accurate historical snapshot but was superseded by the August 27 cash-out.
+- On August 27, reporting linked to complete Solana transaction signatures showed an operation-linked wallet claiming approximately 1,442.43 WSOL worth $154,683 and 15.4 million CYBERLEEK worth about $95,185 in creator fees, then selling the token position for roughly $125,000 in SOL. The proceeds were split across four fresh wallets and at least 91 SOL was routed to KuCoin. Researchers estimated aggregate proceeds near $270,000.
 - Bitquery estimated that the five highest-profit early wallets realized approximately $157,643 combined and found no link between those traders and the deployer. Their profits must not be attributed to CYBERLEEK without new evidence.
 
 The campaign also advertised custom gameplay and ad placement. Public reporting described a 400 XMR contact fee, approximately $165,000 at the quoted exchange rate, before private negotiation through Session. No public evidence establishes that anyone paid the fee, and ordinary public-chain analysis cannot verify Monero receipts.
@@ -42,6 +43,8 @@ No credible public evidence currently links CYBERLEEK to the September 2022 LAPS
 | The creator dumped the retained 270 million-token allocation. | Contradicted | On-chain `burnChecked` removed the entire allocation on August 22. |
 | The creator can conventionally rug the original pool by minting, freezing, or withdrawing the locked LP. | Low | Mint and freeze authorities are null; the creator allocation was burned; approximately 98.43% of the original LP position is locked. |
 | The creator has no continuing financial interest. | Contradicted | The Fee Key retains LP-fee claim rights; advertising and Monero contact fees are separate possible revenue paths. |
+| The operation realized creator-fee proceeds on August 27. | High | Reporting cites complete Solana claim and KuCoin-routing transaction signatures and quantifies the claimed WSOL and CYBERLEEK. |
+| The August 27 cash-out should be classified as a confirmed rug pull. | Medium | The cash-out and dispersal support suspected rug or insider-exit activity, but original exit-scam intent is not established. |
 | The five highest-profit early traders were deployer-linked insiders. | Low / unsupported | Bitquery characterized them as automated or fast traders and found no deployer funding link. |
 | Launch funding originated at KuCoin. | Low-to-moderate | Community tracing reports a KuCoin endpoint; Bitquery reproduced the middle hops but could not independently label the exchange terminus. |
 | The operator is in Central Europe. | Low-to-moderate | Wallet-signing and social-posting hours align with UTC+1/+2, but scheduling, teamwork, travel, or deception could produce the same pattern. |
@@ -62,7 +65,7 @@ No credible public evidence currently links CYBERLEEK to the September 2022 LAPS
 | Unknown capability | Original intrusion, persistence in Rockstar systems, source-code access, or possession of the complete production build |
 | Distribution | Social media, community mirrors, Discord/GitHub-associated communities, and Arweave-backed infrastructure |
 | Monetization | Solana event token, locked-liquidity fee stream, market-cap-gated content, Monero contact fee, advertising, and custom footage |
-| Operational status | Active as of August 24-25; no confirmed arrest or authoritative public identification |
+| Operational status | Active as of August 27-28; no confirmed arrest or authoritative public identification |
 
 ## Timeline
 
@@ -86,6 +89,7 @@ No credible public evidence currently links CYBERLEEK to the September 2022 LAPS
 | 2026-08-23 | CoinGecko recorded an all-time high near $0.03436. | Second major speculative surge followed by material retracement. |
 | 2026-08-24 | Campaign messaging called for physical demonstrations at Rockstar / Take-Two offices. | Escalation into real-world nuisance activity; no verified violence threat in the reviewed material. |
 | 2026-08-25 | Price snapshot near $0.0178-$0.0182 with roughly $12.9M-$13.2M market capitalization. | Approximately 48% below the August 23 high; values are time-sensitive. |
+| 2026-08-27 | Operation-linked wallet claimed approximately 1,442.43 WSOL and 15.4M CYBERLEEK in creator fees, sold the token position for roughly $125K in SOL, and dispersed proceeds across four fresh wallets; at least 91 SOL later moved to KuCoin. | High confidence in the cash-out; medium confidence for confirmed-rug classification. |
 
 ## Leak and Access Assessment
 
@@ -154,14 +158,15 @@ No credible public evidence currently links CYBERLEEK to the September 2022 LAPS
 | Party or event | Amount | Attribution treatment |
 |---|---:|---|
 | Creator's 270M allocation | Entire balance burned; nominal value near $1.4M at the time | Not a dump and not realized profit. High-confidence burn event. |
-| Creator's locked-LP fee stream | Rough estimate of $128,809 gross accrued through August 23 | Plausibly controlled through the Fee Key; no harvest found by the cited analysis at its cutoff. Treat as potential/accrued revenue. |
+| Creator's locked-LP fee stream | Earlier estimate of $128,809 gross accrued through August 23; August 27 claim reported at approximately $249,868 combined nominal value | The earlier no-harvest finding was time-bounded. The later claim and sale materially establish realized operator-linked cash-out activity. |
+| August 27 creator-fee cash-out | Approximately $270,000 aggregate proceeds estimated by researchers | High confidence in the claim, sale, dispersal, and KuCoin route; medium confidence that the event should be classified as a confirmed rug pull. |
 | Creator's initial SOL seed | About 330 SOL; approximately $29K-$31K at contemporary prices | Permanently committed principal in the locked creator position. |
 | 400 XMR contact fee | About $165K requested per contact | Demand only; no verified payer or receipt. |
 | Advertising and custom footage | Privately negotiated | Revenue unknown; no confirmed completed deal. |
 | Five highest-profit early traders | Approximately $157,643 realized combined | Bitquery found no deployer link; do not attribute to CYBERLEEK. |
 | Four same-ticker copycat mints | Approximately $1.63M combined early-window volume | Separate assets; do not merge with the primary mint or actor attribution. |
 
-The $128,809 estimate used approximately $62.316M cumulative pool volume multiplied by a 0.21% LP-fee share and approximately 98.43% ownership of the locked LP position. It is an analytical estimate, not proof of collection, net profit, or present value. The pool's separate 0.05% creator-fee field was reportedly configured but disabled; the Fee Key is the supported continuing revenue mechanism.
+The $128,809 estimate used approximately $62.316M cumulative pool volume multiplied by a 0.21% LP-fee share and approximately 98.43% ownership of the locked LP position. It remains a historical accrual estimate rather than proof of the exact later net profit. The August 27 activity separately establishes a material creator-fee claim and token sale. The four downstream wallets remain excluded from the direct threat-seed dataset because complete addresses were not published in the reviewed reporting.
 
 ## Indicator Handling
 
@@ -226,6 +231,8 @@ The machine-readable transaction set is in [`transactions.csv`](./transactions.c
 | [`JyNCGXB3uxRzr5AL47SpBgwAvEW8UMkPfiZ1w7oDcUn5bjarQdTxtseBaKY89ZNkt3SfsmpduXwvdaQmLzUMoLN`](https://solscan.io/tx/JyNCGXB3uxRzr5AL47SpBgwAvEW8UMkPfiZ1w7oDcUn5bjarQdTxtseBaKY89ZNkt3SfsmpduXwvdaQmLzUMoLN) | 730M tokens deposited during Raydium pool initialization on August 15. |
 | [`4jvfbVcdiHkCEgPj59dbPEnJL12W379YW4HeDZZmByrEKApdDTJwWxoECQRrJNLMWqcq32YnbAkBYPb5bY5Teja3`](https://solscan.io/tx/4jvfbVcdiHkCEgPj59dbPEnJL12W379YW4HeDZZmByrEKApdDTJwWxoECQRrJNLMWqcq32YnbAkBYPb5bY5Teja3) | Creator LP locked and Fee Key minted on August 15. |
 | [`3EeEqdrYZKNPxoL3qcxK3LDbavPrn7skpAvjyuAxmLihpjc6qerQ1ZrqDv4kGPCkgEueC48nMqoeeZusAQ8Vsn3C`](https://solscan.io/tx/3EeEqdrYZKNPxoL3qcxK3LDbavPrn7skpAvjyuAxmLihpjc6qerQ1ZrqDv4kGPCkgEueC48nMqoeeZusAQ8Vsn3C) | `burnChecked` of 270M CYBERLEEK on August 22. |
+| [`4YgZeKvfvubhzoAebFT4JbbKKBgPAQf5d5j3xLNHQ6mXKf563gpAf68UpK3dCRtmezo6qCvsBN8cfMjbhxLz57V4`](https://solscan.io/tx/4YgZeKvfvubhzoAebFT4JbbKKBgPAQf5d5j3xLNHQ6mXKf563gpAf68UpK3dCRtmezo6qCvsBN8cfMjbhxLz57V4) | August 27 creator-fee claim and cash-out evidence cited by reporting. |
+| [`3CUsT8WL61giDDwrk5sVwXvoXeMstKWLGkS8yc73ZgtegvyqrfjDn3Jamy1Lgj5rEexvJpiGQoy3P2zjMtBWqLqm`](https://solscan.io/tx/3CUsT8WL61giDDwrk5sVwXvoXeMstKWLGkS8yc73ZgtegvyqrfjDn3Jamy1Lgj5rEexvJpiGQoy3P2zjMtBWqLqm) | Reported downstream transfer of at least 91 SOL to KuCoin. |
 
 ## Observed Behaviors and TTPs
 
@@ -275,7 +282,9 @@ Take-Two filed DMCA-subpoena requests on August 20 seeking information from Micr
 - Original access vector and whether Rockstar itself was breached in this event.
 - Whether the operation is one person, a coordinated group, or a broker working with a source.
 - Whether the campaign possesses a complete build, source code, or a restricted development slice.
-- Current custody and transfer history of the Fee Key after August 23.
+- Exact Fee Key custody and transfer history surrounding the August 27 claim.
+- Complete addresses for the four fresh downstream wallets and the labeled KuCoin endpoint.
+- Exact creator fees harvested after the August 27 reporting cutoff.
 - Exact fees harvested after the reviewed snapshot.
 - Whether any 400 XMR contact fee or advertising payment was made.
 - Verified centralized-exchange origin and exit points; the reported KuCoin origin is not independently labeled on-chain.
@@ -313,6 +322,7 @@ Take-Two filed DMCA-subpoena requests on August 20 seeking information from Micr
 - [CoinGecko — historical price and supply snapshot](https://www.coingecko.com/en/coins/cyberleek)
 - [DEX Screener — primary Raydium pool](https://dexscreener.com/solana/G8kgi7aUpeX8EVR8VMkrth9SKEv5BietWC33UjAiiMGh)
 - [Phantom — primary mint market page](https://phantom.com/tokens/solana/ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg)
+- [TheStreet — August 27 creator-fee cash-out, dispersal, and KuCoin route](https://www.thestreet.com/crypto/markets/gta-6-leaker-sends-community-into-meltdown-before-netflix-extended-look)
 
 ### Campaign, Access, and Legal
 
@@ -331,4 +341,4 @@ Take-Two filed DMCA-subpoena requests on August 20 seeking information from Micr
 
 ## TLDR
 
-CYBERLEEK is best tracked as an active, high-impact IP-disclosure and monetization operation, not yet as a confidently attributed intrusion group. The strongest financial conclusion is not that the creator dumped the token: the 270M allocation was burned and the original LP position was permanently locked. The supported continuing revenue path is the Fee Key's share of Raydium trading fees, supplemented by unverified Monero contact and advertising income. The operation manufactured the publicity event, while the largest demonstrated early cash-outs went to fast traders that available analysis does not connect to the deployer.
+CYBERLEEK is best tracked as an active, high-impact IP-disclosure and monetization operation, not yet as a confidently attributed intrusion group. The creator did not dump the retained 270M allocation; it was burned, and the original LP principal remains locked. The August 27 activity nevertheless establishes a material operation-linked creator-fee cash-out, reported near $270,000 in aggregate proceeds, followed by dispersal and a KuCoin route. Classify the event as suspected rug or insider-exit activity with high cash-out confidence and medium confirmed-rug confidence. The four unpublished downstream wallets remain excluded from direct threat seeds.

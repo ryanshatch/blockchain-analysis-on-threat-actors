@@ -1,13 +1,13 @@
-# August 20-25, 2026 Crypto Security Sweep
+# August 20-28, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
-| Follow-up cutoff | August 25, 2026 |
+| Follow-up cutoff | August 28, 2026 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
-| Networks | MAYAChain, Bitcoin, Ethereum, Solana, BNB Chain, Harmony, and other EVM environments |
+| Networks | MAYAChain, Bitcoin, Ethereum, Solana, BNB Chain, Harmony, TRON, Base, and other EVM environments |
 | Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, SEAL/Security Alliance, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, Protos, protocol disclosures, public explorers, and corroborating reporting |
-| Latest confirmed protocol incident in the follow-up window | Term Finance, August 23, 2026 on Ethereum; no new confirmed Solana protocol exploit identified for August 24-25 |
+| Latest confirmed protocol incident in the follow-up window | Moonwell / MAMO collateral-price manipulation, August 27, 2026 on Base; no new confirmed Solana protocol exploit identified through August 28 |
 
 > SlowMist's live tracker listed Maya Protocol as its newest incident at the review cutoff. No protocol exploit dated August 19 or August 20 appeared above it. This is a point-in-time observation, not proof that no undisclosed or later-indexed incident occurred.
 
@@ -15,6 +15,7 @@
 
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
 |---|---|---|---:|---|
+| Moonwell / MAMO collateral market | August 27 | Thin-liquidity collateral-price manipulation on Base | Approximately $8.7M | High incident; incomplete attacker IOC |
 | Term Finance / Term Meta Vaults | August 23; laundering update August 25 | Governance-layer takeover, malicious vault asset movements, and active Tornado Cash dispersal | About $8.5M; 300 ETH later deposited to Tornado Cash | High |
 | Bofur Capital wallet | August 22 | Automated look-alike address poisoning and proceeds consolidation | About $2M / about 2M DAI | High theft; medium-high campaign attribution |
 | The Sandbox SAND bridge | August 22 | Unauthorized minting of unbacked SAND on Base and BNB Smart Chain | 14.9B unbacked SAND reported; realized loss unresolved | High incident; incomplete IOCs |
@@ -366,8 +367,31 @@ The current evidence supports reported social-account compromise and malicious t
 ### Reviewed Exclusions
 
 - Automated token-risk failures are not proof that an executed rug pull occurred and are excluded from confirmed-incident counts.
-- No new complete BTC or Solana attacker wallet was published in the reviewed August 24-25 material.
-- No new qualifying OFAC, FBI, or DOJ BTC/ETH/SOL wallet disclosure was identified. The August 24 Profit Connect conviction is material criminal-case reporting but publishes no wallet identifiers.
+- No new complete BTC or Solana attacker wallet was published in the reviewed August 24-28 exploit and campaign material.
+- The earlier statement that no qualifying August 24 OFAC wallet disclosure existed is superseded. OFAC published 30 BTC, ETH, and TRON identifiers for four MOIS-linked cyber actors plus one separate Tsoris USDT/TRON seed; those authoritative attributions are stored in a dedicated case.
+- The August 24 Profit Connect conviction is material criminal-case reporting but publishes no wallet identifiers.
+
+## 17. Moonwell / MAMO Collateral-Price Manipulation
+
+| Field | Assessment |
+|---|---|
+| Incident date | August 27, 2026 |
+| Network | Base |
+| Classification | Thin-liquidity collateral-price manipulation / lending-market exploit |
+| Estimated loss | Approximately $8.7 million |
+| Proceeds | Reported consolidated into DAI |
+| Confidence | High that the exploit occurred; incomplete public attacker IOC |
+| Direct seeds | Zero |
+
+CertiK, Blockaid, and PeckShield reporting described an attacker manipulating thin MAMO collateral pricing and borrowing against the inflated value through Moonwell on Base. Publicly indexed reporting exposed the proceeds address only as `0xD71d...C384` at this cutoff.
+
+The truncated identifier is not retained in `addresses.csv` and must not be reconstructed from prefix and suffix fragments. Moonwell and MAMO protocol contracts, oracles, liquidity venues, and affected users remain infrastructure or victim context rather than attacker-controlled seeds.
+
+## 18. August 24 OFAC MOIS Cyber-Actor Attribution
+
+The August 28 review identified a material official disclosure missed by the prior cutoff. OFAC published 30 Bitcoin, Ethereum, and TRON identifiers for Keyvan Fayyaz Ghareh Blagh, Mojtaba Ghal'eh-Kuhi, Arman Kahzadian, and Behzad Mesri. A separate USDT/TRON identifier for Almpertos Tsoris was published under a different Iran-related sanctions authority.
+
+The complete address set, entity roles, monitoring treatment, and attribution boundaries are maintained in [`Iranian-MOIS-Cyber-Network/`](../Iranian-MOIS-Cyber-Network/). These official identifiers are direct sanctions-watch seeds; counterparties remain graph context unless independently attributed.
 
 ## Monitoring Priorities
 
@@ -377,7 +401,7 @@ The current evidence supports reported social-account compromise and malicious t
 | P2 | Bofur poisoning contract; Maya Arbitrum proceeds address; Coldcard-linked Ethereum laundering pivot; poisoning address | Direct monitoring with narrower incident-role labels |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
 | Campaign IOCs | Fake Seeker / SKR domain and fake `$WAR` rewards activity | Block known domains, monitor replacements, and preserve the distinction from legitimate projects and tokens |
-| Case only | ODY | Preserve rug-pull report; withhold truncated identifiers |
+| Case only | ODY; Moonwell / MAMO | Preserve confirmed incident reporting while withholding truncated identifiers |
 | Investigative | Vultisig-related outflow; FOMO iOS allegations; Kylie Jenner / `$KYLIE` promotion | Monitor for complete IOCs, root-cause evidence, victim confirmation, deployer/proceeds attribution, and authoritative statements |
 
 ## Attribution Boundaries
@@ -396,6 +420,8 @@ The current evidence supports reported social-account compromise and malicious t
 - The verified 662 SOL transfer does not establish that FOMO caused or authorized a wallet drain; FOMO receives no threat-wallet label.
 - Fake Seeker / SKR and `$WAR` pages are phishing infrastructure, not Solana protocol exploits or evidence against the legitimate projects and tokens.
 - The `$KYLIE` mint is a contextual token-promotion IOC, not an attacker wallet or a confirmed rug classification.
+- The Moonwell / MAMO exploit is confirmed at high confidence, but `0xD71d...C384` is truncated and contributes no machine-readable seed.
+- The 30 MOIS-network addresses and separate Tsoris seed are official OFAC identifiers; interacting wallets do not automatically inherit those labels.
 - ODY and Vultisig identifiers remain withheld where public evidence is truncated or attribution is incomplete.
 
 ## Sources
@@ -488,8 +514,17 @@ The current evidence supports reported social-account compromise and malicious t
 - [BeInCrypto — Kylie Jenner X account and `$KYLIE` promotion](https://beincrypto.com/kylie-jenner-x-account-hack-meme-coin/)
 - [U.S. Department of Justice — Profit Connect conviction; no wallet identifiers published](https://www.justice.gov/usao-nv/pr/jury-convicts-las-vegas-business-owner-cryptocurrency-ponzi-scheme)
 
+### August 27 Moonwell / MAMO Exploit
+
+- [Crypto Times — Moonwell loss, MAMO price manipulation, and truncated proceeds address](https://www.cryptotimes.io/2026/08/27/moonwell-loses-nearly-8-7m-in-base-exploit-after-mamo-price-manipulation/)
+
+### August 24 OFAC MOIS Cyber-Actor Attribution
+
+- [OFAC Recent Action — official SDN entries and digital-currency identifiers](https://ofac.treasury.gov/recent-actions/20260824)
+- [U.S. Treasury — MOIS cyber group, critical-infrastructure intrusions, and digital-asset theft](https://home.treasury.gov/news/press-releases/sb0613)
+
 ---
 
 ## TLDR
 
-The August 25 follow-up upgrades the Term Finance proceeds address to an active Tornado Cash laundering source after a reported 300 ETH deposit. It also records FOMO as a disputed Solana wallet-drain allegation, preserves fake Seeker / SKR and `$WAR` pages as non-wallet campaign intelligence, and retains the `$KYLIE` mint as a contextual promotion IOC rather than a confirmed rug or attacker wallet. No new high-confidence Solana protocol exploit or qualifying new BTC/Solana threat-wallet seed was identified.
+The August 28 follow-up adds the confirmed, zero-seed Moonwell / MAMO Base exploit and corrects the prior OFAC scan by linking to a dedicated 31-address sanctions case. It preserves FOMO as a disputed allegation, fake Seeker / SKR and `$WAR` pages as non-wallet campaign intelligence, and the `$KYLIE` mint as a contextual IOC. No new high-confidence Solana protocol exploit or complete new BTC/Solana attacker-wallet seed was identified.
