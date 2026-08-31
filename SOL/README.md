@@ -6,7 +6,7 @@
 <hr>
 
 <p>
-<strong>Recent tracked set:</strong> Eight individually identifiable Solana-origin security incidents from June 10 through July 21, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. The active CYBERLEEK leak-and-token operation is tracked as a threat-actor campaign and is not counted as a Solana protocol incident. Multi-victim drainer campaigns and sanctions attributions are also tracked separately.
+<strong>Recent tracked set:</strong> Nine individually identifiable Solana-origin security incidents from June 10 through August 28, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. The active CYBERLEEK leak-and-token operation is tracked as a threat-actor campaign and is not counted as a Solana protocol incident. Multi-victim drainer campaigns and sanctions attributions are also tracked separately.
 </p>
 
 <h2>Solana Case Directories</h2>
@@ -57,6 +57,12 @@
       <td>August 18, 2026–ongoing</td>
       <td>Active IP-disclosure and monetization campaign with a pre-positioned Solana event token; August 27 creator-fee cash-out and suspected insider-exit activity</td>
       <td>No Solana protocol loss; approximately $270,000 aggregate operator-linked cash-out proceeds reported</td>
+    </tr>
+    <tr>
+      <td><a href="./Rain-Legacy-Contracts/"><code>Rain-Legacy-Contracts/</code></a></td>
+      <td>August 28, 2026</td>
+      <td>Shared-infrastructure authorization and signature-validation exploit affecting Rain legacy Solana card contracts used by Avici and Tria</td>
+      <td>2,321 confirmed users and $932,804.22 reconciled; approximately $1.0M-$1.1M observed on-chain</td>
     </tr>
     <tr>
       <td><a href="./HOPE/"><code>HOPE/</code></a></td>
@@ -157,6 +163,7 @@ The exploit-origin chain and the later proceeds chains are recorded separately. 
   <li>The SpaceX/FIFA drainer wave is tracked as a campaign because its domains, tokens, receiving addresses, and operator infrastructure rotate rapidly.</li>
   <li>FOMO remains a disputed wallet-drain allegation; the verified 662 SOL transfer does not establish app causation and adds no direct threat-wallet seed.</li>
   <li>The fake Seeker / SKR URL and the <code>$KYLIE</code> mint are retained as non-wallet investigative IOCs. Fake <code>$WAR</code> pages remain campaign intelligence without a complete retained IOC.</li>
+  <li>The Rain case retains one complete principal drainer as a P1 seed. Rain contracts, affected Avici and Tria collateral accounts, DEXs, bridges, exchanges, market makers, and ordinary counterparties remain infrastructure or victim context.</li>
   <li>None of the August 24–25 Solana watch items are counted as confirmed Solana protocol exploits or confirmed rug pulls.</li>
   <li>Cross-chain counterparties are not automatically threat-labeled merely because they interacted with incident proceeds or sanctioned seeds.</li>
 </ul>

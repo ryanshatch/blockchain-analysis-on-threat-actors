@@ -1,13 +1,13 @@
-# August 20-28, 2026 Crypto Security Sweep
+# August 20-30, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
-| Follow-up cutoff | August 28, 2026 |
+| Follow-up cutoff | August 30, 2026 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
 | Networks | MAYAChain, Bitcoin, Ethereum, Solana, BNB Chain, Harmony, TRON, Base, and other EVM environments |
 | Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, SEAL/Security Alliance, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, Protos, protocol disclosures, public explorers, and corroborating reporting |
-| Latest confirmed protocol incident in the follow-up window | Moonwell / MAMO collateral-price manipulation, August 27, 2026 on Base; no new confirmed Solana protocol exploit identified through August 28 |
+| Latest confirmed protocol incident in the follow-up window | Rain legacy Solana card-contract exploit, August 28, 2026, affecting Avici and Tria |
 
 > SlowMist's live tracker listed Maya Protocol as its newest incident at the review cutoff. No protocol exploit dated August 19 or August 20 appeared above it. This is a point-in-time observation, not proof that no undisclosed or later-indexed incident occurred.
 
@@ -15,6 +15,7 @@
 
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
 |---|---|---|---:|---|
+| Rain legacy Solana card contracts / Avici and Tria | August 28; combined reconciliation August 30 | Shared-infrastructure authorization and signature-validation exploit | $932,804.22 confirmed across 2,321 users; approximately $1.0M-$1.1M observed on-chain | High |
 | Moonwell / MAMO collateral market | August 27 | Thin-liquidity collateral-price manipulation on Base | Approximately $8.7M | High incident; incomplete attacker IOC |
 | Term Finance / Term Meta Vaults | August 23; laundering update August 25 | Governance-layer takeover, malicious vault asset movements, and active Tornado Cash dispersal | About $8.5M; 300 ETH later deposited to Tornado Cash | High |
 | Bofur Capital wallet | August 22 | Automated look-alike address poisoning and proceeds consolidation | About $2M / about 2M DAI | High theft; medium-high campaign attribution |
@@ -367,7 +368,7 @@ The current evidence supports reported social-account compromise and malicious t
 ### Reviewed Exclusions
 
 - Automated token-risk failures are not proof that an executed rug pull occurred and are excluded from confirmed-incident counts.
-- No new complete BTC or Solana attacker wallet was published in the reviewed August 24-28 exploit and campaign material.
+- Earlier Rain/Avici reporting exposed the principal drainer only as `FVNFzq...CEj`; subsequent independent transaction-level reporting published the complete Solana address, which is retained in the dedicated case without reconstruction.
 - The earlier statement that no qualifying August 24 OFAC wallet disclosure existed is superseded. OFAC published 30 BTC, ETH, and TRON identifiers for four MOIS-linked cyber actors plus one separate Tsoris USDT/TRON seed; those authoritative attributions are stored in a dedicated case.
 - The August 24 Profit Connect conviction is material criminal-case reporting but publishes no wallet identifiers.
 
@@ -393,11 +394,42 @@ The August 28 review identified a material official disclosure missed by the pri
 
 The complete address set, entity roles, monitoring treatment, and attribution boundaries are maintained in [`Iranian-MOIS-Cyber-Network/`](../Iranian-MOIS-Cyber-Network/). These official identifiers are direct sanctions-watch seeds; counterparties remain graph context unless independently attributed.
 
+## 19. Rain Legacy Solana Card-Contract Exploit
+
+| Field | Assessment |
+|---|---|
+| Incident date | August 28, 2026 |
+| Infrastructure | Rain legacy Solana card contracts |
+| Confirmed affected programs | Avici and Tria |
+| Classification | Shared-infrastructure authorization and signature-validation exploit |
+| Avici | 1,685 users / $500,859.22 |
+| Tria | 636 users / $431,945 |
+| Confirmed combined impact | 2,321 users / $932,804.22 |
+| Broader observed proceeds | Approximately $1.0-$1.1 million; difference unresolved |
+| Confidence | High |
+| Direct seeds | One complete Solana drainer |
+
+The August 28 incident was broader than an Avici-only breach. Tria confirmed that the same Rain infrastructure issue affected another 636 users and $431,945 in Solana card balances. Combined with Avici's reconciliation, the confirmed minimum is 2,321 affected users and $932,804.22 in unauthorized withdrawals.
+
+Rain said a small number of programs were using outdated Solana contract versions. It upgraded all affected deployments, engaged external forensic specialists, and reported no further unauthorized activity. Avici and Tria each reported restoring affected balances in full plus 10% additional compensation.
+
+The approximately $1.0-$1.1 million observed on-chain remains separate from the program-level reconciliation. The difference must not be assigned to a third victim program without confirmation.
+
+### Direct Incident Seed
+
+| Network | Address | Role | Monitoring |
+|---|---|---|---|
+| Solana | `FVNFzqAny8spWdPmYw6RQ9TkYa29ueFFiqCFD1gQnCEj` | Principal drainer and proceeds-consolidation wallet | P1 direct watch |
+
+The complete address was published by The Defiant and a transaction-level Solana analysis after earlier reports showed only `FVNFzq...CEj`. Rain contracts, affected collateral accounts, DEX pools, deBridge, exchanges, market makers, and ordinary counterparties remain infrastructure or graph pivots rather than attacker-controlled wallets.
+
+The canonical report and machine-readable seed are maintained in [`SOL/Rain-Legacy-Contracts/`](../../SOL/Rain-Legacy-Contracts/).
+
 ## Monitoring Priorities
 
 | Priority | Indicators | Action |
 |---|---|---|
-| P1 | Term Finance active laundering source; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge, exchange-deposit, and privacy-protocol alerts |
+| P1 | Rain Solana drainer; Term Finance active laundering source; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge, exchange-deposit, and privacy-protocol alerts |
 | P2 | Bofur poisoning contract; Maya Arbitrum proceeds address; Coldcard-linked Ethereum laundering pivot; poisoning address | Direct monitoring with narrower incident-role labels |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
 | Campaign IOCs | Fake Seeker / SKR domain and fake `$WAR` rewards activity | Block known domains, monitor replacements, and preserve the distinction from legitimate projects and tokens |
@@ -422,6 +454,7 @@ The complete address set, entity roles, monitoring treatment, and attribution bo
 - The `$KYLIE` mint is a contextual token-promotion IOC, not an attacker wallet or a confirmed rug classification.
 - The Moonwell / MAMO exploit is confirmed at high confidence, but `0xD71d...C384` is truncated and contributes no machine-readable seed.
 - The 30 MOIS-network addresses and separate Tsoris seed are official OFAC identifiers; interacting wallets do not automatically inherit those labels.
+- The complete Rain drainer is a high-confidence incident seed, but Rain contracts, Avici and Tria accounts, affected users, DEXs, bridges, exchanges, and service counterparties do not inherit attacker labels.
 - ODY and Vultisig identifiers remain withheld where public evidence is truncated or attribution is incomplete.
 
 ## Sources
@@ -523,8 +556,17 @@ The complete address set, entity roles, monitoring treatment, and attribution bo
 - [OFAC Recent Action — official SDN entries and digital-currency identifiers](https://ofac.treasury.gov/recent-actions/20260824)
 - [U.S. Treasury — MOIS cyber group, critical-infrastructure intrusions, and digital-asset theft](https://home.treasury.gov/news/press-releases/sb0613)
 
+### August 28 Rain Legacy Solana Card-Contract Exploit
+
+- [Rain — vulnerable Solana contract versions upgraded](https://x.com/raincards/status/2093435073081053518)
+- [Avici — 1,685 users and $500,859.22 reconciled](https://x.com/avici/status/2093439613201482068)
+- [Tria — 636 users and $431,945 reconciled](https://x.com/useTria/status/2093651836079116392)
+- [FinanceFeeds — combined Avici and Tria impact](https://financefeeds.com/tria-and-avici-report-2321-users-hit-by-rain-solana-card-vulnerability/)
+- [The Defiant — complete drainer and exploit mechanics](https://thedefiant.io/news/hacks/attacker-drains-more-than-usd1-million-from-avici-users-in-live-solana-neobank-attack)
+- [SolScanner — complete drainer and transaction-level reconstruction](https://www.solscanner.app/blog/inside-the-avici-exploit)
+
 ---
 
 ## TLDR
 
-The August 28 follow-up adds the confirmed, zero-seed Moonwell / MAMO Base exploit and corrects the prior OFAC scan by linking to a dedicated 31-address sanctions case. It preserves FOMO as a disputed allegation, fake Seeker / SKR and `$WAR` pages as non-wallet campaign intelligence, and the `$KYLIE` mint as a contextual IOC. No new high-confidence Solana protocol exploit or complete new BTC/Solana attacker-wallet seed was identified.
+The August 30 follow-up reclassifies the August 28 card-balance drain as a Rain shared-infrastructure Solana exploit affecting at least Avici and Tria. The two programs confirmed 2,321 affected users and $932,804.22 in unauthorized withdrawals, while the approximately $1.0-$1.1 million on-chain total remains unresolved. Subsequent reporting published one complete Solana drainer, now retained as a P1 seed. The update also preserves the zero-seed Moonwell / MAMO Base exploit and the prior OFAC sanctions case.
