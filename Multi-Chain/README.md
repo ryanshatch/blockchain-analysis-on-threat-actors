@@ -23,7 +23,7 @@
     <tr>
       <td><a href="./August-2026-Security-Sweep/"><code>August-2026-Security-Sweep/</code></a></td>
       <td>MAYAChain, Bitcoin, Ethereum, Arbitrum, BNB Chain, Harmony, TRON, Polygon, Base, and multi-chain users</td>
-      <td>August 20-28, 2026 cross-ecosystem sweep covering Term Finance laundering, Solana investigative items, the zero-seed Moonwell/MAMO Base exploit, Sandbox Base/BSC, Bofur Capital, Maya external-L1, Coinsbuy Ethereum/TRON, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence</td>
+      <td>August 20-30, 2026 cross-ecosystem sweep covering the Rain/Avici/Tria shared-infrastructure Solana exploit, Term Finance laundering, the zero-seed Moonwell/MAMO Base exploit, Sandbox Base/BSC, Bofur Capital, Maya external-L1, Coinsbuy Ethereum/TRON, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence</td>
     </tr>
     <tr>
       <td><a href="./Iranian-MOIS-Cyber-Network/"><code>Iranian-MOIS-Cyber-Network/</code></a></td>

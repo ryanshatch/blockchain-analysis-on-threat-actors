@@ -533,6 +533,28 @@ These items are not counted as confirmed Solana protocol exploits or confirmed r
 
 ---
 
+## Rain Legacy Solana Card-Contract Exploit
+
+**Incident date:** August 28, 2026
+
+**Network:** Solana
+
+**Case file:** [`SOL/Rain-Legacy-Contracts/`](./SOL/Rain-Legacy-Contracts/)
+
+**Machine-readable seed:** [`addresses.csv`](./SOL/Rain-Legacy-Contracts/addresses.csv)
+
+| Address | Classification | Confidence | Monitoring |
+|---|---|---|---|
+| `FVNFzqAny8spWdPmYw6RQ9TkYa29ueFFiqCFD1gQnCEj` | Principal Rain legacy-contract drainer and proceeds-consolidation wallet | High | P1 direct watch |
+
+Avici reconciled 1,685 affected users and $500,859.22 in unauthorized card-balance withdrawals. Tria confirmed another 636 users and $431,945, establishing at least 2,321 victims and $932,804.22 across two Rain-powered programs. The approximately $1.0-$1.1 million observed on-chain remains a separate unresolved measure.
+
+The complete address above was published by independent transaction-level reporting after earlier coverage exposed only `FVNFzq...CEj`. It was not reconstructed from a truncated form.
+
+Rain contracts, user collateral accounts, Avici and Tria infrastructure, DEX pools, deBridge, exchanges, market makers, and ordinary counterparties remain victim, protocol, or graph-expansion context and must not inherit the attacker label.
+
+---
+
 ## CYBERLEEK / GTA VI Leak-and-Token Campaign
 
 **Assessment date:** August 28, 2026
