@@ -404,7 +404,7 @@ The July action materially expanded an existing sanctioned-wallet attribution. T
 OFAC directly attributed these TRON identifiers to Zaid Issam Ahmed Al-Jebouri and linked him to El-Kahira for General Trading. Connected exchanges, OTC services, bridges, token contracts, and counterparties should initially remain graph-expansion pivots unless separately attributed.
 ---
 
-## August 20, 2026 Multi-Chain Security Sweep
+## August 20-31, 2026 Multi-Chain Security Sweep
 
 **Review cutoff:** August 20, 2026 at 2:31 a.m. ET  
 **Case file:** [`Multi-Chain/August-2026-Security-Sweep/`](./Multi-Chain/August-2026-Security-Sweep/)  
@@ -541,17 +541,46 @@ These items are not counted as confirmed Solana protocol exploits or confirmed r
 
 **Case file:** [`SOL/Rain-Legacy-Contracts/`](./SOL/Rain-Legacy-Contracts/)
 
-**Machine-readable seed:** [`addresses.csv`](./SOL/Rain-Legacy-Contracts/addresses.csv)
+**Machine-readable seeds:** [`addresses.csv`](./SOL/Rain-Legacy-Contracts/addresses.csv)
 
-| Address | Classification | Confidence | Monitoring |
-|---|---|---|---|
-| `FVNFzqAny8spWdPmYw6RQ9TkYa29ueFFiqCFD1gQnCEj` | Principal Rain legacy-contract drainer and proceeds-consolidation wallet | High | P1 direct watch |
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Solana | `FVNFzqAny8spWdPmYw6RQ9TkYa29ueFFiqCFD1gQnCEj` | Principal Rain legacy-contract drainer, collection wallet, and source of 10,000 SOL transfer | High | P1 direct watch |
+| Solana | `4kjsW9dPsqzvuhQVP3P23cvZisdoHE5dR8NdD1TMPKKE` | Proceeds and conversion wallet receiving more than $1M in SOL before USDC swaps | High | P1 direct watch |
+| Ethereum | `0x2cE21E4921d3Eb116526c3651Dac0257657338D5` | Cross-chain laundering and proceeds pivot routing funds toward Tornado Cash | High incident linkage; medium-high control | P1 direct watch with proceeds-role label |
 
-Avici reconciled 1,685 affected users and $500,859.22 in unauthorized card-balance withdrawals. Tria confirmed another 636 users and $431,945, establishing at least 2,321 victims and $932,804.22 across two Rain-powered programs. The approximately $1.0-$1.1 million observed on-chain remains a separate unresolved measure.
+Avici reconciled 1,685 affected users and $500,859.22 in unauthorized card-balance withdrawals. Tria confirmed another 636 users and $431,945, establishing at least 2,321 victims and $932,804.22 across two Rain-powered programs. Approximately $1.02 million in broader attacker proceeds remains a separate unresolved measure.
 
-The complete address above was published by independent transaction-level reporting after earlier coverage exposed only `FVNFzq...CEj`. It was not reconstructed from a truncated form.
+The principal address was published by independent transaction-level reporting after earlier coverage exposed only `FVNFzq...CEj`. It was not reconstructed from a truncated form. Subsequent tracing resolved the next Solana proceeds wallet and the Ethereum-side laundering pivot.
 
-Rain contracts, user collateral accounts, Avici and Tria infrastructure, DEX pools, deBridge, exchanges, market makers, and ordinary counterparties remain victim, protocol, or graph-expansion context and must not inherit the attacker label.
+Rain contracts, user collateral accounts, Avici and Tria infrastructure, DEX pools, bridges, exchanges, market makers, Tornado Cash contracts, and ordinary counterparties remain victim, protocol, or graph-expansion context and must not inherit the attacker label.
+
+---
+
+## ICON Network Migration-Contract Replay Exploit
+
+| Field | Value |
+|---|---|
+| Incident date | August 27, 2026 |
+| Official post-mortem | August 30, 2026 |
+| Networks | ICON, Sonic, and Ethereum |
+| Case file | [`Multi-Chain/ICON-Migration-Replay-Exploit/`](./Multi-Chain/ICON-Migration-Replay-Exploit/) |
+| Machine-readable records | [`addresses.csv`](./Multi-Chain/ICON-Migration-Replay-Exploit/addresses.csv) |
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| ICON | `hx130b7e31ad0fb67c8b0442df308d349202212b88` | Exploit relayer and distribution wallet; sole source of downstream exchange deposits | High; official attribution | P1 direct watch |
+| Sonic | `0x72659d1bcc69f15c62ad7eb0f2311952856f0fec` | Pre-positioned attacker hub and collateral-position wallet | High; official attribution | P1 direct watch |
+| Sonic | `0xA1b828019B43F92f7E5B6d340ccAFF08228fCB52` | Shared attacker EOA on Sonic | High; official attribution | P1 direct watch |
+| Ethereum | `0xA1b828019B43F92f7E5B6d340ccAFF08228fCB52` | Cross-chain exploit-proceeds and consolidation address | High; official attribution | P1 direct watch |
+
+ICON reports that two legitimate signed withdrawal messages were replayed 1,492 times, releasing 119,866,000 ICX and 531,600 bnUSD. Approximately 150.2 ETH and 31,204 USDC were the currently unrecovered portion at the official post-mortem cutoff.
+
+The shared EOA appears twice because Sonic and Ethereum require separate network monitoring; it represents one unique account key. The approximately 24 exchange deposit addresses are custody and evidence pivots, not attacker-controlled wallets. No named person or threat group has been attributed.
+
+### Tectonic / Cronos Zero-Seed Boundary
+
+The August 30 Tectonic exploit is confirmed, but the three indexed attacker and proceeds representations remain truncated as `0xc404...72dd`, `0x7d4e...4f2dc`, and `0x215a...d3fc`. None is added to this wallet index or reconstructed from partial strings.
 
 ---
 
