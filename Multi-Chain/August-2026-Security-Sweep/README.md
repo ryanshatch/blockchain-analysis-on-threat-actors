@@ -1,13 +1,13 @@
-# August 20-30, 2026 Crypto Security Sweep
+# August 20-31, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
-| Follow-up cutoff | August 30, 2026 |
+| Follow-up cutoff | August 31, 2026 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
-| Networks | MAYAChain, Bitcoin, Ethereum, Solana, BNB Chain, Harmony, TRON, Base, and other EVM environments |
-| Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, SEAL/Security Alliance, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, Protos, protocol disclosures, public explorers, and corroborating reporting |
-| Latest confirmed protocol incident in the follow-up window | Rain legacy Solana card-contract exploit, August 28, 2026, affecting Avici and Tria |
+| Networks | MAYAChain, Bitcoin, Ethereum, Solana, ICON, Sonic, Cronos, BNB Chain, Harmony, TRON, Base, and other EVM environments |
+| Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, SEAL/Security Alliance, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, Protos, ICON Foundation, protocol disclosures, public explorers, and corroborating reporting |
+| Latest confirmed protocol incident in the follow-up window | Tectonic lending-market exploit on Cronos, August 30, 2026; no complete attacker seed retained |
 
 > SlowMist's live tracker listed Maya Protocol as its newest incident at the review cutoff. No protocol exploit dated August 19 or August 20 appeared above it. This is a point-in-time observation, not proof that no undisclosed or later-indexed incident occurred.
 
@@ -15,7 +15,9 @@
 
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
 |---|---|---|---:|---|
-| Rain legacy Solana card contracts / Avici and Tria | August 28; combined reconciliation August 30 | Shared-infrastructure authorization and signature-validation exploit | $932,804.22 confirmed across 2,321 users; approximately $1.0M-$1.1M observed on-chain | High |
+| Tectonic / Cronos | August 30-31 | Lending-market exploit involving manipulated thin-liquidity TONIC collateral pricing | Approximately $74M-$75M reported | High incident; incomplete attacker IOCs |
+| Rain legacy Solana card contracts / Avici and Tria | August 28; attribution update August 29-31 | Shared-infrastructure authorization and signature-validation exploit | $932,804.22 confirmed across 2,321 users; approximately $1.02M in broader attacker proceeds | High |
+| ICON Network migration contracts | August 27; official post-mortem August 30 | Signed-message replay and withdrawal-uniqueness validation exploit | 119,866,000 ICX and 531,600 bnUSD released; approximately 150.2 ETH plus 31,204 USDC unrecovered | High |
 | Moonwell / MAMO collateral market | August 27 | Thin-liquidity collateral-price manipulation on Base | Approximately $8.7M | High incident; incomplete attacker IOC |
 | Term Finance / Term Meta Vaults | August 23; laundering update August 25 | Governance-layer takeover, malicious vault asset movements, and active Tornado Cash dispersal | About $8.5M; 300 ETH later deposited to Tornado Cash | High |
 | Bofur Capital wallet | August 22 | Automated look-alike address poisoning and proceeds consolidation | About $2M / about 2M DAI | High theft; medium-high campaign attribution |
@@ -405,35 +407,86 @@ The complete address set, entity roles, monitoring treatment, and attribution bo
 | Avici | 1,685 users / $500,859.22 |
 | Tria | 636 users / $431,945 |
 | Confirmed combined impact | 2,321 users / $932,804.22 |
-| Broader observed proceeds | Approximately $1.0-$1.1 million; difference unresolved |
+| Broader attacker proceeds | Approximately $1.02 million; difference unresolved |
 | Confidence | High |
-| Direct seeds | One complete Solana drainer |
+| Direct seeds | Two Solana P1 seeds and one Ethereum laundering/proceeds pivot |
 
 The August 28 incident was broader than an Avici-only breach. Tria confirmed that the same Rain infrastructure issue affected another 636 users and $431,945 in Solana card balances. Combined with Avici's reconciliation, the confirmed minimum is 2,321 affected users and $932,804.22 in unauthorized withdrawals.
 
 Rain said a small number of programs were using outdated Solana contract versions. It upgraded all affected deployments, engaged external forensic specialists, and reported no further unauthorized activity. Avici and Tria each reported restoring affected balances in full plus 10% additional compensation.
 
-The approximately $1.0-$1.1 million observed on-chain remains separate from the program-level reconciliation. The difference must not be assigned to a third victim program without confirmation.
+The approximately $1.02 million traced through the attacker cluster remains separate from the program-level reconciliation. The roughly $87,000 difference must not be assigned to a third victim program without confirmation.
 
-### Direct Incident Seed
+### Direct Attacker and Proceeds Cluster
 
 | Network | Address | Role | Monitoring |
 |---|---|---|---|
-| Solana | `FVNFzqAny8spWdPmYw6RQ9TkYa29ueFFiqCFD1gQnCEj` | Principal drainer and proceeds-consolidation wallet | P1 direct watch |
+| Solana | `FVNFzqAny8spWdPmYw6RQ9TkYa29ueFFiqCFD1gQnCEj` | Principal drainer, collection wallet, and source of the 10,000 SOL transfer | P1 direct watch |
+| Solana | `4kjsW9dPsqzvuhQVP3P23cvZisdoHE5dR8NdD1TMPKKE` | Proceeds and conversion wallet receiving more than $1 million in SOL before USDC swaps | P1 direct watch |
+| Ethereum | `0x2cE21E4921d3Eb116526c3651Dac0257657338D5` | Cross-chain laundering and proceeds pivot routing funds toward Tornado Cash | P1 direct watch with proceeds-role label |
 
-The complete address was published by The Defiant and a transaction-level Solana analysis after earlier reports showed only `FVNFzq...CEj`. Rain contracts, affected collateral accounts, DEX pools, deBridge, exchanges, market makers, and ordinary counterparties remain infrastructure or graph pivots rather than attacker-controlled wallets.
+The complete principal address was published by The Defiant and a transaction-level Solana analysis after earlier reports showed only `FVNFzq...CEj`. On-chain investigators later resolved the next Solana wallet and the Ethereum-side proceeds address. The supported flow is principal drain and collection → Solana conversion → approximately $1.02 million USDC → roughly 418 ETH → Ethereum laundering pivot → Tornado Cash.
 
-The canonical report and machine-readable seed are maintained in [`SOL/Rain-Legacy-Contracts/`](../../SOL/Rain-Legacy-Contracts/).
+Rain contracts, affected collateral accounts, DEX pools, bridges, exchanges, market makers, Tornado Cash contracts, and ordinary counterparties remain infrastructure or graph pivots rather than attacker-controlled wallets.
+
+The canonical report and three machine-readable seeds are maintained in [`SOL/Rain-Legacy-Contracts/`](../../SOL/Rain-Legacy-Contracts/).
+
+No newer high-confidence Solana protocol exploit, wallet-drainer campaign, or confirmed rug pull from August 30-31 cleared the repository's evidence threshold. The material Solana development is resolution of this complete attacker and proceeds cluster.
+
+## 20. ICON Network Migration-Contract Replay Exploit
+
+| Field | Assessment |
+|---|---|
+| Incident date | August 27, 2026 |
+| Official post-mortem | August 30, 2026 |
+| Networks | ICON, Sonic, and Ethereum |
+| Classification | Signed-message replay and withdrawal-uniqueness validation exploit |
+| Gross unauthorized release | 119,866,000 ICX and 531,600 bnUSD |
+| Currently unrecovered | Approximately 150.2 ETH plus 31,204 USDC |
+| Confidence | High |
+| Direct-watch representation | Three unique accounts represented as four chain-specific rows |
+
+ICON Foundation reports that an attacker replayed two previously legitimate signed withdrawal messages 1,492 times in a 20-minute window. A serial-number precision defect allowed the attacker to vary unsigned high bits while the cryptographically signed low 256 bits remained unchanged. Of the replay calls, 1,490 succeeded and credited the same attacker-controlled ICON relayer wallet.
+
+Approximately 11 hours before the exploit, the attacker opened a Sonic money-market position. Exploited assets were later used as collateral, producing USDC borrowings, while ICX moved through exchange deposits. ICON identifies approximately 150.2 ETH and 31,204 USDC as the currently unrecovered portion.
+
+### Officially Identified Attacker-Controlled Accounts
+
+| Network | Address | Role | Monitoring |
+|---|---|---|---|
+| ICON | `hx130b7e31ad0fb67c8b0442df308d349202212b88` | Exploit relayer and distribution wallet | P1 direct watch |
+| Sonic | `0x72659d1bcc69f15c62ad7eb0f2311952856f0fec` | Pre-positioned attacker hub and collateral wallet | P1 direct watch |
+| Sonic | `0xA1b828019B43F92f7E5B6d340ccAFF08228fCB52` | Shared attacker EOA on Sonic | P1 direct watch |
+| Ethereum | `0xA1b828019B43F92f7E5B6d340ccAFF08228fCB52` | Cross-chain proceeds and consolidation address | P1 direct watch |
+
+The shared EOA is intentionally retained once per network but represents one unique account key. The approximately 24 exchange deposit addresses cited in the post-mortem are exchange custody and evidence pivots; they must not be threat-labeled as attacker wallets.
+
+The canonical report and machine-readable records are maintained in [`Multi-Chain/ICON-Migration-Replay-Exploit/`](../ICON-Migration-Replay-Exploit/).
+
+## 21. Tectonic / Cronos Exploit — Zero-Seed Review
+
+| Field | Assessment |
+|---|---|
+| Incident date | August 30, 2026 |
+| Network | Cronos |
+| Classification | Lending-market exploit involving manipulated thin-liquidity TONIC collateral pricing |
+| Reported impact | Approximately $74M-$75M; estimates remain subject to reconciliation |
+| Confidence | High that the exploit occurred; incomplete public attacker IOCs |
+| Direct seeds | Zero |
+
+Tectonic and Cronos acknowledged the incident, and Cronos halted the network during containment. PeckShield reported three attacker or proceeds locations, including an Ethereum destination holding roughly $6 million, but indexed sources expose them only as `0xc404...72dd`, `0x7d4e...4f2dc`, and `0x215a...d3fc`.
+
+The truncated identifiers are not retained in a wallet dataset and must not be reconstructed from prefixes and suffixes. Tectonic contracts, Cronos validators, bridges, exchanges, and other protocol counterparties remain infrastructure or evidence context unless separately attributed.
 
 ## Monitoring Priorities
 
 | Priority | Indicators | Action |
 |---|---|---|
-| P1 | Rain Solana drainer; Term Finance active laundering source; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge, exchange-deposit, and privacy-protocol alerts |
+| P1 | Rain three-address exploit/proceeds cluster; four ICON chain-specific records; Term Finance active laundering source; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge, exchange-deposit, and privacy-protocol alerts |
 | P2 | Bofur poisoning contract; Maya Arbitrum proceeds address; Coldcard-linked Ethereum laundering pivot; poisoning address | Direct monitoring with narrower incident-role labels |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
 | Campaign IOCs | Fake Seeker / SKR domain and fake `$WAR` rewards activity | Block known domains, monitor replacements, and preserve the distinction from legitimate projects and tokens |
-| Case only | ODY; Moonwell / MAMO | Preserve confirmed incident reporting while withholding truncated identifiers |
+| Case only | ODY; Moonwell / MAMO; Tectonic / Cronos | Preserve confirmed incident reporting while withholding truncated identifiers |
 | Investigative | Vultisig-related outflow; FOMO iOS allegations; Kylie Jenner / `$KYLIE` promotion | Monitor for complete IOCs, root-cause evidence, victim confirmation, deployer/proceeds attribution, and authoritative statements |
 
 ## Attribution Boundaries
@@ -454,7 +507,9 @@ The canonical report and machine-readable seed are maintained in [`SOL/Rain-Lega
 - The `$KYLIE` mint is a contextual token-promotion IOC, not an attacker wallet or a confirmed rug classification.
 - The Moonwell / MAMO exploit is confirmed at high confidence, but `0xD71d...C384` is truncated and contributes no machine-readable seed.
 - The 30 MOIS-network addresses and separate Tsoris seed are official OFAC identifiers; interacting wallets do not automatically inherit those labels.
-- The complete Rain drainer is a high-confidence incident seed, but Rain contracts, Avici and Tria accounts, affected users, DEXs, bridges, exchanges, and service counterparties do not inherit attacker labels.
+- The Rain cluster contains two Solana P1 seeds and one Ethereum laundering/proceeds pivot; Rain contracts, Avici and Tria accounts, affected users, DEXs, bridges, exchanges, Tornado Cash contracts, and service counterparties do not inherit attacker labels.
+- ICON officially identifies three unique attacker-controlled accounts, represented as four chain-specific records because one EOA is shared across Sonic and Ethereum. The 24 exchange deposit addresses remain custody and evidence pivots, not attacker labels.
+- Tectonic's three published address representations remain truncated and are withheld from machine-readable wallet data.
 - ODY and Vultisig identifiers remain withheld where public evidence is truncated or attribution is incomplete.
 
 ## Sources
@@ -564,9 +619,20 @@ The canonical report and machine-readable seed are maintained in [`SOL/Rain-Lega
 - [FinanceFeeds — combined Avici and Tria impact](https://financefeeds.com/tria-and-avici-report-2321-users-hit-by-rain-solana-card-vulnerability/)
 - [The Defiant — complete drainer and exploit mechanics](https://thedefiant.io/news/hacks/attacker-drains-more-than-usd1-million-from-avici-users-in-live-solana-neobank-attack)
 - [SolScanner — complete drainer and transaction-level reconstruction](https://www.solscanner.app/blog/inside-the-avici-exploit)
+- [inno — next Solana proceeds wallet and four-call exploit sequence](https://x.com/inno_sol/status/2093415789848412448)
+- [Onchain Lens — cross-chain USDC, ETH, and Tornado Cash path](https://x.com/OnchainLens/status/2093501494033273339)
+
+### August 27 ICON Network Migration-Contract Replay Exploit
+
+- [ICON Foundation — official replay-exploit post-mortem, attacker-controlled accounts, and recovery status](https://www.icon.foundation/blog/2026/icon-network-replay-exploit-post-mortem)
+
+### August 30 Tectonic / Cronos Exploit
+
+- [Tectonic — incident acknowledgement and interaction warning](https://x.com/TectonicFi)
+- [PeckShield Alert — approximately $74M estimate and truncated proceeds representations](https://x.com/PeckShieldAlert/status/2094217367434015065)
 
 ---
 
 ## TLDR
 
-The August 30 follow-up reclassifies the August 28 card-balance drain as a Rain shared-infrastructure Solana exploit affecting at least Avici and Tria. The two programs confirmed 2,321 affected users and $932,804.22 in unauthorized withdrawals, while the approximately $1.0-$1.1 million on-chain total remains unresolved. Subsequent reporting published one complete Solana drainer, now retained as a P1 seed. The update also preserves the zero-seed Moonwell / MAMO Base exploit and the prior OFAC sanctions case.
+The August 31 follow-up resolves Rain's monitoring cluster into two Solana P1 seeds and one Ethereum laundering/proceeds pivot while preserving the $932,804.22 reconciled loss separately from approximately $1.02 million in broader attacker proceeds. ICON's official post-mortem adds three unique attacker-controlled accounts across ICON, Sonic, and Ethereum, represented as four chain-specific rows. The confirmed Tectonic / Cronos exploit remains a zero-seed case because all three indexed attacker or proceeds identifiers are truncated.
