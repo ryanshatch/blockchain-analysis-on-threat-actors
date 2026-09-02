@@ -8,3 +8,4 @@ Across Protocol,2026-07-17,Solana,Multi-Chain/Across-Protocol,off-chain event-pa
 Allbridge Core,2026-07-19,Solana,Multi-Chain/Allbridge-Core,stablecoin-pool account-aliasing and accounting exploit,approximately 1.65 million USD,Multi-Chain/Allbridge-Core/addresses.csv
 FlashTrade,2026-07-21,Solana,SOL/FlashTrade,ephemeral undelegation PDA-validation exploit,98000 USDC fully covered,unresolved
 Rain Legacy Solana Card Contracts,2026-08-28,Solana,SOL/Rain-Legacy-Contracts,shared-infrastructure authorization and signature-validation exploit,932804.22 USD reconciled across 2321 users with approximately 1.02 million USD in broader attacker proceeds,SOL/Rain-Legacy-Contracts/addresses.csv
+Aquifer,2026-08-31,Solana,SOL/Aquifer,forged token-account and untrusted token-program validation exploit,2469729 USD across 212 malicious swaps with 1000.7956 ETH consolidated on Ethereum,SOL/Aquifer/addresses.csv

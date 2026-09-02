@@ -6,7 +6,7 @@
 <hr>
 
 <p>
-<strong>Recent tracked set:</strong> Nine individually identifiable Solana-origin security incidents from June 10 through August 28, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. The active CYBERLEEK leak-and-token operation is tracked as a threat-actor campaign and is not counted as a Solana protocol incident. Multi-victim drainer campaigns and sanctions attributions are also tracked separately.
+<strong>Recent tracked set:</strong> Ten individually identifiable Solana-origin security incidents from June 10 through August 31, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. The active CYBERLEEK leak-and-token operation is tracked as a threat-actor campaign and is not counted as a Solana protocol incident. Multi-victim drainer campaigns and sanctions attributions are also tracked separately.
 </p>
 
 <h2>Solana Case Directories</h2>
@@ -63,6 +63,12 @@
       <td>August 28, 2026</td>
       <td>Shared-infrastructure authorization and signature-validation exploit affecting Rain legacy Solana card contracts used by Avici and Tria</td>
       <td>2,321 confirmed users and $932,804.22 reconciled; approximately $1.02M in broader attacker proceeds; two Solana seeds plus one Ethereum laundering pivot</td>
+    </tr>
+    <tr>
+      <td><a href="./Aquifer/"><code>Aquifer/</code></a></td>
+      <td>August 31, 2026</td>
+      <td>Forged token-account and untrusted token-program validation exploit with cross-chain proceeds consolidation</td>
+      <td>$2,469,729 across 212 malicious swaps; one Solana attacker wallet, one malicious program, and one Ethereum proceeds wallet retained as P1 indicators</td>
     </tr>
     <tr>
       <td><a href="./HOPE/"><code>HOPE/</code></a></td>
@@ -164,6 +170,7 @@ The exploit-origin chain and the later proceeds chains are recorded separately. 
   <li>FOMO remains a disputed wallet-drain allegation; the verified 662 SOL transfer does not establish app causation and adds no direct threat-wallet seed.</li>
   <li>The fake Seeker / SKR URL and the <code>$KYLIE</code> mint are retained as non-wallet investigative IOCs. Fake <code>$WAR</code> pages remain campaign intelligence without a complete retained IOC.</li>
   <li>The Rain case retains two Solana P1 seeds and one Ethereum laundering/proceeds pivot. Rain contracts, affected Avici and Tria collateral accounts, DEXs, bridges, exchanges, market makers, Tornado Cash contracts, and ordinary counterparties remain infrastructure or victim context.</li>
+  <li>The Aquifer case retains one Solana attacker wallet, one malicious Solana program, and one Ethereum proceeds wallet as P1 indicators. The Aquifer program, affected vaults, recovery addresses, routers, bridges, settlement wallets, market makers, and ordinary counterparties remain victim, recovery, or service infrastructure.</li>
   <li>None of the August 24–25 Solana watch items are counted as confirmed Solana protocol exploits or confirmed rug pulls.</li>
   <li>Cross-chain counterparties are not automatically threat-labeled merely because they interacted with incident proceeds or sanctioned seeds.</li>
 </ul>

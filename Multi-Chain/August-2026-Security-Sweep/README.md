@@ -1,13 +1,13 @@
-# August 20-31, 2026 Crypto Security Sweep
+# August 20-September 1, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
-| Follow-up cutoff | August 31, 2026 |
+| Follow-up cutoff | September 1, 2026 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
 | Networks | MAYAChain, Bitcoin, Ethereum, Solana, ICON, Sonic, Cronos, BNB Chain, Harmony, TRON, Base, and other EVM environments |
-| Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, SEAL/Security Alliance, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, Protos, ICON Foundation, protocol disclosures, public explorers, and corroborating reporting |
-| Latest confirmed protocol incident in the follow-up window | Tectonic lending-market exploit on Cronos, August 30, 2026; no complete attacker seed retained |
+| Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, SEAL/Security Alliance, Bitquery, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, Protos, ICON Foundation, protocol disclosures, public explorers, and corroborating reporting |
+| Latest confirmed protocol incidents in the follow-up window | Aquifer on Solana and Injective binary-options settlement, August 31, 2026; Aquifer has three complete P1 indicators while Injective remains a zero-seed case |
 
 > SlowMist's live tracker listed Maya Protocol as its newest incident at the review cutoff. No protocol exploit dated August 19 or August 20 appeared above it. This is a point-in-time observation, not proof that no undisclosed or later-indexed incident occurred.
 
@@ -15,6 +15,8 @@
 
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
 |---|---|---|---:|---|
+| Aquifer | August 31; reconstruction verified September 1 | Forged token-account and untrusted token-program validation exploit | $2,469,729 across 212 malicious swaps | High incident and address linkage; medium-high precise source-level root cause |
+| Injective binary-options module | August 31; reported September 1 | Market-identifier collision and settlement-logic exploit | Approximately $4.9M | High incident; incomplete attacker IOC |
 | Tectonic / Cronos | August 30-31 | Lending-market exploit involving manipulated thin-liquidity TONIC collateral pricing | Approximately $74M-$75M reported | High incident; incomplete attacker IOCs |
 | Rain legacy Solana card contracts / Avici and Tria | August 28; attribution update August 29-31 | Shared-infrastructure authorization and signature-validation exploit | $932,804.22 confirmed across 2,321 users; approximately $1.02M in broader attacker proceeds | High |
 | ICON Network migration contracts | August 27; official post-mortem August 30 | Signed-message replay and withdrawal-uniqueness validation exploit | 119,866,000 ICX and 531,600 bnUSD released; approximately 150.2 ETH plus 31,204 USDC unrecovered | High |
@@ -478,15 +480,57 @@ Tectonic and Cronos acknowledged the incident, and Cronos halted the network dur
 
 The truncated identifiers are not retained in a wallet dataset and must not be reconstructed from prefixes and suffixes. Tectonic contracts, Cronos validators, bridges, exchanges, and other protocol counterparties remain infrastructure or evidence context unless separately attributed.
 
+## 22. Aquifer Solana AMM Exploit
+
+| Field | Assessment |
+|---|---|
+| Incident date | August 31, 2026 |
+| Network path | Solana exploit execution to Ethereum proceeds consolidation |
+| Classification | Forged token-account and untrusted token-program validation exploit |
+| Reconstructed loss | $2,469,729 across 212 successful malicious swaps |
+| Proceeds | Approximately 24,084 SOL converted into 1,000.7956 ETH |
+| Confidence | High incident and address linkage; medium-high precise source-level root cause |
+
+Bitquery reconstructed 212 swaps in approximately 40 minutes that paid genuine assets from Aquifer's vaults while receiving no tokens. The attacker supplied 165-byte accounts that resembled SPL token accounts but were owned by a malicious program. One forged account claimed approximately 18 trillion USDC. The same malicious program was nominated as the incoming token program, accepted the payment-shaped instruction, moved nothing, and returned success.
+
+Aquifer has not published its source code. The missing owner and token-program validation is inferred from the complete on-chain instruction pattern rather than confirmed against source code.
+
+| Network | Address | Role | Treatment |
+|---|---|---|---|
+| Solana | `7fTe9pvrwXJRBHq9MaSyVPR4PgEuhqLiA93Dxf4gRk7J` | Primary attacker, exploit execution, and proceeds wallet | P1 direct watch |
+| Solana | `DMBpPMaMpGM2mWiUMaqcHx9FwhPg9Ys7qg1X59NRgb68` | Malicious program impersonating the incoming token program | P1 exploit infrastructure and control-path pivot |
+| Ethereum | `0x2Dfe9e969796e2797278b02761dd9Ad6aE922746` | Cross-chain attacker and proceeds-consolidation wallet | P1 direct watch |
+
+Aquifer's on-chain whitehat offer, authorized through its program upgrade authority, named the same Solana and Ethereum attacker addresses and requested at least 80% back by September 3 at 14:00 UTC. At Bitquery's September 1 cutoff, the Ethereum address held 1,000.7956 ETH and had sent no transactions; no return to the designated Solana recovery address was observed.
+
+The Aquifer program `AQU1FRd7papthgdrwPTTq5JacJh8YtwEXaBfKU3bTz45`, affected vaults, recovery addresses, routers, bridge settlement wallets, market makers, and ordinary counterparties are victim, recovery, or service infrastructure. They must not inherit the attacker label.
+
+The canonical report and ten machine-readable role-separated records are maintained in [`SOL/Aquifer/`](../../SOL/Aquifer/). Three rows are P1 attacker or exploit-infrastructure indicators; seven rows preserve explicit victim and recovery exclusions.
+
+## 23. Injective Binary-Options Exploit — Zero-Seed Review
+
+| Field | Assessment |
+|---|---|
+| Incident date | August 31, 2026 |
+| Network path | Injective to Ethereum |
+| Classification | Binary-options market-identifier collision and settlement-logic exploit |
+| Reported impact | Approximately $4.9 million; roughly 1,980 ETH reportedly consolidated on Ethereum |
+| Confidence | High incident; incomplete public attacker IOC |
+| Direct seeds | Zero |
+
+Public reporting describes an attacker creating 299 binary-options markets and exploiting identifier-collision and no-price settlement behavior to extract approximately $4.9 million before bridging proceeds to Ethereum. Indexed sources expose the Ethereum destination only as `0x5a18...69ea`.
+
+The truncated identifier is not retained in a machine-readable dataset and must not be reconstructed from prefix and suffix fragments. Injective protocol modules, oracles, bridge infrastructure, and exchange counterparties remain protocol or graph context unless separately attributed.
+
 ## Monitoring Priorities
 
 | Priority | Indicators | Action |
 |---|---|---|
-| P1 | Rain three-address exploit/proceeds cluster; four ICON chain-specific records; Term Finance active laundering source; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge, exchange-deposit, and privacy-protocol alerts |
+| P1 | Aquifer Solana attacker, malicious program, and Ethereum proceeds wallet; Rain three-address exploit/proceeds cluster; four ICON chain-specific records; Term Finance active laundering source; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge, exchange-deposit, malicious-program, and privacy-protocol alerts |
 | P2 | Bofur poisoning contract; Maya Arbitrum proceeds address; Coldcard-linked Ethereum laundering pivot; poisoning address | Direct monitoring with narrower incident-role labels |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
 | Campaign IOCs | Fake Seeker / SKR domain and fake `$WAR` rewards activity | Block known domains, monitor replacements, and preserve the distinction from legitimate projects and tokens |
-| Case only | ODY; Moonwell / MAMO; Tectonic / Cronos | Preserve confirmed incident reporting while withholding truncated identifiers |
+| Case only | ODY; Moonwell / MAMO; Tectonic / Cronos; Injective binary-options exploit | Preserve confirmed incident reporting while withholding truncated identifiers |
 | Investigative | Vultisig-related outflow; FOMO iOS allegations; Kylie Jenner / `$KYLIE` promotion | Monitor for complete IOCs, root-cause evidence, victim confirmation, deployer/proceeds attribution, and authoritative statements |
 
 ## Attribution Boundaries
@@ -510,6 +554,9 @@ The truncated identifiers are not retained in a wallet dataset and must not be r
 - The Rain cluster contains two Solana P1 seeds and one Ethereum laundering/proceeds pivot; Rain contracts, Avici and Tria accounts, affected users, DEXs, bridges, exchanges, Tornado Cash contracts, and service counterparties do not inherit attacker labels.
 - ICON officially identifies three unique attacker-controlled accounts, represented as four chain-specific records because one EOA is shared across Sonic and Ethereum. The 24 exchange deposit addresses remain custody and evidence pivots, not attacker labels.
 - Tectonic's three published address representations remain truncated and are withheld from machine-readable wallet data.
+- The Aquifer direct set contains one Solana attacker wallet, one malicious Solana program, and one Ethereum proceeds wallet. The Aquifer victim program, affected vaults, recovery addresses, routers, bridges, settlement wallets, market makers, and ordinary counterparties remain explicitly non-attacker context.
+- Aquifer's precise source-level root cause is reconstructed from a consistent on-chain instruction pattern because the source code is not public.
+- Injective's reported Ethereum destination remains truncated as `0x5a18...69ea` and contributes no machine-readable seed.
 - ODY and Vultisig identifiers remain withheld where public evidence is truncated or attribution is incomplete.
 
 ## Sources
@@ -631,8 +678,19 @@ The truncated identifiers are not retained in a wallet dataset and must not be r
 - [Tectonic — incident acknowledgement and interaction warning](https://x.com/TectonicFi)
 - [PeckShield Alert — approximately $74M estimate and truncated proceeds representations](https://x.com/PeckShieldAlert/status/2094217367434015065)
 
+### August 31 Aquifer Solana AMM Exploit
+
+- [Bitquery — complete on-chain reconstruction, loss accounting, cross-chain proceeds, and scope limits](https://bitquery.io/investigations/aquifer-solana-hack-2-5-million)
+- [GoPlus Security — complete attacker wallets, malicious program, affected program, and vault identifiers](https://x.com/GoPlusSecurity/status/2094757173121204271)
+- [Defimon Alerts — Aquifer on-chain whitehat offer and designated recovery addresses](https://x.com/DefimonAlerts/status/2094467984030826622)
+
+### August 31 Injective Binary-Options Exploit
+
+- [Defimon Alerts — incident and Ethereum proceeds report](https://x.com/DefimonAlerts)
+- [PANews — binary-options exploit, network interruption, and zero-seed context](https://www.panewslab.com/en/articles/01a05a75-a70e-765e-8982-ab931191e00d)
+
 ---
 
 ## TLDR
 
-The August 31 follow-up resolves Rain's monitoring cluster into two Solana P1 seeds and one Ethereum laundering/proceeds pivot while preserving the $932,804.22 reconciled loss separately from approximately $1.02 million in broader attacker proceeds. ICON's official post-mortem adds three unique attacker-controlled accounts across ICON, Sonic, and Ethereum, represented as four chain-specific rows. The confirmed Tectonic / Cronos exploit remains a zero-seed case because all three indexed attacker or proceeds identifiers are truncated.
+The September 1 follow-up adds Aquifer as a high-confidence Solana-origin exploit with one attacker wallet, one malicious program, and one Ethereum proceeds wallet retained as P1 indicators. Seven additional Aquifer records preserve victim, vault, and recovery exclusions without transferring the attacker label. Injective and Tectonic remain confirmed zero-seed cases because their indexed attacker or proceeds identifiers are truncated.

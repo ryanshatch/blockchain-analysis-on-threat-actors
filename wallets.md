@@ -584,6 +584,46 @@ The August 30 Tectonic exploit is confirmed, but the three indexed attacker and 
 
 ---
 
+## Aquifer Solana AMM Exploit
+
+**Incident date:** August 31, 2026
+
+**Network path:** Solana exploit execution to Ethereum proceeds consolidation
+
+**Case file:** [`SOL/Aquifer/`](./SOL/Aquifer/)
+
+**Machine-readable roles and exclusions:** [`addresses.csv`](./SOL/Aquifer/addresses.csv)
+
+### P1 Direct and Exploit-Infrastructure Indicators
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Solana | `7fTe9pvrwXJRBHq9MaSyVPR4PgEuhqLiA93Dxf4gRk7J` | Primary attacker, exploit execution, and proceeds wallet | High | P1 direct watch |
+| Solana | `DMBpPMaMpGM2mWiUMaqcHx9FwhPg9Ys7qg1X59NRgb68` | Malicious program impersonating the incoming token program | High | P1 exploit infrastructure and control-path pivot |
+| Ethereum | `0x2Dfe9e969796e2797278b02761dd9Ad6aE922746` | Cross-chain attacker and proceeds-consolidation wallet; 1,000.7956 ETH received | High | P1 direct watch |
+
+Bitquery reconstructed $2,469,729 removed through 212 one-sided swaps in approximately 40 minutes. The attacker supplied forged 165-byte accounts and a malicious incoming token program that returned success without transferring payment. Aquifer's upgrade-authority message later named the same Solana and Ethereum attacker addresses in an on-chain whitehat offer.
+
+### Explicit Non-Attacker Infrastructure
+
+| Network | Address | Role | Handling |
+|---|---|---|---|
+| Solana | `AQU1FRd7papthgdrwPTTq5JacJh8YtwEXaBfKU3bTz45` | Aquifer victim program | Protocol infrastructure; do not threat-label |
+| Solana | `GtwzYxBQcPFNFQcYbdELuaKzb4DGJpGVU2ehLhzbffCw` | Affected USDC vault | Victim vault; transaction filtering only |
+| Solana | `7C7Y3fyPYeAYqpc29uahDUQ84PQ255Avj2YEP9KpvyKx` | Affected USDT vault | Victim vault; transaction filtering only |
+| Solana | `AwtZZUJsRGLje9c5wE9q7zMNjA9ZkEuxTk8awBza14kr` | Affected WSOL vault | Victim vault; transaction filtering only |
+| Solana | `DKCGgPdyLcPFJGTZzkhYeenEUWXPu5VED5ourTrW8PAM` | Affected WETH vault | Victim vault; transaction filtering only |
+| Solana | `8af8RnAgyKzNt4fjDaP8w8pBekYVux1ja4AofavRyjox` | Aquifer-designated recovery address | Alert only for restitution; do not threat-label |
+| Ethereum | `0xb7EAA8cd5dFAD8021d9fB19c8a21613679f268F5` | Aquifer-designated recovery address | Alert only for restitution; do not threat-label |
+
+Routers, bridges, settlement wallets, market makers, and ordinary counterparties remain service or graph-expansion context. At Bitquery's September 1 cutoff, the Ethereum proceeds wallet had sent no transactions; that state is time-sensitive.
+
+### Injective Zero-Seed Boundary
+
+The August 31 Injective binary-options exploit is confirmed at high confidence, but indexed reporting exposes the Ethereum proceeds address only as `0x5a18...69ea`. The truncated identifier is not added to this wallet index or reconstructed from partial strings.
+
+---
+
 ## CYBERLEEK / GTA VI Leak-and-Token Campaign
 
 **Assessment date:** August 28, 2026
