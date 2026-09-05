@@ -439,6 +439,8 @@ The native and hexadecimal strings in each row are alternate representations of 
 |---|---|---|---|---|---|
 | Coldcard weak-entropy theft | Ethereum | `0x41B7529a411EeA979a8d468bdEBd36b0ad703268` | BTC-to-ETH bridge and Tornado Cash pivot | High linkage; medium actor clustering | Watch directly as a laundering pivot; do not label as the sole Coldcard attacker |
 
+The Coldcard Wave 3 attacker began converting stolen BTC to ETH through THORChain on September 2. The newly traced Ethereum destination is not added here because investigators shared it privately rather than publishing the complete address.
+
 ### Explicit Exclusions
 
 | Incident | Indicator | Why excluded from threat seeds |
@@ -545,15 +547,27 @@ These items are not counted as confirmed Solana protocol exploits or confirmed r
 
 | Network | Address | Classification | Confidence | Monitoring |
 |---|---|---|---|---|
+| Ethereum | `0xa1a15f1b0d4878873f2933573e4385ab1e4df25c` | Pre-exploit funding seed that bridged operating gas to Solana through deBridge | High incident linkage; common control unresolved | P1 direct watch and graph expansion |
+| Ethereum | `0x775028b2ce02844e8947905e4d655940a76cf559` | Upstream pre-exploit funding seed | High incident linkage; common control unresolved | P1 direct watch and graph expansion |
 | Solana | `FVNFzqAny8spWdPmYw6RQ9TkYa29ueFFiqCFD1gQnCEj` | Principal Rain legacy-contract drainer, collection wallet, and source of 10,000 SOL transfer | High | P1 direct watch |
 | Solana | `4kjsW9dPsqzvuhQVP3P23cvZisdoHE5dR8NdD1TMPKKE` | Proceeds and conversion wallet receiving more than $1M in SOL before USDC swaps | High | P1 direct watch |
 | Ethereum | `0x2cE21E4921d3Eb116526c3651Dac0257657338D5` | Cross-chain laundering and proceeds pivot routing funds toward Tornado Cash | High incident linkage; medium-high control | P1 direct watch with proceeds-role label |
 
 Avici reconciled 1,685 affected users and $500,859.22 in unauthorized card-balance withdrawals. Tria confirmed another 636 users and $431,945, establishing at least 2,321 victims and $932,804.22 across two Rain-powered programs. Approximately $1.02 million in broader attacker proceeds remains a separate unresolved measure.
 
-The principal address was published by independent transaction-level reporting after earlier coverage exposed only `FVNFzq...CEj`. It was not reconstructed from a truncated form. Subsequent tracing resolved the next Solana proceeds wallet and the Ethereum-side laundering pivot.
+The principal address was published by independent transaction-level reporting after earlier coverage exposed only `FVNFzq...CEj`. It was not reconstructed from a truncated form. Subsequent tracing resolved the next Solana proceeds wallet and the Ethereum-side laundering pivot. Blockaid's September 2 post-mortem added the two Ethereum funding seeds and reconstructed 2,945 unauthorized administrator additions plus 5,288 collateral withdrawals, totaling 8,233 core exploit transactions. Approximately 455.9 ETH ultimately entered Tornado Cash.
 
-Rain contracts, user collateral accounts, Avici and Tria infrastructure, DEX pools, bridges, exchanges, market makers, Tornado Cash contracts, and ordinary counterparties remain victim, protocol, or graph-expansion context and must not inherit the attacker label.
+The funding addresses are high-confidence incident-linked infrastructure; common ownership with the Solana exploiter remains unproven.
+
+| Network | Address | Non-attacker role |
+|---|---|---|
+| Solana | `26DkA98jjctzPkBEteUsN935CR4dsKx3XvjrtE7MeL4a` | Drained Rain legacy card-contract deployment |
+| Solana | `CWgkFB7ngUc9cGD1LryyhP7h6xYWtwrAjhSKKCoR1gkz` | Same-opcode Rain legacy card-contract deployment |
+| Solana | `3zVB27Gap6fbxpAcV2hsBBUcV3vRjkCikBXREiyBzDuc` | Same-opcode Rain legacy deployment; no confirmed loss disclosed |
+| Solana | `8r2jms1vAnHhtCWxDNSgiHvQNSzzJvGa9oBRCbBPCBNN` | Same-opcode Rain legacy deployment; no confirmed loss disclosed |
+| Ethereum | `0xd90e2f925DA726b50C4Ed8D0Fb90Ad053324F31b` | Tornado Cash router / laundering infrastructure |
+
+User collateral accounts, Avici and Tria infrastructure, DEX pools, bridges, exchanges, market makers, Tornado Cash contracts, and ordinary counterparties remain victim, protocol, or graph-expansion context and must not inherit the attacker label.
 
 ---
 

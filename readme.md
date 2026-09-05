@@ -96,7 +96,7 @@
     </tr>
     <tr>
       <td><a href="./Multi-Chain/August-2026-Security-Sweep/"><code>Multi-Chain/August-2026-Security-Sweep/</code></a></td>
-      <td>August 20-September 1, 2026 security sweep covering the complete Aquifer attacker/proceeds cluster, zero-seed Injective and Tectonic cases, Rain's complete attacker/proceeds cluster, the ICON migration-contract replay exploit, Moonwell/MAMO, Term Finance laundering, Sandbox Base/BSC, Bofur Capital address poisoning, Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence.</td>
+      <td>August 20-September 2, 2026 security sweep covering the Aquifer attacker/proceeds cluster, Rain's expanded funding/exploit/proceeds set, the Coldcard Wave 3 laundering update, zero-seed Injective and Tectonic cases, the ICON migration-contract replay exploit, Moonwell/MAMO, Term Finance laundering, Sandbox Base/BSC, Bofur Capital address poisoning, Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/ICON-Migration-Replay-Exploit/"><code>Multi-Chain/ICON-Migration-Replay-Exploit/</code></a></td>
@@ -131,7 +131,7 @@
     <tr><td><a href="./Lazarus/"><code>Lazarus/</code></a></td><td>DPRK TraderTraitor / Lazarus Group wallets, including addresses connected to the Bybit theft and earlier incidents.</td></tr>
     <tr><td><a href="./SOL/"><code>SOL/</code></a></td><td>Solana-specific threat-actor, governance, exploit, leak-and-token campaign, and suspicious-wallet investigations.</td></tr>
     <tr><td><a href="./SOL/CYBERLEEK/"><code>SOL/CYBERLEEK/</code></a></td><td>CYBERLEEK / GTA VI leak-and-token campaign report covering the creator wallet, token and pool mechanics, locked-liquidity Fee Key, August 27 creator-fee cash-out, funding pivots, explicit trader and copycat exclusions, and unresolved real-world attribution.</td></tr>
-    <tr><td><a href="./SOL/Rain-Legacy-Contracts/"><code>SOL/Rain-Legacy-Contracts/</code></a></td><td>August 28 Rain shared-infrastructure authorization exploit affecting Avici and Tria card balances, with two Solana P1 seeds and one Ethereum laundering/proceeds pivot.</td></tr>
+    <tr><td><a href="./SOL/Rain-Legacy-Contracts/"><code>SOL/Rain-Legacy-Contracts/</code></a></td><td>August 28 Rain shared-infrastructure authorization exploit affecting Avici and Tria card balances, with two upstream Ethereum funding seeds, two Solana P1 seeds, one Ethereum laundering/proceeds pivot, and explicit non-attacker contract exclusions.</td></tr>
     <tr><td><a href="./SOL/Aquifer/"><code>SOL/Aquifer/</code></a></td><td>August 31 Aquifer forged token-account and token-program validation exploit, with one Solana attacker wallet, one malicious program, one Ethereum proceeds wallet, and explicit victim/recovery exclusions.</td></tr>
     <tr><td><a href="./SOL/BonkDAO/"><code>SOL/BonkDAO/</code></a></td><td>Analysis of the BonkDAO governance attack and associated on-chain activity.</td></tr>
     <tr><td><a href="./SOL/HOPE/"><code>SOL/HOPE/</code></a></td><td>Analysis of the Solana-based HOPE token, wallet concentration, transfers, sales, and suspected rug activity.</td></tr>
