@@ -404,7 +404,7 @@ The July action materially expanded an existing sanctioned-wallet attribution. T
 OFAC directly attributed these TRON identifiers to Zaid Issam Ahmed Al-Jebouri and linked him to El-Kahira for General Trading. Connected exchanges, OTC services, bridges, token contracts, and counterparties should initially remain graph-expansion pivots unless separately attributed.
 ---
 
-## August 20-31, 2026 Multi-Chain Security Sweep
+## August 20-September 4, 2026 Multi-Chain Security Sweep
 
 **Review cutoff:** August 20, 2026 at 2:31 a.m. ET  
 **Case file:** [`Multi-Chain/August-2026-Security-Sweep/`](./Multi-Chain/August-2026-Security-Sweep/)  
@@ -433,13 +433,29 @@ The native and hexadecimal strings in each row are alternate representations of 
 | `one1a5hur07z5vtvzhr35zkw8tfqedemkz8t88xgd7` | `0xed2fc1bfc2a316c15c71a0ace3ad20cb73bb08eb` | Unauthorized-mint incident account | P1 direct watch |
 | `one1h56hkxmua0uzfv07fu04cudvtrl35u96pq47vy` | `0xbd357b1b7cebf824b1fe4f1f5c71ac58ff1a70ba` | Unauthorized-mint incident account | P1 direct watch |
 
-### Incident-Linked Laundering Pivot
+### COLDCARD Weak-Entropy Theft — Cross-Chain Watch Set
 
-| Incident | Network | Address | Classification | Confidence | Handling |
-|---|---|---|---|---|---|
-| Coldcard weak-entropy theft | Ethereum | `0x41B7529a411EeA979a8d468bdEBd36b0ad703268` | BTC-to-ETH bridge and Tornado Cash pivot | High linkage; medium actor clustering | Watch directly as a laundering pivot; do not label as the sole Coldcard attacker |
+**Case file:** [`Multi-Chain/Coldcard-Weak-Entropy-Theft/`](./Multi-Chain/Coldcard-Weak-Entropy-Theft/)
 
-The Coldcard Wave 3 attacker began converting stolen BTC to ETH through THORChain on September 2. The newly traced Ethereum destination is not added here because investigators shared it privately rather than publishing the complete address.
+**Machine-readable records:** [`addresses.csv`](./Multi-Chain/Coldcard-Weak-Entropy-Theft/addresses.csv)
+
+| Network | Address | Classification | Confidence | Handling |
+|---|---|---|---|---|
+| Ethereum | `0x160a7A4c067B084F03400c6980Ac29F73F6782f6` | Primary Wave 3 cross-chain proceeds and consolidation destination | High | P1 direct watch |
+| Ethereum | `0x8B5b650067841ff3bF28fF3EC8ED1eE635e3D200` | Secondary September THORChain destination | High linkage; common control unresolved | P2 direct watch |
+| Ethereum | `0x6A08B5B20F23FcFE09f5da506Be59CAD1eC0df06` | Historical August THORChain destination | High linkage; common control unresolved | P2 historical graph pivot |
+| Ethereum | `0x41B7529a411EeA979a8d468bdEBd36b0ad703268` | Earlier BTC-to-ETH bridge and Tornado Cash pivot | High linkage; medium actor clustering | P2 direct watch; not the sole COLDCARD attacker |
+
+| Bitcoin address | Bitquery tier | Snapshot state | Handling |
+|---|---|---|---|
+| `bc1qq85v2c926eg6pgxhwp6q7lf6cnsz80qs3fcu9r` | Confirmed | 562.02147793 BTC; dormant | P1 direct watch |
+| `bc1qx76cae2706qd5q576feh7xq8rfcsjpf2htfhe3` | Confirmed | 398.47576957 BTC; dormant | P1 direct watch |
+| `bc1q8jy96fe5lf8vfugydnte3cguk92gpev7kwtp3q` | Confirmed | 89.62329890 BTC; dormant | P1 direct watch |
+| `bc1qtfrwa4j6rmj9rsgspv6a0yjumkg39js2numu75` | Confirmed | 45.90254994 BTC; dormant | P1 direct watch |
+| `bc1qnk4zh9qcnap2mycp56qjrgza3cc8ylrh8fecp0` | Confirmed | 32.45061090 BTC; prior spends | P1 watch and graph expansion |
+| `bc1qmd5m5ktv7m5ffujxv4248fxv36myvdx79n8jp6` | Confirmed | 0.00002000 BTC; prior spends | P2 historical pivot |
+
+Bitquery traced 20.69 BTC through 36 THORChain swaps. Protocol memos name the Ethereum destinations directly. The primary address received approximately 20.15 BTC of traced value, the secondary address approximately 0.30 BTC, and the historical August address approximately 0.24 BTC. Bitquery's lower `TRACED`, `REPORTED`, `ATTRIBUTED`, `VENUE`, and `UNDER REVIEW` tiers are not promoted to the confirmed set, and common ownership across destinations or theft waves remains unresolved.
 
 ### Explicit Exclusions
 

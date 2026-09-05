@@ -1,9 +1,9 @@
-# August 20-September 2, 2026 Crypto Security Sweep
+# August 20-September 4, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
-| Follow-up cutoff | September 2, 2026 |
+| Follow-up cutoff | September 4, 2026 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
 | Networks | MAYAChain, Bitcoin, Ethereum, Solana, ICON, Sonic, Cronos, BNB Chain, Harmony, TRON, Base, and other EVM environments |
 | Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, Blockaid, SEAL/Security Alliance, Bitquery, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, Protos, ICON Foundation, protocol disclosures, public explorers, and corroborating reporting |
@@ -33,7 +33,7 @@
 | Harmony | August 11-12 | Cross-shard receipt and quorum-validation flaw causing unauthorized minting | About $3.2M initial cash-loss estimate; token issuance estimates remain disputed | High |
 | Coinsbuy | August 9 | Coordinated Ethereum and TRON wallet drain; exact access vector unresolved | More than $7.9M / about $8.07M | High incident linkage; unknown attacker identity |
 | ODY / Odyssey / Ody DeFi | July 28; highlighted August 11-13 | Privileged mint, market dump, liquidity extraction, and exit scam | About $15M-$15.67M USDT | Medium-high |
-| Coldcard | July 30 onward | Weak seed entropy and offline private-key brute forcing | About 1,816 BTC / $116M | High vulnerability and loss; medium actor clustering |
+| COLDCARD | July 30 onward; Ethereum attribution update September 3-4 | Weak seed entropy, offline private-key brute forcing, and cross-chain laundering | Bitquery tracks 1,789.28 BTC; prior broader estimate about 1,816 BTC / $116M | High vulnerability and address linkage; unresolved actor and cross-wave clustering |
 | Address-poisoning theft | Reported August 2026 | Automated look-alike address poisoning | About $100K USDT | High |
 | Vultisig-related outflow | August 11; reported August 18 | Suspicious outflow and Tornado Cash routing; compromise unconfirmed | 1.284M USDC outflow; 1.092M USDC routed into 575.4 ETH | Medium investigative lead |
 
@@ -161,18 +161,40 @@ The indexed reports expose the main aggregation address and mint transaction onl
 **Incident window:** July 30, 2026 onward  
 **Primary network:** Bitcoin; incident-linked laundering later reached Ethereum  
 **Classification:** Hardware-wallet seed-generation weakness and offline brute forcing  
-**Known impact:** Approximately 1,816 BTC / $116M from more than 5,200 addresses across at least four waves  
-**Confidence:** High for the vulnerability and loss; medium for individual actor clustering
+**Known impact:** Bitquery tracks 1,789.28 BTC from 8,865 victim addresses; prior broader reporting estimated approximately 1,816 BTC / $116M
+
+**Confidence:** High for the vulnerability, incident linkage, and complete addresses; unresolved individual actor and cross-wave clustering
 
 TRM Labs attributes the theft opportunity to affected Coldcard firmware generating seeds with effective entropy as low as roughly 40 bits, allowing offline private-key brute forcing without physical access. Updating firmware does not repair a seed created with weak entropy; affected seeds must be replaced.
 
-TRM cautions that differences among theft waves may indicate multiple attackers. CertiK published the following Ethereum laundering pivot after incident-linked BTC moved through THORChain:
+TRM cautions that differences among theft waves may indicate multiple attackers. CertiK previously published the following Ethereum laundering pivot after incident-linked BTC moved through THORChain:
 
 | Network | Address | Role | Treatment |
 |---|---|---|---|
 | Ethereum | `0x41B7529a411EeA979a8d468bdEBd36b0ad703268` | Incident-linked bridge and Tornado Cash pivot | Watch directly as a laundering pivot; do not label as the sole Coldcard attacker |
 
-On September 2, the Wave 3 attacker moved stolen BTC for the first time and began converting part of it to ETH through THORChain. Galaxy's Alex Thorn said the new Ethereum destination was shared privately with authorities and crypto companies but was not released publicly. This is a material laundering-path update, but it contributes no new address because the repository requires a complete public identifier.
+Bitquery's September 3-4 update resolves three complete Ethereum destinations for 20.69 BTC routed through 36 THORChain swaps. The destination address is encoded in each Bitcoin-side protocol memo, so the chain linkage does not depend solely on behavioral inference.
+
+| Network | Address | Role | Treatment |
+|---|---|---|---|
+| Ethereum | `0x160a7A4c067B084F03400c6980Ac29F73F6782f6` | Primary Wave 3 proceeds and consolidation destination; approximately 20.15 BTC across 26 swaps | P1 direct watch |
+| Ethereum | `0x8B5b650067841ff3bF28fF3EC8ED1eE635e3D200` | Secondary September destination; approximately 0.30 BTC across eight swaps | P2 direct watch |
+| Ethereum | `0x6A08B5B20F23FcFE09f5da506Be59CAD1eC0df06` | Historical August 2 destination; approximately 0.24 BTC across two swaps | P2 historical graph pivot |
+
+Bitquery also publishes six Bitcoin addresses in its `CONFIRMED` tier:
+
+| Address | September 3 snapshot | Treatment |
+|---|---:|---|
+| `bc1qq85v2c926eg6pgxhwp6q7lf6cnsz80qs3fcu9r` | 562.02147793 BTC; dormant | P1 direct watch |
+| `bc1qx76cae2706qd5q576feh7xq8rfcsjpf2htfhe3` | 398.47576957 BTC; dormant | P1 direct watch |
+| `bc1q8jy96fe5lf8vfugydnte3cguk92gpev7kwtp3q` | 89.62329890 BTC; dormant | P1 direct watch |
+| `bc1qtfrwa4j6rmj9rsgspv6a0yjumkg39js2numu75` | 45.90254994 BTC; dormant | P1 direct watch |
+| `bc1qnk4zh9qcnap2mycp56qjrgza3cc8ylrh8fecp0` | 32.45061090 BTC; prior spends | P1 direct watch and spend-path expansion |
+| `bc1qmd5m5ktv7m5ffujxv4248fxv36myvdx79n8jp6` | 0.00002000 BTC; prior spends | P2 historical pivot |
+
+The `CONFIRMED` tier means an independent source corroborated the address as part of this exploit. Bitquery's larger `TRACED`, `REPORTED`, `ATTRIBUTED`, `VENUE`, and `UNDER REVIEW` sets are not promoted to equivalent attacker status. A common incident path also does not prove that the same individual controlled every Ethereum destination or all four theft waves.
+
+The canonical report and ten machine-readable records are maintained in [`Multi-Chain/Coldcard-Weak-Entropy-Theft/`](../Coldcard-Weak-Entropy-Theft/).
 
 ## 9. Address-Poisoning Theft
 
@@ -535,8 +557,8 @@ The truncated identifier is not retained in a machine-readable dataset and must 
 
 | Priority | Indicators | Action |
 |---|---|---|
-| P1 | Aquifer Solana attacker, malicious program, and Ethereum proceeds wallet; Rain five-address funding/exploit/proceeds set; four ICON chain-specific records; Term Finance active laundering source; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge, exchange-deposit, malicious-program, and privacy-protocol alerts |
-| P2 | Bofur poisoning contract; Maya Arbitrum proceeds address; Coldcard-linked Ethereum laundering pivot; poisoning address | Direct monitoring with narrower incident-role labels |
+| P1 | COLDCARD primary Ethereum destination plus five confirmed high-value or active Bitcoin seeds; Aquifer Solana attacker, malicious program, and Ethereum proceeds wallet; Rain five-address funding/exploit/proceeds set; four ICON chain-specific records; Term Finance active laundering source; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge, exchange-deposit, malicious-program, and privacy-protocol alerts |
+| P2 | Three COLDCARD secondary, historical, or earlier Ethereum/BTC pivots; Bofur poisoning contract; Maya Arbitrum proceeds address; poisoning address | Direct monitoring with narrower incident-role labels |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
 | Campaign IOCs | Fake Seeker / SKR domain and fake `$WAR` rewards activity | Block known domains, monitor replacements, and preserve the distinction from legitimate projects and tokens |
 | Case only | ODY; Moonwell / MAMO; Tectonic / Cronos; Injective binary-options exploit | Preserve confirmed incident reporting while withholding truncated identifiers |
@@ -548,7 +570,7 @@ The truncated identifier is not retained in a machine-readable dataset and must 
 - Victims, legitimate recipients, protocol contracts, pools, routers, bridges, exchanges, and mixers are not automatically threat-controlled.
 - Harmony native and hex forms are alternate representations of the same four accounts.
 - The Hyperliquid case is phishing against a user, not a Hyperliquid protocol breach.
-- The Coldcard Ethereum address is a laundering pivot, not proof of one actor controlling every theft wave. The September 2 Wave 3 Ethereum destination remains withheld because no complete public address was released.
+- The COLDCARD set contains six Bitcoin addresses in Bitquery's `CONFIRMED` tier, three memo-linked Ethereum destinations, and one previously retained Ethereum pivot. It does not imply one actor controlled every destination or theft wave; lower Bitquery tiers remain separate.
 - The 2026 Ethereum whale drain's exact compromise vector remains unresolved.
 - The Coinsbuy drain's exact compromise vector remains unresolved; cross-chain timing alone does not prove private-key compromise.
 - The Allbridge CCTP/Base incident has no complete authoritative attacker identifier in this update and contributes no machine-readable seed.
@@ -626,6 +648,8 @@ The truncated identifier is not retained in a machine-readable dataset and must 
 - [CertiK Alert — THORChain-to-Ethereum laundering pivot](https://x.com/CertiKAlert/status/2084920866526114183)
 - [Alex Thorn — Wave 3 BTC-to-ETH movement through THORChain](https://x.com/intangiblecoins/status/2095297452681158840)
 - [Cointelegraph — Wave 3 THORChain movement and unpublished Ethereum destination](https://cointelegraph.com/news/coldcard-hacker-swaps-stolen-bitcoin-eth-thorchain)
+- [Bitquery — live tracker, confirmed Bitcoin tier, complete Ethereum destinations, and THORChain memo linkage](https://bitquery.io/coldcard-hack/)
+- [CryptoSlate — Bitquery update and later primary-destination balance observation](https://cryptoslate.com/parked-coldcard-loot-begins-moving-as-attacker-routes-1-6m-in-stolen-bitcoin-to-ethereum/)
 
 ### Address Poisoning and Vultisig Lead
 
@@ -705,4 +729,4 @@ The truncated identifier is not retained in a machine-readable dataset and must 
 
 ## TLDR
 
-The September 2 follow-up adds two Blockaid-published Ethereum funding seeds to the Rain case and strengthens the existing Solana attribution with an 8,233-transaction reconstruction. The Rain dataset now contains five P1 addresses plus four explicitly non-attacker Rain deployments and the Tornado Cash router. The Coldcard Wave 3 attacker also began moving BTC through THORChain, but its new Ethereum destination remains excluded because the complete address was shared privately rather than published. No new official OFAC, FBI, or DOJ BTC, ETH, or SOL full-address disclosure was identified in this follow-up.
+The September 3-4 follow-up resolves three complete Ethereum destinations for 20.69 BTC moved through 36 THORChain swaps from the COLDCARD theft graph. The dedicated case retains those destinations, six Bitcoin addresses from Bitquery's `CONFIRMED` tier, and the earlier CertiK-linked Ethereum pivot. Lower-confidence Bitquery tiers and service infrastructure remain separate. No new official OFAC, FBI, or DOJ BTC, ETH, or SOL full-address disclosure was identified in this follow-up.

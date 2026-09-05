@@ -23,7 +23,12 @@
     <tr>
       <td><a href="./August-2026-Security-Sweep/"><code>August-2026-Security-Sweep/</code></a></td>
       <td>MAYAChain, Bitcoin, Ethereum, Solana, Injective, ICON, Sonic, Cronos, Arbitrum, BNB Chain, Harmony, TRON, Polygon, Base, and multi-chain users</td>
-      <td>August 20-September 2, 2026 cross-ecosystem sweep covering Aquifer's Solana-to-Ethereum attacker cluster, Rain's expanded funding/exploit/proceeds set, the Coldcard Wave 3 laundering update, zero-seed Injective and Tectonic/Cronos cases, the ICON replay exploit, Moonwell/MAMO, Term Finance laundering, Sandbox Base/BSC, Bofur Capital, Maya external-L1, Coinsbuy Ethereum/TRON, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence</td>
+      <td>August 20-September 4, 2026 cross-ecosystem sweep covering the complete COLDCARD Wave 3 Ethereum destinations, Aquifer's Solana-to-Ethereum attacker cluster, Rain's expanded funding/exploit/proceeds set, zero-seed Injective and Tectonic/Cronos cases, the ICON replay exploit, Moonwell/MAMO, Term Finance laundering, Sandbox Base/BSC, Bofur Capital, Maya external-L1, Coinsbuy Ethereum/TRON, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence</td>
+    </tr>
+    <tr>
+      <td><a href="./Coldcard-Weak-Entropy-Theft/"><code>Coldcard-Weak-Entropy-Theft/</code></a></td>
+      <td>Bitcoin theft and THORChain routing into Ethereum</td>
+      <td>Weak-entropy hardware-wallet theft with six confirmed Bitcoin seeds, three complete Ethereum proceeds destinations, and explicit cross-wave and service-infrastructure boundaries</td>
     </tr>
     <tr>
       <td><a href="./ICON-Migration-Replay-Exploit/"><code>ICON-Migration-Replay-Exploit/</code></a></td>

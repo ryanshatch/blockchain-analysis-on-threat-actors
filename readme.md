@@ -96,7 +96,11 @@
     </tr>
     <tr>
       <td><a href="./Multi-Chain/August-2026-Security-Sweep/"><code>Multi-Chain/August-2026-Security-Sweep/</code></a></td>
-      <td>August 20-September 2, 2026 security sweep covering the Aquifer attacker/proceeds cluster, Rain's expanded funding/exploit/proceeds set, the Coldcard Wave 3 laundering update, zero-seed Injective and Tectonic cases, the ICON migration-contract replay exploit, Moonwell/MAMO, Term Finance laundering, Sandbox Base/BSC, Bofur Capital address poisoning, Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence.</td>
+      <td>August 20-September 4, 2026 security sweep covering the complete COLDCARD Wave 3 Ethereum destinations, the Aquifer attacker/proceeds cluster, Rain's expanded funding/exploit/proceeds set, zero-seed Injective and Tectonic cases, the ICON migration-contract replay exploit, Moonwell/MAMO, Term Finance laundering, Sandbox Base/BSC, Bofur Capital address poisoning, Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/Coldcard-Weak-Entropy-Theft/"><code>Multi-Chain/Coldcard-Weak-Entropy-Theft/</code></a></td>
+      <td>Dedicated COLDCARD weak-entropy theft and cross-chain laundering case with six confirmed Bitcoin seeds, three newly public Ethereum destinations, one previously retained Ethereum pivot, and tier-preserving attribution boundaries.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/ICON-Migration-Replay-Exploit/"><code>Multi-Chain/ICON-Migration-Replay-Exploit/</code></a></td>
