@@ -293,6 +293,8 @@ Take-Two filed DMCA-subpoena requests on August 20 seeking information from Micr
 
 ## Attribution Boundaries
 
+The September 1 fake GTA VI leaked-copy wallet drainer documented by Malwarebytes is tracked separately in [`Multi-Chain/GTA-VI-Wallet-Drainer/`](../../Multi-Chain/GTA-VI-Wallet-Drainer/). Its hard-coded receiving address and malicious domains are not attributed to CYBERLEEK; shared GTA VI branding is not evidence of common control.
+
 - The actor's real-world identity is unknown. This report does not repeat or endorse circulating real-name, age, nationality, prior-handle, or hosting claims.
 - A transfer path is not proof that each relay or service is controlled by the same actor.
 - The creator wallet is directly actor-linked through token and pool creation. Funding relays are contextual unless independently attributed.

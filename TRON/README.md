@@ -27,7 +27,7 @@
   </tbody>
 </table>
 
-<h2>Related Cross-Chain Sanctions Cases</h2>
+<h2>Related Cross-Chain Attribution Cases</h2>
 
 <table>
   <thead>
@@ -49,6 +49,11 @@
       <td><code>TXR4FDAZZLDSvuRxveW9aBMybbaS12WWHk</code>, <code>TP3kVtnFgDSoSqzw178nLJtGWNjrbKNgB6</code>, <code>TAbbVaBKgH4VBLXgWqACuwoKF4cH1HinQh</code>, <code>TEsxMcVocweTM82Mdmc5diKC6qyCWqSpPv</code>, and separate Tsoris seed <code>TJCBpxZ3yC7C7oegSRZMFxBcscmUVeSA36</code></td>
       <td>August 24, 2026 OFAC action: four direct MOIS-linked cyber-actor TRON seeds plus one separately classified Iran sanctions-finance USDT seed</td>
     </tr>
+    <tr>
+      <td><a href="../Multi-Chain/Hamas-Al-Qassam-Financing/"><code>Multi-Chain/Hamas-Al-Qassam-Financing/</code></a></td>
+      <td>Sixteen TRON records: donation targets, one consolidation wallet, one downstream laundering wallet, and two Binance-linked money-mule accounts</td>
+      <td>September 1, 2026 DOJ/FBI unsealing with official Hamas / Al-Qassam fundraising-network attribution and explicit custody boundaries</td>
+    </tr>
   </tbody>
 </table>
 
@@ -61,4 +66,6 @@
   <li>Preserve publication and update dates so newly disclosed identifiers are distinguishable from previously known addresses.</li>
   <li>Do not infer direct IRGC ownership of the full Shelbit transaction graph solely from transactional proximity.</li>
   <li>The Tsoris USDT/TRON identifier is an official direct-watch seed but must remain separate from the MOIS cyber-actor cluster.</li>
+  <li>The Hamas / Al-Qassam case preserves donation, consolidation, laundering, and custodial money-mule roles separately. Exchange hot wallets, later exchange sweeps, and transaction neighbors do not inherit the attribution.</li>
+  <li>Two additional submitted TRON strings are withheld from direct-watch data because they could not be reconciled to the reviewed DOJ warrant packages.</li>
 </ul>

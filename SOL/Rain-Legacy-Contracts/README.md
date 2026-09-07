@@ -3,25 +3,25 @@
 | Field | Assessment |
 |---|---|
 | Incident date | August 28, 2026 |
-| Assessment date | September 2, 2026 |
+| Assessment date | September 6, 2026 |
 | Networks | Solana with Ethereum funding and laundering |
 | Infrastructure | Rain legacy Solana card contracts |
-| Confirmed affected programs | Avici and Tria |
-| Classification | Shared-infrastructure authorization and signature-validation exploit |
+| Confirmed affected programs | Avici, Tria, and Solayer Pay |
+| Classification | Shared-infrastructure Ed25519 signature-reuse and authorization-bypass exploit |
 | Confirmed victims | 2,321 |
 | Reconciled loss | $932,804.22 |
-| Broader attacker proceeds | Approximately $1.02 million |
+| Fleet-wide attacker cash-out | Approximately $1.1 million |
 | Confidence | High |
 
 ## Executive Assessment
 
-The August 28 incident is a Rain shared-infrastructure exploit, not an Avici-only breach. Avici reconciled 1,685 affected users and $500,859.22 in unauthorized withdrawals. Tria subsequently confirmed another 636 affected users and $431,945 from Solana card balances. The two program disclosures establish at least 2,321 victims and $932,804.22 in confirmed losses.
+The August 28 incident is a Rain shared-infrastructure exploit, not an Avici-only breach. Avici reconciled 1,685 affected users and $500,859.22 in unauthorized withdrawals. Tria subsequently confirmed another 636 affected users and $431,945 from Solana card balances. Blockaid's fleet-wide reconstruction identifies Solayer Pay as another affected program and places total attacker cash-out at approximately $1.1 million.
 
 Rain said a small number of programs were still using an outdated version of its Solana contracts. It upgraded every program running the vulnerable version, engaged external forensic specialists, and reported no further unauthorized activity after remediation.
 
 Blockaid's September 2 post-mortem adds two complete Ethereum addresses that funded the Solana operation before the exploit. Both had already been classified as malicious in Blockaid's threat-intelligence network. They are high-confidence incident-linked infrastructure seeds, but funding linkage alone does not establish that the same person controlled both Ethereum addresses and the Solana exploiter.
 
-The approximately $1.02 million traced through the attacker cluster is larger than the reconciled Avici and Tria total by roughly $87,000. That difference may reflect another affected program, valuation timing, or differences in proceeds accounting. It is unresolved and must not be assigned to a third victim without confirmation.
+The Avici and Tria disclosures establish a reconciled subset of 2,321 users and $932,804.22. Solayer Pay's separate loss and victim count have not been published. The roughly $167,195.78 difference between the reconciled subset and Blockaid's approximate $1.1 million fleet-wide cash-out must not be assigned entirely to Solayer Pay or any other program without further evidence.
 
 ## Confirmed Program Impact
 
@@ -29,9 +29,11 @@ The approximately $1.02 million traced through the attacker cluster is larger th
 |---|---:|---:|---|
 | Avici | 1,685 | $500,859.22 | Full balance restoration plus 10% additional compensation |
 | Tria | 636 | $431,945.00 | Full balance restoration plus 10% additional compensation |
-| **Confirmed combined** | **2,321** | **$932,804.22** | Both programs report completed make-whole payments plus 10% |
+| Solayer Pay | Not separately disclosed | Not separately disclosed | Identified by Blockaid as affected; program-specific recovery not quantified in the reviewed report |
+| **Reconciled Avici + Tria subset** | **2,321** | **$932,804.22** | Both programs report completed make-whole payments plus 10% |
+| **Fleet-wide cash-out** | **Not fully disclosed** | **Approximately $1.1 million** | Includes affected Rain ecosystem programs; do not assign the residual to one program |
 
-The affected assets were card balances already transferred into Rain-powered Solana contracts. Avici and Tria both said their users' ordinary self-custodial wallets were not compromised.
+The affected assets were card balances already transferred into Rain-powered Solana contracts. The flaw was in outdated shared contract infrastructure rather than users' ordinary self-custodial wallets.
 
 ## Pre-Exploit Funding Seeds
 
@@ -77,7 +79,7 @@ Public transaction analysis describes a repeated four-call pattern:
 3. A second `SubmitSignatures` call supplied authorization state for the withdrawal.
 4. The attacker called `WithdrawCollateralAsset` and moved user balances into attacker-controlled token accounts.
 
-Blockaid reconstructed 2,945 unauthorized `AddCollateralAdmin` calls and 5,288 `WithdrawCollateralAsset` calls: 8,233 core exploit transactions over approximately 2 hours and 29 minutes. Its analysis found that previously valid signatures were replayed at reused byte offsets, allowing the attacker to obtain administrator privileges across card-collateral accounts before withdrawal.
+Blockaid reconstructed 2,945 unauthorized `AddCollateralAdmin` calls and 5,288 `WithdrawCollateralAsset` calls: 8,233 core exploit transactions over approximately 2 hours and 29 minutes. Its bytecode analysis found that the vulnerable version accepted reused Ed25519 instruction offsets, allowing one attacker-controlled signature to satisfy what should have been two independent authorization proofs. The attacker then obtained administrator privileges across card-collateral accounts before withdrawal.
 
 This supports an authorization or signature-validation flaw in shared card-contract infrastructure. It does not support a Solana consensus failure, compromise of users' private keys, or an Avici- or Tria-specific wallet exploit.
 
@@ -97,7 +99,7 @@ Refunds reduce the final customer loss but do not change the gross amount remove
 2. Expand upstream from `0xa1a1...f25c` and `0x7750...f559` for capital provisioning, CEX exposure, prior campaigns, deployments, and other preparatory activity.
 3. Preserve the two Solana roles separately: `FVNFzq...QnCEj` is the exploit and collection seed; `4kjs...PKKKE` is the proceeds and conversion seed.
 4. Track `0x2cE2...338D5` as an Ethereum laundering and proceeds pivot without threat-labeling Tornado Cash contracts or ordinary mixer users.
-5. Reconcile the roughly $87,000 difference between the confirmed program total and the approximately $1.02 million attacker-proceeds estimate.
+5. Reconcile the roughly $167,195.78 difference between the Avici and Tria subset and the approximately $1.1 million fleet-wide cash-out without assigning it entirely to Solayer Pay.
 6. Monitor for Rain's final forensic report, additional affected-program disclosures, and any law-enforcement recovery action.
 7. Keep Rain contracts, victim accounts, DEXs, bridges, exchanges, and market-maker counterparties outside the actor cluster unless independent evidence supports control.
 
@@ -118,9 +120,9 @@ Blockaid found the same bytecode and opcode hash across the four Rain deployment
 - No named attacker or real-world identity is established.
 - The two Ethereum funding addresses are direct-watch pre-exploit infrastructure seeds. Their incident linkage is high confidence; common ownership with the Solana exploiter remains unresolved.
 - The principal drainer and downstream Solana proceeds wallet are direct P1 seeds; the Ethereum proceeds address is a high-confidence cross-chain laundering and proceeds pivot.
-- Rain is the vulnerable infrastructure provider, while Avici and Tria are confirmed affected integrations.
+- Rain is the vulnerable infrastructure provider, while Avici, Tria, and Solayer Pay are confirmed affected integrations.
 - User card-collateral accounts are victims, not attacker-controlled wallets.
-- The $932,804.22 figure is the confirmed program-level loss. The approximately $1.02 million attacker-proceeds estimate remains a separate, unresolved measure.
+- The $932,804.22 figure is the reconciled Avici and Tria subset. The approximately $1.1 million figure is Blockaid's fleet-wide attacker cash-out; Solayer Pay's separate loss and victim count remain undisclosed.
 - Refund and 10% compensation amounts are recovery costs, not additional attacker proceeds.
 - Tornado Cash contracts, relayers, DEXs, bridges, exchanges, and ordinary counterparties do not inherit the attacker label.
 
@@ -143,4 +145,4 @@ Blockaid found the same bytecode and opcode hash across the four Rain deployment
 
 ## TLDR
 
-The August 28 drain affected at least two Rain-powered Solana card programs: Avici and Tria. Together they confirmed 2,321 affected users and $932,804.22 in unauthorized withdrawals, with both reporting full refunds plus 10%. The monitoring set now contains two pre-exploit Ethereum funding seeds, the Solana exploit wallet `FVNFzq...QnCEj`, Solana proceeds wallet `4kjs...PKKKE`, and Ethereum laundering pivot `0x2cE2...338D5`. Common control of the funding seeds and Solana exploiter is unproven. Four Rain deployments and the Tornado Cash router are recorded only as non-attacker infrastructure.
+The August 28 drain affected Rain-powered programs including Avici, Tria, and Solayer Pay. Avici and Tria reconciled 2,321 affected users and $932,804.22; Blockaid estimates approximately $1.1 million in fleet-wide attacker cash-out, while Solayer Pay's separate loss remains undisclosed. The monitoring set contains two pre-exploit Ethereum funding seeds, the Solana exploit wallet `FVNFzq...QnCEj`, Solana proceeds wallet `4kjs...PKKKE`, and Ethereum laundering pivot `0x2cE2...338D5`. Common control of the funding seeds and Solana exploiter is unproven. Four Rain deployments and the Tornado Cash router are recorded only as non-attacker infrastructure.
