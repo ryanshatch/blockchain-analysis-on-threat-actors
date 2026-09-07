@@ -404,9 +404,10 @@ The July action materially expanded an existing sanctioned-wallet attribution. T
 OFAC directly attributed these TRON identifiers to Zaid Issam Ahmed Al-Jebouri and linked him to El-Kahira for General Trading. Connected exchanges, OTC services, bridges, token contracts, and counterparties should initially remain graph-expansion pivots unless separately attributed.
 ---
 
-## August 20-September 4, 2026 Multi-Chain Security Sweep
+## August 20-September 6, 2026 Multi-Chain Security Sweep
 
 **Review cutoff:** August 20, 2026 at 2:31 a.m. ET  
+**Follow-up cutoff:** September 6, 2026
 **Case file:** [`Multi-Chain/August-2026-Security-Sweep/`](./Multi-Chain/August-2026-Security-Sweep/)  
 **Machine-readable seeds:** [`addresses.csv`](./Multi-Chain/August-2026-Security-Sweep/addresses.csv)
 
@@ -481,7 +482,7 @@ Fake AMLBot and AML-checker sites are tracked as a high-confidence wallet-draine
 
 The Coinsbuy access vector remains unresolved; simultaneous Ethereum/TRON activity does not by itself prove private-key compromise, API compromise, or insider access. The Allbridge August Base/CCTP incident is documented as a second exploit but contributes no direct-watch seed because no complete attacker identifier was available in authoritative reporting.
 
-The Harmony native and hex identifiers above remain four underlying accounts, not eight. No new complete qualifying Solana threat address was identified in the follow-up scan. Truncated Lazarus BTC destinations and other incomplete identifiers remain excluded.
+The Harmony native and hex identifiers above remain four underlying accounts, not eight. At the August 21 follow-up cutoff, no new complete qualifying Solana threat address had been identified. Later additions, including Rain, Aquifer, and the fake GTA VI drainer, are documented in their dedicated sections. Truncated Lazarus BTC destinations and other incomplete identifiers remain excluded.
 
 ---
 
@@ -569,7 +570,7 @@ These items are not counted as confirmed Solana protocol exploits or confirmed r
 | Solana | `4kjsW9dPsqzvuhQVP3P23cvZisdoHE5dR8NdD1TMPKKE` | Proceeds and conversion wallet receiving more than $1M in SOL before USDC swaps | High | P1 direct watch |
 | Ethereum | `0x2cE21E4921d3Eb116526c3651Dac0257657338D5` | Cross-chain laundering and proceeds pivot routing funds toward Tornado Cash | High incident linkage; medium-high control | P1 direct watch with proceeds-role label |
 
-Avici reconciled 1,685 affected users and $500,859.22 in unauthorized card-balance withdrawals. Tria confirmed another 636 users and $431,945, establishing at least 2,321 victims and $932,804.22 across two Rain-powered programs. Approximately $1.02 million in broader attacker proceeds remains a separate unresolved measure.
+Avici reconciled 1,685 affected users and $500,859.22 in unauthorized card-balance withdrawals. Tria confirmed another 636 users and $431,945, establishing a 2,321-user / $932,804.22 reconciled subset. Blockaid also identifies Solayer Pay as affected and estimates approximately $1.1 million in fleet-wide attacker cash-out. Solayer Pay's separate loss and victim count remain undisclosed; the roughly $167,195.78 difference must not be assigned entirely to that program.
 
 The principal address was published by independent transaction-level reporting after earlier coverage exposed only `FVNFzq...CEj`. It was not reconstructed from a truncated form. Subsequent tracing resolved the next Solana proceeds wallet and the Ethereum-side laundering pivot. Blockaid's September 2 post-mortem added the two Ethereum funding seeds and reconstructed 2,945 unauthorized administrator additions plus 5,288 collateral withdrawals, totaling 8,233 core exploit transactions. Approximately 455.9 ETH ultimately entered Tornado Cash.
 
@@ -583,7 +584,7 @@ The funding addresses are high-confidence incident-linked infrastructure; common
 | Solana | `8r2jms1vAnHhtCWxDNSgiHvQNSzzJvGa9oBRCbBPCBNN` | Same-opcode Rain legacy deployment; no confirmed loss disclosed |
 | Ethereum | `0xd90e2f925DA726b50C4Ed8D0Fb90Ad053324F31b` | Tornado Cash router / laundering infrastructure |
 
-User collateral accounts, Avici and Tria infrastructure, DEX pools, bridges, exchanges, market makers, Tornado Cash contracts, and ordinary counterparties remain victim, protocol, or graph-expansion context and must not inherit the attacker label.
+User collateral accounts, Avici, Tria, and Solayer Pay infrastructure, DEX pools, bridges, exchanges, market makers, Tornado Cash contracts, and ordinary counterparties remain victim, protocol, or graph-expansion context and must not inherit the attacker label.
 
 ---
 
@@ -695,6 +696,75 @@ The August 31 Injective binary-options exploit is confirmed at high confidence, 
 - Five high-profit early traders and four same-ticker copycat mints are retained in the case CSV as explicit non-actor rows and must not inherit the CYBERLEEK label.
 - Upstream hubs, relays, feeder wallets, services, pools, exchanges, token accounts, and look-alike dust addresses remain graph context unless independently attributed.
 - No named person, nationality, or link to the 2022 LAPSUS$ or April 2026 ShinyHunters cases is established.
+
+---
+
+## Fake GTA VI Leak Wallet-Drainer Campaign
+
+**Report date:** September 1, 2026
+
+**Case file:** [`Multi-Chain/GTA-VI-Wallet-Drainer/`](./Multi-Chain/GTA-VI-Wallet-Drainer/)
+
+**Address data:** [`addresses.csv`](./Multi-Chain/GTA-VI-Wallet-Drainer/addresses.csv)
+
+**Domain IOCs:** [`domains.csv`](./Multi-Chain/GTA-VI-Wallet-Drainer/domains.csv)
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Solana | `21iWU6FJWJ9FKKz4Jek2CyTh2x1fqs5jawjrNgE3nHjN` | Receiving address embedded in malicious Solana transfer code | High | P1 direct watch |
+
+Malwarebytes found that the analyzed fake GTA VI page retained only transaction fees and attempted to send essentially the victim's remaining SOL to this address. Realized loss and victim count remain unknown. The domains `centrodigestionedellarapina[.]life` and `dasunerforschtelandamendederwelt[.]sbs` are campaign IOCs, not wallet labels.
+
+The drainer remains separate from CYBERLEEK. Shared GTA VI branding does not establish shared infrastructure or control.
+
+---
+
+## DOJ/FBI Hamas / Al-Qassam Financing and Laundering Network
+
+**Public disclosure:** September 1, 2026
+
+**Networks:** TRON and BNB Smart Chain
+
+**Case file:** [`Multi-Chain/Hamas-Al-Qassam-Financing/`](./Multi-Chain/Hamas-Al-Qassam-Financing/)
+
+**Machine-readable records:** [`addresses.csv`](./Multi-Chain/Hamas-Al-Qassam-Financing/addresses.csv)
+
+### Highest-Priority Seeds
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| TRON | `TAZEkqkjuHkYznF3Q8g9PKbpRuUNtUbgCB` | Hamas donation-consolidation and operational laundering wallet | High; official DOJ/FBI affidavit | P1 direct watch |
+| TRON | `TL192dbA29m2pyaug7m7gHCurzGbzFnLEx` | Downstream laundering and rapid Binance dispersal wallet | High; official DOJ/FBI affidavit | P1 direct watch |
+| BNB Smart Chain | `0x0c78ab86e809e1f65374055610f9fcb5cd100734` | Financier and fiat-conversion network account; seizure target | High; official DOJ/FBI affidavit | P1 direct watch |
+| BNB Smart Chain | `0x8a48E24D664f481e5B8b98f6efa4Af43DC765834` | Incident-linked cross-chain exchange and laundering hop | High flow linkage; medium control confidence | P2 direct watch and graph expansion |
+
+### Donation and Financing Address Set
+
+| Network | Address | Classification |
+|---|---|---|
+| TRON | `TA315GUGunjKDhv1ZL1YTvy7asPzJhAtL1` | Official fundraising-network seizure target |
+| TRON | `TS4toQBwagdM2oD1Q9eNqWoL8s7fMg5U2b` | Official fundraising-network seizure target |
+| TRON | `TWsomy6GFJqhswDjJcufPgTpMKGhwcVhdw` | Official fundraising-network seizure target |
+| TRON | `TVWRL9AY81gDdChuYiCfiNm5U39DNTyQwG` | Official fundraising-network seizure target |
+| TRON | `TYjWo3X1eFm8ufpb1jPQf8xv5bfriszGgq` | Official fundraising-network seizure target |
+| TRON | `TM1ywQ3ApL8ai2VTR6515fmzNdgFdKfa6J` | Official fundraising-network seizure target with direct email evidence |
+| TRON | `TAbC5hoom3mktAGf3KZBNdxhEEujdUtpWG` | Official fundraising-network seizure target with direct email evidence |
+| TRON | `TFBnvjWAjXkRAigJSPR5YqzowMNT85y1YZ` | Official fundraising-network seizure target with direct email evidence |
+| TRON | `TDeBgBrQjgySyP9zPje3CRBCT2MQd13hy3` | Directly solicited donation address |
+| TRON | `TWE3K4dctpkdQgXG5VRHU4ND1ssh3HCCFg` | Directly solicited donation address |
+| TRON | `TCeCc94bcYiooTuGsHojDCUNbdneK2qgn3` | Directly solicited donation address |
+| TRON | `TL5Npc5AA2CuWcWzjzemGV1zBo3dadUgdF` | Directly solicited donation address |
+
+### Custodial Money-Mule Accounts
+
+| Network | Address | Classification | Boundary |
+|---|---|---|---|
+| TRON | `TKmyTRdBaKXviN5MCJHD7nvfmoSTQ6zzmS` | Binance-linked likely money-mule account | Custodial user account, not a self-hosted wallet |
+| TRON | `TYZwCibn8uH1jr9c7i9Vc46mPoGpS9cvsz` | Binance-linked likely money-mule account | Custodial user account, not a self-hosted wallet |
+
+DOJ reports approximately $560,000 seized. The June warrant package supports the 18 role-separated records above, but not one common controller for the full set. Exchange hot wallets, consolidation sweeps, token contracts, and transaction neighbors do not inherit the Hamas label.
+
+The submitted addresses `TWQTTSqorX2dqVYmVn8j1WNNaKgmL7ShkV` and `TYMRKshB4rMrr2UP3HF9AFM1PGjpFSKLHh` are withheld because they could not be reconciled to the reviewed DOJ release and warrant packages.
 
 ---
 

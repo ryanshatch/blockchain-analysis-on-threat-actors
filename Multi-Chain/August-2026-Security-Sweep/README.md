@@ -1,12 +1,12 @@
-# August 20-September 4, 2026 Crypto Security Sweep
+# August 20-September 6, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
-| Follow-up cutoff | September 4, 2026 |
+| Follow-up cutoff | September 6, 2026 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
 | Networks | MAYAChain, Bitcoin, Ethereum, Solana, ICON, Sonic, Cronos, BNB Chain, Harmony, TRON, Base, and other EVM environments |
-| Sources reviewed | SlowMist, CertiK, TRM Labs, BlockSec, Blockaid, SEAL/Security Alliance, Bitquery, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, Protos, ICON Foundation, protocol disclosures, public explorers, and corroborating reporting |
+| Sources reviewed | U.S. Department of Justice and FBI affidavits, SlowMist, CertiK, TRM Labs, BlockSec, Blockaid, SEAL/Security Alliance, Bitquery, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, Protos, ICON Foundation, protocol disclosures, public explorers, and corroborating reporting |
 | Latest confirmed protocol incidents in the follow-up window | Aquifer on Solana and Injective binary-options settlement, August 31, 2026; Aquifer has three complete P1 indicators while Injective remains a zero-seed case |
 
 > SlowMist's live tracker listed Maya Protocol as its newest incident at the review cutoff. No protocol exploit dated August 19 or August 20 appeared above it. This is a point-in-time observation, not proof that no undisclosed or later-indexed incident occurred.
@@ -15,10 +15,12 @@
 
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
 |---|---|---|---:|---|
+| Hamas / Al-Qassam cryptocurrency fundraising network | Warrants unsealed September 1 | Terrorist fundraising, consolidation, laundering, money-mule, and financier activity | Approximately $560,000 seized by the FBI | High official network linkage; role-specific ownership caveats |
+| Fake GTA VI leak wallet drainer | Reported September 1 | Wallet drainer, phishing, and malicious transaction signing | Not publicly quantified | High campaign, code-behavior, and address linkage |
 | Aquifer | August 31; reconstruction verified September 1 | Forged token-account and untrusted token-program validation exploit | $2,469,729 across 212 malicious swaps | High incident and address linkage; medium-high precise source-level root cause |
 | Injective binary-options module | August 31; reported September 1 | Market-identifier collision and settlement-logic exploit | Approximately $4.9M | High incident; incomplete attacker IOC |
 | Tectonic / Cronos | August 30-31 | Lending-market exploit involving manipulated thin-liquidity TONIC collateral pricing | Approximately $74M-$75M reported | High incident; incomplete attacker IOCs |
-| Rain legacy Solana card contracts / Avici and Tria | August 28; attribution update September 2 | Shared-infrastructure authorization and signature-validation exploit | $932,804.22 confirmed across 2,321 users; approximately $1.02M in broader attacker proceeds | High |
+| Rain legacy Solana card contracts / Avici, Tria, and Solayer Pay | August 28; fleet update September 2-6 | Shared-infrastructure Ed25519 signature-reuse and authorization-bypass exploit | $932,804.22 reconciled Avici + Tria subset; approximately $1.1M fleet-wide cash-out | High |
 | ICON Network migration contracts | August 27; official post-mortem August 30 | Signed-message replay and withdrawal-uniqueness validation exploit | 119,866,000 ICX and 531,600 bnUSD released; approximately 150.2 ETH plus 31,204 USDC unrecovered | High |
 | Moonwell / MAMO collateral market | August 27 | Thin-liquidity collateral-price manipulation on Base | Approximately $8.7M | High incident; incomplete attacker IOC |
 | Term Finance / Term Meta Vaults | August 23; laundering update August 25 | Governance-layer takeover, malicious vault asset movements, and active Tornado Cash dispersal | About $8.5M; 300 ETH later deposited to Tornado Cash | High |
@@ -428,20 +430,21 @@ The complete address set, entity roles, monitoring treatment, and attribution bo
 |---|---|
 | Incident date | August 28, 2026 |
 | Infrastructure | Rain legacy Solana card contracts |
-| Confirmed affected programs | Avici and Tria |
-| Classification | Shared-infrastructure authorization and signature-validation exploit |
+| Confirmed affected programs | Avici, Tria, and Solayer Pay |
+| Classification | Shared-infrastructure Ed25519 signature-reuse and authorization-bypass exploit |
 | Avici | 1,685 users / $500,859.22 |
 | Tria | 636 users / $431,945 |
-| Confirmed combined impact | 2,321 users / $932,804.22 |
-| Broader attacker proceeds | Approximately $1.02 million; difference unresolved |
+| Reconciled Avici + Tria subset | 2,321 users / $932,804.22 |
+| Solayer Pay | Affected; separate loss and victim count not disclosed |
+| Fleet-wide attacker cash-out | Approximately $1.1 million |
 | Confidence | High |
 | Direct seeds | Two Ethereum funding seeds, two Solana P1 seeds, and one Ethereum laundering/proceeds pivot |
 
-The August 28 incident was broader than an Avici-only breach. Tria confirmed that the same Rain infrastructure issue affected another 636 users and $431,945 in Solana card balances. Combined with Avici's reconciliation, the confirmed minimum is 2,321 affected users and $932,804.22 in unauthorized withdrawals.
+The August 28 incident was broader than an Avici-only breach. Tria confirmed that the same Rain infrastructure issue affected another 636 users and $431,945 in Solana card balances. Combined with Avici's reconciliation, the confirmed Avici and Tria subset is 2,321 affected users and $932,804.22 in unauthorized withdrawals. Blockaid also identifies Solayer Pay as affected.
 
 Rain said a small number of programs were using outdated Solana contract versions. It upgraded all affected deployments, engaged external forensic specialists, and reported no further unauthorized activity. Avici and Tria each reported restoring affected balances in full plus 10% additional compensation.
 
-The approximately $1.02 million traced through the attacker cluster remains separate from the program-level reconciliation. The roughly $87,000 difference must not be assigned to a third victim program without confirmation.
+Blockaid's fleet-wide estimate is approximately $1.1 million. The roughly $167,195.78 difference from the Avici and Tria reconciliation must not be assigned entirely to Solayer Pay or another program without program-specific evidence.
 
 Blockaid's September 2 post-mortem disclosed two complete Ethereum addresses that funded the Solana operation before the exploit. Both were already flagged as malicious in Blockaid's threat-intelligence network. They are retained as P1 pre-exploit infrastructure seeds; their high-confidence transaction linkage does not, by itself, prove common ownership with the Solana exploiter.
 
@@ -458,13 +461,13 @@ Blockaid's September 2 post-mortem disclosed two complete Ethereum addresses tha
 | Solana | `4kjsW9dPsqzvuhQVP3P23cvZisdoHE5dR8NdD1TMPKKE` | Proceeds and conversion wallet receiving more than $1 million in SOL before USDC swaps | P1 direct watch |
 | Ethereum | `0x2cE21E4921d3Eb116526c3651Dac0257657338D5` | Cross-chain laundering and proceeds pivot routing funds toward Tornado Cash | P1 direct watch with proceeds-role label |
 
-The complete principal address was published by The Defiant and a transaction-level Solana analysis after earlier reports showed only `FVNFzq...CEj`. On-chain investigators later resolved the next Solana wallet and the Ethereum-side proceeds address. Blockaid reconstructed 2,945 unauthorized `AddCollateralAdmin` calls and 5,288 `WithdrawCollateralAsset` calls, totaling 8,233 core exploit transactions over approximately 2 hours and 29 minutes. The supported path is Ethereum funding seeds → deBridge → principal Solana drain and collection → Solana conversion → approximately $1.02 million USDC → Ethereum laundering pivot → approximately 455.9 ETH deposited through Tornado Cash infrastructure.
+The complete principal address was published by The Defiant and a transaction-level Solana analysis after earlier reports showed only `FVNFzq...CEj`. On-chain investigators later resolved the next Solana wallet and the Ethereum-side proceeds address. Blockaid reconstructed 2,945 unauthorized `AddCollateralAdmin` calls and 5,288 `WithdrawCollateralAsset` calls, totaling 8,233 core exploit transactions over approximately 2 hours and 29 minutes. Its bytecode analysis found that reused Ed25519 instruction offsets allowed one attacker-controlled signature to satisfy two expected authorizations. The supported path is Ethereum funding seeds → deBridge → principal Solana drain and collection → Solana conversion → Ethereum laundering pivot → approximately 455.9 ETH deposited through Tornado Cash infrastructure.
 
 Blockaid also published four Rain card-contract deployments and the Tornado Cash router. They are retained only as victim/protocol or laundering-infrastructure context, not attacker-controlled wallets.
 
 The canonical report and ten machine-readable records—five P1 seeds and five explicit non-attacker infrastructure pivots—are maintained in [`SOL/Rain-Legacy-Contracts/`](../../SOL/Rain-Legacy-Contracts/).
 
-No additional high-confidence Solana protocol exploit, wallet-drainer campaign, or confirmed rug pull cleared the repository's evidence threshold in the September 2 follow-up. The material Solana development is the resolution of Rain's upstream funding seeds and the stronger reconstruction of its existing exploit cluster.
+No later Solana protocol exploit or confirmed rug pull cleared the repository's evidence threshold through September 6. The new qualifying Solana-targeting campaign is the separate fake GTA VI wallet drainer documented below.
 
 ## 20. ICON Network Migration-Contract Replay Exploit
 
@@ -553,14 +556,48 @@ Public reporting describes an attacker creating 299 binary-options markets and e
 
 The truncated identifier is not retained in a machine-readable dataset and must not be reconstructed from prefix and suffix fragments. Injective protocol modules, oracles, bridge infrastructure, and exchange counterparties remain protocol or graph context unless separately attributed.
 
+## 24. DOJ/FBI Hamas / Al-Qassam Financing Disclosure
+
+| Field | Assessment |
+|---|---|
+| Public disclosure | September 1, 2026 |
+| Networks represented | TRON and BNB Smart Chain |
+| Classification | Terrorist fundraising, consolidation, laundering, exchange conversion, and money-mule activity |
+| Value seized | Approximately $560,000 |
+| Direct monitoring records | 18 |
+| Confidence | High official network linkage; role-specific ownership caveats |
+
+DOJ unsealed seizure-warrant materials exposing complete addresses used in the Hamas / Al-Qassam fundraising and laundering network. The June 25, 2025 affidavit contributes fourteen TRON target-property addresses, two Binance-linked TRON user accounts assessed as likely money mules, one BSC financier account, and one incident-linked but unattributed BSC exchange hop.
+
+The highest-priority seeds are the TRON consolidation wallet `TAZEkqkjuHkYznF3Q8g9PKbpRuUNtUbgCB`, the downstream laundering wallet `TL192dbA29m2pyaug7m7gHCurzGbzFnLEx`, and the BSC financier account `0x0c78ab86e809e1f65374055610f9fcb5cd100734`. The two Binance-linked TRON records retain explicit custodial-account labels. The BSC hop `0x8a48E24D664f481e5B8b98f6efa4Af43DC765834` is watched for incident flows but is not assigned the financier's controller.
+
+Two additional submitted TRON strings were withheld after they could not be located in the DOJ release or the five linked warrant packages. The canonical report and 18 verified records are maintained in [`Multi-Chain/Hamas-Al-Qassam-Financing/`](../Hamas-Al-Qassam-Financing/).
+
+## 25. Fake GTA VI Leak Wallet Drainer
+
+| Field | Assessment |
+|---|---|
+| Report date | September 1, 2026 |
+| Classification | Wallet drainer, phishing, and malicious transaction signing |
+| Solana direct seed | `21iWU6FJWJ9FKKz4Jek2CyTh2x1fqs5jawjrNgE3nHjN` |
+| Infrastructure IOCs | Two malicious domains |
+| Realized loss | Not publicly quantified |
+| Confidence | High |
+
+Malwarebytes ThreatLabs reverse-engineered a fake GTA VI leaked-copy page whose Solana component kept only enough SOL for transaction fees and attempted to transfer essentially the remaining balance to the published receiving address. The advertised one-SOL purchase price was not used in the transaction calculation.
+
+The page also loaded an approximately 2.4 MB remotely configurable multi-chain drainer targeting Ethereum, Polygon, BNB Smart Chain, Avalanche, Arbitrum, Base, and Fantom. The domains `centrodigestionedellarapina[.]life` and `dasunerforschtelandamendederwelt[.]sbs` are retained as campaign IOCs.
+
+This case is separate from CYBERLEEK. A shared GTA VI lure does not establish common control. The canonical report, one address row, and two domain rows are maintained in [`Multi-Chain/GTA-VI-Wallet-Drainer/`](../GTA-VI-Wallet-Drainer/).
+
 ## Monitoring Priorities
 
 | Priority | Indicators | Action |
 |---|---|---|
-| P1 | COLDCARD primary Ethereum destination plus five confirmed high-value or active Bitcoin seeds; Aquifer Solana attacker, malicious program, and Ethereum proceeds wallet; Rain five-address funding/exploit/proceeds set; four ICON chain-specific records; Term Finance active laundering source; Bofur spoof, swap, final-DAI, and campaign-controller addresses; Maya MAYAChain/BTC addresses; FoxMarket attacker; three Hyperliquid-phishing recipients; Ethereum whale theft address; two Coinsbuy Ethereum addresses; Coinsbuy TRON address; four Harmony accounts | Direct monitoring, historical graph expansion, bridge, exchange-deposit, malicious-program, and privacy-protocol alerts |
-| P2 | Three COLDCARD secondary, historical, or earlier Ethereum/BTC pivots; Bofur poisoning contract; Maya Arbitrum proceeds address; poisoning address | Direct monitoring with narrower incident-role labels |
+| P1 | DOJ/FBI Hamas fundraising, consolidation, laundering, money-mule, and financier targets; GTA VI Solana drainer address; COLDCARD primary Ethereum destination plus five confirmed high-value or active Bitcoin seeds; Aquifer Solana attacker, malicious program, and Ethereum proceeds wallet; Rain five-address funding/exploit/proceeds set; four ICON chain-specific records; Term Finance active laundering source; Bofur, Maya, FoxMarket, Hyperliquid-phishing, whale-drain, Coinsbuy, and Harmony seeds | Direct monitoring, historical graph expansion, bridge, exchange-deposit, malicious-program, and privacy-protocol alerts |
+| P2 | Hamas incident-linked unattributed BSC exchange hop; three COLDCARD secondary, historical, or earlier Ethereum/BTC pivots; Bofur poisoning contract; Maya Arbitrum proceeds address; poisoning address | Direct monitoring with narrower incident-role labels |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
-| Campaign IOCs | Fake Seeker / SKR domain and fake `$WAR` rewards activity | Block known domains, monitor replacements, and preserve the distinction from legitimate projects and tokens |
+| Campaign IOCs | Fake GTA VI drainer domains, fake Seeker / SKR domain, and fake `$WAR` rewards activity | Block known domains, monitor replacements, and preserve case and legitimate-project distinctions |
 | Case only | ODY; Moonwell / MAMO; Tectonic / Cronos; Injective binary-options exploit | Preserve confirmed incident reporting while withholding truncated identifiers |
 | Investigative | Vultisig-related outflow; FOMO iOS allegations; Kylie Jenner / `$KYLIE` promotion | Monitor for complete IOCs, root-cause evidence, victim confirmation, deployer/proceeds attribution, and authoritative statements |
 
@@ -582,12 +619,14 @@ The truncated identifier is not retained in a machine-readable dataset and must 
 - The `$KYLIE` mint is a contextual token-promotion IOC, not an attacker wallet or a confirmed rug classification.
 - The Moonwell / MAMO exploit is confirmed at high confidence, but `0xD71d...C384` is truncated and contributes no machine-readable seed.
 - The 30 MOIS-network addresses and separate Tsoris seed are official OFAC identifiers; interacting wallets do not automatically inherit those labels.
-- The Rain monitoring set contains two Ethereum funding seeds, two Solana P1 seeds, and one Ethereum laundering/proceeds pivot. Funding linkage is high confidence, but common ownership of the Ethereum funders and Solana exploiter remains unresolved. Rain contracts, Avici and Tria accounts, affected users, DEXs, bridges, exchanges, Tornado Cash contracts, and service counterparties do not inherit attacker labels.
+- The Rain monitoring set contains two Ethereum funding seeds, two Solana P1 seeds, and one Ethereum laundering/proceeds pivot. Funding linkage is high confidence, but common ownership of the Ethereum funders and Solana exploiter remains unresolved. Avici, Tria, and Solayer Pay are confirmed affected programs; the Solayer Pay loss is not separately disclosed. Rain contracts, affected accounts, DEXs, bridges, exchanges, Tornado Cash contracts, and service counterparties do not inherit attacker labels.
 - ICON officially identifies three unique attacker-controlled accounts, represented as four chain-specific records because one EOA is shared across Sonic and Ethereum. The 24 exchange deposit addresses remain custody and evidence pivots, not attacker labels.
 - Tectonic's three published address representations remain truncated and are withheld from machine-readable wallet data.
 - The Aquifer direct set contains one Solana attacker wallet, one malicious Solana program, and one Ethereum proceeds wallet. The Aquifer victim program, affected vaults, recovery addresses, routers, bridges, settlement wallets, market makers, and ordinary counterparties remain explicitly non-attacker context.
 - Aquifer's precise source-level root cause is reconstructed from a consistent on-chain instruction pattern because the source code is not public.
 - Injective's reported Ethereum destination remains truncated as `0x5a18...69ea` and contributes no machine-readable seed.
+- The DOJ/FBI Hamas case contains 18 official, role-separated records from the June warrant package. Custodial money-mule accounts and the unattributed BSC hop retain narrower control labels; exchange infrastructure and neighbors do not inherit the attribution. Two uncorroborated submitted TRON strings are withheld.
+- The GTA VI wallet drainer is distinct from CYBERLEEK. One hard-coded Solana address is a direct campaign seed; two domains are non-wallet IOCs; no named operator or quantified loss is established.
 - ODY and Vultisig identifiers remain withheld where public evidence is truncated or attribution is incomplete.
 
 ## Sources
@@ -725,8 +764,17 @@ The truncated identifier is not retained in a machine-readable dataset and must 
 - [Defimon Alerts — incident and Ethereum proceeds report](https://x.com/DefimonAlerts)
 - [PANews — binary-options exploit, network interruption, and zero-seed context](https://www.panewslab.com/en/articles/01a05a75-a70e-765e-8982-ab931191e00d)
 
+### September 1 DOJ/FBI Hamas / Al-Qassam Financing Disclosure
+
+- [U.S. Department of Justice — disruption and seizure announcement](https://www.justice.gov/usao-dc/pr/justice-department-continues-disrupt-hamas-terrorist-financing-schemes-through-seizures)
+- [U.S. Department of Justice — June 25, 2025 seizure warrant and affidavit, case 25-sz-34](https://www.justice.gov/usao-dc/media/1459826/dl?inline=)
+
+### September 1 Fake GTA VI Leak Wallet Drainer
+
+- [Malwarebytes ThreatLabs — analyzed Solana and multi-chain wallet-drainer code](https://www.malwarebytes.com/blog/scams/2026/09/fake-gta-6-leaked-copy-drains-your-crypto-wallet)
+
 ---
 
 ## TLDR
 
-The September 3-4 follow-up resolves three complete Ethereum destinations for 20.69 BTC moved through 36 THORChain swaps from the COLDCARD theft graph. The dedicated case retains those destinations, six Bitcoin addresses from Bitquery's `CONFIRMED` tier, and the earlier CertiK-linked Ethereum pivot. Lower-confidence Bitquery tiers and service infrastructure remain separate. No new official OFAC, FBI, or DOJ BTC, ETH, or SOL full-address disclosure was identified in this follow-up.
+The September 6 update adds 18 DOJ/FBI-attributed TRON and BSC records from the Hamas / Al-Qassam financing investigation, one Solana receiving address and two domains from a fake GTA VI wallet drainer, and the fleet-wide Rain scope: Avici, Tria, and Solayer Pay with approximately $1.1 million cash-out. The Rain direct-watch address cluster is unchanged. Custodial, victim, protocol, exchange, mixer, and domain roles remain separated, and two submitted TRON strings are withheld after failing primary-source reconciliation.

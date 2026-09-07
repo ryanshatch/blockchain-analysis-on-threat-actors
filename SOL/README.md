@@ -61,8 +61,8 @@
     <tr>
       <td><a href="./Rain-Legacy-Contracts/"><code>Rain-Legacy-Contracts/</code></a></td>
       <td>August 28, 2026</td>
-      <td>Shared-infrastructure authorization and signature-validation exploit affecting Rain legacy Solana card contracts used by Avici and Tria</td>
-      <td>2,321 confirmed users and $932,804.22 reconciled; approximately $1.02M in broader attacker proceeds; two upstream Ethereum funding seeds, two Solana seeds, and one Ethereum laundering pivot</td>
+      <td>Shared-infrastructure Ed25519 signature-reuse and authorization-bypass exploit affecting Rain legacy Solana card contracts used by Avici, Tria, and Solayer Pay</td>
+      <td>2,321 users and $932,804.22 reconciled for Avici plus Tria; approximately $1.1M fleet-wide cash-out; Solayer Pay impact not separately quantified</td>
     </tr>
     <tr>
       <td><a href="./Aquifer/"><code>Aquifer/</code></a></td>
@@ -128,6 +128,11 @@
       <td>Wallet-drainer, malicious dApp, fake-token, impersonation, and investment-scam campaign. Not counted as a single Solana protocol exploit.</td>
     </tr>
     <tr>
+      <td><a href="../Multi-Chain/GTA-VI-Wallet-Drainer/"><code>Multi-Chain/GTA-VI-Wallet-Drainer/</code></a></td>
+      <td>Reported September 1, 2026; one hard-coded Solana receiving address and two malicious domains retained</td>
+      <td>Fake GTA VI leaked-copy wallet drainer. Confirmed malicious code; separate from CYBERLEEK and not counted as a Solana protocol exploit.</td>
+    </tr>
+    <tr>
       <td><a href="../Multi-Chain/August-2026-Security-Sweep/"><code>FOMO iOS allegations</code></a></td>
       <td>August 23–24, 2026; one 662 SOL transfer verified; $6M aggregate loss claimed but unverified</td>
       <td>Disputed wallet-drain allegation / possible client-side compromise. Investigative only; no direct threat-wallet seed.</td>
@@ -169,7 +174,8 @@ The exploit-origin chain and the later proceeds chains are recorded separately. 
   <li>The SpaceX/FIFA drainer wave is tracked as a campaign because its domains, tokens, receiving addresses, and operator infrastructure rotate rapidly.</li>
   <li>FOMO remains a disputed wallet-drain allegation; the verified 662 SOL transfer does not establish app causation and adds no direct threat-wallet seed.</li>
   <li>The fake Seeker / SKR URL and the <code>$KYLIE</code> mint are retained as non-wallet investigative IOCs. Fake <code>$WAR</code> pages remain campaign intelligence without a complete retained IOC.</li>
-  <li>The Rain case retains two upstream Ethereum funding seeds, two Solana P1 seeds, and one Ethereum laundering/proceeds pivot. Funding linkage is high confidence, but common ownership with the Solana exploiter remains unresolved. Rain contracts, affected Avici and Tria collateral accounts, DEXs, bridges, exchanges, market makers, Tornado Cash contracts, and ordinary counterparties remain infrastructure or victim context.</li>
+  <li>The Rain case retains two upstream Ethereum funding seeds, two Solana P1 seeds, and one Ethereum laundering/proceeds pivot. Funding linkage is high confidence, but common ownership with the Solana exploiter remains unresolved. Avici, Tria, and Solayer Pay are confirmed affected programs; Solayer Pay's separate loss is undisclosed. Rain contracts, collateral accounts, DEXs, bridges, exchanges, market makers, Tornado Cash contracts, and ordinary counterparties remain infrastructure or victim context.</li>
+  <li>The fake GTA VI drainer address is a high-confidence campaign seed. Shared branding does not connect it to CYBERLEEK, and the two malicious domains remain non-wallet IOCs.</li>
   <li>The Aquifer case retains one Solana attacker wallet, one malicious Solana program, and one Ethereum proceeds wallet as P1 indicators. The Aquifer program, affected vaults, recovery addresses, routers, bridges, settlement wallets, market makers, and ordinary counterparties remain victim, recovery, or service infrastructure.</li>
   <li>None of the August 24–25 Solana watch items are counted as confirmed Solana protocol exploits or confirmed rug pulls.</li>
   <li>Cross-chain counterparties are not automatically threat-labeled merely because they interacted with incident proceeds or sanctioned seeds.</li>

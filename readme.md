@@ -96,7 +96,7 @@
     </tr>
     <tr>
       <td><a href="./Multi-Chain/August-2026-Security-Sweep/"><code>Multi-Chain/August-2026-Security-Sweep/</code></a></td>
-      <td>August 20-September 4, 2026 security sweep covering the complete COLDCARD Wave 3 Ethereum destinations, the Aquifer attacker/proceeds cluster, Rain's expanded funding/exploit/proceeds set, zero-seed Injective and Tectonic cases, the ICON migration-contract replay exploit, Moonwell/MAMO, Term Finance laundering, Sandbox Base/BSC, Bofur Capital address poisoning, Maya external-L1 proceeds, Coinsbuy Ethereum/TRON theft wallets, Allbridge Base/CCTP, and prior exploit, phishing, rug-pull, and laundering intelligence.</td>
+      <td>August 20-September 6, 2026 security sweep covering the DOJ/FBI Hamas financing disclosure, the fake GTA VI wallet drainer, Rain's fleet-wide scope update, the complete COLDCARD Wave 3 Ethereum destinations, Aquifer, ICON, and earlier exploit, phishing, rug-pull, and laundering intelligence.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/Coldcard-Weak-Entropy-Theft/"><code>Multi-Chain/Coldcard-Weak-Entropy-Theft/</code></a></td>
@@ -109,6 +109,14 @@
     <tr>
       <td><a href="./Multi-Chain/Iranian-MOIS-Cyber-Network/"><code>Multi-Chain/Iranian-MOIS-Cyber-Network/</code></a></td>
       <td>August 24, 2026 OFAC attribution covering 30 BTC, ETH, and TRON seeds for four MOIS-linked Iranian cyber actors plus one separately classified Tsoris sanctions-finance seed.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/Hamas-Al-Qassam-Financing/"><code>Multi-Chain/Hamas-Al-Qassam-Financing/</code></a></td>
+      <td>September 1, 2026 DOJ/FBI unsealing with 18 role-separated TRON and BNB Smart Chain fundraising, consolidation, laundering, money-mule, and financier records.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/GTA-VI-Wallet-Drainer/"><code>Multi-Chain/GTA-VI-Wallet-Drainer/</code></a></td>
+      <td>September 1 fake GTA VI leak wallet-drainer campaign with one hard-coded Solana receiving address and two malicious-domain IOCs, kept separate from CYBERLEEK.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/Triple-A/"><code>Multi-Chain/Triple-A/</code></a></td>
@@ -135,7 +143,7 @@
     <tr><td><a href="./Lazarus/"><code>Lazarus/</code></a></td><td>DPRK TraderTraitor / Lazarus Group wallets, including addresses connected to the Bybit theft and earlier incidents.</td></tr>
     <tr><td><a href="./SOL/"><code>SOL/</code></a></td><td>Solana-specific threat-actor, governance, exploit, leak-and-token campaign, and suspicious-wallet investigations.</td></tr>
     <tr><td><a href="./SOL/CYBERLEEK/"><code>SOL/CYBERLEEK/</code></a></td><td>CYBERLEEK / GTA VI leak-and-token campaign report covering the creator wallet, token and pool mechanics, locked-liquidity Fee Key, August 27 creator-fee cash-out, funding pivots, explicit trader and copycat exclusions, and unresolved real-world attribution.</td></tr>
-    <tr><td><a href="./SOL/Rain-Legacy-Contracts/"><code>SOL/Rain-Legacy-Contracts/</code></a></td><td>August 28 Rain shared-infrastructure authorization exploit affecting Avici and Tria card balances, with two upstream Ethereum funding seeds, two Solana P1 seeds, one Ethereum laundering/proceeds pivot, and explicit non-attacker contract exclusions.</td></tr>
+    <tr><td><a href="./SOL/Rain-Legacy-Contracts/"><code>SOL/Rain-Legacy-Contracts/</code></a></td><td>August 28 Rain shared-infrastructure Ed25519 signature-reuse exploit affecting Avici, Tria, and Solayer Pay, with approximately $1.1M fleet-wide cash-out and explicit non-attacker contract exclusions.</td></tr>
     <tr><td><a href="./SOL/Aquifer/"><code>SOL/Aquifer/</code></a></td><td>August 31 Aquifer forged token-account and token-program validation exploit, with one Solana attacker wallet, one malicious program, one Ethereum proceeds wallet, and explicit victim/recovery exclusions.</td></tr>
     <tr><td><a href="./SOL/BonkDAO/"><code>SOL/BonkDAO/</code></a></td><td>Analysis of the BonkDAO governance attack and associated on-chain activity.</td></tr>
     <tr><td><a href="./SOL/HOPE/"><code>SOL/HOPE/</code></a></td><td>Analysis of the Solana-based HOPE token, wallet concentration, transfers, sales, and suspected rug activity.</td></tr>
@@ -204,7 +212,7 @@
     <tr><th align="left">Category</th><th align="left">Examples</th></tr>
   </thead>
   <tbody>
-    <tr><td>Sanctions intelligence</td><td>OFAC-designated infrastructure, state-linked wallets, and sanctioned actors</td></tr>
+    <tr><td>Sanctions and terrorist-finance intelligence</td><td>OFAC-designated infrastructure, state-linked wallets, and DOJ/FBI-attributed fundraising and laundering networks</td></tr>
     <tr><td>State-sponsored activity</td><td>DPRK TraderTraitor / Lazarus Group</td></tr>
     <tr><td>Cybercrime infrastructure</td><td>First VPN Service / 1VPNS</td></tr>
     <tr><td>Exchange and protocol incidents</td><td>FTX, Alameda Research, Bybit, Hedera, Zunami Protocol, Ostium, Rain legacy contracts, ICON migration contracts, Aquifer, Injective, Tectonic/Cronos, and related exploit or theft flows</td></tr>
@@ -222,6 +230,7 @@
     <tr><td>Governance attacks</td><td>BonkDAO</td></tr>
     <tr><td>Rug pulls and token manipulation</td><td>HOPE and other Solana ecosystem cases</td></tr>
     <tr><td>Leak-and-monetization campaigns</td><td>CYBERLEEK pre-positioned Solana event token, staged IP disclosure, fee-right monitoring, and attribution-safe funding analysis</td></tr>
+    <tr><td>Wallet-drainer campaigns</td><td>Fake GTA VI leak sites, malicious transaction signing, receiving-wallet monitoring, and domain IOCs</td></tr>
     <tr><td>Personally encountered fraud</td><td>Spear-phishing, impersonation, hacked-account, and payment scams</td></tr>
     <tr><td>Transaction analysis</td><td>Wallet clustering, bridge activity, swaps, consolidation, exchange deposits, and contract-control paths</td></tr>
   </tbody>
@@ -241,7 +250,7 @@
     <tr><td>Arbitrum</td><td>L2 exploit execution, oracle manipulation, malicious contract paths, payout wallets, and downstream laundering activity</td></tr>
     <tr><td>Other EVM chains</td><td>Bridge destinations, contract interactions, exchange deposits, and consolidation activity</td></tr>
     <tr><td>Solana</td><td>Rug pulls, governance attacks, NFT-related fraud, token concentration, scam wallets, and leak-driven event-token campaigns</td></tr>
-    <tr><td>TRON</td><td>Sanctions attribution and state-linked financial infrastructure</td></tr>
+    <tr><td>TRON</td><td>Sanctions attribution, terrorist-finance fundraising, consolidation, laundering, and exchange-linked infrastructure</td></tr>
     <tr><td>Hedera</td><td>Suspected exploit and cross-chain bridge activity</td></tr>
     <tr>
       <td>Multi-chain incidents</td>
