@@ -1,13 +1,13 @@
-# August 20-September 6, 2026 Crypto Security Sweep
+# August 20-September 7, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
-| Follow-up cutoff | September 6, 2026 |
+| Follow-up cutoff | September 7, 2026 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
 | Networks | MAYAChain, Bitcoin, Ethereum, Solana, ICON, Sonic, Cronos, BNB Chain, Harmony, TRON, Base, and other EVM environments |
-| Sources reviewed | U.S. Department of Justice and FBI affidavits, SlowMist, CertiK, TRM Labs, BlockSec, Blockaid, SEAL/Security Alliance, Bitquery, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, Protos, ICON Foundation, protocol disclosures, public explorers, and corroborating reporting |
-| Latest confirmed protocol incidents in the follow-up window | Aquifer on Solana and Injective binary-options settlement, August 31, 2026; Aquifer has three complete P1 indicators while Injective remains a zero-seed case |
+| Sources reviewed | U.S. Department of Justice and FBI affidavits, SlowMist, CertiK, TRM Labs, BlockSec, Blockaid, SEAL/Security Alliance, Bitquery, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, ExVulSec, Galaxy Research, ICON Foundation, protocol disclosures, public explorers, and corroborating reporting |
+| Latest confirmed protocol incidents in the follow-up window | Liquid unauthorized peg-out on September 6 and RedSonic vault exploit on September 5; both now have complete direct-watch addresses |
 
 > SlowMist's live tracker listed Maya Protocol as its newest incident at the review cutoff. No protocol exploit dated August 19 or August 20 appeared above it. This is a point-in-time observation, not proof that no undisclosed or later-indexed incident occurred.
 
@@ -15,6 +15,10 @@
 
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
 |---|---|---|---:|---|
+| Liquid Network / Elements | September 6; reporting and chain verification September 6-7 | Unauthorized federation-reserve peg-out; reported consensus and asset-validation exploit | 3,996.01834922 BTC / approximately $320M | High incident and address linkage; medium-high technical classification |
+| RedSonic / Reddio Vault | September 5 | Cross-vault asset double counting and flash-loan share-price manipulation | Approximately 9.25 ETH | High incident, transaction, and address linkage |
+| Suspected GoMining-linked wallet population | September 4-5 | Coordinated multi-wallet drain and cross-chain proceeds consolidation | Approximately 1,147 ETH / $2.8M | High proceeds-flow linkage; medium GoMining ecosystem attribution |
+| Dream Health Chain | September 5 | Business-award state-machine logic exploit | Approximately $71.8K | High address and incident linkage; P3 priority |
 | Hamas / Al-Qassam cryptocurrency fundraising network | Warrants unsealed September 1 | Terrorist fundraising, consolidation, laundering, money-mule, and financier activity | Approximately $560,000 seized by the FBI | High official network linkage; role-specific ownership caveats |
 | Fake GTA VI leak wallet drainer | Reported September 1 | Wallet drainer, phishing, and malicious transaction signing | Not publicly quantified | High campaign, code-behavior, and address linkage |
 | Aquifer | August 31; reconstruction verified September 1 | Forged token-account and untrusted token-program validation exploit | $2,469,729 across 212 malicious swaps | High incident and address linkage; medium-high precise source-level root cause |
@@ -35,7 +39,7 @@
 | Harmony | August 11-12 | Cross-shard receipt and quorum-validation flaw causing unauthorized minting | About $3.2M initial cash-loss estimate; token issuance estimates remain disputed | High |
 | Coinsbuy | August 9 | Coordinated Ethereum and TRON wallet drain; exact access vector unresolved | More than $7.9M / about $8.07M | High incident linkage; unknown attacker identity |
 | ODY / Odyssey / Ody DeFi | July 28; highlighted August 11-13 | Privileged mint, market dump, liquidity extraction, and exit scam | About $15M-$15.67M USDT | Medium-high |
-| COLDCARD | July 30 onward; Ethereum attribution update September 3-4 | Weak seed entropy, offline private-key brute forcing, and cross-chain laundering | Bitquery tracks 1,789.28 BTC; prior broader estimate about 1,816 BTC / $116M | High vulnerability and address linkage; unresolved actor and cross-wave clustering |
+| COLDCARD | July 30 onward; Ethereum attribution September 3-4 and CoinJoin movement September 5-7 | Weak seed entropy, offline private-key brute forcing, and cross-chain laundering | Bitquery tracks 1,789.28 BTC; Galaxy reports 97.09 BTC moved from Wave 3 | High vulnerability and address linkage; unresolved actor and cross-wave clustering |
 | Address-poisoning theft | Reported August 2026 | Automated look-alike address poisoning | About $100K USDT | High |
 | Vultisig-related outflow | August 11; reported August 18 | Suspicious outflow and Tornado Cash routing; compromise unconfirmed | 1.284M USDC outflow; 1.092M USDC routed into 575.4 ETH | Medium investigative lead |
 
@@ -590,12 +594,79 @@ The page also loaded an approximately 2.4 MB remotely configurable multi-chain d
 
 This case is separate from CYBERLEEK. A shared GTA VI lure does not establish common control. The canonical report, one address row, and two domain rows are maintained in [`Multi-Chain/GTA-VI-Wallet-Drainer/`](../GTA-VI-Wallet-Drainer/).
 
+## 26. Liquid Network Unauthorized Peg-Out
+
+| Field | Assessment |
+|---|---|
+| Incident date | September 6, 2026 |
+| Network path | Liquid / Elements to Bitcoin mainnet |
+| Classification | Unauthorized federation-reserve peg-out; reported consensus and asset-validation exploit |
+| Primary peg-out | 3,996.01834922 BTC |
+| Reported value | Approximately $320 million |
+| Confidence | High incident and address linkage; actor identity and whitehat claim unresolved |
+
+The Liquid Federation payout transaction sent 3,996.01834922 BTC to `bc1qgslsydz56d0ed6827hdemfmk5w2f6ldyc6wt7p`. That fresh address immediately forwarded essentially the full amount to `bc1ql4mfu6aundtkksxklfajs2h3t9nzcd6gyqjlte` in the same Bitcoin block. Both are P1 incident-proceeds seeds.
+
+Liquid publicly acknowledged that purported white-hat actors withdrew approximately 4,000 BTC and paused new transactions. The actors' self-description remains unverified. GoPlus attributes the event to an Elements consensus and asset-validation flaw, but that precise technical classification remains security-firm analysis pending a definitive protocol post-mortem.
+
+The source address `bc1qdlld6antmv4xug242ed83q7k4rqw50cwfns38szx4qu2f4jwaxxsuhwxxr` is the Liquid Federation reserve. It is victim/protocol infrastructure and must not be threat-labeled. Other outputs in the batched payout transaction also do not automatically inherit the incident label.
+
+The canonical report, three role-separated addresses, and three complete transactions are maintained in [`Multi-Chain/Liquid-Network-Peg-Out/`](../Liquid-Network-Peg-Out/).
+
+## 27. RedSonic / Reddio Vault Exploit
+
+| Field | Assessment |
+|---|---|
+| Incident date | September 5, 2026 |
+| Network | Ethereum |
+| Classification | Cross-vault asset double counting and flash-loan share-price manipulation |
+| Reported loss | Approximately 9.25 ETH |
+| Direct seed | `0x70f2333d21ed7e7d105f6578227a9a747687982c` |
+| Confidence | High |
+
+SlowMist identified the direct attacker wallet and attributed the exploit to stETH being counted in more than one vault's total assets. The attacker used flash liquidity to amplify the share-accounting error, redeem excess ETH, separately recover the stETH, and repay the loan.
+
+The RedSonic Diamond `0x4315990d9eeaffdfafd49958b4851f203fa1126f` and vulnerable vault implementation `0x92ecc5deacb14937867686ca8b85dd8a65b74704` are victim contracts, not attacker-controlled infrastructure. The full attack transaction is retained in the dedicated case.
+
+The canonical report, three role-separated addresses, and one transaction are maintained in [`EVM/Ethereum/RedSonic/`](../../EVM/Ethereum/RedSonic/).
+
+## 28. Suspected GoMining-Linked Multi-Wallet Drain
+
+| Field | Assessment |
+|---|---|
+| Incident window | September 4-5, 2026 |
+| Network path | Multiple networks to Ethereum consolidation |
+| Reported scope | More than 600 wallets / approximately 1,147 ETH or $2.8M |
+| Consolidation address | `0xa7372Fa49da5e52cf31f35cCE517C4768FeD4704` |
+| Confidence | High proceeds-flow linkage; medium GoMining ecosystem attribution |
+
+Specter and follow-up monitoring linked the coordinated drain's swap and bridge flows to the Ethereum consolidation address. The address is retained as a P2 incident-proceeds seed.
+
+The project-level label remains provisional. Prior GMT exposure and third-party service tags do not prove that every affected wallet belonged to GoMining, and GoMining had not confirmed the complete affected-wallet population at the reporting cutoff. The record must not be relabeled as an established `GoMining attacker` wallet without stronger evidence.
+
+The canonical report and machine-readable address record are maintained in [`EVM/Ethereum/Suspected-GoMining-Drain/`](../../EVM/Ethereum/Suspected-GoMining-Drain/).
+
+## 29. Dream Health Chain Exploit
+
+| Field | Assessment |
+|---|---|
+| Incident date | September 5, 2026 |
+| Network | BNB Smart Chain |
+| Classification | Business-award state-machine logic exploit |
+| Reported loss | Approximately $71.8K |
+| Priority | P3 cross-chain intelligence |
+
+SlowMist published the attacker wallet `0xd3a8d0a9f55cf679fff6f277e49afc95b49d2b07` and attacker-controlled exploit contract `0x226923d34a10f3d54b57b9f4b685e82c6cba968a`. Both are complete, high-confidence indicators. The P3 designation reflects the repository's impact-based prioritization, not weaker address linkage.
+
+The canonical report and two machine-readable records are maintained in [`EVM/BNB-Chain/Dream-Health-Chain/`](../../EVM/BNB-Chain/Dream-Health-Chain/).
+
 ## Monitoring Priorities
 
 | Priority | Indicators | Action |
 |---|---|---|
-| P1 | DOJ/FBI Hamas fundraising, consolidation, laundering, money-mule, and financier targets; GTA VI Solana drainer address; COLDCARD primary Ethereum destination plus five confirmed high-value or active Bitcoin seeds; Aquifer Solana attacker, malicious program, and Ethereum proceeds wallet; Rain five-address funding/exploit/proceeds set; four ICON chain-specific records; Term Finance active laundering source; Bofur, Maya, FoxMarket, Hyperliquid-phishing, whale-drain, Coinsbuy, and Harmony seeds | Direct monitoring, historical graph expansion, bridge, exchange-deposit, malicious-program, and privacy-protocol alerts |
-| P2 | Hamas incident-linked unattributed BSC exchange hop; three COLDCARD secondary, historical, or earlier Ethereum/BTC pivots; Bofur poisoning contract; Maya Arbitrum proceeds address; poisoning address | Direct monitoring with narrower incident-role labels |
+| P1 | Liquid primary payout and immediate consolidation addresses; RedSonic attacker wallet; DOJ/FBI Hamas targets; GTA VI Solana drainer; COLDCARD primary Ethereum destination plus confirmed Bitcoin seeds; Aquifer direct set; Rain direct set; ICON direct set; Term Finance and earlier high-confidence seeds | Direct monitoring, historical graph expansion, bridge, exchange-deposit, malicious-program, and privacy-protocol alerts |
+| P2 | Suspected GoMining-linked consolidation address with provisional ecosystem label; Hamas BSC hop; COLDCARD secondary and historical pivots; Bofur poisoning contract; Maya Arbitrum proceeds address; poisoning address | Direct monitoring with narrower incident-role or attribution labels |
+| P3 | Dream Health Chain attacker wallet and exploit contract | Cross-chain monitoring with lower impact-based operational priority |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
 | Campaign IOCs | Fake GTA VI drainer domains, fake Seeker / SKR domain, and fake `$WAR` rewards activity | Block known domains, monitor replacements, and preserve case and legitimate-project distinctions |
 | Case only | ODY; Moonwell / MAMO; Tectonic / Cronos; Injective binary-options exploit | Preserve confirmed incident reporting while withholding truncated identifiers |
@@ -627,6 +698,11 @@ This case is separate from CYBERLEEK. A shared GTA VI lure does not establish co
 - Injective's reported Ethereum destination remains truncated as `0x5a18...69ea` and contributes no machine-readable seed.
 - The DOJ/FBI Hamas case contains 18 official, role-separated records from the June warrant package. Custodial money-mule accounts and the unattributed BSC hop retain narrower control labels; exchange infrastructure and neighbors do not inherit the attribution. Two uncorroborated submitted TRON strings are withheld.
 - The GTA VI wallet drainer is distinct from CYBERLEEK. One hard-coded Solana address is a direct campaign seed; two domains are non-wallet IOCs; no named operator or quantified loss is established.
+- The Liquid direct set contains the unauthorized peg-out destination and its immediate consolidation address. The federation reserve is victim/protocol infrastructure, other batched outputs are not automatically incident-linked, and the actors' whitehat claim remains unverified.
+- The RedSonic attacker wallet is a direct seed; the Diamond and vault implementation are explicit victim/protocol context.
+- The suspected GoMining-linked consolidation address has high proceeds-flow confidence, but the GoMining ecosystem association remains medium confidence.
+- Dream Health Chain's attacker wallet and malicious contract are high-confidence P3 indicators; protocol contracts and affected users remain excluded.
+- The latest COLDCARD update adds CoinJoin behavior but no new full address. Mixed CoinJoin participants and outputs do not inherit the theft label.
 - ODY and Vultisig identifiers remain withheld where public evidence is truncated or attribution is incomplete.
 
 ## Sources
@@ -773,8 +849,18 @@ This case is separate from CYBERLEEK. A shared GTA VI lure does not establish co
 
 - [Malwarebytes ThreatLabs — analyzed Solana and multi-chain wallet-drainer code](https://www.malwarebytes.com/blog/scams/2026/09/fake-gta-6-leaked-copy-drains-your-crypto-wallet)
 
+### September 4-7 Follow-Up
+
+- [Liquid Network — official incident acknowledgement](https://x.com/Liquid_BTC/status/2096696272447218108)
+- [GoPlus Security — Liquid incident classification and address roles](https://x.com/GoPlusSecurity/status/2096859288585286025)
+- [mempool.space — Liquid federation Bitcoin payout](https://mempool.space/tx/8db751a650ae2f12006b7e8c69a75e4df360e8afd6b9e05ae0b9fa6458a7b140)
+- [SlowMist — RedSonic and Dream Health Chain incident reporting](https://hacked.slowmist.io/)
+- [Etherscan — RedSonic exploit transaction](https://etherscan.io/tx/0xe3cba90e865c6cba950ebce36a52607f51f1fd33cd9fb920c78803f19b57791a)
+- [Specter Investigation — suspected GoMining-linked drain tracing](https://t.me/specterinvestigation)
+- [Galaxy Research — COLDCARD Wave 3 CoinJoin movement](https://x.com/glxyresearch/status/2096785347929608296)
+
 ---
 
 ## TLDR
 
-The September 6 update adds 18 DOJ/FBI-attributed TRON and BSC records from the Hamas / Al-Qassam financing investigation, one Solana receiving address and two domains from a fake GTA VI wallet drainer, and the fleet-wide Rain scope: Avici, Tria, and Solayer Pay with approximately $1.1 million cash-out. The Rain direct-watch address cluster is unchanged. Custodial, victim, protocol, exchange, mixer, and domain roles remain separated, and two submitted TRON strings are withheld after failing primary-source reconciliation.
+The September 7 update adds two P1 Bitcoin proceeds addresses from the 3,996.01834922 BTC Liquid unauthorized peg-out, one P1 RedSonic attacker wallet, one P2 suspected GoMining-linked consolidation address, and two P3 Dream Health Chain indicators. Nine new address rows include explicit reserve and victim-contract exclusions. The COLDCARD report adds material CoinJoin behavior without inventing new identifiers from unpublished addresses.

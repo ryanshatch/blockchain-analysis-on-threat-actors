@@ -23,12 +23,22 @@
     <tr>
       <td><a href="./August-2026-Security-Sweep/"><code>August-2026-Security-Sweep/</code></a></td>
       <td>MAYAChain, Bitcoin, Ethereum, Solana, Injective, ICON, Sonic, Cronos, Arbitrum, BNB Chain, Harmony, TRON, Polygon, Base, and multi-chain users</td>
-      <td>August 20-September 6, 2026 cross-ecosystem sweep covering the DOJ/FBI Hamas financing disclosure, fake GTA VI wallet drainer, Rain fleet-wide scope, COLDCARD Ethereum destinations, Aquifer, ICON, and earlier exploit, phishing, rug-pull, and laundering intelligence</td>
+      <td>August 20-September 7, 2026 cross-ecosystem sweep covering the Liquid unauthorized peg-out, RedSonic, the suspected GoMining-linked drain, Dream Health Chain, COLDCARD CoinJoin movement, and the earlier DOJ/FBI Hamas, GTA VI drainer, Rain, Aquifer, and ICON updates</td>
     </tr>
     <tr>
       <td><a href="./Coldcard-Weak-Entropy-Theft/"><code>Coldcard-Weak-Entropy-Theft/</code></a></td>
       <td>Bitcoin theft and THORChain routing into Ethereum</td>
-      <td>Weak-entropy hardware-wallet theft with six confirmed Bitcoin seeds, three complete Ethereum proceeds destinations, and explicit cross-wave and service-infrastructure boundaries</td>
+      <td>Weak-entropy hardware-wallet theft with six confirmed Bitcoin seeds, three complete Ethereum proceeds destinations, September Wave 3 CoinJoin movement, and explicit cross-wave and service-infrastructure boundaries</td>
+    </tr>
+    <tr>
+      <td><a href="./Liquid-Network-Peg-Out/"><code>Liquid-Network-Peg-Out/</code></a></td>
+      <td>Liquid / Elements to Bitcoin mainnet</td>
+      <td>September 6 unauthorized federation-reserve peg-out with two P1 Bitcoin proceeds seeds, three complete transactions, and an explicit federation-reserve exclusion</td>
+    </tr>
+    <tr>
+      <td><a href="../EVM/Ethereum/Suspected-GoMining-Drain/"><code>EVM/Ethereum/Suspected-GoMining-Drain/</code></a></td>
+      <td>Multiple source networks to Ethereum consolidation</td>
+      <td>Coordinated multi-wallet drain with one P2 consolidation seed and an explicitly provisional GoMining ecosystem association</td>
     </tr>
     <tr>
       <td><a href="./ICON-Migration-Replay-Exploit/"><code>ICON-Migration-Replay-Exploit/</code></a></td>
