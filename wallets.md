@@ -782,10 +782,12 @@ The submitted addresses `TWQTTSqorX2dqVYmVn8j1WNNaKgmL7ShkV` and `TYMRKshB4rMrr2
 
 | Address | Classification | Confidence | Monitoring |
 |---|---|---|---|
-| `bc1qgslsydz56d0ed6827hdemfmk5w2f6ldyc6wt7p` | Primary unauthorized peg-out destination; received 3,996.01834922 BTC | High | P1 direct watch |
-| `bc1ql4mfu6aundtkksxklfajs2h3t9nzcd6gyqjlte` | Immediate proceeds-consolidation address | High flow linkage; medium-high common-control inference | P1 direct watch and graph expansion |
+| `bc1ql4mfu6aundtkksxklfajs2h3t9nzcd6gyqjlte` | Primary consolidation, negotiation, partial-return source, and residual proceeds wallet | High incident linkage and operational control; identity unknown | P1 direct watch and graph expansion |
+| `bc1qgslsydz56d0ed6827hdemfmk5w2f6ldyc6wt7p` | Initial peg-out recipient and intermediary; received 3,996.01834922 BTC | High flow linkage; service-custody caveat | P2 direct incident-flow watch; attacker-control label withheld |
 
-The first address received the primary output from the Liquid Federation payout transaction and immediately forwarded essentially the full amount to the second address in the same Bitcoin block. The actors' `whitehat` description is self-asserted and remains unverified.
+The initial recipient immediately forwarded 3,995.99999857 BTC to the consolidation wallet. On September 7, the consolidation wallet returned 3,400 BTC to the federation in transaction [`a6d697a25266ce3c78774fd1d75f896b7af522ada209b0f6228ea497bc49a46d`](https://mempool.space/tx/a6d697a25266ce3c78774fd1d75f896b7af522ada209b0f6228ea497bc49a46d). Approximately 598.49 BTC remained at the cited snapshot. The actors' `whitehat` claim and any authorized bounty remain unverified.
+
+[Bitquery describes the initial forwarding as SideSwap's service payout](https://bitquery.io/investigations/liquid-network-hack-4000-btc-op-return). Its P2 incident-flow watch therefore does not assert attacker ownership. The case records one threat-labeled P1 seed, one monitored P2 intermediary, and one reserve exclusion; both watched addresses were already present.
 
 ### Explicit Non-Attacker Infrastructure
 

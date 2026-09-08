@@ -33,7 +33,7 @@
     <tr>
       <td><a href="./Liquid-Network-Peg-Out/"><code>Liquid-Network-Peg-Out/</code></a></td>
       <td>Liquid / Elements to Bitcoin mainnet</td>
-      <td>September 6 unauthorized federation-reserve peg-out with two P1 Bitcoin proceeds seeds, three complete transactions, and an explicit federation-reserve exclusion</td>
+      <td>September 6 unauthorized peg-out and September 7 partial recovery: P1 consolidation wallet, P2 payout intermediary, 3,400 BTC returned, four complete transactions, and an explicit federation-reserve exclusion</td>
     </tr>
     <tr>
       <td><a href="../EVM/Ethereum/Suspected-GoMining-Drain/"><code>EVM/Ethereum/Suspected-GoMining-Drain/</code></a></td>
