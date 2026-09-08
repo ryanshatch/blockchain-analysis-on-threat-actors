@@ -404,7 +404,7 @@ The July action materially expanded an existing sanctioned-wallet attribution. T
 OFAC directly attributed these TRON identifiers to Zaid Issam Ahmed Al-Jebouri and linked him to El-Kahira for General Trading. Connected exchanges, OTC services, bridges, token contracts, and counterparties should initially remain graph-expansion pivots unless separately attributed.
 ---
 
-## August 20-September 6, 2026 Multi-Chain Security Sweep
+## August 20-September 7, 2026 Multi-Chain Security Sweep
 
 **Review cutoff:** August 20, 2026 at 2:31 a.m. ET  
 **Follow-up cutoff:** September 6, 2026
@@ -457,6 +457,8 @@ The native and hexadecimal strings in each row are alternate representations of 
 | `bc1qmd5m5ktv7m5ffujxv4248fxv36myvdx79n8jp6` | Confirmed | 0.00002000 BTC; prior spends | P2 historical pivot |
 
 Bitquery traced 20.69 BTC through 36 THORChain swaps. Protocol memos name the Ethereum destinations directly. The primary address received approximately 20.15 BTC of traced value, the secondary address approximately 0.30 BTC, and the historical August address approximately 0.24 BTC. Bitquery's lower `TRACED`, `REPORTED`, `ATTRIBUTED`, `VENUE`, and `UNDER REVIEW` tiers are not promoted to the confirmed set, and common ownership across destinations or theft waves remains unresolved.
+
+Galaxy's September 7 update reports 97.09 BTC moved from Wave 3, approximately 45% of that wave. The newer activity includes 15.48 BTC and 61.12 BTC CoinJoin paths. No complete new CoinJoin address cleared the ingestion threshold, so the machine-readable set is unchanged. Mixed CoinJoin participants and outputs must not inherit the COLDCARD label.
 
 ### Explicit Exclusions
 
@@ -765,6 +767,81 @@ The drainer remains separate from CYBERLEEK. Shared GTA VI branding does not est
 DOJ reports approximately $560,000 seized. The June warrant package supports the 18 role-separated records above, but not one common controller for the full set. Exchange hot wallets, consolidation sweeps, token contracts, and transaction neighbors do not inherit the Hamas label.
 
 The submitted addresses `TWQTTSqorX2dqVYmVn8j1WNNaKgmL7ShkV` and `TYMRKshB4rMrr2UP3HF9AFM1PGjpFSKLHh` are withheld because they could not be reconciled to the reviewed DOJ release and warrant packages.
+
+---
+
+## Liquid Network Unauthorized Peg-Out
+
+**Incident date:** September 6, 2026
+
+**Case file:** [`Multi-Chain/Liquid-Network-Peg-Out/`](./Multi-Chain/Liquid-Network-Peg-Out/)
+
+**Machine-readable records:** [`addresses.csv`](./Multi-Chain/Liquid-Network-Peg-Out/addresses.csv) and [`transactions.csv`](./Multi-Chain/Liquid-Network-Peg-Out/transactions.csv)
+
+### Direct-Watch Bitcoin Seeds
+
+| Address | Classification | Confidence | Monitoring |
+|---|---|---|---|
+| `bc1qgslsydz56d0ed6827hdemfmk5w2f6ldyc6wt7p` | Primary unauthorized peg-out destination; received 3,996.01834922 BTC | High | P1 direct watch |
+| `bc1ql4mfu6aundtkksxklfajs2h3t9nzcd6gyqjlte` | Immediate proceeds-consolidation address | High flow linkage; medium-high common-control inference | P1 direct watch and graph expansion |
+
+The first address received the primary output from the Liquid Federation payout transaction and immediately forwarded essentially the full amount to the second address in the same Bitcoin block. The actors' `whitehat` description is self-asserted and remains unverified.
+
+### Explicit Non-Attacker Infrastructure
+
+| Address | Classification | Handling |
+|---|---|---|
+| `bc1qdlld6antmv4xug242ed83q7k4rqw50cwfns38szx4qu2f4jwaxxsuhwxxr` | Liquid Federation reserve and proof-of-reserves address | Victim/protocol infrastructure; do not threat-label |
+
+Other outputs in the batched federation payout, Liquid federation members, SideSwap infrastructure, and ordinary peg-out users do not automatically inherit the incident label.
+
+---
+
+## RedSonic / Reddio Vault Exploit
+
+**Incident date:** September 5, 2026
+
+**Case file:** [`EVM/Ethereum/RedSonic/`](./EVM/Ethereum/RedSonic/)
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Ethereum | `0x70f2333d21ed7e7d105f6578227a9a747687982c` | Exploit execution and proceeds wallet | High | P1 direct watch |
+
+SlowMist attributes the approximately 9.25 ETH exploit to cross-vault asset double counting amplified through flash-loan share-price manipulation. No named real-world actor is established.
+
+| Address | Classification | Handling |
+|---|---|---|
+| `0x4315990d9eeaffdfafd49958b4851f203fa1126f` | RedSonic Diamond | Victim/protocol infrastructure; do not threat-label |
+| `0x92ecc5deacb14937867686ca8b85dd8a65b74704` | Vulnerable vault implementation | Victim/protocol infrastructure; do not threat-label |
+
+---
+
+## Suspected GoMining-Linked Multi-Wallet Drain
+
+**Incident window:** September 4-5, 2026
+
+**Case file:** [`EVM/Ethereum/Suspected-GoMining-Drain/`](./EVM/Ethereum/Suspected-GoMining-Drain/)
+
+| Network | Address | Classification | Flow confidence | Ecosystem attribution | Monitoring |
+|---|---|---|---|---|---|
+| Ethereum | `0xa7372Fa49da5e52cf31f35cCE517C4768FeD4704` | Approximately 1,147 ETH stolen-fund consolidation address | High | Medium for GoMining linkage | P2 direct watch and cautious graph expansion |
+
+The consolidation address is actionable, but the project-level label remains provisional. Affected-wallet tags and prior GMT exposure do not establish that every wallet belonged to GoMining or that this is a confirmed `GoMining attacker` address.
+
+---
+
+## Dream Health Chain Exploit
+
+**Incident date:** September 5, 2026
+
+**Case file:** [`EVM/BNB-Chain/Dream-Health-Chain/`](./EVM/BNB-Chain/Dream-Health-Chain/)
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| BNB Smart Chain | `0xd3a8d0a9f55cf679fff6f277e49afc95b49d2b07` | Attacker and proceeds wallet | High | P3 direct watch |
+| BNB Smart Chain | `0x226923d34a10f3d54b57b9f4b685e82c6cba968a` | Attacker-controlled exploit contract | High | P3 malicious infrastructure pivot |
+
+SlowMist reports approximately $71.8K lost through a business-award state-machine logic flaw. The P3 rating reflects impact-based repository priority, not weaker address linkage. Victim contracts and affected users remain excluded.
 
 ---
 

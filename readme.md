@@ -96,11 +96,19 @@
     </tr>
     <tr>
       <td><a href="./Multi-Chain/August-2026-Security-Sweep/"><code>Multi-Chain/August-2026-Security-Sweep/</code></a></td>
-      <td>August 20-September 6, 2026 security sweep covering the DOJ/FBI Hamas financing disclosure, the fake GTA VI wallet drainer, Rain's fleet-wide scope update, the complete COLDCARD Wave 3 Ethereum destinations, Aquifer, ICON, and earlier exploit, phishing, rug-pull, and laundering intelligence.</td>
+      <td>August 20-September 7, 2026 security sweep covering the Liquid unauthorized peg-out, RedSonic, the suspected GoMining-linked drain, Dream Health Chain, COLDCARD CoinJoin movement, and earlier DOJ/FBI Hamas, GTA VI drainer, Rain, Aquifer, and ICON updates.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/Coldcard-Weak-Entropy-Theft/"><code>Multi-Chain/Coldcard-Weak-Entropy-Theft/</code></a></td>
-      <td>Dedicated COLDCARD weak-entropy theft and cross-chain laundering case with six confirmed Bitcoin seeds, three newly public Ethereum destinations, one previously retained Ethereum pivot, and tier-preserving attribution boundaries.</td>
+      <td>Dedicated COLDCARD weak-entropy theft and cross-chain laundering case with six confirmed Bitcoin seeds, three Ethereum destinations, one earlier pivot, September CoinJoin movement, and tier-preserving attribution boundaries.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/Liquid-Network-Peg-Out/"><code>Multi-Chain/Liquid-Network-Peg-Out/</code></a></td>
+      <td>September 6 unauthorized Liquid federation-reserve peg-out with two P1 Bitcoin proceeds seeds, three complete transactions, and an explicit non-attacker reserve address.</td>
+    </tr>
+    <tr>
+      <td><a href="./EVM/Ethereum/Suspected-GoMining-Drain/"><code>EVM/Ethereum/Suspected-GoMining-Drain/</code></a></td>
+      <td>September 4-5 coordinated multi-wallet drain with one Ethereum consolidation seed and a deliberately provisional GoMining ecosystem association.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/ICON-Migration-Replay-Exploit/"><code>Multi-Chain/ICON-Migration-Replay-Exploit/</code></a></td>
@@ -170,6 +178,21 @@
       <td>Ostium oracle-manipulation exploit analysis covering the execution wallet, payout wallet, entry contract, confirmed transaction, and attribution boundaries.</td>
     </tr>
     <tr>
+      <td><a href="./EVM/Ethereum/RedSonic/"><code>EVM/Ethereum/RedSonic/</code></a></td>
+      <td>Ethereum</td>
+      <td>September 5 cross-vault accounting and flash-loan exploit with one P1 attacker wallet, a complete transaction, and two explicit victim-contract exclusions.</td>
+    </tr>
+    <tr>
+      <td><a href="./EVM/Ethereum/Suspected-GoMining-Drain/"><code>EVM/Ethereum/Suspected-GoMining-Drain/</code></a></td>
+      <td>Ethereum proceeds from multiple source networks</td>
+      <td>Approximately 1,147 ETH consolidation lead with high flow confidence and medium-confidence GoMining ecosystem attribution.</td>
+    </tr>
+    <tr>
+      <td><a href="./EVM/BNB-Chain/Dream-Health-Chain/"><code>EVM/BNB-Chain/Dream-Health-Chain/</code></a></td>
+      <td>BNB Smart Chain</td>
+      <td>P3 cross-chain intelligence case with a security-firm-identified attacker wallet and malicious exploit contract.</td>
+    </tr>
+    <tr>
       <td><a href="./Multi-Chain/ICON-Migration-Replay-Exploit/"><code>Multi-Chain/ICON-Migration-Replay-Exploit/</code></a></td>
       <td>Sonic and Ethereum, with ICON-origin execution</td>
       <td>Officially attributed attacker accounts covering pre-positioned Sonic collateral activity and Ethereum proceeds consolidation after the ICON migration-contract replay exploit.</td>
@@ -215,7 +238,7 @@
     <tr><td>Sanctions and terrorist-finance intelligence</td><td>OFAC-designated infrastructure, state-linked wallets, and DOJ/FBI-attributed fundraising and laundering networks</td></tr>
     <tr><td>State-sponsored activity</td><td>DPRK TraderTraitor / Lazarus Group</td></tr>
     <tr><td>Cybercrime infrastructure</td><td>First VPN Service / 1VPNS</td></tr>
-    <tr><td>Exchange and protocol incidents</td><td>FTX, Alameda Research, Bybit, Hedera, Zunami Protocol, Ostium, Rain legacy contracts, ICON migration contracts, Aquifer, Injective, Tectonic/Cronos, and related exploit or theft flows</td></tr>
+    <tr><td>Exchange and protocol incidents</td><td>FTX, Alameda Research, Bybit, Hedera, Zunami Protocol, Ostium, Liquid, RedSonic, Dream Health Chain, Rain legacy contracts, ICON migration contracts, Aquifer, Injective, Tectonic/Cronos, and related exploit or theft flows</td></tr>
     <tr><td>Treasury and hot-wallet compromises</td><td>Triple-A multi-chain treasury-wallet compromise, Ethereum consolidation activity, and cross-chain routing analysis</td></tr>
     <tr><td>Off-chain parser and relayer exploits</td><td>Across Protocol forged Solana deposit events, missing Anchor event-type validation, fraudulent destination-chain fills, and relayer-capital loss</td></tr>
     <tr>
