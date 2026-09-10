@@ -1,0 +1,1645 @@
+{
+  "review_date": "2026-09-08",
+  "base_commit": "6a14083ddb1ac5831a373fc6859063d121eed725",
+  "reviewed_source_tree": "4e3af1ab7c77d3392eedca00ecf530e05c0acc8b",
+  "scope": "All 109 tracked source files after the Liquid correction. The two newly authored audit records are separately validated and excluded from this source manifest.",
+  "file_count": 109,
+  "total_bytes": 6828116,
+  "confirmed_malware_findings": 0,
+  "limitations": "Static content review; no antivirus signature engine, detonation, historical-object audit, or installed dependency inventory. See the accompanying review.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 624,
+      "sha256": "948671b181a500f25518232583b6cbea683feabe5b727ff79a8957d7207243c0",
+      "git_blob": "d2afeac27a5dfdc5c691c12b8d1a735f8f378222",
+      "git_mode": "100644",
+      "file_type": "ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/attribution-correction.yml",
+      "bytes": 2949,
+      "sha256": "8b81ab898c6eea4d06217ce0112b2cb6c5b8741f8f3e7315b41f28d4bfcbf7e5",
+      "git_blob": "e7a245b39196f121e30ddee0acbbdb663f025e76",
+      "git_mode": "100644",
+      "file_type": "ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and safe YAML parsing; manually reviewed issue-template fields"
+      }
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/new-intelligence.yml",
+      "bytes": 4501,
+      "sha256": "8c9cabe6c40dcfd3ba3438a25484686e402b7cc101c7400a746a7aeeee81a197",
+      "git_blob": "841a9c0977599454c59455bffba7bd7fd0ca08dd",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and safe YAML parsing; manually reviewed issue-template fields"
+      }
+    },
+    {
+      "path": "1VPNS/README.md",
+      "bytes": 7432,
+      "sha256": "4bf7a46011c182667578b903c77caa6cce6591b0f581b3514eb84f2bc2fe60db",
+      "git_blob": "4f6092cb88dc0ae565a2707ac192811208427a0b",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "1VPNS/addresses.csv",
+      "bytes": 4083,
+      "sha256": "d736cfbeb9ea9bf0c8cdea37f0d263008a157056174d6f03fd82211eb75176e0",
+      "git_blob": "eead606141354c3eda53ac6510a77447f1b25918",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 147,
+        "records_including_header_and_blanks": 21,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "EVM/Arbitrum/AFX-Bridge/README.md",
+      "bytes": 11722,
+      "sha256": "5f887b19d9d013a4c84fcd71400eeaee1fb8744fbaddb7c246d87f6e186f82b0",
+      "git_blob": "459295bc58113cc0cecf6ca8397f2030d9818477",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "EVM/Arbitrum/AFX-Bridge/addresses.csv",
+      "bytes": 1141,
+      "sha256": "a03746ba48a6dba648cd755a2c4751ff384a53785483cf42123520b4d96e4680",
+      "git_blob": "8b73ebb300e71318a4e0d0b51708f6dbcaf426de",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 52,
+        "records_including_header_and_blanks": 4,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "EVM/Arbitrum/AFX-Bridge/transactions.csv",
+      "bytes": 570,
+      "sha256": "ee903bba1469f3c714bd6035af13a2b65f9b39f76a5a0af2fb7d4e5be0bd4bd8",
+      "git_blob": "d2850b78323e2ef53408d581ccfaa15de5e44e3f",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 26,
+        "records_including_header_and_blanks": 2,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "EVM/Arbitrum/Ostium/README.md",
+      "bytes": 5015,
+      "sha256": "3f1e379821a4451d22ec847d25fb1b623c000a8c9d538e75fc128ade1e24e7dc",
+      "git_blob": "93740f85f0bf38abeac413f90baaf4f103bee592",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (361)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "EVM/Arbitrum/Ostium/addresses.csv",
+      "bytes": 963,
+      "sha256": "37f4c08f76c332eb10d5da17b645c49b5cf0c9bf26c82cfcb0d35769831ed74d",
+      "git_blob": "ff0ee6459594b7e8b4506fe7c5be99a7f9a91c6c",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 52,
+        "records_including_header_and_blanks": 4,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "EVM/Arbitrum/Ostium/transactions.csv",
+      "bytes": 541,
+      "sha256": "0430bc9cc22baaf8ce7c40521a8a9b264043200f1a30242e003b31ba76b9391f",
+      "git_blob": "eb11a999d1368587d59c92febfebc75a397deebb",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 26,
+        "records_including_header_and_blanks": 2,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "EVM/BNB-Chain/Dream-Health-Chain/README.md",
+      "bytes": 2683,
+      "sha256": "92422b955073b5121b2281283e2e01a022f9955232b3504864ca4bd719bb71e0",
+      "git_blob": "572af4d775b1c903b7c8ffd37625c71a2d8ea1e7",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "EVM/BNB-Chain/Dream-Health-Chain/addresses.csv",
+      "bytes": 1216,
+      "sha256": "3e2da8830f32078f491196dcb1b0697229c094982e9abe4019a273eeab61ad5d",
+      "git_blob": "2d11fe544e10dcb981e1f5a0a8a65108d6d2aa60",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 48,
+        "records_including_header_and_blanks": 3,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "EVM/Ethereum/RedSonic/README.md",
+      "bytes": 3838,
+      "sha256": "e9654dfc83c5dc585d5ee9352662910fd67f144c8b65c551f427cc19db5a989f",
+      "git_blob": "c3b529f84b51b260b3451bdcfccd15b0895fe719",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (327)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "EVM/Ethereum/RedSonic/addresses.csv",
+      "bytes": 1740,
+      "sha256": "2c0ebc8df3d9774b6863d9b2ce615a68b213e95f2f860131ed89e744cc19fc98",
+      "git_blob": "bbd093913c99aa558b20eeecbcb77ec69304ea09",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 64,
+        "records_including_header_and_blanks": 4,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "EVM/Ethereum/RedSonic/transactions.csv",
+      "bytes": 620,
+      "sha256": "932de920e7c161c8a2d6ec346e4c07f2782b9622d5a437c400f63c602dfe3d74",
+      "git_blob": "af3fb95d7221e01fc8e4a2743664caa8118c0ec2",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 24,
+        "records_including_header_and_blanks": 2,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "EVM/Ethereum/Suspected-GoMining-Drain/README.md",
+      "bytes": 3446,
+      "sha256": "b7e9c3eb2e1764e7583412cb315b59b7cf991d74eab45218dfd2ba08baa289ae",
+      "git_blob": "f26ff9385ef90edc051a7bf1e49e495537ff7ae2",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (327)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "EVM/Ethereum/Suspected-GoMining-Drain/addresses.csv",
+      "bytes": 929,
+      "sha256": "750c17768549885d029e2accf4835bc640a1edac13ec4f63f2ebfb37c8090eed",
+      "git_blob": "70dde4b38fbedbbe9333a3e2f1acb89acc561b32",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 32,
+        "records_including_header_and_blanks": 2,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "EVM/Ethereum/Zunami-Protocol/README.md",
+      "bytes": 4531,
+      "sha256": "fe6e7efb56df23ca793106cad5652f45fd08caebd953c21c021bb7c937c06d83",
+      "git_blob": "0617c75a8a32ed61637ba78d0827e83f727fab85",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (323)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "EVM/Ethereum/Zunami-Protocol/addresses.csv",
+      "bytes": 1553,
+      "sha256": "031f1ef6d6113c5e05088027cc398e7af2382defdcd196c8f5fe9eae90886b4e",
+      "git_blob": "207d780b222e75dd4097a5d21e0c9258c04b8b6d",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 84,
+        "records_including_header_and_blanks": 7,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "FTX/Alameda.html",
+      "bytes": 17688,
+      "sha256": "606c50fe187ad94b8efeaef4aef0a65d43922fcf91bbefc735a68c8c9bbc0abb",
+      "git_blob": "f701dbe44340dd2d4628362645debe4ee3c38f2a",
+      "git_mode": "100644",
+      "file_type": "HTML document, ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [
+        "SR-03 via local stylesheet"
+      ],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "FTX/FTX.html",
+      "bytes": 4780,
+      "sha256": "6e561c1a7ddf2822d5e96a726bd7e9bb775f28509289f80d2c3c9f2bac2769b3",
+      "git_blob": "1e74ee009d10239c55d523890e7c2364b8a04b7b",
+      "git_mode": "100644",
+      "file_type": "HTML document, ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [
+        "SR-03 via local stylesheet"
+      ],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "FTX/FTX_DB.xlsx",
+      "bytes": 9425,
+      "sha256": "e692593fce28848598934cbe463d591c194f7cc59ec09ad24a4c1e6816ab9602",
+      "git_blob": "51728ceabe8f6b5a235490f88b1363a1790c621b",
+      "git_mode": "100644",
+      "file_type": "Microsoft Excel 2007+",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "every ZIP member and XML part; formulas and relationships",
+        "zip_members": 13,
+        "formula_cells": 37,
+        "active_parts": [],
+        "external_relationships": 0
+      }
+    },
+    {
+      "path": "FTX/readme.md",
+      "bytes": 20646,
+      "sha256": "d15cb2c4d8d033005d9182de4433f19429c9a4ac09351c5ba30526d1346e859d",
+      "git_blob": "eee79260c1f56213f4c3666ad7e326bb0e9f68a0",
+      "git_mode": "100644",
+      "file_type": "HTML document, ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "FTX/resources/sheet.css",
+      "bytes": 3235325,
+      "sha256": "ad718fac0aec799ecaecaeb13e31a8ad0b032a456268446a37bc7540172603ff",
+      "git_blob": "7911f1110226536a23e7a6c42f8107a147c75339",
+      "git_mode": "100644",
+      "file_type": "ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [
+        "SR-03"
+      ],
+      "inspection": {
+        "method": "full text; decoded CSS escapes; URL classification; decoded embedded-image inspection",
+        "remote_url_references": 352
+      }
+    },
+    {
+      "path": "HBAR/readme.md",
+      "bytes": 5220,
+      "sha256": "e45f28b385addcbed2613f32c83ec99a746c0907954bb98e71afab0861aec0a7",
+      "git_blob": "57b1dd40da5c5a66f040e2a83838f29e9e42969a",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1592,
+      "sha256": "69ad54ab37cda5f59bc68f8b7cbb02f6d2cb16bcf6a3b9775de8134cecfd2ced",
+      "git_blob": "b77b93965d8f4d7bb19f6c8bdaf3461eb8918663",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (675)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Lazarus/readme.md",
+      "bytes": 4151,
+      "sha256": "f5a8f8e3a6fdebfcf548325df152e0111a0a08eaeda7f82c72344efa269fede3",
+      "git_blob": "4fcdaf6332523838ab16676eb964f3ff43e340d5",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/Across-Protocol/README.md",
+      "bytes": 18102,
+      "sha256": "56488a006c970d04849d29d8a9b43ce752dbfd32043cebaafa15a442b8df8207",
+      "git_blob": "6741ed6082c9211ee9602f932d6bee3c852df325",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/Across-Protocol/addresses.csv",
+      "bytes": 1800,
+      "sha256": "7571f2f6cb4bc049eabbed75ded776a1b0c0cefbaf3fefb3e77e24e3540ea55d",
+      "git_blob": "c7f3451ba98f5f4ac2b351609ffa503b2e00eb13",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 75,
+        "records_including_header_and_blanks": 5,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Across-Protocol/incident-metrics.csv",
+      "bytes": 2339,
+      "sha256": "8ec72c1c9e956e60c328bd66b688633ab578e35c56187f53e2c143ab109187e5",
+      "git_blob": "1f0e3c2517192c738a838c54e110e56fd271c3e3",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 104,
+        "records_including_header_and_blanks": 14,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Across-Protocol/recovery-events.csv",
+      "bytes": 632,
+      "sha256": "b3345d9ec443660674bb8b7c5180507e1e12ba27be28144bfb669a14c2bb788d",
+      "git_blob": "ec278b53dda3fd99321165bd5cabc1d2107dac21",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 28,
+        "records_including_header_and_blanks": 2,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Allbridge-Core/README.md",
+      "bytes": 14173,
+      "sha256": "fbeb77e4deb027b0235076071956d17a557e073f90c07ba091286d21b2e2d9f7",
+      "git_blob": "c0694df37a9b64a174b6fd1678cc39a7550d1899",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (427)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/Allbridge-Core/addresses.csv",
+      "bytes": 1444,
+      "sha256": "afad26bd00a6c9f7c8f992070574a5234747db173487c01461db360381fc30c8",
+      "git_blob": "718cc24562f04eefe567f453c8e6f1e64d0cf2b7",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 56,
+        "records_including_header_and_blanks": 8,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/August-2026-Security-Sweep/README.md",
+      "bytes": 75437,
+      "sha256": "414f0ca20506e10d71bbc332d58c68443e76bddb96322cee472bb4219f15d58f",
+      "git_blob": "34a7500ccd18007db876a4adc62c0b1d7c85ac54",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (813)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/August-2026-Security-Sweep/addresses.csv",
+      "bytes": 26916,
+      "sha256": "9a9c9a4d127d554abee6951bc9febefd048c2ff288fb69c95aa2cf04902fedd0",
+      "git_blob": "7849d15aef7bceeeb39ddad845817e0c064e8cbd",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 915,
+        "records_including_header_and_blanks": 61,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/August-2026-Security-Sweep/incidents.csv",
+      "bytes": 12728,
+      "sha256": "5a2ccb9e332689785b939cb25e8a7edb66534b19454360becbd061656a406054",
+      "git_blob": "cbb23ad73ca4427d31c8877961a63f76a77529a6",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 352,
+        "records_including_header_and_blanks": 32,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/August-2026-Security-Sweep/investigative_iocs.csv",
+      "bytes": 2209,
+      "sha256": "27870b26de4071eab393be435e17a17d5dd753fb5389ca50a2d186093af38786",
+      "git_blob": "bbd9a32b3f3f08400808b000aa35c920f9a77102",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 65,
+        "records_including_header_and_blanks": 5,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Coldcard-Weak-Entropy-Theft/README.md",
+      "bytes": 11023,
+      "sha256": "96847c3fdb8446404c763bcaa94ffecf72e0bffb4290518e7e6c6bcd8d71a962",
+      "git_blob": "98a62637c476e8229c667efcbd08374b81ddad11",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (480)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/Coldcard-Weak-Entropy-Theft/addresses.csv",
+      "bytes": 7254,
+      "sha256": "1a0c1b7d51f739a0f711ba864d79ea64c3f7fd170780f44f877121770cae9d50",
+      "git_blob": "e959589acd1b632bac637de94d0f1b044e7b9792",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 176,
+        "records_including_header_and_blanks": 11,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/GTA-VI-Wallet-Drainer/README.md",
+      "bytes": 3780,
+      "sha256": "b035c57c9a3a1dac45d2a110c866b875a6c1ee38eab54f66e8046190f645de01",
+      "git_blob": "2fd6042b37aea5c8f4686c827d0d7b1b7c20f868",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (466)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/GTA-VI-Wallet-Drainer/addresses.csv",
+      "bytes": 931,
+      "sha256": "bbaa26c0d0a45be7371f4605c15c22fa5c0952ad6c3eb1aa56a437c7f690cec3",
+      "git_blob": "d5503bbef2dc649da2e1b03da3202d548bc1e422",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 32,
+        "records_including_header_and_blanks": 2,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/GTA-VI-Wallet-Drainer/domains.csv",
+      "bytes": 1224,
+      "sha256": "84c89bf12b80ba972254d0e989afe2d25ece4801710adb119680c7a97545e5af",
+      "git_blob": "c3631518fbe5d8581f3b9dce4d05f4fc1c663ae4",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 39,
+        "records_including_header_and_blanks": 3,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Hamas-Al-Qassam-Financing/README.md",
+      "bytes": 7866,
+      "sha256": "1acdcfd654f735d6f43bacd6c1d821e5767477ffc36bdac2810a953fcdffaa68",
+      "git_blob": "408d9e25a5bbb15cb2f4e6ddb2953ce880488aed",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (475)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/Hamas-Al-Qassam-Financing/addresses.csv",
+      "bytes": 10271,
+      "sha256": "97190f5ecda8c3b7bf4c224c39a1419bf2e03ace57c981ca67e7d47a38cf24dd",
+      "git_blob": "59420d4c6b77dacd29b07d8ad57395b4c5f63038",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 304,
+        "records_including_header_and_blanks": 19,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/ICON-Migration-Replay-Exploit/README.md",
+      "bytes": 7522,
+      "sha256": "bebeb5d6457039762fac90a4a848bbc70f5a6f8a6786a1b697bd0d43d78fcede",
+      "git_blob": "ee3cb089681288fccf4f69f158c6a04013bad089",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (472)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/ICON-Migration-Replay-Exploit/addresses.csv",
+      "bytes": 3086,
+      "sha256": "6011f72a31f98d6acc03f8c3ae6a7961a07a0bacefa7caef01abbb6c364a197f",
+      "git_blob": "1d5c5b7bec2db906015bafd8afdca27d92731c0c",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 80,
+        "records_including_header_and_blanks": 5,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Iranian-MOIS-Cyber-Network/README.md",
+      "bytes": 8626,
+      "sha256": "d84fe676724bb6a1b12fd652e7a74356bd23c2913d6cdd7fa429b85868c075af",
+      "git_blob": "2acff0879a63b8ec5ffdfed3298011dd1ca70b2d",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (565)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/Iranian-MOIS-Cyber-Network/addresses.csv",
+      "bytes": 10055,
+      "sha256": "6510e56b723b66baf28f77a29837a268221a9c4b15b09dd5f9fbd26f03697b26",
+      "git_blob": "2206d30ddc48ee77b3bfc1b048b309e44cbe1af8",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 480,
+        "records_including_header_and_blanks": 32,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Liquid-Network-Peg-Out/README.md",
+      "bytes": 9560,
+      "sha256": "786f0027d4b2d396c7269bac7d37dd8aeec27a4fce34828e89311e8a86679ee5",
+      "git_blob": "e6139e595fe2395254b54a759dbb3315ccd85cf5",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (602)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/Liquid-Network-Peg-Out/addresses.csv",
+      "bytes": 3321,
+      "sha256": "9f24181e67be4a8aa8781ca04a5e349d25e1d4077de43879a367cb0eb7fb642a",
+      "git_blob": "692ecb38a0f13e1c9a8e0cb1ba17bb995839aa37",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 64,
+        "records_including_header_and_blanks": 4,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Liquid-Network-Peg-Out/transactions.csv",
+      "bytes": 2125,
+      "sha256": "69f770f4ae53fbb33f0eca6b7a7e0749d505b042dcc67f7885ac44eddbec926d",
+      "git_blob": "2318416e54aef39df8ff3a18b91dc5e6546bc82c",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 60,
+        "records_including_header_and_blanks": 5,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/README.md",
+      "bytes": 6718,
+      "sha256": "4bd5bf2242536c9bd2711686978e7e6dc4e1e7e8f0bbb784b8e1909eae56eb22",
+      "git_blob": "aa10e2c59d54f2c25f8696220f5e5f073c868631",
+      "git_mode": "100644",
+      "file_type": "HTML document, ASCII text, with very long lines (521)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/Shelbit-Network/README.md",
+      "bytes": 9473,
+      "sha256": "a74102afe108704fa041882d14f1fa8589ad0dc803ede9a41b5eb8a9c4f8419e",
+      "git_blob": "e27df5415c7891632b3ebf3311842e40d4e7ec26",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (569)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/Shelbit-Network/addresses.csv",
+      "bytes": 2186,
+      "sha256": "647ecd1315f7ac568b0223abf836a37391fc5235a3132b46e7c8ba2b55e6cfa5",
+      "git_blob": "44915e77000f77208a73ac819fe5118db51ef619",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 126,
+        "records_including_header_and_blanks": 14,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/SpaceX-FIFA-Drainers/README.md",
+      "bytes": 7141,
+      "sha256": "7a14bd4d7a36e80ad37c6bab640f6ebe8dd54077349eb7759e639190c0aa4107",
+      "git_blob": "0c479b3b526e1554413fa7f43c9b4ee8b59a044f",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (306)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/SpaceX-FIFA-Drainers/domains.csv",
+      "bytes": 747,
+      "sha256": "8357e7c6b85eae1381944d5162eb28e5ec8e09f7ff143c5f7515ffb5bb6f4b4b",
+      "git_blob": "522a0d7d9ac9bcb9e28dfac4e44a000a58769b52",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 36,
+        "records_including_header_and_blanks": 6,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Triple-A/README.md",
+      "bytes": 14272,
+      "sha256": "d239242a2185b2724a3c5fdd079236ccafa595433a1a456483fea5808407e92e",
+      "git_blob": "a23797f6ad4af4ab19352bd275a36d9ee255c90c",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/Triple-A/addresses.csv",
+      "bytes": 655,
+      "sha256": "e102f576aa3f5a13d44cc5dd7d313e845072fc36cbac1c59ce4b62d9421d6359",
+      "git_blob": "11e2e85b94b3a89337003d305599e135c2c59b8f",
+      "git_mode": "100644",
+      "file_type": "ASCII text, with very long lines (453)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 30,
+        "records_including_header_and_blanks": 3,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Triple-A/related-addresses.csv",
+      "bytes": 1834,
+      "sha256": "ee67d1f9ec8095b2849be5e9a73d244d4c3f6ea73447ed90764589c4b648a2f5",
+      "git_blob": "79a81e45672d40d3effa75847e919c8995b0472a",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 84,
+        "records_including_header_and_blanks": 6,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Triple-A/reported-networks.csv",
+      "bytes": 1727,
+      "sha256": "a1406c4adf38c4c9d07fbe1cda1c7f0fdf60925449e2db7ab6edf14106273d23",
+      "git_blob": "e5e463212cddfa397a877da64f8849cd4d4d4c41",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 56,
+        "records_including_header_and_blanks": 8,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Verus-Ethereum-Bridge/README.md",
+      "bytes": 15018,
+      "sha256": "b9d70e7dd97aebe9233e7656ac6139b6dbddd1c6d70474edeb0e7f95d167f0b6",
+      "git_blob": "abcf7cecce6a9acacb1becc9fdefe326ae579725",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "Multi-Chain/Verus-Ethereum-Bridge/addresses.csv",
+      "bytes": 1901,
+      "sha256": "ccdb8af230f1dcfbcaf49a7784f5353160fca6bda5b35d6ed34b291c3fc636fd",
+      "git_blob": "d0cfc886fd4d32e5fc56f6755e333698d95c7959",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 105,
+        "records_including_header_and_blanks": 7,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Verus-Ethereum-Bridge/incident-metrics.csv",
+      "bytes": 1134,
+      "sha256": "d8168637deb7c37c701e432f625ecf059236f753d2c5025bda5a351c8d7706e1",
+      "git_blob": "0c843f02850383462e7385693c7f5c5dc454fdcc",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 56,
+        "records_including_header_and_blanks": 7,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "Multi-Chain/Verus-Ethereum-Bridge/transactions.csv",
+      "bytes": 3054,
+      "sha256": "49f2cd9afa823a2f0f66b00fb2ebe5f37749226dd8d821479739bb24d78b5d24",
+      "git_blob": "fa86143f8f5fed39ae579a47956b5d4125caa732",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 144,
+        "records_including_header_and_blanks": 13,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "SOL/Aquifer/README.md",
+      "bytes": 9665,
+      "sha256": "2ff40f6f9003229c0da24a4b2acbed818144471b0da456a24ffc9ff065a1ff34",
+      "git_blob": "1856477cd9ef6aea88523603fee194a973f5b4e4",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (478)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/Aquifer/addresses.csv",
+      "bytes": 6542,
+      "sha256": "205a5b34c381cd2d9a9b95110900b7e2df581eff25b7fdbb9ea516aa7005125b",
+      "git_blob": "7249f79f5482526b41926dca672d01e30c84d178",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 176,
+        "records_including_header_and_blanks": 11,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "SOL/BonkDAO/README.md",
+      "bytes": 6002,
+      "sha256": "6b747d46df270aa82e4e0758004665fb1625b4589cd1dcb2e26d12b1bfba1838",
+      "git_blob": "71accd5618f8b6372dfb2310ead89bb1268c4abb",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/CYBERLEEK/README.md",
+      "bytes": 35157,
+      "sha256": "07f1f4ac17851dcf908278132d8d3ef5f1ff3055430356052e19a2bdadcbd9d7",
+      "git_blob": "0058eff57f34a3bb23ef822ca0730f6738cef34c",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (658)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/CYBERLEEK/addresses.csv",
+      "bytes": 12418,
+      "sha256": "79ef693b5d35c2d627be821801c2d73ca92f4aa9d258108364585194e9278b70",
+      "git_blob": "b1923aab1be4e7e640b5eb9ff4f4dc1428ba7287",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 390,
+        "records_including_header_and_blanks": 26,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "SOL/CYBERLEEK/images/cyberleek-usdt-1h-2026-08-25.png",
+      "bytes": 162520,
+      "sha256": "9e8056902f4ccec9a51613f34fe0b3ab2ad6ead2771f0ca48e7c60d75723f5fa",
+      "git_blob": "632fe3ff4f73d0b70b8c4ff4c339f69eaeefabb2",
+      "git_mode": "100644",
+      "file_type": "PNG image data, 1800 x 1200, 8-bit/color RGB, non-interlaced",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "PNG CRC/chunks; image decoding; metadata; visual review",
+        "dimensions": [
+          1800,
+          1200
+        ],
+        "trailing_bytes": 0
+      }
+    },
+    {
+      "path": "SOL/CYBERLEEK/images/cyberleek-usdt-30m-2026-08-25.png",
+      "bytes": 171818,
+      "sha256": "b5c875e6435995414e6a19656741a14d21cd27c85b730f90298bda65ba8f92a9",
+      "git_blob": "c3560e8049954b2b3df924464004e3192f4a8932",
+      "git_mode": "100644",
+      "file_type": "PNG image data, 1800 x 1200, 8-bit/color RGB, non-interlaced",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "PNG CRC/chunks; image decoding; metadata; visual review",
+        "dimensions": [
+          1800,
+          1200
+        ],
+        "trailing_bytes": 0
+      }
+    },
+    {
+      "path": "SOL/CYBERLEEK/transactions.csv",
+      "bytes": 3449,
+      "sha256": "ad9b8cd29aa89c0e6e0279f990c5b21d4d9e73ee6c5f93f374c24377f95b3c28",
+      "git_blob": "dcca3c9d05e2d5c08e5664c94b4b70e243776103",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 77,
+        "records_including_header_and_blanks": 7,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "SOL/DeFiTuna/README.md",
+      "bytes": 8672,
+      "sha256": "e82e8cbfb8c8c578a7e469c11b4ce7f6c9d06c5d39520c812b1ffa1d285b0360",
+      "git_blob": "637c0e647f8bd18bcb3d122b7181e076eb5b6138",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (382)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/DeFiTuna/addresses.csv",
+      "bytes": 2279,
+      "sha256": "b0a97ba1f67ea7982945edc7dc6fbae93ac1b5277bd409d2c3ee0249d82c0edd",
+      "git_blob": "f43515582f561264d50307e4ce8a9f5b8c4ca76f",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 91,
+        "records_including_header_and_blanks": 13,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "SOL/FlashTrade/README.md",
+      "bytes": 8399,
+      "sha256": "36f4c7774f122bbc3953533050a9d43f3937c7260a2d6b870ac54465edab1542",
+      "git_blob": "57a1303794b8c04f4a84b247b0cbda0e00a40fed",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (398)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/FlashTrade/address-status.md",
+      "bytes": 690,
+      "sha256": "30531530a7066c4cd58709b0306af58f976213aba3d26bc9beb99ff6303a97b7",
+      "git_blob": "4461bf1460007c62b4c24ef8b02260e23e8393ad",
+      "git_mode": "100644",
+      "file_type": "ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/Genesis-Whale-Drain/README.md",
+      "bytes": 6955,
+      "sha256": "8ac7ac15db4989390ec2ea9ff1aed764b99cdb02168489021cb362c62f5e3a66",
+      "git_blob": "b782c9574b35ee6be552b2df773bf87aeb62174d",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (305)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/Genesis-Whale-Drain/addresses.csv",
+      "bytes": 1279,
+      "sha256": "9fd4961d403b8be8f58daf186ece0ddd1a3604ac829597bf3d7f00b0d73c1f36",
+      "git_blob": "0b7157127f8e4e42b4d54462a149d60ce998df37",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 49,
+        "records_including_header_and_blanks": 7,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "SOL/HOPE/current_stats.pdf",
+      "bytes": 1788332,
+      "sha256": "b2014e8d270f300acf5a01f840bf702b74e862d505e74c4d0247ce4d0c8fa10f",
+      "git_blob": "59d1e8a5e1fb45bf42d689c5db44e43172d93f2c",
+      "git_mode": "100644",
+      "file_type": "PDF document, version 1.7, 7 page(s)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full object/stream parsing; secondary PDF inspection; visual review of all pages",
+        "pages": 7,
+        "objects": 428,
+        "streams": 282,
+        "active_actions": 0,
+        "trailing_payload_bytes": 0
+      }
+    },
+    {
+      "path": "SOL/HOPE/personal_distribution.png",
+      "bytes": 257385,
+      "sha256": "760b2fc2bddf00e268fe641d5f2a735dc59d1cad49b838c80693069e0934cffb",
+      "git_blob": "51e8dc598ac429f74fd26c3cf57f602bc47b0840",
+      "git_mode": "100644",
+      "file_type": "PNG image data, 2502 x 2090, 8-bit/color RGBA, non-interlaced",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "PNG CRC/chunks; image decoding; metadata; visual review",
+        "dimensions": [
+          2502,
+          2090
+        ],
+        "trailing_bytes": 0
+      }
+    },
+    {
+      "path": "SOL/HOPE/readme.md",
+      "bytes": 1330,
+      "sha256": "bbe957015c5777f43083d93de5195d8503a300947e860c703c65fc134c7a4b4a",
+      "git_blob": "062ab5cbe829a9078e1a121aa46372e928fb46a0",
+      "git_mode": "100644",
+      "file_type": "ASCII text, with very long lines (466)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/INCIDENTS.csv",
+      "bytes": 2113,
+      "sha256": "c087a772e684d426f7d9042a4c0dc68cc8f95de3edd6224ad0e2360e8f7e7d6c",
+      "git_blob": "1e372d76b3cf217e93b05e753dc4fb6a5df0ccca",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 77,
+        "records_including_header_and_blanks": 11,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "SOL/README.md",
+      "bytes": 11786,
+      "sha256": "72b959e060b9d454565ebf88d0be0a1d51626ed79c5b7928bd0f249cc013fcf7",
+      "git_blob": "ba70c9f88aafa4d99c8d018dd0ecc3a0b5c7296a",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (640)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/Rain-Legacy-Contracts/README.md",
+      "bytes": 13801,
+      "sha256": "b6c27e19e444c077538c8ca682e8a60a0a4872ccd1b495346aaba82cdba140fa",
+      "git_blob": "20247d7fe18d9d51078bc143c74f21ce06b8f800",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 text, with very long lines (657)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/Rain-Legacy-Contracts/addresses.csv",
+      "bytes": 8560,
+      "sha256": "72fb6aab1c800642d6d20003c1b01ffec11977d66dbb03d5334801664a96965c",
+      "git_blob": "f09e1f1c1ca5f373d599d92c7bb3e4d56a67e09d",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 176,
+        "records_including_header_and_blanks": 11,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "SOL/Raydium/README.md",
+      "bytes": 9213,
+      "sha256": "8c02610d6de8625fb3db62cf890f4512ce352e090838d92217fb02f3e6c55ab5",
+      "git_blob": "0ba0a8a66429017a22b05f0a82428c48777ccbc9",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (384)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/Raydium/addresses.csv",
+      "bytes": 729,
+      "sha256": "c126c156e88793de7d77775d9a6cee575e5c95dcc9956d92dd55d9ad947c642f",
+      "git_blob": "acd2bd95c8ca6abfe0768922ae73ebe1908da365",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 28,
+        "records_including_header_and_blanks": 4,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "SOL/SUNUSI/README.md",
+      "bytes": 7858,
+      "sha256": "8d7b9f6bb29463732d08d51522e699ad76f49874ea573f410b559ec918e25410",
+      "git_blob": "7a6ff34548da670bbe10b4bf594265f13a0b2ad7",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (327)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "SOL/SUNUSI/addresses.csv",
+      "bytes": 607,
+      "sha256": "642c87f77653fa89201ec58d1e740bc6d7e8c315bea1b391102a8730a46fcf5a",
+      "git_blob": "c347124afb2d53bd89fc9d9133c6ce94cc886322",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 21,
+        "records_including_header_and_blanks": 3,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "TRON/Central-Bank-of-Iran/README.md",
+      "bytes": 6038,
+      "sha256": "fa5ed24f9bc09780349fdb388dcdf6c3b889930aefd25621de20184e22f307d2",
+      "git_blob": "4bbe914c424cc718d96bee0a998cf26a6c6375ff",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (304)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "TRON/Central-Bank-of-Iran/addresses.csv",
+      "bytes": 1227,
+      "sha256": "6fa206274171cb430f876a8291668d85b25484cff28454b016db7a0f6eb5d71b",
+      "git_blob": "1f11f0070c016d2dbc64d231e880606d6f4bb25e",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 49,
+        "records_including_header_and_blanks": 7,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "TRON/El-Kahira/README.md",
+      "bytes": 7594,
+      "sha256": "450ad2f364543bec30d2910e711e2b7cd0614ae75ac396345bab1c1f830606aa",
+      "git_blob": "f8a3279779df2dd736a5ad17584135c70f4729b6",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "TRON/El-Kahira/addresses.csv",
+      "bytes": 2181,
+      "sha256": "1071f182b98bf091591d0e0eb61c5bfb9ed90c550297303bb789a188e0b2ff08",
+      "git_blob": "faa625825bf31270dee2f55408f32642571d681d",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 112,
+        "records_including_header_and_blanks": 8,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "TRON/El-Kahira/wallets.md",
+      "bytes": 1999,
+      "sha256": "dd0652da24c57a54b52b244a1f191e497c470a66663197ab4c545c3cad9ea93b",
+      "git_blob": "9e8b020b85de946fd5cc4b91ef588645eb693a86",
+      "git_mode": "100644",
+      "file_type": "HTML document, ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "TRON/README.md",
+      "bytes": 4262,
+      "sha256": "8ad273d3a0b843abd2ff908a33f2525f6663b90f5b9268f251534ed110c99431",
+      "git_blob": "0d5614287b8e87afd31baaf01467f890dbeff656",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "img/mail.png",
+      "bytes": 387995,
+      "sha256": "dc32d99f7b38fa09af41f17b9166890b0821f99294275b1fde85de05f133010f",
+      "git_blob": "84850a086b04f8ee51e022c717e8f8d106a724fa",
+      "git_mode": "100644",
+      "file_type": "PNG image data, 680 x 453, 8-bit/color RGB, non-interlaced",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "PNG CRC/chunks; image decoding; metadata; visual review",
+        "dimensions": [
+          680,
+          453
+        ],
+        "trailing_bytes": 0
+      }
+    },
+    {
+      "path": "parsing/combined_sol_transfers.txt",
+      "bytes": 8820,
+      "sha256": "73cb19dfdc635de4ac5e834574be654273a222473053cfc74ee7077570f73231",
+      "git_blob": "a16b87e3444941e5e2f4069f59c6f603bf432fad",
+      "git_mode": "100644",
+      "file_type": "Unicode text, UTF-8 (with BOM) text, with very long lines (581)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 496,
+        "records_including_header_and_blanks": 34,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "parsing/combined_values.csv",
+      "bytes": 7698,
+      "sha256": "2096defbfc98be44af5caf712891cb6f0b6b02151bb31ba64f61b8b75264b89a",
+      "git_blob": "8b4b17734f7ae90081b9df867c9edaa721b4ac75",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 512,
+        "records_including_header_and_blanks": 32,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "parsing/merge_files.py",
+      "bytes": 4460,
+      "sha256": "256df2570adae6e759dfb7f9e27d5215dff49a58afcfea53997436ac08ff75a3",
+      "git_blob": "18d9c27b8f5252bf1c6a97ed42e08e09af5a248e",
+      "git_mode": "100644",
+      "file_type": "Python script, ASCII text executable",
+      "inspection_status": "parsed and reviewed",
+      "findings": [
+        "SR-01",
+        "SR-02",
+        "conditional python-docx version exposure; not a confirmed CVE installation"
+      ],
+      "inspection": {
+        "method": "full AST and manual source review",
+        "imports": [
+          "import tkinter as tk",
+          "from tkinter import filedialog",
+          "import tkinter.messagebox",
+          "import json",
+          "import os",
+          "from docx import Document"
+        ],
+        "ast_nodes": 618
+      }
+    },
+    {
+      "path": "parsing/readme.md",
+      "bytes": 1593,
+      "sha256": "dd4b0d3cd9011a2709a8204aaa25d8840b7619a0b2c6047ad08cb9a7e7af4ff6",
+      "git_blob": "dba242e88020a5a22df12eb51edda410730d9871",
+      "git_mode": "100644",
+      "file_type": "ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [
+        "Unpinned dependency instructions; tkinter installation guidance"
+      ],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "parsing/sol tx history/banana.sol_sol_transfers.csv",
+      "bytes": 1590,
+      "sha256": "e5ee2fffe439b34fdde471c95355ba0f57c98740e913edcea99a6d12e2111abb",
+      "git_blob": "60ccd2b695d436c331b15d59927aed4ff22bda56",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 80,
+        "records_including_header_and_blanks": 5,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "parsing/sol tx history/readme.md",
+      "bytes": 1593,
+      "sha256": "62abda82f560f6db8c8f3b30bd079339ecdaf45c2176cdf656f626c01ae49f74",
+      "git_blob": "62b36ea54445b0cf7b03f1c656912a61b3aae7d6",
+      "git_mode": "100644",
+      "file_type": "ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [
+        "Unpinned dependency instructions; tkinter installation guidance"
+      ],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "parsing/sol tx history/x.sol_2_sol_transfers.csv",
+      "bytes": 5124,
+      "sha256": "a8b04617cfac355e269569e6a9e951a751dc0502f02a451326391d328252a3fb",
+      "git_blob": "06a2f779a5b9d8ac99ac66204d7cf6c00286aeff",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 304,
+        "records_including_header_and_blanks": 19,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "parsing/sol tx history/x.sol_sol_transfers.csv",
+      "bytes": 2100,
+      "sha256": "1f8cdb4da1d0e2148502422e11967ac58e30880cd394b6810cbe7dfe6b0f87c5",
+      "git_blob": "efc5b71abb76ab62a38101cc9b3fc9b5cf897c96",
+      "git_mode": "100644",
+      "file_type": "CSV ASCII text",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text and delimited-cell inspection",
+        "cells": 112,
+        "records_including_header_and_blanks": 7,
+        "formula_payload_candidates": 0
+      }
+    },
+    {
+      "path": "parsing/visual_of_data_loss.py",
+      "bytes": 4830,
+      "sha256": "887e9b55bd5e8055d80295040cb9bd295fe7402b48232aeb8b75fc3d33fbc844",
+      "git_blob": "07d5efa1a2f88e3a171cf842251a82059aea227b",
+      "git_mode": "100644",
+      "file_type": "Python script, ASCII text executable",
+      "inspection_status": "parsed and reviewed",
+      "findings": [
+        "SR-01",
+        "SR-02",
+        "conditional python-docx version exposure; not a confirmed CVE installation"
+      ],
+      "inspection": {
+        "method": "full AST and manual source review",
+        "imports": [
+          "import tkinter as tk",
+          "from tkinter import filedialog",
+          "import tkinter.messagebox",
+          "import json",
+          "import os",
+          "import pandas as pd",
+          "import matplotlib.pyplot as plt",
+          "import seaborn as sns",
+          "from docx import Document"
+        ],
+        "ast_nodes": 683
+      }
+    },
+    {
+      "path": "readme.md",
+      "bytes": 25110,
+      "sha256": "ffe233a21685ab46cda1804459cb5fa74011728df48a9c3b1b6f57d1b2b74f23",
+      "git_blob": "dd38108d6ebde685eaff21812a28057792be4dac",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (701)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "scammer DB.html",
+      "bytes": 90505,
+      "sha256": "560b75debc324481dc8926486d9ec98202694fb3b3bb5b2b7e6980ffc8157aa9",
+      "git_blob": "87caccd1dfea19fe39b550f767c7dc5092a8fb37",
+      "git_mode": "100644",
+      "file_type": "HTML document, ASCII text, with CRLF line terminators",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    },
+    {
+      "path": "wallets.md",
+      "bytes": 58630,
+      "sha256": "293cebdb72356d35f832cc18290dff6427173572f61c7d2726b63eb36dcc7266",
+      "git_blob": "fe03a56c08f8998550be50d9c0139ae1e4636ffa",
+      "git_mode": "100644",
+      "file_type": "HTML document, Unicode text, UTF-8 text, with very long lines (545)",
+      "inspection_status": "parsed and reviewed",
+      "findings": [],
+      "inspection": {
+        "method": "full text; markup tags, attributes, links and code/encoded-content markers where applicable"
+      }
+    }
+  ]
+}
