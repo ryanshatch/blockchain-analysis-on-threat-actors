@@ -11,6 +11,11 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="./Nesa-Cosmos-EVM/"><code>Nesa-Cosmos-EVM/</code></a></td>
+      <td>Nesa through Hyperlane to Ethereum</td>
+      <td>August 24 exploit with a September 8 Ethereum attribution report: one P1 bridge recipient, one P2 liquidation seed, and incomplete source-chain technical attribution</td>
+    </tr>
+    <tr>
       <td><a href="./Across-Protocol/"><code>Across-Protocol/</code></a></td>
       <td>Solana origin; fraudulent fills across multiple destination chains; Ethereum recovery activity</td>
       <td>Off-chain event-parser and relayer exploit</td>
@@ -22,8 +27,8 @@
     </tr>
     <tr>
       <td><a href="./August-2026-Security-Sweep/"><code>August-2026-Security-Sweep/</code></a></td>
-      <td>MAYAChain, Bitcoin, Ethereum, Solana, Injective, ICON, Sonic, Cronos, Arbitrum, BNB Chain, Harmony, TRON, Polygon, Base, and multi-chain users</td>
-      <td>August 20-September 7, 2026 cross-ecosystem sweep covering the Liquid unauthorized peg-out, RedSonic, the suspected GoMining-linked drain, Dream Health Chain, COLDCARD CoinJoin movement, and the earlier DOJ/FBI Hamas, GTA VI drainer, Rain, Aquifer, and ICON updates</td>
+      <td>MAYAChain, Bitcoin, Ethereum, Solana, Nesa, Nomic, Osmosis, Injective, ICON, Sonic, Cronos, Arbitrum, BNB Chain, Harmony, TRON, Polygon, Base, and multi-chain users</td>
+      <td>August 20-September 9, 2026 cross-ecosystem sweep covering Nesa, the Xinbi sanctions set, the zero-seed Nomic review, the Liquid unauthorized peg-out, RedSonic, the suspected GoMining-linked drain, Dream Health Chain, COLDCARD CoinJoin movement, and the earlier DOJ/FBI Hamas, GTA VI drainer, Rain, Aquifer, and ICON updates</td>
     </tr>
     <tr>
       <td><a href="./Coldcard-Weak-Entropy-Theft/"><code>Coldcard-Weak-Entropy-Theft/</code></a></td>
