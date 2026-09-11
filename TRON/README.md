@@ -13,6 +13,12 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="./Xinbi-Guarantee/"><code>Xinbi-Guarantee/</code></a></td>
+      <td>September 9, 2026</td>
+      <td>52 OFAC-listed TRON addresses on the Xinbi Guarantee SDN entry; P1 direct sanctions watch</td>
+      <td>High — official OFAC entity association</td>
+    </tr>
+    <tr>
       <td><a href="./Central-Bank-of-Iran/"><code>Central-Bank-of-Iran/</code></a></td>
       <td>July 14, 2026 update</td>
       <td>OFAC-sanctioned state-linked financial infrastructure; four newly added TRON identifiers plus two retained identifiers</td>
@@ -60,6 +66,7 @@
 <h2>Monitoring Boundaries</h2>
 
 <ul>
+  <li>The Xinbi set contains 52 exact official identifiers. Sanctions membership does not establish individual freeze status or membership in a separate seizure subset.</li>
   <li>Addresses directly published by OFAC are treated as high-confidence direct sanctions-watch seeds.</li>
   <li>Counterparties, exchange deposit addresses, bridges, routers, token contracts, and service wallets are not automatically sanctioned or actor-controlled merely because they interact with a designated address.</li>
   <li>Use connected addresses as graph-expansion pivots until independent attribution supports a stronger label.</li>
