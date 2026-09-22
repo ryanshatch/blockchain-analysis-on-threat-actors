@@ -11,6 +11,26 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="./September-2026-Security-Sweep/"><code>September-2026-Security-Sweep/</code></a></td>
+      <td>September 11–21 reports across Solana, Ethereum, and mobile-wallet users</td>
+      <td>Six new cases, 27 role-separated indicators, a zero-wallet FomoPeek campaign, resolved ether.fi attribution, and reconciliation of repeated September 4–9 reports</td>
+    </tr>
+    <tr>
+      <td><a href="./Fetch-NuNet-SingularityNET/"><code>Fetch-NuNet-SingularityNET/</code></a></td>
+      <td>Ethereum execution with Cardano and BNB Chain effects</td>
+      <td>September 19–20 privileged-key compromise, converter drain, unauthorized minting, and two P1 Ethereum seeds</td>
+    </tr>
+    <tr>
+      <td><a href="./FomoPeek/"><code>FomoPeek/</code></a></td>
+      <td>iOS credentials; Solana, Ethereum, and TRON users</td>
+      <td>September 19 malicious-application disclosure with four release records, no attributed wallet seeds, and unknown aggregate losses</td>
+    </tr>
+    <tr>
+      <td><a href="../SOL/Dominion-SILV/"><code>SOL/Dominion-SILV/</code></a></td>
+      <td>Solana key compromise and Chainflip payouts on Ethereum</td>
+      <td>September 11 treasury theft; custody, signer control, Ethereum proceeds, and possible service endpoints separated</td>
+    </tr>
+    <tr>
       <td><a href="./Nesa-Cosmos-EVM/"><code>Nesa-Cosmos-EVM/</code></a></td>
       <td>Nesa through Hyperlane to Ethereum</td>
       <td>August 24 exploit with a September 8 Ethereum attribution report: one P1 bridge recipient, one P2 liquidation seed, and incomplete source-chain technical attribution</td>

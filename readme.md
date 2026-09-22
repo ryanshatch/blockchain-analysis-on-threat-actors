@@ -89,6 +89,22 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="./Multi-Chain/September-2026-Security-Sweep/"><code>Multi-Chain/September-2026-Security-Sweep/</code></a></td>
+      <td>September 11–21 update covering Dominion, FomoPeek, Safe/rsETH, KREMLIN, Fetch/NuNet/SingularityNET, and resolved ether.fi attribution, with 27 role-separated indicators and a coverage table for repeated reports.</td>
+    </tr>
+    <tr>
+      <td><a href="./SOL/Dominion-SILV/"><code>SOL/Dominion-SILV/</code></a></td>
+      <td>September 11 multisig/key compromise, SILV treasury liquidation, Chainflip proceeds, added signer, and explicit service/victim boundaries.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/FomoPeek/"><code>Multi-Chain/FomoPeek/</code></a></td>
+      <td>Malicious iOS releases disclosed September 19; kernel-assisted credential theft, release chronology, and zero wallet seeds.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/Fetch-NuNet-SingularityNET/"><code>Multi-Chain/Fetch-NuNet-SingularityNET/</code></a></td>
+      <td>September 19–20 shared compromise cluster with two P1 Ethereum seeds, victim-authority exclusions, and separate mint, holdings, and proceeds measures.</td>
+    </tr>
+    <tr>
       <td><a href="./Multi-Chain/Nesa-Cosmos-EVM/"><code>Multi-Chain/Nesa-Cosmos-EVM/</code></a></td>
       <td>August 24 Nesa exploit, reported September 8: exact Hyperlane bridge receipt, one High-confidence P1 Ethereum seed, and one Medium-confidence P2 liquidation wallet.</td>
     </tr>
@@ -175,6 +191,21 @@
     <tr><th align="left">Directory</th><th align="left">Network</th><th align="left">Description</th></tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="./EVM/Ethereum/Etherfi-AtomicQueue/"><code>EVM/Ethereum/Etherfi-AtomicQueue/</code></a></td>
+      <td>Ethereum</td>
+      <td>September 11 legacy queue exploit; full attacker address resolved September 22 and corroborated against its transaction; victim queue excluded from threat labels.</td>
+    </tr>
+    <tr>
+      <td><a href="./EVM/Ethereum/Safe-rsETH-Module/"><code>EVM/Ethereum/Safe-rsETH-Module/</code></a></td>
+      <td>Ethereum</td>
+      <td>September 15 auxiliary authorization exploit with original exploiter, Yoink MEV actor, proceeds holder, and victim infrastructure kept separate.</td>
+    </tr>
+    <tr>
+      <td><a href="./EVM/Ethereum/KREMLIN-REF9334/"><code>EVM/Ethereum/KREMLIN-REF9334/</code></a></td>
+      <td>Ethereum</td>
+      <td>Elastic's September 14 banking-malware attribution: one operator wallet, three malicious C2 contracts, and four non-attributed financial pivots.</td>
+    </tr>
     <tr>
       <td><a href="./EVM/Ethereum/Zunami-Protocol/"><code>EVM/Ethereum/Zunami-Protocol/</code></a></td>
       <td>Ethereum</td>
