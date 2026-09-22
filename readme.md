@@ -88,6 +88,14 @@
     <tr><th align="left">Directory</th><th align="left">Description</th></tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="./Multi-Chain/Nesa-Cosmos-EVM/"><code>Multi-Chain/Nesa-Cosmos-EVM/</code></a></td>
+      <td>August 24 Nesa exploit, reported September 8: exact Hyperlane bridge receipt, one High-confidence P1 Ethereum seed, and one Medium-confidence P2 liquidation wallet.</td>
+    </tr>
+    <tr>
+      <td><a href="./TRON/Xinbi-Guarantee/"><code>TRON/Xinbi-Guarantee/</code></a></td>
+      <td>September 9 OFAC designation with 52 officially listed TRON addresses, direct sanctions-watch treatment, and separate freeze and seizure attribution boundaries.</td>
+    </tr>
     <tr><td><a href="./1VPNS/"><code>1VPNS/</code></a></td><td>OFAC-designated wallets associated with Dmytro Rashevskyi and First VPN Service / 1VPNS across BTC, ETH, and SOL.</td></tr>
     <tr><td><a href="./EVM/"><code>EVM/</code></a></td><td>Ethereum and EVM-compatible threat-wallet, exploit, sanctions, bridge-flow, and protocol-incident investigations.</td></tr>
     <tr>
@@ -96,7 +104,7 @@
     </tr>
     <tr>
       <td><a href="./Multi-Chain/August-2026-Security-Sweep/"><code>Multi-Chain/August-2026-Security-Sweep/</code></a></td>
-      <td>August 20-September 7, 2026 security sweep covering the Liquid unauthorized peg-out, RedSonic, the suspected GoMining-linked drain, Dream Health Chain, COLDCARD CoinJoin movement, and earlier DOJ/FBI Hamas, GTA VI drainer, Rain, Aquifer, and ICON updates.</td>
+      <td>August 20-September 9, 2026 security sweep covering Nesa, the 52-address Xinbi OFAC set, the zero-seed Nomic review, the Liquid unauthorized peg-out, RedSonic, the suspected GoMining-linked drain, Dream Health Chain, COLDCARD CoinJoin movement, and earlier DOJ/FBI Hamas, GTA VI drainer, Rain, Aquifer, and ICON updates.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/Coldcard-Weak-Entropy-Theft/"><code>Multi-Chain/Coldcard-Weak-Entropy-Theft/</code></a></td>

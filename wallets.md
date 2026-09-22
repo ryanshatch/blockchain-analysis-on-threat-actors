@@ -919,3 +919,83 @@ OFAC's August 24 action publishes 30 BTC, ETH, and TRON identifiers for four nam
 - Exchange, bridge, router, mixer, protocol, and service addresses remain infrastructure pivots unless independently attributed.
 - Kahzadian's Treasury-described Bitcoin-wallet theft does not establish that the stolen wallet is one of his three published sanctions identifiers.
 - Mesri's 15-address set is an authoritative common-entity attribution, but specific operational roles require separate transaction analysis.
+
+---
+
+## Nesa / Cosmos EVM Exploit
+
+**Incident:** August 24, 2026. **Report:** September 8, 2026.
+
+**Case file:** [Multi-Chain/Nesa-Cosmos-EVM/](./Multi-Chain/Nesa-Cosmos-EVM/)
+
+| Network | Address | Role | Confidence | Treatment |
+|---|---|---|---|---|
+| Ethereum | `0x9AE755D23Fc948fE94C9364A2398fd508a2AB0d2` | Primary attacker; cross-chain proceeds and consolidation | High | P1 direct watch |
+| Ethereum | `0xB92dF70F3d25eD25265c7C341C9D2550c42Ff83A` | Exit-trading and liquidation; funding/flow-derived association | Medium | P2 direct incident-flow watch and graph expansion |
+
+The bridge record exposes exactly 257,703,733.288579599652028616 NES delivered to the primary wallet. The separate liquidation reconstruction reports approximately 185.74M NES sold across 241 fills for approximately 95.97 ETH. Source-chain attacker identity and the precise Nesa-side call remain unresolved. Hyperlane, relayers, exchanges, CoW Protocol, Uniswap, token contracts, and the mint null address remain infrastructure context.
+
+---
+
+## Xinbi Guarantee — September 9 OFAC TRON Disclosure
+
+**Case file:** [TRON/Xinbi-Guarantee/](./TRON/Xinbi-Guarantee/)
+
+All 52 identifiers below appear directly in the [official Xinbi Guarantee SDN entry](https://ofac.treasury.gov/recent-actions/20260909). All are High-confidence entity-attribution records with P1 direct sanctions-watch treatment. Their individual operator, operational role, and membership in separate freeze or seizure subsets are not inferred.
+
+| Network | Address | Classification | Confidence | Treatment |
+|---|---|---|---|---|
+| TRON | `TW5tokvhEfrb77z98Rc8HqbkzQJ6sxYtGX` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TBKpozurdWLrbKkxtDqkveeq1dSB8Axj3V` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TWqcMjV7Wq2RHe2CSiKQHpkn6A7B2AWUPe` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TG83Fk56S2mycAUMYHZyZp9wMg6DCf4bUn` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TYkE8VwX1SGHM3Q2CA29nka5U2F2khKAj5` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TEECjwHqVG8sDmM3VtscjuCaRe5p351MU7` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TDU61o35UEe5hdB3R16c116DrPSV4kiyKz` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TKRNCETxbiMmyyMraCkgdXKdLr1ZkmKxV5` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTWRf2MD6zJ26bS4uKCNrcp84aAr7AmTjm` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TYvjt4ZKfsipHjA52nzgjUjDBF622SLCih` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TXHX2NUvcgft4zs6MkkUtdNVERPTavHDWN` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TWPma8xH48AEN93x2krdukV9e1j6sPsBeS` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TK3n8pGHvDTcK53mpfeDAMzdwjb22qvFU3` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TGSGw4aUeAMNCfD8WqLRLe8ErQiJ1vqghj` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TBNjCi1d5Ns6ec5aMp28LpfKcX7xTpykAN` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `THH9JJNbLDN7qs1CyTxJQEjhC9y5FnZUhU` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TQhT3QWAbFiy6GEYuBrbK97uP3XVmTpRD8` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TXka5xc6mEkcoVXR7F2TFDKernyLt3XyW4` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TH1yknksde3pBY3oWVhUxVTbWbLqdafqYT` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TLHWeZcDmXk6idnaGwsQ9CEmK24KpoGgRM` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTmvr41Fa9LeWJQ8NKQ5t4wFUspgEA1mJF` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `THifikwE6RtxYNWdcP9CWUjXS8Gh1xBCoa` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TR983hNyUNgrNSB1xncG9thZNhgYpbNvSh` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TNwe3WoEX6XrQ5NPAeWPkvpTtdaf27XYxK` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TGcewGsDLy7Fzc66kXXEB8Kh2b6u2XCvnV` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TYq3iRujcBELXX89i9JY32UmLxcyZAJe7E` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TRyQivSkQChryfnYnE1bUmJhnL3TvKUpvS` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TGjYoJLhfAiD2BRV9hwCeuHhZ54D3gLKTd` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TXT9atp8qBMXKbFYnRyWkM88UXYyobQNLP` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TThRMUSidD4gQeCnu56cFfCmqS421Nmbu7` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TAkpWPt2JZdiLSkG7ZX2VAQkZQsnGZ1nqh` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TZ8zsUe9M9tkhrFtfE7vMMmEwgVEF3n2UN` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TM9c5uR2UKwd5fMySgaoYSjphRyi3AjAtc` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTjHn8qNVxazB3UroiekGRPuM2w2GwvNbn` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TWHwre81Mv4hvupNdHnsYX9FPocm29dQQQ` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TT4WKPQscK7fkxrPj1E9PjZp1HTVBUpoTm` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TYZKYK2fbvw3EAPES2daFvoV4DqPna43Jd` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TF7LUSoZQyDFxTFzCL11saBHAqMAyPh8dK` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TSmcHwvTR27Ao4NN8HhPFCVcPU5aTEqLDt` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TJ6NznpBV5uUpp5uZGDub9zD1999999999` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TPD4pmojFA2f2RvgnSDa7YCuGJ4BeS9yK2` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TXtH3iUipk6DZnYNu3kgjDsnSSLHLz8ZZU` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TBEqQGTxXRWXXeqe7ZwmSB6hc5MMMMMMMM` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTYf9kcvABTSizXsdbC2E5co6jx9jvJ111` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTrHak4biV5ZtNwN1K8oi7916CjmeVVeH8` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TCoKgVdQbSyPnJnf9oNUNQn3dWMDD9wbQL` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TNUQ2rZSRjZaGhtbwaFZEvuaemMj5z5Fnm` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTWBrNgoooSs9HQQKMty3ZQDbS9LzgjNiH` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TGu8xk3u1QcA9FNCQZ4RUTvniiCjNkjXkA` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TAQPzv9941nVuTj4ng2vd6L11Re57r42pW` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TMdZfVVAsxKsbXGmV3kBnEgM69z3QHH3kz` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TZ42sU5kQ2n5rLZ6PhEGkmfLtmHjoi2vpr` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+
+Counterparties and service infrastructure do not automatically inherit sanctions or attacker labels. The reported ten-address USDT freeze is a distinct set; only `TWPma8xH48AEN93x2krdukV9e1j6sPsBeS` is individually identified in the [reviewed reporting](https://www.cryptotimes.io/2026/09/08/misttrack-reports-39m-usdt-freeze-across-xinbi-linked-wallets/). Nomic remains a zero-seed incident review with no guessed attacker address.

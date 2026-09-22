@@ -1,13 +1,13 @@
-# August 20-September 8, 2026 Crypto Security Sweep
+# August 20-September 9, 2026 Crypto Security Sweep
 
 | Field | Details |
 |---|---|
 | Review cutoff | August 20, 2026 at 2:31 a.m. ET |
-| Follow-up cutoff | September 8, 2026; Liquid attribution and recovery correction |
+| Follow-up cutoff | September 9, 2026 reports; Nesa and Xinbi source/identifier checks September 11 |
 | Scope | Protocol exploits, wallet compromises, phishing and drainer campaigns, rug pulls, address poisoning, laundering pivots, and unresolved investigative intelligence |
-| Networks | MAYAChain, Bitcoin, Ethereum, Solana, ICON, Sonic, Cronos, BNB Chain, Harmony, TRON, Base, and other EVM environments |
-| Sources reviewed | U.S. Department of Justice and FBI affidavits, SlowMist, CertiK, TRM Labs, BlockSec, Blockaid, SEAL/Security Alliance, Bitquery, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, ExVulSec, Galaxy Research, ICON Foundation, protocol disclosures, public explorers, and corroborating reporting |
-| Latest confirmed protocol incidents in the follow-up window | Liquid unauthorized peg-out on September 6 and RedSonic vault exploit on September 5; both now have complete direct-watch addresses |
+| Networks | MAYAChain, Bitcoin, Ethereum, Solana, Nesa, Nomic, Osmosis, ICON, Sonic, Cronos, BNB Chain, Harmony, TRON, Base, and other EVM environments |
+| Sources reviewed | OFAC, Treasury, Rekt/Rarma, Cosmos Labs, Elliptic, U.S. Department of Justice and FBI affidavits, SlowMist, CertiK, TRM Labs, BlockSec, Blockaid, SEAL/Security Alliance, Bitquery, GoPlus, Defimon, PeckShield/Specter, Malwarebytes, ExVulSec, Galaxy Research, ICON Foundation, protocol disclosures, public explorers, and corroborating reporting |
+| Newest reported incident in this follow-up | September 9 Nomic / Osmosis nBTC report; no complete attacker identifier ingested. Nesa is an August 24 incident with September 8 Ethereum attribution reporting. |
 
 > SlowMist's live tracker listed Maya Protocol as its newest incident at the review cutoff. No protocol exploit dated August 19 or August 20 appeared above it. This is a point-in-time observation, not proof that no undisclosed or later-indexed incident occurred.
 
@@ -15,6 +15,9 @@
 
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
 |---|---|---|---:|---|
+| Xinbi Guarantee | September 9 designation | Official OFAC TCO designation; 52 TRON sanctions seeds | Not a theft-loss estimate; over $24B throughput and approximately $52M enforcement restraint are separate measures | High official entity association |
+| Nesa / Cosmos EVM | August 24 incident; September 8 report | Balance-accounting exploit and Hyperlane bridge-out | 257,703,733.288579599652028616 NES receipt; approximately 95.97 ETH in the cited liquidation subset | High primary wallet; Medium liquidation wallet |
+| Nomic / Osmosis nBTC | September 9 report; precise exploit date not established here | Reported double-spend and false-voucher incident | Approximately 39.84 nBTC implicated; 22.65 BTC-equivalent frozen | High reported incident; no complete attacker IOC ingested |
 | Liquid Network / Elements | September 6; partial return September 7; attribution correction September 8 | Unauthorized federation-reserve peg-out; reported consensus and asset-validation exploit | 3,996.01834922 BTC principal peg-out; 3,400 BTC returned | High incident and consolidation linkage; intermediary ownership caveat |
 | RedSonic / Reddio Vault | September 5 | Cross-vault asset double counting and flash-loan share-price manipulation | Approximately 9.25 ETH | High incident, transaction, and address linkage |
 | Suspected GoMining-linked wallet population | September 4-5 | Coordinated multi-wallet drain and cross-chain proceeds consolidation | Approximately 1,147 ETH / $2.8M | High proceeds-flow linkage; medium GoMining ecosystem attribution |
@@ -662,19 +665,43 @@ SlowMist published the attacker wallet `0xd3a8d0a9f55cf679fff6f277e49afc95b49d2b
 
 The canonical report and two machine-readable records are maintained in [`EVM/BNB-Chain/Dream-Health-Chain/`](../../EVM/BNB-Chain/Dream-Health-Chain/).
 
+## 30. Nesa / Cosmos EVM — Ethereum Attribution
+
+The September 8 report identifies two complete Ethereum addresses for the August 24 Nesa exploit. The primary recipient `0x9AE755D23Fc948fE94C9364A2398fd508a2AB0d2` is a High-confidence P1 direct-watch seed. The funding/flow-derived liquidation wallet `0xB92dF70F3d25eD25265c7C341C9D2550c42Ff83A` remains Medium confidence and P2.
+
+The Ethereum Hyperlane transaction records exactly 257,703,733.288579599652028616 NES delivered to the primary wallet. Rarma's reported liquidation subset sold approximately 185.74M NES across 241 fills for approximately 95.97 ETH. The exact bridge quantity is distinct from sale proceeds and net profit. No source-chain attacker account or precise Nesa-specific call is inferred from the Ethereum receipt.
+
+The [dedicated case](../Nesa-Cosmos-EVM/) preserves two address rows and one complete transaction. Hyperlane, CoW Protocol, Uniswap, token contracts, and exchange infrastructure remain context. [Rekt investigation](https://rekt.news/nesa-rekt)
+
+## 31. Xinbi Guarantee — 52 Official TRON Identifiers
+
+OFAC's September 9 designation directly associates 52 complete TRON addresses with Xinbi Guarantee. All 52 are High-confidence P1 sanctions-watch records. They were reconciled exactly against the official entry and pass TRON Base58Check validation. The [dedicated case and complete address set](../../TRON/Xinbi-Guarantee/) retain official publication order. [OFAC source](https://ofac.treasury.gov/recent-actions/20260909)
+
+Treasury's over-$24B throughput measure and DOJ's approximately $52M enforcement restraint are different quantities. Neither is a summed balance or loss attributed to these 52 wallets. Separate freeze reports are not mapped onto the OFAC set without address-level evidence. Only the full `TWPma8xH48AEN93x2krdukV9e1j6sPsBeS` identifier is linked to the separately reported ten-address freeze in the reviewed material. [MistTrack reporting and complete overlap identifier](https://www.cryptotimes.io/2026/09/08/misttrack-reports-39m-usdt-freeze-across-xinbi-linked-wallets/)
+
+## 32. Nomic / Osmosis nBTC — Zero-Seed Review
+
+The September 9 report describes approximately 39.84 nBTC implicated and 22.65 BTC-equivalent frozen on Osmosis after a reported Nomic double-spend/false-voucher incident. The reviewed material supplies no complete authoritative attacker identifier suitable for ingestion. The precise exploit date is not assigned from the publication date, and no Bitcoin-mainnet reserve drain or wallet is inferred. [Incident reporting](https://www.cryptotimes.io/2026/09/09/osmosis-freezes-22-65-btc-after-nomic-exploit-hits-alloyed-btc-backing/)
+
+This follow-up adds **54 unique monitoring identifiers: two Nesa ETH wallets and 52 Xinbi TRON addresses**. Nomic adds one incident record and zero addresses. Negative scan statements in the supplied reports describe their September 8-9 cutoffs, not an exhaustive September 11 scan.
+
 ## Monitoring Priorities
 
 | Priority | Indicators | Action |
 |---|---|---|
-| P1 | Liquid consolidation and residual holding wallet; RedSonic attacker wallet; DOJ/FBI Hamas targets; GTA VI Solana drainer; COLDCARD primary Ethereum destination plus confirmed Bitcoin seeds; Aquifer direct set; Rain direct set; ICON direct set; Term Finance and earlier high-confidence seeds | Direct monitoring, historical graph expansion, bridge, exchange-deposit, malicious-program, and privacy-protocol alerts |
-| P2 | Liquid initial payout intermediary with service-custody caveat; suspected GoMining-linked consolidation address with provisional ecosystem label; Hamas BSC hop; COLDCARD secondary and historical pivots; Bofur poisoning contract; Maya Arbitrum proceeds address; poisoning address | Direct monitoring with narrower incident-role or attribution labels |
+| P1 | Nesa primary Ethereum recipient; 52 official Xinbi TRON identifiers; Liquid consolidation and residual holding wallet; RedSonic attacker wallet; DOJ/FBI Hamas targets; GTA VI Solana drainer; COLDCARD primary Ethereum destination plus confirmed Bitcoin seeds; Aquifer direct set; Rain direct set; ICON direct set; Term Finance and earlier high-confidence seeds | Direct monitoring, historical graph expansion, bridge, exchange-deposit, malicious-program, and privacy-protocol alerts |
+| P2 | Nesa liquidation wallet with Medium relationship confidence; Liquid initial payout intermediary with service-custody caveat; suspected GoMining-linked consolidation address with provisional ecosystem label; Hamas BSC hop; COLDCARD secondary and historical pivots; Bofur poisoning contract; Maya Arbitrum proceeds address; poisoning address | Direct monitoring with narrower incident-role or attribution labels |
 | P3 | Dream Health Chain attacker wallet and exploit contract | Cross-chain monitoring with lower impact-based operational priority |
 | TTP only | Fake AML-checker campaign | Track brands, domains, wallet-connection behavior, malicious approvals, and any later verified wallets |
 | Campaign IOCs | Fake GTA VI drainer domains, fake Seeker / SKR domain, and fake `$WAR` rewards activity | Block known domains, monitor replacements, and preserve case and legitimate-project distinctions |
-| Case only | ODY; Moonwell / MAMO; Tectonic / Cronos; Injective binary-options exploit | Preserve confirmed incident reporting while withholding truncated identifiers |
+| Case only | Nomic / Osmosis nBTC; ODY; Moonwell / MAMO; Tectonic / Cronos; Injective binary-options exploit | Preserve confirmed incident reporting while withholding truncated identifiers |
 | Investigative | Vultisig-related outflow; FOMO iOS allegations; Kylie Jenner / `$KYLIE` promotion | Monitor for complete IOCs, root-cause evidence, victim confirmation, deployer/proceeds attribution, and authoritative statements |
 
 ## Attribution Boundaries
+
+- Nesa contributes one High-confidence P1 bridge recipient and one Medium-confidence P2 liquidation wallet. A complete source-chain attacker account and Nesa-specific exploit call remain unresolved.
+- Xinbi contributes 52 directly OFAC-listed TRON identifiers. Sanctions membership, individual operator control, freeze status, and seizure-subset membership are distinct assertions; neighbors do not inherit official attribution.
+- Nomic contributes no address; publication date and exploit date are not conflated.
 
 - `addresses.csv` contains only complete, evidence-supported direct seeds or explicitly labeled incident-linked laundering pivots.
 - Victims, legitimate recipients, protocol contracts, pools, routers, bridges, exchanges, and mixers are not automatically threat-controlled.
@@ -863,8 +890,18 @@ The canonical report and two machine-readable records are maintained in [`EVM/BN
 - [Specter Investigation — suspected GoMining-linked drain tracing](https://t.me/specterinvestigation)
 - [Galaxy Research — COLDCARD Wave 3 CoinJoin movement](https://x.com/glxyresearch/status/2096785347929608296)
 
+### September 8-9 Nesa, Xinbi, and Nomic Reports
+
+- [Rekt — Nesa Ethereum attribution](https://rekt.news/nesa-rekt)
+- [Etherscan — exact Nesa bridge receipt](https://etherscan.io/tx/0xd443eabd4cfa1be6ad5f7ef861db9a9f271305040615667ed336bc195af05080)
+- [Cosmos Labs — shared vulnerability post-mortem](https://github.com/cosmos/security/blob/main/communications/cosmos_evm_GHSA-7g4w-cg88-2cq2_post_mortem.md)
+- [OFAC — Xinbi SDN entry and 52 TRON identifiers](https://ofac.treasury.gov/recent-actions/20260909)
+- [Treasury — Xinbi designation](https://home.treasury.gov/news/press-releases/sb0624/)
+- [DOJ — Xinbi infrastructure seizure and crypto restraint](https://www.justice.gov/usao-dc/pr/scam-center-strike-force-conducts-seizures-chinese-run-illicit-scammer-marketplace-and)
+- [The Crypto Times — Nomic / Osmosis nBTC incident](https://www.cryptotimes.io/2026/09/09/osmosis-freezes-22-65-btc-after-nomic-exploit-hits-alloyed-btc-backing/)
+
 ---
 
 ## TLDR
 
-The September 8 correction prioritizes Liquid's consolidation wallet at P1 after its 3,400 BTC partial return, while retaining the initial recipient at P2 with a service-custody caveat. Approximately 598.49 BTC remained at the cited snapshot, with no public authorized-bounty agreement. The previous RedSonic, suspected GoMining-linked drain, Dream Health Chain, and COLDCARD updates remain in place. No new wallet identifiers are added in this correction.
+The September 8-9 reports add two Ethereum monitoring wallets for Nesa and 52 officially listed Xinbi TRON addresses. Nesa's primary recipient remains High confidence/P1 and its liquidation wallet Medium confidence/P2. Xinbi's sanctions set is preserved separately from freeze and seizure subsets. Nomic remains a zero-seed incident review. Earlier Liquid recovery and other case updates remain in place.
