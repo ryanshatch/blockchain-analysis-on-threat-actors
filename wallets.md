@@ -999,3 +999,67 @@ All 52 identifiers below appear directly in the [official Xinbi Guarantee SDN en
 | TRON | `TZ42sU5kQ2n5rLZ6PhEGkmfLtmHjoi2vpr` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
 
 Counterparties and service infrastructure do not automatically inherit sanctions or attacker labels. The reported ten-address USDT freeze is a distinct set; only `TWPma8xH48AEN93x2krdukV9e1j6sPsBeS` is individually identified in the [reviewed reporting](https://www.cryptotimes.io/2026/09/08/misttrack-reports-39m-usdt-freeze-across-xinbi-linked-wallets/). Nomic remains a zero-seed incident review with no guessed attacker address.
+
+---
+
+## Dominion Market / SILV — September 11 Key Compromise
+
+**Case:** [SOL/Dominion-SILV/](./SOL/Dominion-SILV/). Three-of-five multisig signing keys were compromised; this is not an established Solana or Squads protocol vulnerability.
+
+| Network | Address | Role | Confidence / treatment |
+|---|---|---|---|
+| Solana | `BmgpLvcQJPDuVHwGVGkJo1mkRVnRaeJ9JyhrYrRjrrkZ` | Primary attacker / consolidation | High; P1 direct watch |
+| Solana | `Ge2GYHJm4MGiWiWpSVyru9vHdLBZGtVnYd7yHqnYAH7g` | Treasury-drain / liquidation | High; P1 direct watch |
+| Solana | `6QAoKpU6QKqHS2ZxkKPYp1bHbvZQf9q1jAWxeTH1qvtF` | Late consolidation / Chainflip staging | High; P1 direct watch |
+| Ethereum | `0x8b3423a3c06ab16484ed2c561a86118f040adaaf` | Explicit Chainflip destination; 9.25 ETH | High flow linkage; P1 watch and backward tracing |
+| Ethereum | `0xd13772ef959a4b227c3e9e62a4c971ce8886eeff` | Secondary destination; 9.83 ETH; possible service | High flow linkage, Medium ownership; P2 proceeds watch; no threat label |
+| Solana | `EHQZBu5y3G8Lo5Vb2HH48DRjtajdzJwX499Cs9E8mSfY` | Attacker-added authorization signer | High insertion evidence, Medium-High inferred control; P1 infrastructure watch |
+
+The SILV mint `SiLVFMgD3eD2rgK628NbTBq9MnuJF5FW2CRaVyTB35L` is victim/technical context. Stolen Dominion signers, Chainflip agents, deposit channels, and other counterparties do not automatically receive attacker labels. Approximately $3M pre-attack nominal token value is distinct from approximately $238,000 realized proceeds.
+
+## Safe / rsETH — Original Exploiter and MEV Proceeds
+
+**Case:** [EVM/Ethereum/Safe-rsETH-Module/](./EVM/Ethereum/Safe-rsETH-Module/). September 15 auxiliary authorization flaw; Safe core contracts are not identified as vulnerable.
+
+| Ethereum address | Role | Treatment |
+|---|---|---|
+| `0x0dC2c5D6b05A317076CF501f7E7be36a5dfe9b66` | Original exploiter | High; P1 threat seed |
+| `0xFDe0d1575Ed8E06FBf36256bcdfA1F359281455A` | Yoink MEV frontrunner | High observed role; P2 incident-flow watch; no original-attacker label |
+| `0xC70f00CD7E461686b04B0E912E309becA8b80ea0` | Yoink-associated holder of approximately 2,882.37 rsETH at publication | High proceeds linkage; P1 direct watch; intent unresolved |
+| `0x80BF7Db69556D9521c03461978B8fC731DBBD4e4` | Yoink bot contract | P2 infrastructure monitoring; distinct from original exploiter |
+
+Only the original exploiter has a threat label in this case. The other three records remain directly monitored with unresolved intent. Victim Safe `0x40E93a52F6Af9fCD3b476aeDADD7FeABD9f7AbA8` and executor `0x4f0055926c839D1d960a82CBF84E2eE933958ebC` are victim/protocol context. The dated proceeds snapshot and reported 24-hour restriction do not establish a current balance or permanent freeze.
+
+## REF9334 / KREMLIN — Operator and C2 Contracts
+
+**Case:** [EVM/Ethereum/KREMLIN-REF9334/](./EVM/Ethereum/KREMLIN-REF9334/). Elastic's September 14 attribution concerns malware configuration control rather than a stolen-fund cluster.
+
+| Ethereum address | Role | Treatment |
+|---|---|---|
+| `0x5C32A09873be70a92fd8bB5A9fED7967dE06BdE6` | Contract deployer and configuration administrator | High; P1 direct watch |
+| `0x902EDbFECFF38f285Bf26283fB9cEB3700061873` | Early malicious C2/dead-drop contract | High; P1 infrastructure watch |
+| `0x64Def0A6099c4DE9C413B108EAae85A3C7457615` | Successor C2/dead-drop contract | High; P1 infrastructure watch |
+| `0xCD7360A83E5cdbBbbbcEB0e78748babA6740d07b` | C2/dead-drop contract active at publication | High; P1 infrastructure watch |
+
+Four financial counterparties are retained only as contextual pivots in the case dataset. Their controllers are not attributed to KREMLIN. Brazilian victim concentration and operating-hour patterns do not establish operator nationality or location; the campaign name does not imply a Russian link.
+
+## Fetch.ai / NuNet / SingularityNET — September 19–20 Cluster
+
+**Case:** [Multi-Chain/Fetch-NuNet-SingularityNET/](./Multi-Chain/Fetch-NuNet-SingularityNET/).
+
+| Ethereum address | Role | Treatment |
+|---|---|---|
+| `0x1572F2af7696b39c85E3221CDE8EFb640F86c362` | Exploit initiator / attribution seed | High; P1 direct watch and backward graph expansion |
+| `0x2dcc1085fDCf418B421E45e86e4e54637cc21dfE` | Common proceeds / unauthorized-mint recipient | High; P1 direct watch and forward tracing |
+
+Fetch.ai converter `0xab424A430CC09864fA1277A38193111705ADF3A3` and NuNet deployer `0x863F13e5B505f1Eb17803b94EC9d3DaF80092165` remain victim/compromised infrastructure. Different asset-unit totals, snapshot holdings, and realized sale proceeds must not be summed into a single loss estimate.
+
+## ether.fi Legacy AtomicQueue — Resolved Full Address
+
+**Case:** [EVM/Ethereum/Etherfi-AtomicQueue/](./EVM/Ethereum/Etherfi-AtomicQueue/). September 11 incident; complete identifier checked September 22.
+
+`0xa5cc6e490bce9185fa47b421f2eac677a83b64ea` is a High-confidence P1 attacker seed, resolved from the public explorer link and security-firm alerts and corroborated by the successful transaction's initiating EOA. The vulnerable queue `0xd45884b592e316eb816199615a95c182f75dea07` is victim/protocol infrastructure. This supersedes the submitted truncated-only exclusion; no missing characters were guessed.
+
+## September Campaign and Coverage Notes
+
+[FomoPeek](./Multi-Chain/FomoPeek/) has a confirmed malicious-release report but zero ingested wallet seeds. It is distinct from the earlier disputed FOMO allegation. The [September reconciliation](./Multi-Chain/September-2026-Security-Sweep/) links every resubmitted report to its canonical location, preserves Liquid's newer P1 consolidation/P2 service-intermediary correction, and documents the newly resolved ether.fi identifier.

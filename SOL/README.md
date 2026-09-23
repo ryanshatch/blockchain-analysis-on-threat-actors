@@ -6,7 +6,7 @@
 <hr>
 
 <p>
-<strong>Recent tracked set:</strong> Ten individually identifiable Solana-origin security incidents from June 10 through August 31, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. The active CYBERLEEK leak-and-token operation is tracked as a threat-actor campaign and is not counted as a Solana protocol incident. Multi-victim drainer campaigns and sanctions attributions are also tracked separately.
+<strong>Recent tracked set:</strong> Eleven individually identifiable Solana-origin security incidents from June 10 through September 11, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. This includes key compromises as well as protocol incidents. CYBERLEEK, FomoPeek, multi-victim drainer campaigns, and sanctions attributions are tracked separately from this incident count.
 </p>
 
 <h2>Solana Case Directories</h2>
@@ -71,6 +71,12 @@
       <td>$2,469,729 across 212 malicious swaps; one Solana attacker wallet, one malicious program, and one Ethereum proceeds wallet retained as P1 indicators</td>
     </tr>
     <tr>
+      <td><a href="./Dominion-SILV/"><code>Dominion-SILV/</code></a></td>
+      <td>September 11, 2026</td>
+      <td>Multisig and standalone-key compromise; treasury theft, liquidation, and Chainflip proceeds tracing</td>
+      <td>Approximately 46,909 SILV; $2.98–3.0M pre-attack nominal value and approximately $238,000 realized proceeds; seven role-separated indicators</td>
+    </tr>
+    <tr>
       <td><a href="./HOPE/"><code>HOPE/</code></a></td>
       <td>Historical / ongoing investigation</td>
       <td>Token concentration, transfers, sales, and suspected rug activity</td>
@@ -123,6 +129,11 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="../Multi-Chain/FomoPeek/"><code>Multi-Chain/FomoPeek/</code></a></td>
+      <td>Disclosed September 19, 2026; malicious iOS 1.1 and 1.2 releases; Solana, Ethereum, and TRON users</td>
+      <td>Kernel-exploit-assisted credential theft; zero published wallet seeds retained and no quantified aggregate loss. Separate from the disputed FOMO allegation.</td>
+    </tr>
+    <tr>
       <td><a href="../Multi-Chain/SpaceX-FIFA-Drainers/"><code>Multi-Chain/SpaceX-FIFA-Drainers/</code></a></td>
       <td>Solana and EVM users; observed May–July 2026</td>
       <td>Wallet-drainer, malicious dApp, fake-token, impersonation, and investment-scam campaign. Not counted as a single Solana protocol exploit.</td>
@@ -165,6 +176,8 @@ The exploit-origin chain and the later proceeds chains are recorded separately. 
 <ul>
   <li>Direct-watch attacker, proceeds, and officially sanctioned addresses are separated from victim, protocol, bridge, exchange, router, vault, recovery, and transactional-counterparty infrastructure.</li>
   <li>Incomplete or truncated addresses are not added as monitoring seeds.</li>
+  <li>Dominion's three directly attributed Solana wallets, inserted signer, and Ethereum proceeds destinations retain separate custody and control roles. The secondary Ethereum destination may be a service; stolen Dominion signer wallets and the SILV mint are victim context.</li>
+  <li>FomoPeek is a confirmed malicious-application campaign with unknown aggregate loss and no sufficiently attributed public wallet cluster in the reviewed reporting; it is not a Solana protocol vulnerability.</li>
   <li>The Shelbit Solana identifier is an official sanctions seed and should be watched directly; connected wallets do not automatically inherit the Shelbit or IRGC label.</li>
   <li>For CYBERLEEK, only the creator / pool-creator address is labeled as a direct actor-linked wallet. August 27 reporting establishes a material creator-fee cash-out, but the mint, token accounts, pools, Fee Key NFT, funding relays, external traders, and copycat mints retain narrower infrastructure or exclusion labels.</li>
   <li>The four fresh wallets used in the August 27 CYBERLEEK dispersal are not promoted to direct seeds because complete addresses were not published in the reviewed reporting.</li>
