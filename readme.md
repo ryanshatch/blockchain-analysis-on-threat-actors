@@ -23,8 +23,9 @@
     <img src="https://img.shields.io/badge/Submit%20Report-black?style=for-the-badge&amp;logo=github&amp;logoColor=007EC6" alt="Submit threat intelligence">
   </a>
   <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues/new?template=attribution-correction.yml">
-    <img src="https://img.shields.io/badge/Request-black?style=for-the-badge&amp;logo=github&amp;logoColor=007EC6" alt="Request an attribution correction">
+    <img src="https://img.shields.io/badge/Request%20Correction-black?style=for-the-badge&amp;logo=github&amp;logoColor=007EC6" alt="Request an attribution correction">
   </a>
+  <br>
 <!-- </div>
 <div align="center"> -->
   <!-- <h3>Cases:</h3> -->
