@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../../assets/readme-headers/evm-ethereum-suspected-gomining-drain.svg" alt="Suspected GoMining-linked drain — Proceeds tracing with provisional ecosystem attribution" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Suspected GoMining-Linked Multi-Wallet Drain
 
 | Field | Assessment |

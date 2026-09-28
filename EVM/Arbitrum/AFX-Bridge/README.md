@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../../assets/readme-headers/evm-arbitrum-afx-bridge.svg" alt="AFX Bridge — Bridge compromise and cross-chain proceeds" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center">
 
 <h1>AFX Bridge Compromise</h1>

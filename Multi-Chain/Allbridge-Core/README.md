@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-allbridge-core.svg" alt="Allbridge Core — Pool accounting and cross-chain incident tracing" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center" style="text-align: center;">
 <h1>Allbridge 2026 Security Case History</h1>
 <h2>Two Distinct Incidents: Solana Core and Base CCTP</h2>

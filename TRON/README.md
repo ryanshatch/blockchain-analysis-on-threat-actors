@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../assets/readme-headers/tron.svg" alt="TRON investigations — Sanctions identifiers and threat-finance attribution" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center">
 <h1>TRON Threat and Sanctions Index</h1>
 <p><strong>High-confidence TRON wallet attributions, sanctions updates, and threat-finance investigations.</strong></p>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+<title id="title">FomoPeek reported proceeds routes</title><desc id="desc">Salus identifies one primary attacker and five intermediaries. Three FixedFloat paths total 401028 USDT. A shared staging address also routes 20000 USDT toward KuCoin. Separate escrow and CCE paths have unresolved controller attribution. Arrows summarize routes rather than individual transactions.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#55768b"/></marker></defs>
+<rect width="1200" height="840" rx="16" fill="#f3f7fb"/>
+<text x="36" y="48" font-family="Arial" font-size="28" font-weight="bold" fill="#10253d">FomoPeek: reported proceeds routes</text>
+<text x="36" y="78" font-family="Arial" font-size="17" fill="#42596e">Salus attribution · checked September 24, 2026 · amounts in USDT</text>
+
+<path d="M295 372H328V155H362" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M295 372H328V265H362" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M295 372H328V375H362" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M295 372H328V485H362" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M295 372H328V595H362" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M690 155H742V185H799" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M690 265H742V185H799" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M690 375H742V185H799" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M690 280H763V329H799" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M690 485H799" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M690 595H799" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M963 573V529" fill="none" stroke="#55768b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="35" y="320" width="260" height="106" rx="10" fill="#fff1d8" stroke="#d3a550"/><text x="53" y="349" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#10253d">Primary attacker</text><text x="53" y="376" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#10253d">0x6d37…f4BB</text>
+<text x="53" y="404" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#10253d">~579,900 USDT attributed</text>
+<rect x="365" y="119" width="325" height="76" rx="10" fill="#fff" stroke="#bacbd8"/><text x="383" y="148" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#10253d">0x111f…541c</text><text x="383" y="175" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#10253d">~215,000 → FixedFloat</text>
+<rect x="365" y="229" width="325" height="76" rx="10" fill="#fff" stroke="#bacbd8"/><text x="383" y="258" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#10253d">0x2d53…38be</text><text x="383" y="285" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#10253d">27,028 FF + 20,000 KuCoin</text>
+<rect x="365" y="339" width="325" height="76" rx="10" fill="#fff" stroke="#bacbd8"/><text x="383" y="368" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#10253d">0x0df6…3e68</text><text x="383" y="395" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#10253d">~159,000 → FixedFloat</text>
+<rect x="365" y="449" width="325" height="76" rx="10" fill="#fff" stroke="#bacbd8"/><text x="383" y="478" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#10253d">0x4c73…a0ec</text><text x="383" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#10253d">~111,458.3085 → escrow</text>
+<rect x="365" y="559" width="325" height="76" rx="10" fill="#fff" stroke="#bacbd8"/><text x="383" y="588" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#10253d">0x0361…c7cf</text><text x="383" y="615" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#10253d">~10,000 → CCE</text>
+<rect x="802" y="149" width="360" height="76" rx="10" fill="#e3f4f0" stroke="#79b7ad"/><text x="820" y="178" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#10253d">Toward FixedFloat</text><text x="820" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#10253d">Three paths: 401,028</text>
+<rect x="802" y="293" width="360" height="76" rx="10" fill="#fff" stroke="#bacbd8"/><text x="820" y="322" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#10253d">Toward KuCoin</text><text x="820" y="349" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#10253d">20,000 via two deposit addresses</text>
+<rect x="802" y="449" width="360" height="76" rx="10" fill="#fff" stroke="#bacbd8"/><text x="820" y="478" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#10253d">Escrow-associated addresses</text><text x="820" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#10253d">Service / endpoint attribution</text>
+<rect x="802" y="559" width="360" height="76" rx="10" fill="#fff" stroke="#bacbd8"/><text x="820" y="588" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#10253d">CCE entry route</text><text x="820" y="615" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#10253d">Subsequently escrow-associated</text>
+<text x="35" y="710" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#10253d">Amber: explicitly attributed primary wallet. White: flow linkage; ownership unresolved.</text>
+<text x="35" y="741" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#10253d">Arrows compress reported routes; unpublished intermediaries are not reconstructed.</text>
+<text x="35" y="772" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#10253d">Route figures are not a complete reconciled loss total. Full addresses appear in the report and CSV.</text>
+</svg>

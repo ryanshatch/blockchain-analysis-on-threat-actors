@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+<title id="title">Cross-chain investigations</title><desc id="desc">RESEARCH INDEX — Incidents, infrastructure and network-specific attribution. Illustrative document header, not transaction evidence.</desc>
+<rect width="1200" height="230" rx="16" fill="#0b192b"/>
+<path d="M0 214h1200" stroke="#65d5c8" stroke-width="3"/>
+<rect x="32" y="35" width="4" height="142" rx="2" fill="#65d5c8"/>
+<text x="58" y="61" font-family="Arial, sans-serif" font-size="16" letter-spacing="2" fill="#65d5c8">RESEARCH INDEX</text>
+<text x="56" y="113" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#f0f6fc">Cross-chain investigations</text>
+<text x="58" y="156" font-family="Arial, sans-serif" font-size="20" fill="#b9c8d9">Incidents, infrastructure and network-specific attribution</text>
+<g transform="translate(982 27)" opacity="0.9"><g fill="none" stroke="#65d5c8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M85 77L23 30M85 77l63-47M85 77l-62 61M85 77l63 61M23 30v108M148 30v108"/><circle cx="85" cy="77" r="20"/><circle cx="23" cy="30" r="12"/><circle cx="148" cy="30" r="12"/><circle cx="23" cy="138" r="12"/><circle cx="148" cy="138" r="12"/></g></g>
+</svg>

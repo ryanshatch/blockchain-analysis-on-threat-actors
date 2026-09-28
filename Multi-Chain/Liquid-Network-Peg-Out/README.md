@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-liquid-network-peg-out.svg" alt="Liquid Network — Unauthorized peg-out, consolidation and partial return" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Liquid Network Unauthorized Peg-Out
 
 | Field | Assessment |

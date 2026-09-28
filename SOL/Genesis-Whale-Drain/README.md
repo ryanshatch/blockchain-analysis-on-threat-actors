@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/sol-genesis-whale-drain.svg" alt="Genesis-era whale drain — Private-wallet compromise and proceeds tracing" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center" style="text-align: center;">
 <h1>New SOL Threat-Wallet Alert</h1>
 <h2>Genesis-Era Solana Whale Drain</h2>

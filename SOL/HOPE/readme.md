@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/sol-hope.svg" alt="HOPE — Historical token-distribution research notes" width="1200">
+</p>
+<!-- case-visual:end -->
+
 #### User Dustyray11 entered the De/Cap TG and shilled HOPE to the Degods and Y00ts holders. I even recieved a free airdrop for being active during the time. This token I made ~$25 from. Nothing thats too good to be true ends up without some sort of a rug. Never the less, Dustryray11 bought up ~26% of the tokens supply before he entered the TG and began the campaign. Currently his main wallet owns ~10% of the current supply and he has 25k in loans from SharkyFi.
 
 - **Main wallet that was used (`26.1%` of 261m tokens)**: `6UWokqQxV4mcK7DeggjQGYMvLJ5HY6zH8AM1Bj6axPGw`

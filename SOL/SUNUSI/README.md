@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/sol-sunusi.svg" alt="SUNUSI — Permanent-delegate authority and token extraction" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center" style="text-align: center;">
 <h1>New SOL Threat-Wallet Alert</h1>
 <h2>SUNUSI Permanent-Delegate Drain</h2>

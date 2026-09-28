@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/sol-raydium.svg" alt="Raydium legacy AMM — Counterfeit LP validation and withdrawal flows" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center" style="text-align: center;">
 <h1>New SOL Threat-Wallet Alert</h1>
 <h2>Raydium Legacy AMM V3 Exploit</h2>

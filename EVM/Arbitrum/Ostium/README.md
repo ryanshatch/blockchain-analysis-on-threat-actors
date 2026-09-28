@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../../assets/readme-headers/evm-arbitrum-ostium.svg" alt="Ostium — Incident analysis and monitoring indicators" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center">
 
 <h1>Ostium Oracle-Manipulation Exploit</h1>

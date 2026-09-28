@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-fetch-nunet-singularitynet.svg" alt="Fetch.ai / NuNet / SingularityNET — Privileged keys, bridge compromise and proceeds" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Fetch.ai / NuNet / SingularityNET — Privileged-Key and Bridge Compromise
 
 | Field | Assessment |

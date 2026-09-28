@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../assets/readme-headers/ftx.svg" alt="FTX / Alameda Research — Historical wallet labels and balance comparisons" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet" href="resources/sheet.css">
 <div class="ritz grid-container" dir="ltr">

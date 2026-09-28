@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/sol-dominion-silv.svg" alt="Dominion Market / SILV — Multisig key compromise and cross-chain proceeds" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Dominion Market / SILV — Multisig and Key Compromise
 
 | Field | Assessment |

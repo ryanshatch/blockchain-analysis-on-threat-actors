@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-gta-vi-wallet-drainer.svg" alt="Fake GTA VI wallet drainer — Phishing infrastructure and malicious wallet signing" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Fake GTA VI Leak Wallet-Drainer Campaign
 
 | Field | Assessment |

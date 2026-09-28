@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../../assets/readme-headers/evm-ethereum-safe-rseth-module.svg" alt="Safe / rsETH — Auxiliary authorization and MEV interception" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Safe / rsETH — Auxiliary Authorization Exploit and Yoink Interception
 
 | Field | Assessment |

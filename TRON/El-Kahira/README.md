@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/tron-el-kahira.svg" alt="El-Kahira financing network — Official designations and financial-network monitoring" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center">
 
 <h1>OFAC Designation — El-Kahira Hamas Financing Network</h1>

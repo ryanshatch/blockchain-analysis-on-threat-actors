@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-nesa-cosmos-evm.svg" alt="Nesa / Cosmos EVM — Bridge evidence and Ethereum liquidation paths" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Nesa / Cosmos EVM Exploit — Ethereum Proceeds
 
 | Field | Assessment |

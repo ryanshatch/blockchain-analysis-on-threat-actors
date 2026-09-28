@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../assets/readme-headers/lazarus.svg" alt="Lazarus / TraderTraitor — Officially attributed wallets and cross-chain tracing" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div style="text-align: center;">
         <p>
             <h2>DPRK / TraderTraitor / Lazarus:</h2> The FBI officially attributed the February 2025 Bybit theft to DPRK-linked “TraderTraitor” actors and published Ethereum addresses that either held, or previously held, stolen Bybit assets.

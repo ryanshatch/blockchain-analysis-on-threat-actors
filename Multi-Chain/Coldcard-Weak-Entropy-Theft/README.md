@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-coldcard-weak-entropy-theft.svg" alt="COLDCARD theft — Weak entropy and cross-chain proceeds monitoring" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # COLDCARD Weak-Entropy Theft — Cross-Chain Laundering Update
 
 | Field | Assessment |

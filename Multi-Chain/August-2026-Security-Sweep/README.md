@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-august-2026-security-sweep.svg" alt="August 2026 security sweep — Incident coverage, evidence and monitoring priorities" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # August 20-September 9, 2026 Crypto Security Sweep
 
 | Field | Details |

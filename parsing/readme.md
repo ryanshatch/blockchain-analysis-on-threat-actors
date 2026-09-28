@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../assets/readme-headers/parsing.svg" alt="Transaction parsing tools — File merging, structured records and data-loss analysis" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Parsing from solscan
 
 ## Overview

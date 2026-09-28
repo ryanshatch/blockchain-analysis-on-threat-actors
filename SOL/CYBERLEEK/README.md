@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/sol-cyberleek.svg" alt="CYBERLEEK — Leak-and-token campaign, liquidity and fee rights" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # CYBERLEEK / GTA VI Leak-and-Token Campaign
 
 | Field | Assessment |

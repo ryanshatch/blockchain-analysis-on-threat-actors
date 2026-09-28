@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/tron-central-bank-of-iran.svg" alt="Central Bank of Iran — Official OFAC address expansion and sanctions exposure" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <h1>OFAC Designation Update</h1>
 
 <h2>Central Bank of Iran — TRON Address Expansion</h2>

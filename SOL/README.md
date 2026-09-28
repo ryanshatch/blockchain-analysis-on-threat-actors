@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../assets/readme-headers/sol.svg" alt="Solana investigations — Protocol incidents, key theft and wallet-threat campaigns" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center">
 <h1>Solana Threat and Incident Index</h1>
 <p><strong>Solana-specific exploits, governance attacks, suspicious wallets, authorization drains, rug investigations, sanctions attributions, and Solana-origin multi-chain incidents.</strong></p>
@@ -131,7 +137,7 @@
     <tr>
       <td><a href="../Multi-Chain/FomoPeek/"><code>Multi-Chain/FomoPeek/</code></a></td>
       <td>Disclosed September 19, 2026; malicious iOS 1.1 and 1.2 releases; Solana, Ethereum, and TRON users</td>
-      <td>Kernel-exploit-assisted credential theft; zero published wallet seeds retained and no quantified aggregate loss. Separate from the disputed FOMO allegation.</td>
+      <td>Kernel-exploit-assisted credential theft; one published Ethereum attacker seed and five proceeds pivots; approximately 580,000 USDT attributed. Separate from the disputed FOMO allegation.</td>
     </tr>
     <tr>
       <td><a href="../Multi-Chain/SpaceX-FIFA-Drainers/"><code>Multi-Chain/SpaceX-FIFA-Drainers/</code></a></td>
@@ -177,7 +183,7 @@ The exploit-origin chain and the later proceeds chains are recorded separately. 
   <li>Direct-watch attacker, proceeds, and officially sanctioned addresses are separated from victim, protocol, bridge, exchange, router, vault, recovery, and transactional-counterparty infrastructure.</li>
   <li>Incomplete or truncated addresses are not added as monitoring seeds.</li>
   <li>Dominion's three directly attributed Solana wallets, inserted signer, and Ethereum proceeds destinations retain separate custody and control roles. The secondary Ethereum destination may be a service; stolen Dominion signer wallets and the SILV mint are victim context.</li>
-  <li>FomoPeek is a confirmed malicious-application campaign with unknown aggregate loss and no sufficiently attributed public wallet cluster in the reviewed reporting; it is not a Solana protocol vulnerability.</li>
+  <li>FomoPeek is a malicious-application campaign with approximately 580,000 USDT in attributed proceeds and six published Ethereum indicators as of the September 24 update; it is not a Solana protocol vulnerability and supplies no new Solana wallet seed.</li>
   <li>The Shelbit Solana identifier is an official sanctions seed and should be watched directly; connected wallets do not automatically inherit the Shelbit or IRGC label.</li>
   <li>For CYBERLEEK, only the creator / pool-creator address is labeled as a direct actor-linked wallet. August 27 reporting establishes a material creator-fee cash-out, but the mint, token accounts, pools, Fee Key NFT, funding relays, external traders, and copycat mints retain narrower infrastructure or exclusion labels.</li>
   <li>The four fresh wallets used in the August 27 CYBERLEEK dispersal are not promoted to direct seeds because complete addresses were not published in the reviewed reporting.</li>
