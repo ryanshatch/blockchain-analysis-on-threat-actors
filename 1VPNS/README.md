@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../assets/readme-headers/1vpns.svg" alt="1VPNS / First VPN Service — OFAC designations and multi-network identifiers" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <h1>OFAC Designation:</h1>
 
 <h2>Dmytro Rashevskyi and First VPN Service / 1VPNS</h2>

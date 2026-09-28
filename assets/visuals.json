@@ -1,0 +1,321 @@
+{
+  "purpose": "README navigation and explanatory graphics; illustrations are not incident evidence",
+  "headers": [
+    {
+      "readme": "1VPNS/README.md",
+      "image": "assets/readme-headers/1vpns.svg",
+      "kind": "original static SVG document header",
+      "alt": "1VPNS / First VPN Service \u2014 OFAC designations and multi-network identifiers"
+    },
+    {
+      "readme": "EVM/Arbitrum/AFX-Bridge/README.md",
+      "image": "assets/readme-headers/evm-arbitrum-afx-bridge.svg",
+      "kind": "original static SVG document header",
+      "alt": "AFX Bridge \u2014 Bridge compromise and cross-chain proceeds"
+    },
+    {
+      "readme": "EVM/Arbitrum/Ostium/README.md",
+      "image": "assets/readme-headers/evm-arbitrum-ostium.svg",
+      "kind": "original static SVG document header",
+      "alt": "Ostium \u2014 Incident analysis and monitoring indicators"
+    },
+    {
+      "readme": "EVM/BNB-Chain/Dream-Health-Chain/README.md",
+      "image": "assets/readme-headers/evm-bnb-chain-dream-health-chain.svg",
+      "kind": "original static SVG document header",
+      "alt": "Dream Health Chain \u2014 Exploit execution and contract indicators"
+    },
+    {
+      "readme": "EVM/Ethereum/Etherfi-AtomicQueue/README.md",
+      "image": "assets/readme-headers/evm-ethereum-etherfi-atomicqueue.svg",
+      "kind": "original static SVG document header",
+      "alt": "ether.fi AtomicQueue \u2014 Legacy queue authorization and stale allowances"
+    },
+    {
+      "readme": "EVM/Ethereum/KREMLIN-REF9334/README.md",
+      "image": "assets/readme-headers/evm-ethereum-kremlin-ref9334.svg",
+      "kind": "original static SVG document header",
+      "alt": "KREMLIN / REF9334 \u2014 Banking malware and on-chain C2 infrastructure"
+    },
+    {
+      "readme": "EVM/Ethereum/RedSonic/README.md",
+      "image": "assets/readme-headers/evm-ethereum-redsonic.svg",
+      "kind": "original static SVG document header",
+      "alt": "RedSonic / Reddio \u2014 Vault accounting and exploit proceeds"
+    },
+    {
+      "readme": "EVM/Ethereum/Safe-rsETH-Module/README.md",
+      "image": "assets/readme-headers/evm-ethereum-safe-rseth-module.svg",
+      "kind": "original static SVG document header",
+      "alt": "Safe / rsETH \u2014 Auxiliary authorization and MEV interception"
+    },
+    {
+      "readme": "EVM/Ethereum/Suspected-GoMining-Drain/README.md",
+      "image": "assets/readme-headers/evm-ethereum-suspected-gomining-drain.svg",
+      "kind": "original static SVG document header",
+      "alt": "Suspected GoMining-linked drain \u2014 Proceeds tracing with provisional ecosystem attribution"
+    },
+    {
+      "readme": "EVM/Ethereum/Zunami-Protocol/README.md",
+      "image": "assets/readme-headers/evm-ethereum-zunami-protocol.svg",
+      "kind": "original static SVG document header",
+      "alt": "Zunami Protocol \u2014 Incident reconstruction and wallet monitoring"
+    },
+    {
+      "readme": "FTX/readme.md",
+      "image": "assets/readme-headers/ftx.svg",
+      "kind": "original static SVG document header",
+      "alt": "FTX / Alameda Research \u2014 Historical wallet labels and balance comparisons"
+    },
+    {
+      "readme": "HBAR/readme.md",
+      "image": "assets/readme-headers/hbar.svg",
+      "kind": "original static SVG document header",
+      "alt": "Hedera / Ethereum \u2014 Suspected theft and cross-chain fund-flow analysis"
+    },
+    {
+      "readme": "Lazarus/readme.md",
+      "image": "assets/readme-headers/lazarus.svg",
+      "kind": "original static SVG document header",
+      "alt": "Lazarus / TraderTraitor \u2014 Officially attributed wallets and cross-chain tracing"
+    },
+    {
+      "readme": "Multi-Chain/Across-Protocol/README.md",
+      "image": "assets/readme-headers/multi-chain-across-protocol.svg",
+      "kind": "original static SVG document header",
+      "alt": "Across Protocol \u2014 Event parsing, relayers and cross-chain settlement"
+    },
+    {
+      "readme": "Multi-Chain/Allbridge-Core/README.md",
+      "image": "assets/readme-headers/multi-chain-allbridge-core.svg",
+      "kind": "original static SVG document header",
+      "alt": "Allbridge Core \u2014 Pool accounting and cross-chain incident tracing"
+    },
+    {
+      "readme": "Multi-Chain/August-2026-Security-Sweep/README.md",
+      "image": "assets/readme-headers/multi-chain-august-2026-security-sweep.svg",
+      "kind": "original static SVG document header",
+      "alt": "August 2026 security sweep \u2014 Incident coverage, evidence and monitoring priorities"
+    },
+    {
+      "readme": "Multi-Chain/Bitget-September-2026/README.md",
+      "image": "assets/readme-headers/multi-chain-bitget-september-2026.svg",
+      "kind": "original static SVG document header",
+      "alt": "Bitget September 2026 \u2014 Cross-chain wallet breach and proceeds tracing"
+    },
+    {
+      "readme": "Multi-Chain/Coldcard-Weak-Entropy-Theft/README.md",
+      "image": "assets/readme-headers/multi-chain-coldcard-weak-entropy-theft.svg",
+      "kind": "original static SVG document header",
+      "alt": "COLDCARD theft \u2014 Weak entropy and cross-chain proceeds monitoring"
+    },
+    {
+      "readme": "Multi-Chain/Fetch-NuNet-SingularityNET/README.md",
+      "image": "assets/readme-headers/multi-chain-fetch-nunet-singularitynet.svg",
+      "kind": "original static SVG document header",
+      "alt": "Fetch.ai / NuNet / SingularityNET \u2014 Privileged keys, bridge compromise and proceeds"
+    },
+    {
+      "readme": "Multi-Chain/FomoPeek/README.md",
+      "image": "assets/readme-headers/multi-chain-fomopeek.svg",
+      "kind": "original static SVG document header",
+      "alt": "FomoPeek \u2014 Malicious iOS releases and credential-theft proceeds"
+    },
+    {
+      "readme": "Multi-Chain/GTA-VI-Wallet-Drainer/README.md",
+      "image": "assets/readme-headers/multi-chain-gta-vi-wallet-drainer.svg",
+      "kind": "original static SVG document header",
+      "alt": "Fake GTA VI wallet drainer \u2014 Phishing infrastructure and malicious wallet signing"
+    },
+    {
+      "readme": "Multi-Chain/Hamas-Al-Qassam-Financing/README.md",
+      "image": "assets/readme-headers/multi-chain-hamas-al-qassam-financing.svg",
+      "kind": "original static SVG document header",
+      "alt": "Hamas / Al-Qassam financing \u2014 Official seizure records and role-specific wallet attribution"
+    },
+    {
+      "readme": "Multi-Chain/ICON-Migration-Replay-Exploit/README.md",
+      "image": "assets/readme-headers/multi-chain-icon-migration-replay-exploit.svg",
+      "kind": "original static SVG document header",
+      "alt": "ICON migration replay \u2014 Cross-chain withdrawal validation and proceeds"
+    },
+    {
+      "readme": "Multi-Chain/Iranian-MOIS-Cyber-Network/README.md",
+      "image": "assets/readme-headers/multi-chain-iranian-mois-cyber-network.svg",
+      "kind": "original static SVG document header",
+      "alt": "Iranian MOIS-linked network \u2014 Cyber-actor attribution and sanctions identifiers"
+    },
+    {
+      "readme": "Multi-Chain/Liquid-Network-Peg-Out/README.md",
+      "image": "assets/readme-headers/multi-chain-liquid-network-peg-out.svg",
+      "kind": "original static SVG document header",
+      "alt": "Liquid Network \u2014 Unauthorized peg-out, consolidation and partial return"
+    },
+    {
+      "readme": "Multi-Chain/Nesa-Cosmos-EVM/README.md",
+      "image": "assets/readme-headers/multi-chain-nesa-cosmos-evm.svg",
+      "kind": "original static SVG document header",
+      "alt": "Nesa / Cosmos EVM \u2014 Bridge evidence and Ethereum liquidation paths"
+    },
+    {
+      "readme": "Multi-Chain/README.md",
+      "image": "assets/readme-headers/multi-chain.svg",
+      "kind": "original static SVG document header",
+      "alt": "Cross-chain investigations \u2014 Incidents, infrastructure and network-specific attribution"
+    },
+    {
+      "readme": "Multi-Chain/September-2026-Security-Sweep/README.md",
+      "image": "assets/readme-headers/multi-chain-september-2026-security-sweep.svg",
+      "kind": "original static SVG document header",
+      "alt": "September 2026 security sweep \u2014 Case coverage, corrections and new wallet disclosures"
+    },
+    {
+      "readme": "Multi-Chain/Shelbit-Network/README.md",
+      "image": "assets/readme-headers/multi-chain-shelbit-network.svg",
+      "kind": "original static SVG document header",
+      "alt": "Shelbit network \u2014 OFAC attribution and exchange-network identifiers"
+    },
+    {
+      "readme": "Multi-Chain/SpaceX-FIFA-Drainers/README.md",
+      "image": "assets/readme-headers/multi-chain-spacex-fifa-drainers.svg",
+      "kind": "original static SVG document header",
+      "alt": "SpaceX / FIFA drainer campaigns \u2014 Impersonation, phishing and wallet-signing threats"
+    },
+    {
+      "readme": "Multi-Chain/Triple-A/README.md",
+      "image": "assets/readme-headers/multi-chain-triple-a.svg",
+      "kind": "original static SVG document header",
+      "alt": "Triple-A \u2014 Treasury compromise and proceeds monitoring"
+    },
+    {
+      "readme": "Multi-Chain/Verus-Ethereum-Bridge/README.md",
+      "image": "assets/readme-headers/multi-chain-verus-ethereum-bridge.svg",
+      "kind": "original static SVG document header",
+      "alt": "Verus / Ethereum bridge \u2014 Exploit reconstruction and cross-chain evidence"
+    },
+    {
+      "readme": "parsing/readme.md",
+      "image": "assets/readme-headers/parsing.svg",
+      "kind": "original static SVG document header",
+      "alt": "Transaction parsing tools \u2014 File merging, structured records and data-loss analysis"
+    },
+    {
+      "readme": "parsing/sol tx history/readme.md",
+      "image": "assets/readme-headers/parsing-sol-tx-history.svg",
+      "kind": "original static SVG document header",
+      "alt": "Solana transaction history \u2014 Historical transfer records and parsing utilities"
+    },
+    {
+      "readme": "readme.md",
+      "image": "assets/blockchain-investigation-hero.jpg",
+      "kind": "AI-generated conceptual illustration",
+      "evidence": false
+    },
+    {
+      "readme": "SOL/Aquifer/README.md",
+      "image": "assets/readme-headers/sol-aquifer.svg",
+      "kind": "original static SVG document header",
+      "alt": "Aquifer \u2014 Forged token accounts and cross-chain proceeds"
+    },
+    {
+      "readme": "SOL/BonkDAO/README.md",
+      "image": "assets/readme-headers/sol-bonkdao.svg",
+      "kind": "original static SVG document header",
+      "alt": "BonkDAO \u2014 Governance takeover and treasury control"
+    },
+    {
+      "readme": "SOL/CYBERLEEK/README.md",
+      "image": "assets/readme-headers/sol-cyberleek.svg",
+      "kind": "original static SVG document header",
+      "alt": "CYBERLEEK \u2014 Leak-and-token campaign, liquidity and fee rights"
+    },
+    {
+      "readme": "SOL/DeFiTuna/README.md",
+      "image": "assets/readme-headers/sol-defituna.svg",
+      "kind": "original static SVG document header",
+      "alt": "DeFiTuna \u2014 Lending exploit and incident monitoring"
+    },
+    {
+      "readme": "SOL/Dominion-SILV/README.md",
+      "image": "assets/readme-headers/sol-dominion-silv.svg",
+      "kind": "original static SVG document header",
+      "alt": "Dominion Market / SILV \u2014 Multisig key compromise and cross-chain proceeds"
+    },
+    {
+      "readme": "SOL/FlashTrade/README.md",
+      "image": "assets/readme-headers/sol-flashtrade.svg",
+      "kind": "original static SVG document header",
+      "alt": "FlashTrade \u2014 Ephemeral-instance exploit and containment"
+    },
+    {
+      "readme": "SOL/Genesis-Whale-Drain/README.md",
+      "image": "assets/readme-headers/sol-genesis-whale-drain.svg",
+      "kind": "original static SVG document header",
+      "alt": "Genesis-era whale drain \u2014 Private-wallet compromise and proceeds tracing"
+    },
+    {
+      "readme": "SOL/HOPE/readme.md",
+      "image": "assets/readme-headers/sol-hope.svg",
+      "kind": "original static SVG document header",
+      "alt": "HOPE \u2014 Historical token-distribution research notes"
+    },
+    {
+      "readme": "SOL/Rain-Legacy-Contracts/README.md",
+      "image": "assets/readme-headers/sol-rain-legacy-contracts.svg",
+      "kind": "original static SVG document header",
+      "alt": "Rain legacy card contracts \u2014 Shared authorization flaw and cross-chain proceeds"
+    },
+    {
+      "readme": "SOL/Raydium/README.md",
+      "image": "assets/readme-headers/sol-raydium.svg",
+      "kind": "original static SVG document header",
+      "alt": "Raydium legacy AMM \u2014 Counterfeit LP validation and withdrawal flows"
+    },
+    {
+      "readme": "SOL/README.md",
+      "image": "assets/readme-headers/sol.svg",
+      "kind": "original static SVG document header",
+      "alt": "Solana investigations \u2014 Protocol incidents, key theft and wallet-threat campaigns"
+    },
+    {
+      "readme": "SOL/SUNUSI/README.md",
+      "image": "assets/readme-headers/sol-sunusi.svg",
+      "kind": "original static SVG document header",
+      "alt": "SUNUSI \u2014 Permanent-delegate authority and token extraction"
+    },
+    {
+      "readme": "TRON/Central-Bank-of-Iran/README.md",
+      "image": "assets/readme-headers/tron-central-bank-of-iran.svg",
+      "kind": "original static SVG document header",
+      "alt": "Central Bank of Iran \u2014 Official OFAC address expansion and sanctions exposure"
+    },
+    {
+      "readme": "TRON/El-Kahira/README.md",
+      "image": "assets/readme-headers/tron-el-kahira.svg",
+      "kind": "original static SVG document header",
+      "alt": "El-Kahira financing network \u2014 Official designations and financial-network monitoring"
+    },
+    {
+      "readme": "TRON/README.md",
+      "image": "assets/readme-headers/tron.svg",
+      "kind": "original static SVG document header",
+      "alt": "TRON investigations \u2014 Sanctions identifiers and threat-finance attribution"
+    },
+    {
+      "readme": "TRON/Xinbi-Guarantee/README.md",
+      "image": "assets/readme-headers/tron-xinbi-guarantee.svg",
+      "kind": "original static SVG document header",
+      "alt": "Xinbi Guarantee \u2014 Official sanctions identifiers and marketplace exposure"
+    }
+  ],
+  "hero_provenance": {
+    "method": "built-in image generation",
+    "prompt": "Wide editorial blockchain investigation illustration. Dark glass ledger blocks and fine cyan connections, one highlighted tracing path and a lens over a graph cluster. Navy background with subtle amber accent. No text, logos, people or dashboard. Conceptual cover art, not evidence."
+  },
+  "flow_diagram": {
+    "image": "Multi-Chain/FomoPeek/images/proceeds-flow.svg",
+    "method": "original static SVG based on reported route amounts",
+    "source": "https://community.twstalker.com/salus_sec/status/2101530978141241459",
+    "checked": "2026-09-24"
+  }
+}

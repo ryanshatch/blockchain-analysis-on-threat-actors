@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../../assets/readme-headers/evm-ethereum-zunami-protocol.svg" alt="Zunami Protocol — Incident reconstruction and wallet monitoring" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center">
 
 <h1>Zunami Protocol Exploit Cluster</h1>

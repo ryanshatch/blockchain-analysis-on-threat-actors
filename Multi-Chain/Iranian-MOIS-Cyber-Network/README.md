@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-iranian-mois-cyber-network.svg" alt="Iranian MOIS-linked network — Cyber-actor attribution and sanctions identifiers" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Iranian MOIS-Linked Cyber-Actor Wallet Network
 
 | Field | Assessment |

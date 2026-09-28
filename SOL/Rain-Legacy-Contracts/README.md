@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/sol-rain-legacy-contracts.svg" alt="Rain legacy card contracts — Shared authorization flaw and cross-chain proceeds" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Rain Legacy Solana Card-Contract Exploit
 
 | Field | Assessment |

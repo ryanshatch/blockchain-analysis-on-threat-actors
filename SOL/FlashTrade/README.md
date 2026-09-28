@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/sol-flashtrade.svg" alt="FlashTrade — Ephemeral-instance exploit and containment" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center" style="text-align: center;">
 <h1>New SOL Threat-Wallet Alert</h1>
 <h2>FlashTrade Ephemeral-Instance Exploit</h2>

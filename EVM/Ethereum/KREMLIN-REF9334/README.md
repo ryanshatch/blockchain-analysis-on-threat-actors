@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../../assets/readme-headers/evm-ethereum-kremlin-ref9334.svg" alt="KREMLIN / REF9334 — Banking malware and on-chain C2 infrastructure" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # REF9334 / KREMLIN — Ethereum Operator and Malware Infrastructure
 
 | Field | Assessment |

@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-shelbit-network.svg" alt="Shelbit network — OFAC attribution and exchange-network identifiers" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center">
 <h1>High-Confidence OFAC Wallet Alert</h1>
 <h2>Siavash Kayvanpour / Shelbit Exchange / Crypto Home DMCC</h2>

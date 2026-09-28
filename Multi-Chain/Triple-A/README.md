@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-triple-a.svg" alt="Triple-A — Treasury compromise and proceeds monitoring" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center">
 
 <h1>Triple-A Treasury-Wallet Compromise</h1>

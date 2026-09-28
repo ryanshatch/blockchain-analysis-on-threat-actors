@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../assets/readme-headers/multi-chain.svg" alt="Cross-chain investigations — Incidents, infrastructure and network-specific attribution" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center">
 <h1>Multi-Chain Threat and Incident Index</h1>
 <p><strong>Incidents and threat campaigns whose exploit execution, treasury compromise, bridge movement, proceeds flow, recovery activity, sanctions attribution, or malicious infrastructure spans more than one blockchain ecosystem.</strong></p>
@@ -12,8 +18,13 @@
   <tbody>
     <tr>
       <td><a href="./September-2026-Security-Sweep/"><code>September-2026-Security-Sweep/</code></a></td>
-      <td>September 11–21 reports across Solana, Ethereum, and mobile-wallet users</td>
-      <td>Six new cases, 27 role-separated indicators, a zero-wallet FomoPeek campaign, resolved ether.fi attribution, and reconciliation of repeated September 4–9 reports</td>
+      <td>September 11–25 reports across Solana, Ethereum, and mobile-wallet users</td>
+      <td>Seven cases, 36 role-separated indicators, updated FomoPeek and Bitget attribution, resolved ether.fi attribution, and reconciliation of repeated September 4–9 reports</td>
+    </tr>
+    <tr>
+      <td><a href="./Bitget-September-2026/"><code>Bitget-September-2026/</code></a></td>
+      <td>Ethereum, XRP Ledger, five other named EVM chains, downstream Bitcoin and TRON</td>
+      <td>September 24 exchange breach; two P1 TRM-linked wallets, one P2 provisional dispersal pivot; DPRK link remains a Medium-confidence hypothesis</td>
     </tr>
     <tr>
       <td><a href="./Fetch-NuNet-SingularityNET/"><code>Fetch-NuNet-SingularityNET/</code></a></td>
@@ -23,7 +34,7 @@
     <tr>
       <td><a href="./FomoPeek/"><code>FomoPeek/</code></a></td>
       <td>iOS credentials; Solana, Ethereum, and TRON users</td>
-      <td>September 19 malicious-application disclosure with four release records, no attributed wallet seeds, and unknown aggregate losses</td>
+      <td>September 19 malicious-application disclosure; September 24 update adds one attacker seed and five proceeds pivots; approximately 580,000 USDT attributed</td>
     </tr>
     <tr>
       <td><a href="../SOL/Dominion-SILV/"><code>SOL/Dominion-SILV/</code></a></td>

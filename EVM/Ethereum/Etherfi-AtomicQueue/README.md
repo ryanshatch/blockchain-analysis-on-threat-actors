@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../../assets/readme-headers/evm-ethereum-etherfi-atomicqueue.svg" alt="ether.fi AtomicQueue — Legacy queue authorization and stale allowances" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # ether.fi Legacy AtomicQueue — Full Identifier Resolved
 
 | Field | Assessment |

@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/sol-aquifer.svg" alt="Aquifer — Forged token accounts and cross-chain proceeds" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Aquifer Solana AMM Exploit
 
 | Field | Assessment |

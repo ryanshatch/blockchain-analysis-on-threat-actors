@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-spacex-fifa-drainers.svg" alt="SpaceX / FIFA drainer campaigns — Impersonation, phishing and wallet-signing threats" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center" style="text-align: center;">
 <h1>New Multi-Chain Threat Campaign Alert</h1>
 <h2>SpaceX / Grok / xAI and 2026 FIFA World Cup Wallet Drainers</h2>

@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-verus-ethereum-bridge.svg" alt="Verus / Ethereum bridge — Exploit reconstruction and cross-chain evidence" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center">
 
 <h1>Verus–Ethereum Bridge Exploit</h1>

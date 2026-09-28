@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-hamas-al-qassam-financing.svg" alt="Hamas / Al-Qassam financing — Official seizure records and role-specific wallet attribution" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Hamas / Al-Qassam Cryptocurrency Financing and Laundering Network
 
 | Field | Assessment |

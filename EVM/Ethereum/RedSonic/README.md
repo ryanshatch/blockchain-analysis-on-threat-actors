@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../../assets/readme-headers/evm-ethereum-redsonic.svg" alt="RedSonic / Reddio — Vault accounting and exploit proceeds" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # RedSonic / Reddio Vault Exploit
 
 | Field | Assessment |

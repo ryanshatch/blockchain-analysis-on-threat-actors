@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/tron-xinbi-guarantee.svg" alt="Xinbi Guarantee — Official sanctions identifiers and marketplace exposure" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Xinbi Guarantee — OFAC TRON Wallet Disclosure
 
 | Field | Assessment |

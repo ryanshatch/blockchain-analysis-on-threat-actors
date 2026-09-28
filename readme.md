@@ -7,7 +7,7 @@
 <body>
 
 <div align="center">
-  <img alt="Header image" src="https://i0.wp.com/thegeorgiasun.com/wp-content/uploads/2021/12/shutterstock_1919690516-scaled.jpg?fit=2000%2C1333&quality=89&ssl=1">
+  <img alt="Conceptual illustration of tracing a highlighted path through a blockchain network; not an actual transaction graph" src="./assets/blockchain-investigation-hero.jpg" width="1200">
   <h1>Blockchain Analysis on Threat Actors</h1>
   <p><strong>A defensive on-chain intelligence repository for tracking sanctioned wallets, threat actors, exploit flows, scams, rug pulls, and suspicious cryptocurrency activity.</strong></p>
 </div>
@@ -90,7 +90,11 @@
   <tbody>
     <tr>
       <td><a href="./Multi-Chain/September-2026-Security-Sweep/"><code>Multi-Chain/September-2026-Security-Sweep/</code></a></td>
-      <td>September 11–21 update covering Dominion, FomoPeek, Safe/rsETH, KREMLIN, Fetch/NuNet/SingularityNET, and resolved ether.fi attribution, with 27 role-separated indicators and a coverage table for repeated reports.</td>
+      <td>September 11–25 update covering Dominion, FomoPeek, Bitget, Safe/rsETH, KREMLIN, Fetch/NuNet/SingularityNET, and resolved ether.fi attribution, with 36 role-separated indicators and a coverage table for repeated reports.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/Bitget-September-2026/"><code>Multi-Chain/Bitget-September-2026/</code></a></td>
+      <td>September 24 hot/warm wallet breach: two P1 Ethereum incident seeds and one provisional P2 proceeds pivot, with distinct confidence on suspected DPRK involvement.</td>
     </tr>
     <tr>
       <td><a href="./SOL/Dominion-SILV/"><code>SOL/Dominion-SILV/</code></a></td>
@@ -98,7 +102,7 @@
     </tr>
     <tr>
       <td><a href="./Multi-Chain/FomoPeek/"><code>Multi-Chain/FomoPeek/</code></a></td>
-      <td>Malicious iOS releases disclosed September 19; kernel-assisted credential theft, release chronology, and zero wallet seeds.</td>
+      <td>Malicious iOS releases disclosed September 19; September 24 update adds one P1 Ethereum attacker seed and five proceeds pivots, with approximately 580,000 USDT attributed.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/Fetch-NuNet-SingularityNET/"><code>Multi-Chain/Fetch-NuNet-SingularityNET/</code></a></td>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+<title id="title">FomoPeek</title><desc id="desc">ETHEREUM / MOBILE — Malicious iOS releases and credential-theft proceeds. Illustrative document header, not transaction evidence.</desc>
+<rect width="1200" height="230" rx="16" fill="#0b192b"/>
+<path d="M0 214h1200" stroke="#65d5c8" stroke-width="3"/>
+<rect x="32" y="35" width="4" height="142" rx="2" fill="#65d5c8"/>
+<text x="58" y="61" font-family="Arial, sans-serif" font-size="16" letter-spacing="2" fill="#65d5c8">ETHEREUM / MOBILE</text>
+<text x="56" y="113" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#f0f6fc">FomoPeek</text>
+<text x="58" y="156" font-family="Arial, sans-serif" font-size="20" fill="#b9c8d9">Malicious iOS releases and credential-theft proceeds</text>
+<g transform="translate(982 27)" opacity="0.9"><g fill="none" stroke="#65d5c8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="43" y="13" width="86" height="138" rx="15"/><path d="M67 25h38M75 139h22M59 56h49M59 71h34"/><circle cx="105" cy="110" r="24"/><path d="M122 127l19 19"/></g></g>
+</svg>

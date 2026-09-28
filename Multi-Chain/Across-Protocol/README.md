@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/multi-chain-across-protocol.svg" alt="Across Protocol — Event parsing, relayers and cross-chain settlement" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <div align="center">
 
 <h1>Across Protocol Solana Relayer Exploit</h1>

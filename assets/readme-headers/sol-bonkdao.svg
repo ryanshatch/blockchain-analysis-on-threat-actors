@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+<title id="title">BonkDAO</title><desc id="desc">SOLANA — Governance takeover and treasury control. Illustrative document header, not transaction evidence.</desc>
+<rect width="1200" height="230" rx="16" fill="#0b192b"/>
+<path d="M0 214h1200" stroke="#e8bd77" stroke-width="3"/>
+<rect x="32" y="35" width="4" height="142" rx="2" fill="#e8bd77"/>
+<text x="58" y="61" font-family="Arial, sans-serif" font-size="16" letter-spacing="2" fill="#e8bd77">SOLANA</text>
+<text x="56" y="113" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#f0f6fc">BonkDAO</text>
+<text x="58" y="156" font-family="Arial, sans-serif" font-size="20" fill="#b9c8d9">Governance takeover and treasury control</text>
+<g transform="translate(982 27)" opacity="0.9"><g fill="none" stroke="#e8bd77" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="54" cy="54" r="24"/><path d="M71 71l56 56h20v-20h-17V90h-18L88 67"/></g></g>
+</svg>

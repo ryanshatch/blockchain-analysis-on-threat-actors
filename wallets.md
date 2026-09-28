@@ -1062,4 +1062,31 @@ Fetch.ai converter `0xab424A430CC09864fA1277A38193111705ADF3A3` and NuNet deploy
 
 ## September Campaign and Coverage Notes
 
-[FomoPeek](./Multi-Chain/FomoPeek/) has a confirmed malicious-release report but zero ingested wallet seeds. It is distinct from the earlier disputed FOMO allegation. The [September reconciliation](./Multi-Chain/September-2026-Security-Sweep/) links every resubmitted report to its canonical location, preserves Liquid's newer P1 consolidation/P2 service-intermediary correction, and documents the newly resolved ether.fi identifier.
+[FomoPeek](./Multi-Chain/FomoPeek/) now has one P1 Ethereum attacker seed and five separately classified proceeds pivots, verified against Salus's published attribution on September 24. It is distinct from the earlier disputed FOMO allegation. The [September reconciliation](./Multi-Chain/September-2026-Security-Sweep/) links every resubmitted report to its canonical location, preserves Liquid's newer P1 consolidation/P2 service-intermediary correction, and documents the newly resolved ether.fi identifier.
+
+## FomoPeek — September 24 Ethereum Attribution
+
+**Case:** [Multi-Chain/FomoPeek/](./Multi-Chain/FomoPeek/). Approximately 579,900–579,984 USDT attributed at the source snapshots; private-key theft rather than a contract exploit.
+
+| Ethereum address | Role | Treatment |
+|---|---|---|
+| `0x6d37f2C5e8F8546b648D317295565dA95975f4BB` | Primary attacker / consolidation seed | High; P1 direct watch; threat label |
+| `0x111faeb95cd0786593433bcc762dc5c1debf541c` | FixedFloat-route hop | High flow linkage; P2 watch; ownership unresolved |
+| `0x2d53113c89c83c520c17b8bbcdc22aa0518a38be` | FixedFloat / KuCoin staging | High flow linkage; P2 watch; ownership unresolved |
+| `0x0df6ac2e2856114228756947d1b1d9ff63ea3e68` | FixedFloat-route hop | High flow linkage; P2 watch; ownership unresolved |
+| `0x4c73d7e8ef0e61129403e219debc597fd43aa0ec` | Escrow-platform transit | High flow linkage; context-only graph pivot |
+| `0x0361897d757d13a4afad64a2e1bc561b96a8c7cf` | CCE entry hop | High flow linkage; P2 watch; ownership unresolved |
+
+Only the primary wallet inherits Salus's explicit attacker attribution. The five routes do not establish common control or service ownership. June-theft common-actor linkage remains Medium confidence and technique linkage unresolved. See the case for full source provenance and dated route amounts.
+
+## Bitget — September 24–25 Cross-Chain Breach
+
+**Case:** [Multi-Chain/Bitget-September-2026/](./Multi-Chain/Bitget-September-2026/). Bitget reported approximately $351.6M in hot/warm-wallet losses; the published cause is backend transaction-data spoofing and fraudulent authorization, with initial access still unresolved.
+
+| Ethereum / EVM identifier | Role | Treatment |
+|---|---|---|
+| `0x770b10b273fC44Fe9197D6bF20F145c2e98463Ee` | Primary collection across Ethereum and other EVM networks | High; P1 direct watch |
+| `0xa6dd3f218b65e32ccc37be30f74884133c655545` | Ethereum distribution hub; incident-linked funds | High; P1 direct watch; avoid attributing all historical outflows |
+| `0x469Ac1406dE92f82C0563477240a3627057425DC` | Reported onward dispersal, direct edge unconfirmed independently | Medium path confidence; P2 watch, no attacker-ownership label |
+
+TRM found laundering-network overlap with DPRK-linked incidents but stopped short of formally attributing this theft; actor hypothesis Medium confidence. No full BTC/XRP destinations were available for ingestion at the snapshot.

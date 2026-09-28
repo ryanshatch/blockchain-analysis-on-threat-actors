@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../assets/readme-headers/hbar.svg" alt="Hedera / Ethereum — Suspected theft and cross-chain fund-flow analysis" width="1200">
+</p>
+<!-- case-visual:end -->
+
 <h1>HBAR Threat Actors and Wallets</h1>
 
 <h2>Hedera → Ethereum Theft Flow</h2>

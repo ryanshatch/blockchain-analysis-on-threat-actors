@@ -1,3 +1,9 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../../assets/readme-headers/evm-bnb-chain-dream-health-chain.svg" alt="Dream Health Chain — Exploit execution and contract indicators" width="1200">
+</p>
+<!-- case-visual:end -->
+
 # Dream Health Chain Exploit
 
 | Field | Assessment |
