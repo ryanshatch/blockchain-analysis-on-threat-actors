@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # Hamas / Al-Qassam Cryptocurrency Financing and Laundering Network
 
 | Field | Assessment |
@@ -16,12 +20,30 @@
 | Machine-readable records | 18 complete addresses |
 | Confidence | High for official network linkage; role-specific ownership caveats preserved |
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-executive-assessment">Executive Assessment</a></li>
+<li><a href="#section-highest-priority-seeds">Highest-Priority Seeds</a></li>
+<li><a href="#section-donation-and-financing-addresses">Donation and Financing Addresses</a></li>
+<li><a href="#section-custodial-and-exchange-linked-accounts">Custodial and Exchange-Linked Accounts</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-withheld-pending-primary-source-reconciliation">Withheld Pending Primary-Source Reconciliation</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-tldr">TLDR</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-executive-assessment"></a>
 ## Executive Assessment
 
 On September 1, 2026, the U.S. Department of Justice announced the unsealing of cryptocurrency seizure warrants directed at infrastructure used by Hamas's Al-Qassam Brigades. DOJ said the FBI seized approximately $560,000 and that Hamas controlled the seized cryptocurrency-address infrastructure on behalf of its military wing.
 
 This case ingests the complete on-chain identifiers in the June 25, 2025 warrant package, case `25-sz-34`, relevant to the supplied finding: fourteen TRON target-property addresses, two Binance-linked TRON user accounts, one BNB Smart Chain financier account, and one separate BSC laundering/exchange hop described in the affidavit. It does not treat transactional neighbors, exchange sweeps, token contracts, or service infrastructure as Hamas-controlled by proximity alone.
 
+<a id="section-highest-priority-seeds"></a>
 ## Highest-Priority Seeds
 
 | Network | Address | Role | Confidence | Treatment |
@@ -34,6 +56,7 @@ The FBI identified `TAZEk...UbgCB` as a consolidation wallet for Hamas donations
 
 The BSC address `0x0c78...00734` is Target Property 39. The affidavit describes the associated Binance account as belonging to a financier who enabled a virtual-currency exchange network Hamas used to obtain fiat.
 
+<a id="section-donation-and-financing-addresses"></a>
 ## Donation and Financing Addresses
 
 | Address | Evidentiary role | Treatment |
@@ -53,6 +76,7 @@ The BSC address `0x0c78...00734` is Target Property 39. The affidavit describes 
 
 The direct email evidence is stronger than proximity-only clustering: investigators documented responses from the Al-Qassam fundraising email that supplied target addresses to prospective donors. All twelve addresses above are nevertheless stored with their precise official target-property role rather than with an unsupported real-person controller.
 
+<a id="section-custodial-and-exchange-linked-accounts"></a>
 ## Custodial and Exchange-Linked Accounts
 
 | Network | Address | Role | Ownership boundary | Treatment |
@@ -63,6 +87,7 @@ The direct email evidence is stronger than proximity-only clustering: investigat
 
 The affidavit says the BSC hop received approximately 20,005 USDT after a Binance user moved funds from TRON to BSC and forwarded 29,880 USDT to the financier account about 30 minutes later. It is useful incident infrastructure, but the evidence does not establish that it shared a controller with Target Property 39.
 
+<a id="section-attribution-boundaries"></a>
 ## Attribution Boundaries
 
 - The official filings support Hamas / Al-Qassam fundraising-network linkage and the address-specific roles recorded here. They do not establish one controller for all 18 records.
@@ -71,6 +96,7 @@ The affidavit says the BSC hop received approximately 20,005 USDT after a Binanc
 - Token contracts, bridges, exchange infrastructure, routers, and ordinary counterparties remain graph pivots unless separately attributed.
 - This directory is not an exhaustive ingestion of every address in all five warrant packages linked from the September 1 DOJ release.
 
+<a id="section-withheld-pending-primary-source-reconciliation"></a>
 ## Withheld Pending Primary-Source Reconciliation
 
 The following two syntactically valid TRON addresses appeared in the submitted finding but were not located in the DOJ release or the five linked warrant packages reviewed for this update:
@@ -80,6 +106,7 @@ The following two syntactically valid TRON addresses appeared in the submitted f
 
 They are not included in `addresses.csv` or the direct-watch index. A complete address is necessary, but not sufficient, for threat attribution.
 
+<a id="section-sources"></a>
 ## Sources
 
 - [U.S. Department of Justice — September 1 disruption and seizure announcement](https://www.justice.gov/usao-dc/pr/justice-department-continues-disrupt-hamas-terrorist-financing-schemes-through-seizures)
@@ -87,6 +114,7 @@ They are not included in `addresses.csv` or the direct-watch index. A complete a
 
 ---
 
+<a id="section-tldr"></a>
 ## TLDR
 
 The September 1 unsealing adds 18 complete, role-separated TRON and BSC monitoring records from the June warrant package. `TAZEk...UbgCB` and `0x0c78...00734` are the strongest P1 seeds. Donation addresses, a downstream laundering wallet, two custodial money-mule accounts, and an unattributed BSC exchange hop retain narrower labels. Two additional submitted TRON strings are withheld because they could not be reconciled to the reviewed DOJ filings.

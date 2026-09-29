@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../readme.md">Home</a> · <a href="../wallets.md">Wallet index</a> · <a href="../CATALOG.md">All case files</a></p>
+<!-- doc-nav:end -->
+
 <div align="center">
 <h1>Solana Threat and Incident Index</h1>
 <p><strong>Solana-specific exploits, governance attacks, suspicious wallets, authorization drains, rug investigations, sanctions attributions, and Solana-origin multi-chain incidents.</strong></p>
@@ -15,6 +19,22 @@
 <strong>Recent tracked set:</strong> Eleven individually identifiable Solana-origin security incidents from June 10 through September 11, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. This includes key compromises as well as protocol incidents. CYBERLEEK, FomoPeek, multi-victim drainer campaigns, and sanctions attributions are tracked separately from this incident count.
 </p>
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-solana-case-directories">Solana Case Directories</a></li>
+<li><a href="#section-solana-origin-cases-stored-under-multi-chain">Solana-Origin Cases Stored Under Multi-Chain</a></li>
+<li><a href="#section-multi-chain-hot-wallet-incidents-affecting-solana">Multi-Chain Hot-Wallet Incidents Affecting Solana</a></li>
+<li><a href="#section-related-solana-sanctions-cases">Related Solana Sanctions Cases</a></li>
+<li><a href="#section-related-solana-targeting-campaigns">Related Solana-Targeting Campaigns</a></li>
+<li><a href="#section-classification-rule">Classification Rule</a></li>
+<li><a href="#section-monitoring-boundaries">Monitoring Boundaries</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-solana-case-directories"></a>
 <h2>Solana Case Directories</h2>
 
 <table>
@@ -91,6 +111,7 @@
   </tbody>
 </table>
 
+<a id="section-solana-origin-cases-stored-under-multi-chain"></a>
 <h2>Solana-Origin Cases Stored Under Multi-Chain</h2>
 
 <table>
@@ -111,6 +132,16 @@
   </tbody>
 </table>
 
+<a id="section-multi-chain-hot-wallet-incidents-affecting-solana"></a>
+<h2>Multi-Chain Hot-Wallet Incidents Affecting Solana</h2>
+
+| Case | Incident date | Scope and monitoring |
+|---|---|---|
+| [Duelbits](../Multi-Chain/Duelbits-September-2026/) | September 24, 2026 | Approximately $7M across five networks; roughly $1M Solana component; one P1 Solana attacker/proceeds seed |
+
+The compromise affected Solana alongside four other networks. Its initial compromise location is unestablished, so it is cross-listed here and excluded from the eleven **Solana-origin** incidents in `INCIDENTS.csv`.
+
+<a id="section-related-solana-sanctions-cases"></a>
 <h2>Related Solana Sanctions Cases</h2>
 
 <table>
@@ -127,6 +158,7 @@
   </tbody>
 </table>
 
+<a id="section-related-solana-targeting-campaigns"></a>
 <h2>Related Solana-Targeting Campaigns</h2>
 
 <table>
@@ -167,6 +199,7 @@
   </tbody>
 </table>
 
+<a id="section-classification-rule"></a>
 <h2>Classification Rule</h2>
 
 <p>
@@ -177,6 +210,7 @@ Cases are indexed here when the vulnerable program, governance system, execution
 The exploit-origin chain and the later proceeds chains are recorded separately. Bridging stolen funds to Ethereum does not reclassify the original vulnerability or wallet drain as an Ethereum incident. Sanctions cases remain distinct from exploit counts.
 </p>
 
+<a id="section-monitoring-boundaries"></a>
 <h2>Monitoring Boundaries</h2>
 
 <ul>

@@ -16,7 +16,7 @@
   <a href="./wallets.md">
     <img src="https://img.shields.io/badge/Wallet%20Index-black?style=for-the-badge&amp;logo=walletconnect&amp;logoColor=007EC6" alt="Open wallet index">
   </a>
-  <a href="#repository-structure">
+  <a href="#section-repository-structure">
     <img src="https://img.shields.io/badge/Browse%20Cases-black?style=for-the-badge&amp;logo=gitbook&amp;logoColor=007EC6" alt="Browse case files">
   </a>
   <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues/new?template=new-intelligence.yml">
@@ -59,6 +59,30 @@
 
 <hr>
 
+<!-- doc-nav:start -->
+<p><a href="wallets.md">Wallet index</a> · <a href="CATALOG.md">All case files</a></p>
+<!-- doc-nav:end -->
+
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-overview">Overview</a></li>
+<li><a href="#section-repository-structure">Repository Structure</a></li>
+<li><a href="#section-current-research-coverage">Current Research Coverage</a></li>
+<li><a href="#section-chain-coverage">Chain Coverage</a></li>
+<li><a href="#section-confidence-levels">Confidence Levels</a></li>
+<li><a href="#section-recommended-case-format">Recommended Case Format</a></li>
+<li><a href="#section-research-workflow">Research Workflow</a></li>
+<li><a href="#section-common-monitoring-uses">Common Monitoring Uses</a></li>
+<li><a href="#section-source-standards">Source Standards</a></li>
+<li><a href="#section-data-handling">Data Handling</a></li>
+<li><a href="#section-disclaimer">Disclaimer</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-overview"></a>
 <h2>Overview</h2>
 
 <p>This repository contains cryptocurrency addresses and transaction data collected through:</p>
@@ -80,6 +104,7 @@
 
 <hr>
 
+<a id="section-repository-structure"></a>
 <h2>Repository Structure</h2>
 
 <h3>Analysis Directories</h3>
@@ -91,7 +116,11 @@
   <tbody>
     <tr>
       <td><a href="./Multi-Chain/September-2026-Security-Sweep/"><code>Multi-Chain/September-2026-Security-Sweep/</code></a></td>
-      <td>September 11–25 update covering Dominion, FomoPeek, Bitget, Safe/rsETH, KREMLIN, Fetch/NuNet/SingularityNET, and resolved ether.fi attribution, with 36 role-separated indicators and a coverage table for repeated reports.</td>
+      <td>September 11–28 update covering Dominion, FomoPeek, Bitget, Duelbits, Safe/rsETH, KREMLIN, Fetch/NuNet/SingularityNET, and resolved ether.fi attribution, with 37 role-separated indicators and a coverage table for repeated reports.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/Duelbits-September-2026/"><code>Multi-Chain/Duelbits-September-2026/</code></a></td>
+      <td>September 24 multi-chain hot-wallet compromise; approximately $7M overall and $1M Solana component, with one complete P1 Solana seed.</td>
     </tr>
     <tr>
       <td><a href="./Multi-Chain/Bitget-September-2026/"><code>Multi-Chain/Bitget-September-2026/</code></a></td>
@@ -272,6 +301,7 @@
 
 <hr>
 
+<a id="section-current-research-coverage"></a>
 <h2>Current Research Coverage</h2>
 
 <table>
@@ -305,6 +335,7 @@
 
 <hr>
 
+<a id="section-chain-coverage"></a>
 <h2>Chain Coverage</h2>
 
 <table>
@@ -332,6 +363,7 @@
 
 <hr>
 
+<a id="section-confidence-levels"></a>
 <h2>Confidence Levels</h2>
 
 <table>
@@ -350,6 +382,7 @@
 
 <hr>
 
+<a id="section-recommended-case-format"></a>
 <h2>Recommended Case Format</h2>
 
 <p>Each investigation directory should contain a <code>README.md</code> and, where useful, machine-readable address or transaction datasets.</p>
@@ -375,6 +408,7 @@
 
 <hr>
 
+<a id="section-research-workflow"></a>
 <h2>Research Workflow</h2>
 
 <ol>
@@ -391,6 +425,7 @@
 
 <hr>
 
+<a id="section-common-monitoring-uses"></a>
 <h2>Common Monitoring Uses</h2>
 
 <ul>
@@ -408,6 +443,7 @@
 
 <hr>
 
+<a id="section-source-standards"></a>
 <h2>Source Standards</h2>
 
 <ul>
@@ -423,6 +459,7 @@
 
 <hr>
 
+<a id="section-data-handling"></a>
 <h2>Data Handling</h2>
 
 <ul>
@@ -439,6 +476,7 @@
 
 <hr>
 
+<a id="section-disclaimer"></a>
 <h2>Disclaimer</h2>
 
 <p><strong>This repository is maintained for defensive security research, fraud analysis, threat intelligence, education, and historical documentation.</strong></p>

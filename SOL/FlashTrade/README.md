@@ -4,8 +4,31 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center" style="text-align: center;">
-<h1>New SOL Threat-Wallet Alert</h1>
+<h1>FlashTrade Ephemeral-Instance Exploit</h1>
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-flashtrade-ephemeral-instance-exploit">FlashTrade Ephemeral-Instance Exploit</a></li>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-published-attacker-wallet-status">Published Attacker-Wallet Status</a></li>
+<li><a href="#section-what-was-actually-exploited">What Was Actually Exploited</a></li>
+<li><a href="#section-technical-root-cause">Technical Root Cause</a></li>
+<li><a href="#section-containment-and-recovery">Containment and Recovery</a></li>
+<li><a href="#section-classification">Classification</a></li>
+<li><a href="#section-attribution-and-monitoring-limits">Attribution and Monitoring Limits</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-in-other-words">In other words:</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-flashtrade-ephemeral-instance-exploit"></a>
 <h2>FlashTrade Ephemeral-Instance Exploit</h2>
 </div>
 
@@ -24,6 +47,7 @@
   </tbody>
 </table>
 
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <p>
@@ -38,6 +62,7 @@ The vulnerability was traced to the MagicBlock SDK's <code>#[ephemeral]</code> A
 That missing seed/PDA validation allowed the attacker to supply a forged buffer account that satisfied the weaker ownership and signer checks. The forged buffer was then processed as though it represented the legitimate delegated account state, enabling an unauthorized withdrawal.
 </p>
 
+<a id="section-published-attacker-wallet-status"></a>
 <h2>Published Attacker-Wallet Status</h2>
 
 <blockquote>
@@ -46,6 +71,7 @@ No complete Solana attacker address, exploit transaction signature, or Ethereum 
 
 <p><strong>Monitoring action:</strong> Retain this case as an incident report and add direct-watch wallet seeds only after FlashTrade, MagicBlock, a security firm, or transaction-level public evidence publishes a complete address or transaction signature.</p>
 
+<a id="section-what-was-actually-exploited"></a>
 <h2>What Was Actually Exploited</h2>
 
 <p>
@@ -60,6 +86,7 @@ FlashTrade used an ephemeral SVM environment to execute trading actions with ver
 The callback verified some properties of the buffer but failed to prove its exact identity. In Solana's account model, checking that an account is owned by the expected program is not equivalent to checking that it is the exact PDA required for that instruction.
 </p>
 
+<a id="section-technical-root-cause"></a>
 <h2>Technical Root Cause</h2>
 
 <ol>
@@ -75,6 +102,7 @@ The callback verified some properties of the buffer but failed to prove its exac
 Ownership checks answer which program controls an account. PDA seed validation answers whether it is the one specific account the instruction is authorized to trust. FlashTrade's integration needed both.
 </blockquote>
 
+<a id="section-containment-and-recovery"></a>
 <h2>Containment and Recovery</h2>
 <ul>
   <li>Monitoring reportedly detected the withdrawal within approximately one minute.</li>
@@ -86,6 +114,7 @@ Ownership checks answer which program controls an account. PDA seed validation a
   <li>MagicBlock released or recommended patched SDK version <code>0.16.2</code> for the affected validation path.</li>
 </ul>
 
+<a id="section-classification"></a>
 <h2>Classification</h2>
 <ul>
   <li><strong>Primary classification:</strong> Solana integration / SDK account-validation exploit</li>
@@ -97,6 +126,7 @@ Ownership checks answer which program controls an account. PDA seed validation a
   <li><strong>Named actor:</strong> none publicly identified</li>
 </ul>
 
+<a id="section-attribution-and-monitoring-limits"></a>
 <h2>Attribution and Monitoring Limits</h2>
 <ul>
   <li>Do not classify MagicBlock, FlashTrade, ChangeNOW, Mayan, or exchange infrastructure as attacker-controlled merely because they appeared in a reported funding or proceeds route.</li>
@@ -105,6 +135,7 @@ Ownership checks answer which program controls an account. PDA seed validation a
   <li>Preserve the distinction between the vulnerable SDK integration and FlashTrade's broader Solana program and liquidity infrastructure.</li>
 </ul>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 <ul>
   <li><a href="https://solana.com/uk/podcasts/pirates-parley/episodes/the-100k-exploit-the-attacker-who-tuned-in-and-six-hours-to-recovery-e3mehjr">Solana Media — FlashTrade technical incident interview</a></li>
@@ -113,6 +144,7 @@ Ownership checks answer which program controls an account. PDA seed validation a
 </ul>
 
 <hr>
+<a id="section-in-other-words"></a>
 <h2>In other words:</h2>
 <p>
 FlashTrade temporarily moved account state into a faster Solana-compatible execution environment. When that state was moved back, the integration checked that the supplied buffer account looked generally authorized, but it did not prove that the account was the exact PDA that should have been trusted.

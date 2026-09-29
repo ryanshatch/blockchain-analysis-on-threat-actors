@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # COLDCARD Weak-Entropy Theft — Cross-Chain Laundering Update
 
 | Field | Assessment |
@@ -18,6 +22,26 @@
 | Confirmed Bitcoin seeds retained | Six |
 | Confidence | High for incident linkage; unresolved actor identity and cross-wave clustering |
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-executive-assessment">Executive Assessment</a></li>
+<li><a href="#section-ethereum-cross-chain-proceeds">Ethereum Cross-Chain Proceeds</a></li>
+<li><a href="#section-september-5-7-wave-3-movement-update">September 5-7 Wave 3 Movement Update</a></li>
+<li><a href="#section-previously-retained-ethereum-pivot">Previously Retained Ethereum Pivot</a></li>
+<li><a href="#section-confirmed-bitcoin-seeds">Confirmed Bitcoin Seeds</a></li>
+<li><a href="#section-cross-chain-flow">Cross-Chain Flow</a></li>
+<li><a href="#section-monitoring-priorities">Monitoring Priorities</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-official-source-scan-boundary">Official-Source Scan Boundary</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-tldr">TLDR</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-executive-assessment"></a>
 ## Executive Assessment
 
 The 2026 COLDCARD theft has shifted from a predominantly Bitcoin custody and cash-out investigation into an active Bitcoin-to-Ethereum laundering graph. Bitquery traced 20.69 BTC through 36 THORChain swaps to three complete Ethereum destinations. Each swap's Bitcoin-side THORChain memo encoded the destination Ethereum address, making the cross-chain linkage protocol-level evidence rather than a behavioral-clustering inference.
@@ -26,6 +50,7 @@ The primary destination received theft-linked value equivalent to approximately 
 
 This update does not establish a real-world attacker identity or one operator across all theft waves. Bitquery's `CONFIRMED`, `TRACED`, `ATTRIBUTED`, `UNDER REVIEW`, `VENUE`, and `REPORTED` categories must remain distinct. Only the six Bitcoin addresses in its `CONFIRMED` tier are promoted into this case dataset.
 
+<a id="section-ethereum-cross-chain-proceeds"></a>
 ## Ethereum Cross-Chain Proceeds
 
 | Address | Role | Observed flow | Confidence | Treatment |
@@ -38,6 +63,7 @@ Bitquery recorded approximately 649.5 ETH at the primary address at 16:15 UTC on
 
 The secondary and historical destinations are high-confidence incident-linked proceeds addresses. A common flow source does not, by itself, prove that the same individual controlled all three destinations.
 
+<a id="section-september-5-7-wave-3-movement-update"></a>
 ## September 5-7 Wave 3 Movement Update
 
 Galaxy Research reports that the Wave 3 operator has now moved 97.09 BTC, approximately 45% of that wave's tracked coins, across three major September movements. After the September 2 THORChain route, the operator shifted to CoinJoin:
@@ -51,6 +77,7 @@ Investigators also identified a 6.34 BTC vault funded from 58 addresses and co-s
 
 No complete new CoinJoin destination or change address was published in the high-confidence reporting reviewed for this update. The behavior is material, but it contributes no new machine-readable address row. CoinJoin participants and outputs must not inherit the COLDCARD label without trace-specific evidence.
 
+<a id="section-previously-retained-ethereum-pivot"></a>
 ## Previously Retained Ethereum Pivot
 
 | Address | Role | Confidence | Treatment |
@@ -59,6 +86,7 @@ No complete new CoinJoin destination or change address was published in the high
 
 This previously published pivot remains part of the wider incident graph. It is not merged into the Wave 3 destination cluster without additional control evidence.
 
+<a id="section-confirmed-bitcoin-seeds"></a>
 ## Confirmed Bitcoin Seeds
 
 Bitquery's September 3 tracker lists the following six addresses in its `CONFIRMED` tier, defined as independently corroborated to the exploit.
@@ -74,6 +102,7 @@ Bitquery's September 3 tracker lists the following six addresses in its `CONFIRM
 
 Balances and spend counts reflect Bitquery's September 3 snapshot and will change if funds move. The first four dormant addresses are the highest-priority Bitcoin alerts because they retained approximately 1,096 BTC combined at that snapshot.
 
+<a id="section-cross-chain-flow"></a>
 ## Cross-Chain Flow
 
 ```text
@@ -90,6 +119,7 @@ Earlier August path
 
 THORChain routers, liquidity providers, vaults, nodes, relayers, and ordinary users remain cross-chain infrastructure or counterparties. They do not inherit the attacker label from the traced flow.
 
+<a id="section-monitoring-priorities"></a>
 ## Monitoring Priorities
 
 1. Alert immediately on outbound activity from `0x160a...82f6` and the four dormant high-balance Bitcoin seeds.
@@ -100,6 +130,7 @@ THORChain routers, liquidity providers, vaults, nodes, relayers, and ordinary us
 6. Do not merge the four reported theft waves into one operator cluster absent stronger wallet-control or off-chain evidence.
 7. Track Wave 3 CoinJoin entry transactions while preserving uncertainty across mixed outputs and participants.
 
+<a id="section-attribution-boundaries"></a>
 ## Attribution Boundaries
 
 - No named person or threat group is established.
@@ -110,10 +141,12 @@ THORChain routers, liquidity providers, vaults, nodes, relayers, and ordinary us
 - The Bitquery tracked total of 1,789.28 BTC and the earlier approximately 1,816 BTC estimate reflect different source scopes and are not forced into one number.
 - The 45% figure applies to Wave 3, not the entire COLDCARD theft. Galaxy reports that approximately 82% of coins across all waves remained at original incident-linked addresses at its September 7 snapshot.
 
+<a id="section-official-source-scan-boundary"></a>
 ## Official-Source Scan Boundary
 
 OFAC's September 3 action covered Cuba designations and a Russia-related removal; its September 2 action covered Venezuela licenses and blocked-property reporting. Neither action published new BTC, ETH, or SOL identifiers. No newer qualifying FBI or DOJ full-address disclosure or additional Solana attacker wallet was identified for this update.
 
+<a id="section-sources"></a>
 ## Sources
 
 - [Bitquery — live COLDCARD tracker, address tiers, cross-chain memo linkage, and September 3 snapshot](https://bitquery.io/coldcard-hack/)
@@ -127,6 +160,7 @@ OFAC's September 3 action covered Cuba designations and a Russia-related removal
 
 ---
 
+<a id="section-tldr"></a>
 ## TLDR
 
 Bitquery resolved three complete Ethereum destinations for 20.69 BTC routed through 36 THORChain swaps from the COLDCARD theft graph. Galaxy later documented two CoinJoin movements that brought Wave 3 activity to 97.09 BTC, about 45% of that wave. No new full CoinJoin address cleared the ingestion threshold. Six independently corroborated Bitcoin addresses remain in the `CONFIRMED` tier, while Bitquery's larger traced and reported sets remain excluded from direct attribution.

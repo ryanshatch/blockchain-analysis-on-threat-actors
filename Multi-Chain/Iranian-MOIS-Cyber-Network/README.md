@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # Iranian MOIS-Linked Cyber-Actor Wallet Network
 
 | Field | Assessment |
@@ -15,6 +19,27 @@
 | Classification | Officially sanctioned cyber-actor addresses; one separate Iran sanctions-finance seed |
 | Monitoring | Watch listed identifiers directly; treat counterparties as graph-expansion pivots unless separately attributed |
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-executive-assessment">Executive Assessment</a></li>
+<li><a href="#section-key-judgments">Key Judgments</a></li>
+<li><a href="#section-address-summary">Address Summary</a></li>
+<li><a href="#section-keyvan-fayyaz-ghareh-blagh">Keyvan Fayyaz Ghareh Blagh</a></li>
+<li><a href="#section-mojtaba-ghaleh-kuhi">Mojtaba Ghal&#x27;eh-Kuhi</a></li>
+<li><a href="#section-arman-kahzadian">Arman Kahzadian</a></li>
+<li><a href="#section-behzad-mesri">Behzad Mesri</a></li>
+<li><a href="#section-separate-iran-sanctions-finance-seed">Separate Iran Sanctions-Finance Seed</a></li>
+<li><a href="#section-monitoring-priorities">Monitoring Priorities</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-tldr">TLDR</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-executive-assessment"></a>
 ## Executive Assessment
 
 On August 24, 2026, the U.S. Department of the Treasury described an Iranian cyber group directed by the Ministry of Intelligence and Security (MOIS) and published cryptocurrency identifiers for four members: Keyvan Fayyaz Ghareh Blagh, Mojtaba Ghal'eh-Kuhi, Arman Kahzadian, and Behzad Mesri. Treasury says the group conducts computer-network exploitation on behalf of, or for the benefit of, MOIS and has compromised U.S. energy companies, defense contractors, healthcare institutions, information-technology firms, financial institutions, and government offices.
@@ -29,6 +54,7 @@ OFAC also published one TRON-format USDT identifier for Almpertos Tsoris. That a
 
 No transactional counterparty, exchange deposit address, bridge, router, or service wallet should inherit an actor or sanctions label merely because it interacts with one of these seeds.
 
+<a id="section-key-judgments"></a>
 ## Key Judgments
 
 | Judgment | Confidence | Basis |
@@ -40,6 +66,7 @@ No transactional counterparty, exchange deposit address, bridge, router, or serv
 | Mesri's cryptocurrency set is a material expansion of an existing attribution. | High | OFAC updated his existing SDN entry with 15 BTC, ETH, and TRON identifiers. |
 | Tsoris belongs to the MOIS cyber cluster. | Unsupported | OFAC lists his USDT/TRON identifier under a separate Iran-related sanctions authority. |
 
+<a id="section-address-summary"></a>
 ## Address Summary
 
 | Entity | BTC | ETH | TRON | Total | Dataset treatment |
@@ -50,6 +77,7 @@ No transactional counterparty, exchange deposit address, bridge, router, or serv
 | Behzad Mesri | 1 | 12 | 2 | 15 | P1 materially updated sanctioned cyber-actor seeds |
 | Almpertos Tsoris | 0 | 0 | 1 | 1 | P1 separate sanctions-finance seed; excluded from MOIS cluster count |
 
+<a id="section-keyvan-fayyaz-ghareh-blagh"></a>
 ## Keyvan Fayyaz Ghareh Blagh
 
 OFAC newly designated Blagh under `[CYBER4]`. Treasury identifies him as a member of the MOIS-linked group and names him among the actors responsible for the majority of its network-compromise activity.
@@ -67,6 +95,7 @@ OFAC newly designated Blagh under `[CYBER4]`. Treasury identifies him as a membe
 | TRON | `TXR4FDAZZLDSvuRxveW9aBMybbaS12WWHk` |
 | TRON | `TP3kVtnFgDSoSqzw178nLJtGWNjrbKNgB6` |
 
+<a id="section-mojtaba-ghaleh-kuhi"></a>
 ## Mojtaba Ghal'eh-Kuhi
 
 Treasury identifies Ghal'eh-Kuhi as a leader of the MOIS-linked group since at least summer 2023. OFAC newly designated him under `[CYBER4]` and directly lists both identifiers below.
@@ -76,6 +105,7 @@ Treasury identifies Ghal'eh-Kuhi as a leader of the MOIS-linked group since at l
 | Bitcoin | `1GXeCkFQq7SYo6B7wdLAPkkri6NFTFB7No` |
 | Ethereum | `0x1b8579cf6ab12ea6b74ac5fa41f3829a3cb61e6e` |
 
+<a id="section-arman-kahzadian"></a>
 ## Arman Kahzadian
 
 Treasury states that Kahzadian focused on digital-asset heists and illicitly gained control of a wallet containing more than $30,000 in Bitcoin in summer 2023. His three OFAC-published identifiers are therefore classified more specifically than generic sanctioned payment addresses.
@@ -86,6 +116,7 @@ Treasury states that Kahzadian focused on digital-asset heists and illicitly gai
 | Ethereum | `0xeb507efa9ee692a4c774ad1de9f3cb26fc459da3` |
 | Ethereum | `0xef85a6fafa5942a964dc618e94e230881d29ce2a` |
 
+<a id="section-behzad-mesri"></a>
 ## Behzad Mesri
 
 Mesri was already sanctioned for prior malicious cyber activity. OFAC's August 24 action materially expanded his existing entry with 15 cryptocurrency identifiers. Treasury says Mesri and Ghal'eh-Kuhi have led the MOIS-linked group since at least summer 2023.
@@ -108,12 +139,14 @@ Mesri was already sanctioned for prior malicious cyber activity. OFAC's August 2
 | TRON | `TAbbVaBKgH4VBLXgWqACuwoKF4cH1HinQh` |
 | TRON | `TEsxMcVocweTM82Mdmc5diKC6qyCWqSpPv` |
 
+<a id="section-separate-iran-sanctions-finance-seed"></a>
 ## Separate Iran Sanctions-Finance Seed
 
 | Entity | Network | Address | Treatment |
 |---|---|---|---|
 | Almpertos Tsoris | TRON / USDT | `TJCBpxZ3yC7C7oegSRZMFxBcscmUVeSA36` | Watch directly, but do not merge into the MOIS cyber-actor cluster. |
 
+<a id="section-monitoring-priorities"></a>
 ## Monitoring Priorities
 
 1. Alert on all direct inflows and outflows involving the 30 MOIS-network identifiers.
@@ -123,6 +156,7 @@ Mesri was already sanctioned for prior malicious cyber activity. OFAC's August 2
 5. Preserve entity and authority boundaries: Tsoris is a separate sanctions-finance seed, not a MOIS cyber-group member.
 6. Retain OFAC publication dates and exact full identifiers; never trace from truncated forms.
 
+<a id="section-attribution-boundaries"></a>
 ## Attribution Boundaries
 
 - OFAC publication supports direct sanctions monitoring of the listed identifiers; it does not prove that every counterparty is sanctioned or actor-controlled.
@@ -131,6 +165,7 @@ Mesri was already sanctioned for prior malicious cyber activity. OFAC's August 2
 - Kahzadian's Treasury-described Bitcoin-wallet theft does not establish that the exact stolen wallet is one of the three published sanctions identifiers.
 - Mesri's address expansion is authoritative attribution, but address-to-address operational roles remain subjects for subsequent on-chain analysis.
 
+<a id="section-sources"></a>
 ## Sources
 
 - [OFAC Recent Action — August 24, 2026](https://ofac.treasury.gov/recent-actions/20260824)
@@ -138,6 +173,7 @@ Mesri was already sanctioned for prior malicious cyber activity. OFAC's August 2
 
 ---
 
+<a id="section-tldr"></a>
 ## TLDR
 
 OFAC's August 24 action contributes 30 high-confidence BTC, ETH, and TRON seeds for four named members of a MOIS-linked Iranian cyber group. Kahzadian is the strongest digital-asset-theft lead, while Mesri's 15-address expansion is the largest newly attributable cluster. The Tsoris USDT/TRON address is also an official direct-watch seed but remains separate from the MOIS cyber case.

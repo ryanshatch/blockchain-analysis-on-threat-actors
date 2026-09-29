@@ -4,8 +4,25 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center" style="text-align: center;">
-<h1>New SOL Threat-Wallet Alert</h1>
+<h1>BonkDAO Governance Takeover</h1>
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-bonkdao-governance-takeover">BonkDAO Governance Takeover</a></li>
+<li><a href="#section-addresses">Addresses</a></li>
+<li><a href="#section-classification">Classification</a></li>
+<li><a href="#section-in-other-words">In other words:</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-bonkdao-governance-takeover"></a>
 <h2>BonkDAO Governance Takeover</h2>
 <table>
   <thead>
@@ -47,6 +64,7 @@
     </tr>
   </tbody>
 </table>
+<a id="section-addresses"></a>
 <h2>Addresses</h2>
 <h3>Proposal Creator — Seed / Governance Address</h3>
 <p>
@@ -116,6 +134,7 @@
 <p>
   <strong>Recommended use:</strong> Use only to identify the original transfer and related governance activity.
 </p>
+<a id="section-classification"></a>
 <h2>Classification</h2>
 <ul>
   <li>
@@ -155,6 +174,7 @@
     </ul>
   </li>
 </ul><hr>
+<a id="section-in-other-words"></a>
 <h2>In other words:</h2>
 <p>
 BonkDAO was drained for roughly $20 million, but this was not a smart contract exploit.

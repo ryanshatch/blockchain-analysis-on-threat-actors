@@ -4,6 +4,14 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../readme.md">Home</a> · <a href="../wallets.md">Wallet index</a> · <a href="../CATALOG.md">All case files</a></p>
+<!-- doc-nav:end -->
+
+# FTX / Alameda Historical Wallet Snapshot
+
+The table below preserves historical labels and balances as originally recorded. It is not a current balance or a current ownership assessment.
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet" href="resources/sheet.css">
 <div class="ritz grid-container" dir="ltr">

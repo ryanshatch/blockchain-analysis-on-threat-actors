@@ -4,8 +4,31 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center">
 <h1>High-Confidence OFAC Wallet Alert</h1>
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-siavash-kayvanpour--shelbit-exchange--crypto-home-dmcc">Siavash Kayvanpour / Shelbit Exchange / Crypto Home DMCC</a></li>
+<li><a href="#section-executive-summary">Executive Summary</a></li>
+<li><a href="#section-siavash-kayvanpour">Siavash Kayvanpour</a></li>
+<li><a href="#section-shelbit-exchange">Shelbit Exchange</a></li>
+<li><a href="#section-crypto-home-dmcc">Crypto Home DMCC</a></li>
+<li><a href="#section-withheld-identifier-pending-reconciliation">Withheld Identifier Pending Reconciliation</a></li>
+<li><a href="#section-priority">Priority</a></li>
+<li><a href="#section-monitoring-boundaries">Monitoring Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-tldr">TLDR</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-siavash-kayvanpour--shelbit-exchange--crypto-home-dmcc"></a>
 <h2>Siavash Kayvanpour / Shelbit Exchange / Crypto Home DMCC</h2>
 </div>
 
@@ -23,6 +46,7 @@
   </tbody>
 </table>
 
+<a id="section-executive-summary"></a>
 <h2>Executive Summary</h2>
 
 <p>
@@ -33,6 +57,7 @@ On August 7, 2026, the U.S. Department of the Treasury's Office of Foreign Asset
 Reuters' underlying investigation found that Shelbit processed at least $4 billion since May 2024, including at least $125 million connected to Iran's central bank, and interacted with Nobitex and wallets linked by Israeli authorities to the IRGC. Reuters could not establish that the IRGC directly controlled Shelbit or the wider gambling network. Accordingly, this case treats the OFAC-published identifiers as direct sanctions-watch seeds while preserving a strict boundary around counterparties and analyst-derived graph expansion.
 </p>
 
+<a id="section-siavash-kayvanpour"></a>
 <h2>Siavash Kayvanpour</h2>
 
 <p><strong>Actor/campaign:</strong> Siavash Kayvanpour / Shelbit / Iranian sanctions-evasion network<br>
@@ -57,6 +82,7 @@ Reuters' underlying investigation found that Shelbit processed at least $4 billi
 Kayvanpour is reported in the designation as linked to the IRGC under counterterrorism authorities. These identifiers are direct graph seeds. Addresses discovered only through transaction proximity must not inherit the same actor or IRGC attribution without separate evidence.
 </p>
 
+<a id="section-shelbit-exchange"></a>
 <h2>Shelbit Exchange</h2>
 
 <p><strong>Actor/campaign:</strong> SHPS Shelbit / Shelbit Exchange / Iran-linked sanctions-evasion infrastructure<br>
@@ -83,6 +109,7 @@ Kayvanpour is reported in the designation as linked to the IRGC under counterter
 The Solana identifier is especially useful because it is an official sanctions attribution rather than an analyst-derived cluster. Reuters reported that Shelbit interacted with Iran's central bank, Nobitex, and wallets linked by Israeli authorities to the IRGC, but Reuters did not establish direct IRGC ownership of Shelbit. Do not elevate the full transaction graph to direct IRGC ownership solely from proximity.
 </p>
 
+<a id="section-crypto-home-dmcc"></a>
 <h2>Crypto Home DMCC</h2>
 
 <p><strong>Source type:</strong> Official OFAC<br>
@@ -101,12 +128,14 @@ The Solana identifier is especially useful because it is an official sanctions a
   </tbody>
 </table>
 
+<a id="section-withheld-identifier-pending-reconciliation"></a>
 <h2>Withheld Identifier Pending Reconciliation</h2>
 
 <p>
 The supplied finding also associated BNB Beacon Chain address <code>bnb136ns6lfw4zs5hg4n85vdthaad7hq5m4gtkgf23</code> with Crypto Home DMCC. That identifier is <strong>not added as a Crypto Home sanctions seed in this case</strong> because OFAC's public November 24, 2025 designation history already associates the same address with Rolan Sokolovski in an unrelated illicit-drugs action. Re-attributing the address would create a direct conflict in the repository. It should remain withheld until the August 2026 OFAC record can be reconciled against the older listing.
 </p>
 
+<a id="section-priority"></a>
 <h2>Priority</h2>
 
 <table>
@@ -121,6 +150,7 @@ The supplied finding also associated BNB Beacon Chain address <code>bnb136ns6lfw
   </tbody>
 </table>
 
+<a id="section-monitoring-boundaries"></a>
 <h2>Monitoring Boundaries</h2>
 
 <ul>
@@ -131,6 +161,7 @@ The supplied finding also associated BNB Beacon Chain address <code>bnb136ns6lfw
   <li>The disputed BNB Beacon Chain identifier is intentionally excluded from the machine-readable sanctions seed set.</li>
 </ul>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 
 <ul>
@@ -141,6 +172,7 @@ The supplied finding also associated BNB Beacon Chain address <code>bnb136ns6lfw
 </ul>
 
 <hr>
+<a id="section-tldr"></a>
 <h2>TLDR</h2>
 <p>
 The August 7, 2026 action adds a high-confidence cross-chain sanctions cluster centered on Siavash Kayvanpour and Shelbit Exchange, including an official Solana identifier. The retained BTC, ETH, SOL, and TRON addresses should be watched directly. Counterparties remain graph-expansion pivots unless separately attributed, and one supplied BNB identifier was withheld because it conflicts with an older OFAC attribution.

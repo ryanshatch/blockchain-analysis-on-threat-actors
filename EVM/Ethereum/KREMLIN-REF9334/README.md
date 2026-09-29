@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../../readme.md">Home</a> · <a href="../../../wallets.md">Wallet index</a> · <a href="../../../CATALOG.md">All case files</a> · <a href="../../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # REF9334 / KREMLIN — Ethereum Operator and Malware Infrastructure
 
 | Field | Assessment |
@@ -19,6 +23,19 @@
 
 [Elastic Security Labs](https://www.elastic.co/security-labs/threat-command/malicious-browser-extension-kremlin-banking-malware) links a single Ethereum wallet to contract deployment and configuration updates used by KREMLIN. The first contract explicitly stored the wallet as its administrator. This is an operational-control lead, not merely proximity to an alleged stolen-fund transfer.
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-operator-and-c2-identifiers">Operator and C2 Identifiers</a></li>
+<li><a href="#section-financial-history-and-non-attributed-counterparties">Financial History and Non-Attributed Counterparties</a></li>
+<li><a href="#section-geographic-and-identity-boundaries">Geographic and Identity Boundaries</a></li>
+<li><a href="#section-source">Source</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-operator-and-c2-identifiers"></a>
 ## Operator and C2 Identifiers
 
 | Address | Role | Treatment |
@@ -30,6 +47,7 @@
 
 The contracts store configuration that malware reads to locate payload and command infrastructure. They are malicious infrastructure IOCs, not ordinary stolen-fund wallets. Passive configuration/history analysis can reveal operator changes; this report contains no malware payload or executable retrieval code. The campaign disclosure date is recorded separately from onset: its Ethereum financial history begins earlier, so `incident_date` is blank in the address dataset.
 
+<a id="section-financial-history-and-non-attributed-counterparties"></a>
 ## Financial History and Non-Attributed Counterparties
 
 Elastic observed **82 USDT transfers from June 19, 2025 through August 24, 2026**, with approximately **20,778.97 USDT received** and **19,016.96 USDT sent** by the operator wallet. These transfers predate and overlap infrastructure deployment. Elastic does not establish each transaction as payment for malware development, stolen funds, or revenue.
@@ -43,12 +61,14 @@ Elastic observed **82 USDT transfers from June 19, 2025 through August 24, 2026*
 
 These counterparties could be exchanges, payment infrastructure, or unrelated parties. [addresses.csv](./addresses.csv) retains them with `threat_label=false` and unknown control attribution. Shared transactions do not make their controllers KREMLIN participants.
 
+<a id="section-geographic-and-identity-boundaries"></a>
 ## Geographic and Identity Boundaries
 
 At publication, Elastic observed **1,515 systems** checking its canary infrastructure, **98.75% in Brazil**. Those are observed systems, not a financial-loss or wallet-victim count. Portuguese artifacts and transaction times consistent with São Paulo working hours support a plausible geographic hypothesis, not confirmed nationality or operator location.
 
 Despite the campaign name, Elastic found no evidence linking KREMLIN to Russia. No named operator is established. Malware infrastructure, infected endpoints, financial counterparties, and real-world identity remain separate attribution questions.
 
+<a id="section-source"></a>
 ## Source
 
 - [Elastic Security Labs — original REF9334/KREMLIN analysis, address tables, contract administration, financial history, and attribution limitations](https://www.elastic.co/security-labs/threat-command/malicious-browser-extension-kremlin-banking-malware)

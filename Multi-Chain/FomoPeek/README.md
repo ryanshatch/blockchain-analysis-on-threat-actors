@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # FomoPeek — Malicious iOS Releases and Wallet-Credential Theft
 
 | Field | Assessment |
@@ -22,6 +26,19 @@
 
 If successful, that exploitation could escape the app sandbox, access/decrypt Keychain material, and read other applications' files. Potentially exposed information includes private keys, seed phrases, account credentials, messages, and files. Investigators also reported remote-command communications and captured plaintext configuration showing that exploitation was enabled for periodic execution. This establishes malicious capability and reported deployment, not proof that every installation succeeded in compromising its device.
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-release-history">Release History</a></li>
+<li><a href="#section-attribution-and-monitoring">Attribution and Monitoring</a></li>
+<li><a href="#section-september-24-attribution-update">September 24 Attribution Update</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-release-history"></a>
 ## Release History
 
 | Version | Build | Reported release | Package findings |
@@ -35,6 +52,7 @@ The [reported historical-package comparison](https://crypto.news/binance-warns-i
 
 The framework declares coverage across **iOS 12.0–18.7.x and 26.0–26.1**. This is a code-level compatibility claim, not evidence that every device/build in those ranges is exploitable. The supplied reporting does not provide a verified method-to-CVE mapping, so this case assigns no guessed CVE identifiers.
 
+<a id="section-attribution-and-monitoring"></a>
 ## Attribution and Monitoring
 
 This is distinct from the [August FOMO iOS allegation](../August-2026-Security-Sweep/), whose verified transfer did not establish app causation. Similar branding is not evidence of common ownership. FomoPeek is a malicious application campaign rather than a Solana protocol exploit and is excluded from the single-incident Solana count.
@@ -43,6 +61,7 @@ The September 24 update supersedes the earlier zero-wallet assessment. Retain th
 
 No malicious application, executable framework, exploit implementation, or live command-server payload is included in this repository.
 
+<a id="section-september-24-attribution-update"></a>
 ## September 24 Attribution Update
 
 [Salus's published tracing](https://community.twstalker.com/salus_sec/status/2101530978141241459) identifies **`0x6d37f2C5e8F8546b648D317295565dA95975f4BB`** as the campaign's confirmed hacker address. It is a **High-confidence P1 primary attacker / stolen-fund consolidation seed**. Monitor incoming funding and outgoing transfers. This is credential theft enabled by malicious iOS software, not an Ethereum smart-contract exploit.
@@ -73,6 +92,7 @@ Salus associates the group with a **June 2026 private-key theft**. Record this a
 
 The original kernel-exploitation and malicious-release findings come from SlowMist and OKX. The six-address attribution and detailed routes are credited specifically to Salus. The original X post is linked below; its reproduced text was readable through the linked public mirror during verification. Real-world identity, total victim count, and full graph coverage remain unknown. The supplied scan reported no separate qualifying BTC/SOL or major official cross-chain disclosure; that is a historical scan statement, not a new exhaustive search by this update.
 
+<a id="section-sources"></a>
 ## Sources
 
 - [SlowMist — original September 19 alert](https://x.com/SlowMist_Team/status/2101211432541192615)

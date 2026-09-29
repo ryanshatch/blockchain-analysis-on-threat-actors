@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center">
 
 <h1>Triple-A Treasury-Wallet Compromise</h1>
@@ -19,6 +23,25 @@
 
 <hr>
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-primary-direct-watch-address">Primary Direct-Watch Address</a></li>
+<li><a href="#section-related-addresses-under-review">Related Addresses Under Review</a></li>
+<li><a href="#section-confirmed-facts">Confirmed Facts</a></li>
+<li><a href="#section-investigator-reported-findings">Investigator-Reported Findings</a></li>
+<li><a href="#section-likely-attack-classification">Likely Attack Classification</a></li>
+<li><a href="#section-analyst-classification">Analyst Classification</a></li>
+<li><a href="#section-monitoring-guidance">Monitoring Guidance</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <p>
@@ -144,6 +167,7 @@
 
 <hr>
 
+<a id="section-primary-direct-watch-address"></a>
 <h2>Primary Direct-Watch Address</h2>
 
 <table>
@@ -233,6 +257,7 @@
 
 <hr>
 
+<a id="section-related-addresses-under-review"></a>
 <h2>Related Addresses Under Review</h2>
 
 <p>
@@ -312,6 +337,7 @@
 
 <hr>
 
+<a id="section-confirmed-facts"></a>
 <h2>Confirmed Facts</h2>
 
 <ul>
@@ -341,6 +367,7 @@
 
 <hr>
 
+<a id="section-investigator-reported-findings"></a>
 <h2>Investigator-Reported Findings</h2>
 
 <ul>
@@ -374,6 +401,7 @@
 
 <hr>
 
+<a id="section-likely-attack-classification"></a>
 <h2>Likely Attack Classification</h2>
 
 <p>
@@ -406,6 +434,7 @@
 
 <hr>
 
+<a id="section-analyst-classification"></a>
 <h2>Analyst Classification</h2>
 
 <ul>
@@ -441,6 +470,7 @@
 
 <hr>
 
+<a id="section-monitoring-guidance"></a>
 <h2>Monitoring Guidance</h2>
 
 <h3>Primary Address</h3>
@@ -469,6 +499,7 @@
 
 <hr>
 
+<a id="section-attribution-boundaries"></a>
 <h2>Attribution Boundaries</h2>
 
 <ul>
@@ -503,6 +534,7 @@
 
 <hr>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 
 <ul>

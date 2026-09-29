@@ -4,8 +4,26 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../readme.md">Home</a> · <a href="../wallets.md">Wallet index</a> · <a href="../CATALOG.md">All case files</a></p>
+<!-- doc-nav:end -->
+
 <h1>HBAR Threat Actors and Wallets</h1>
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-hedera--ethereum-theft-flow">Hedera → Ethereum Theft Flow</a></li>
+<li><a href="#section-addresses">Addresses</a></li>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-analyst-note">Analyst Note</a></li>
+<li><a href="#section-classification">Classification</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-hedera--ethereum-theft-flow"></a>
 <h2>Hedera → Ethereum Theft Flow</h2>
 
 <table>
@@ -68,6 +86,7 @@
   </tbody>
 </table>
 
+<a id="section-addresses"></a>
 <h2>Addresses</h2>
 
 <h3>Suspected Theft / Bridge-Flow Address</h3>
@@ -104,6 +123,7 @@
   The exact source-versus-destination role of each address remains provisional.
 </blockquote>
 
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <p>
@@ -114,6 +134,7 @@
   Binance and KuCoin news feeds independently reproduced the same addresses and attribution.
 </p>
 
+<a id="section-analyst-note"></a>
 <h2>Analyst Note</h2>
 
 <blockquote>
@@ -136,6 +157,7 @@
   <li>The identity or number of actors controlling the addresses</li>
 </ul>
 
+<a id="section-classification"></a>
 <h2>Classification</h2>
 
 <ul>

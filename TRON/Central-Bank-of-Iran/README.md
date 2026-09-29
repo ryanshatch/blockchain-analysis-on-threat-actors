@@ -4,8 +4,27 @@
 </p>
 <!-- case-visual:end -->
 
-<h1>OFAC Designation Update</h1>
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
 
+<h1>Central Bank of Iran — OFAC TRON Address Expansion</h1>
+
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-central-bank-of-iran--tron-address-expansion">Central Bank of Iran — TRON Address Expansion</a></li>
+<li><a href="#section-newly-added-sanctioned-addresses">Newly Added Sanctioned Addresses</a></li>
+<li><a href="#section-existing-addresses-retained">Existing Addresses Retained</a></li>
+<li><a href="#section-why-this-matters">Why This Matters</a></li>
+<li><a href="#section-classification-and-monitoring-guidance">Classification and Monitoring Guidance</a></li>
+<li><a href="#section-source">Source</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-central-bank-of-iran--tron-address-expansion"></a>
 <h2>Central Bank of Iran — TRON Address Expansion</h2>
 
 <p>
@@ -63,6 +82,7 @@
   </tbody>
 </table>
 
+<a id="section-newly-added-sanctioned-addresses"></a>
 <h2>Newly Added Sanctioned Addresses</h2>
 
 <p>
@@ -101,6 +121,7 @@
   </tbody>
 </table>
 
+<a id="section-existing-addresses-retained"></a>
 <h2>Existing Addresses Retained</h2>
 
 <p>
@@ -129,6 +150,7 @@
   </tbody>
 </table>
 
+<a id="section-why-this-matters"></a>
 <h2>Why This Matters</h2>
 
 <p>
@@ -143,6 +165,7 @@
   Direct counterparties, exchange deposit addresses, intermediary wallets, bridges, and other connected infrastructure may be useful graph-expansion pivots. However, transactional proximity alone does not make those counterparties sanctioned or prove that they are controlled by the Central Bank of Iran.
 </p>
 
+<a id="section-classification-and-monitoring-guidance"></a>
 <h2>Classification and Monitoring Guidance</h2>
 
 <ul>
@@ -205,6 +228,7 @@
 </tr>
 
 
+<a id="section-source"></a>
 <h2>Source</h2>
 
 <p>

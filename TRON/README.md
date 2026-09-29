@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../readme.md">Home</a> · <a href="../wallets.md">Wallet index</a> · <a href="../CATALOG.md">All case files</a></p>
+<!-- doc-nav:end -->
+
 <div align="center">
 <h1>TRON Threat and Sanctions Index</h1>
 <p><strong>High-confidence TRON wallet attributions, sanctions updates, and threat-finance investigations.</strong></p>
@@ -11,6 +15,18 @@
 
 <hr>
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-current-cases">Current Cases</a></li>
+<li><a href="#section-related-cross-chain-attribution-cases">Related Cross-Chain Attribution Cases</a></li>
+<li><a href="#section-monitoring-boundaries">Monitoring Boundaries</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-current-cases"></a>
 <h2>Current Cases</h2>
 
 <table>
@@ -39,6 +55,7 @@
   </tbody>
 </table>
 
+<a id="section-related-cross-chain-attribution-cases"></a>
 <h2>Related Cross-Chain Attribution Cases</h2>
 
 <table>
@@ -69,6 +86,7 @@
   </tbody>
 </table>
 
+<a id="section-monitoring-boundaries"></a>
 <h2>Monitoring Boundaries</h2>
 
 <ul>

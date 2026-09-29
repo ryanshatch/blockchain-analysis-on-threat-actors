@@ -4,8 +4,29 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center" style="text-align: center;">
-<h1>New SOL Threat-Wallet Alert</h1>
+<h1>Genesis-Era Solana Whale Drain</h1>
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-genesis-era-solana-whale-drain">Genesis-Era Solana Whale Drain</a></li>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-victim-address--do-not-threat-label">Victim Address — Do Not Threat-Label</a></li>
+<li><a href="#section-direct-incident-watch-seeds">Direct Incident-Watch Seeds</a></li>
+<li><a href="#section-classification">Classification</a></li>
+<li><a href="#section-attribution-limits">Attribution Limits</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-in-other-words">In other words:</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-genesis-era-solana-whale-drain"></a>
 <h2>Genesis-Era Solana Whale Drain</h2>
 </div>
 
@@ -26,6 +47,7 @@
   </tbody>
 </table>
 
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <p>
@@ -40,12 +62,14 @@ The published trail includes one victim address, two Solana theft-linked address
 No public evidence reviewed for this case establishes how control of the victim wallet was obtained. The report must therefore remain neutral between exposed private keys, seed compromise, malicious signing, compromised software or hardware, coercion, insider access, or another mechanism.
 </p>
 
+<a id="section-victim-address--do-not-threat-label"></a>
 <h2>Victim Address — Do Not Threat-Label</h2>
 
 <p><a href="https://solscan.io/account/HwtbQBNnLERakdUDuCCLWmUs2oETLFQZeHUWeQdPads"><code>HwtbQBNnLERakdUDuCCLWmUs2oETLFQZeHUWeQdPads</code></a></p>
 <p><strong>Classification:</strong> Genesis-era Solana victim wallet.</p>
 <p><strong>Recommended use:</strong> Preserve as the source wallet for unstaking, outbound-transfer, and historical-balance reconstruction. Do not classify this address as attacker-controlled merely because unauthorized transactions originated from it.</p>
 
+<a id="section-direct-incident-watch-seeds"></a>
 <h2>Direct Incident-Watch Seeds</h2>
 
 <h3>Solana Theft-Linked Address 1</h3>
@@ -67,6 +91,7 @@ No public evidence reviewed for this case establishes how control of the victim 
 
 <p><strong>Recommended use for the Ethereum set:</strong> Watch directly for consolidation, swaps, bridge reuse, exchange deposits, privacy-protocol interactions, and later recovery activity.</p>
 
+<a id="section-classification"></a>
 <h2>Classification</h2>
 <ul>
   <li><strong>Primary classification:</strong> suspected private-wallet compromise / high-value drain</li>
@@ -78,6 +103,7 @@ No public evidence reviewed for this case establishes how control of the victim 
   <li><strong>Named attacker:</strong> none publicly identified</li>
 </ul>
 
+<a id="section-attribution-limits"></a>
 <h2>Attribution Limits</h2>
 <ul>
   <li>ZachXBT described the assets as appearing to have been stolen; the report should preserve that qualified wording unless stronger attribution emerges.</li>
@@ -86,6 +112,7 @@ No public evidence reviewed for this case establishes how control of the victim 
   <li>Do not classify bridges, exchanges, routers, mixers, validators, or ordinary counterparties as attacker-controlled without transaction-level evidence.</li>
 </ul>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 <ul>
   <li><a href="https://t.me/s/investigations">ZachXBT — Investigations channel, primary disclosure and published victim/theft addresses</a></li>
@@ -93,6 +120,7 @@ No public evidence reviewed for this case establishes how control of the victim 
 </ul>
 
 <hr>
+<a id="section-in-other-words"></a>
 <h2>In other words:</h2>
 <p>
 A wallet that had held a large early Solana allocation suddenly began unstaking and moving roughly 180,900 SOL. Investigators treated the pattern as likely theft and published the source wallet plus five theft-linked destination addresses.

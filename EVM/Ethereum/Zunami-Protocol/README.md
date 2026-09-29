@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../../readme.md">Home</a> · <a href="../../../wallets.md">Wallet index</a> · <a href="../../../CATALOG.md">All case files</a> · <a href="../../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center">
 
 <h1>Zunami Protocol Exploit Cluster</h1>
@@ -14,6 +18,21 @@
 
 <hr>
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-direct-threat-seeds">Direct Threat Seeds</a></li>
+<li><a href="#section-operational-pivots">Operational Pivots</a></li>
+<li><a href="#section-key-relationships">Key Relationships</a></li>
+<li><a href="#section-analyst-classification">Analyst Classification</a></li>
+<li><a href="#section-source">Source</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <table>
@@ -35,6 +54,7 @@ On <strong>July 16, 2026</strong>, Rekt published a forensic case file linking p
 <strong>Why it matters:</strong> The analysis identifies pre-exploit staging, direct operational interaction with an attacker wallet, repeated exchange off-ramps, and an anomalous connection between the protocol deployer and exploit infrastructure.
 </p>
 
+<a id="section-direct-threat-seeds"></a>
 <h2>Direct Threat Seeds</h2>
 
 <table>
@@ -49,6 +69,7 @@ On <strong>July 16, 2026</strong>, Rekt published a forensic case file linking p
   </tbody>
 </table>
 
+<a id="section-operational-pivots"></a>
 <h2>Operational Pivots</h2>
 
 <table>
@@ -61,6 +82,7 @@ On <strong>July 16, 2026</strong>, Rekt published a forensic case file linking p
   </tbody>
 </table>
 
+<a id="section-key-relationships"></a>
 <h2>Key Relationships</h2>
 
 <ul>
@@ -71,6 +93,7 @@ On <strong>July 16, 2026</strong>, Rekt published a forensic case file linking p
   <li>The same deployer later granted the privileges used in the 2025 drain.</li>
 </ul>
 
+<a id="section-analyst-classification"></a>
 <h2>Analyst Classification</h2>
 
 <ul>
@@ -85,6 +108,7 @@ On <strong>July 16, 2026</strong>, Rekt published a forensic case file linking p
 The anomalous deployer relationships are materially relevant, but they do not prove that the protocol team controlled either attacker wallet.
 </blockquote>
 
+<a id="section-source"></a>
 <h2>Source</h2>
 
 <ul>

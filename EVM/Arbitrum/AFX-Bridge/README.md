@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../../readme.md">Home</a> · <a href="../../../wallets.md">Wallet index</a> · <a href="../../../CATALOG.md">All case files</a> · <a href="../../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center">
 
 <h1>AFX Bridge Compromise</h1>
@@ -19,6 +23,25 @@
 
 <hr>
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-how-the-exploit-worked">How the Exploit Worked</a></li>
+<li><a href="#section-direct-threat-seeds">Direct Threat Seeds</a></li>
+<li><a href="#section-infrastructure-pivot">Infrastructure Pivot</a></li>
+<li><a href="#section-confirmed-exploit-transaction">Confirmed Exploit Transaction</a></li>
+<li><a href="#section-cross-chain-fund-flow">Cross-Chain Fund Flow</a></li>
+<li><a href="#section-why-it-matters">Why It Matters</a></li>
+<li><a href="#section-analyst-classification">Analyst Classification</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <table>
@@ -119,6 +142,7 @@
 
 <hr>
 
+<a id="section-how-the-exploit-worked"></a>
 <h2>How the Exploit Worked</h2>
 
 <ol>
@@ -160,6 +184,7 @@
 
 <hr>
 
+<a id="section-direct-threat-seeds"></a>
 <h2>Direct Threat Seeds</h2>
 
 <table>
@@ -207,6 +232,7 @@
 
 <hr>
 
+<a id="section-infrastructure-pivot"></a>
 <h2>Infrastructure Pivot</h2>
 
 <table>
@@ -239,6 +265,7 @@
 
 <hr>
 
+<a id="section-confirmed-exploit-transaction"></a>
 <h2>Confirmed Exploit Transaction</h2>
 
 <table>
@@ -309,6 +336,7 @@
 
 <hr>
 
+<a id="section-cross-chain-fund-flow"></a>
 <h2>Cross-Chain Fund Flow</h2>
 
 <p>
@@ -326,6 +354,7 @@
 
 <hr>
 
+<a id="section-why-it-matters"></a>
 <h2>Why It Matters</h2>
 
 <p>
@@ -344,6 +373,7 @@
 
 <hr>
 
+<a id="section-analyst-classification"></a>
 <h2>Analyst Classification</h2>
 
 <ul>
@@ -388,6 +418,7 @@
 
 <hr>
 
+<a id="section-attribution-boundaries"></a>
 <h2>Attribution Boundaries</h2>
 
 <ul>
@@ -416,6 +447,7 @@
 
 <hr>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 
 <ul>

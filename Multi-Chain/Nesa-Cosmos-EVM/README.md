@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # Nesa / Cosmos EVM Exploit — Ethereum Proceeds
 
 | Field | Assessment |
@@ -20,6 +24,20 @@
 
 The [September 8 Rekt investigation](https://rekt.news/nesa-rekt) identifies a primary Ethereum bridge recipient and a separate liquidation wallet for the August 24 Nesa exploit. The complete bridge transaction independently exposes the primary recipient and exact NES quantity. The liquidation wallet's relationship relies on Rarma's funding and trading reconstruction, so its confidence remains lower.
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-direct-watch-wallets">Direct-Watch Wallets</a></li>
+<li><a href="#section-bridge-evidence-and-liquidation">Bridge Evidence and Liquidation</a></li>
+<li><a href="#section-root-cause-and-attribution-limits">Root Cause and Attribution Limits</a></li>
+<li><a href="#section-monitoring">Monitoring</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-direct-watch-wallets"></a>
 ## Direct-Watch Wallets
 
 | Network | Address | Role | Confidence | Treatment |
@@ -29,6 +47,7 @@ The [September 8 Rekt investigation](https://rekt.news/nesa-rekt) identifies a p
 
 The classifications apply to the documented incident roles. They do not establish a named operator or prove that every subsequent counterparty shares control of either wallet. Structured records are in [addresses.csv](./addresses.csv).
 
+<a id="section-bridge-evidence-and-liquidation"></a>
 ## Bridge Evidence and Liquidation
 
 The Ethereum transaction [`0xd443eabd4cfa1be6ad5f7ef861db9a9f271305040615667ed336bc195af05080`](https://etherscan.io/tx/0xd443eabd4cfa1be6ad5f7ef861db9a9f271305040615667ed336bc195af05080) records a successful Hyperlane withdrawal from Nesa and an Ethereum-side mint of **257,703,733.288579599652028616 NES** to the P1 wallet. The exact decimal quantity is preserved as text in [transactions.csv](./transactions.csv). Its source field is the ERC-20 mint's null address, not a source-chain attacker account or the Ethereum transaction submitter.
@@ -39,6 +58,7 @@ The same reconstruction identifies the P2 wallet as funded by the primary recipi
 
 The supported sequence is funding and Nesa bridge-in, followed by the reported Cosmos EVM exploit, Hyperlane delivery to the P1 wallet, and reported liquidation through the P2 wallet. Later ETH, bridge, and exchange destinations require their own transaction evidence before ingestion.
 
+<a id="section-root-cause-and-attribution-limits"></a>
 ## Root Cause and Attribution Limits
 
 [Cosmos Labs' post-mortem for GHSA-7g4w-cg88-2cq2](https://github.com/cosmos/security/blob/main/communications/cosmos_evm_GHSA-7g4w-cg88-2cq2_post_mortem.md) documents a shared balance-accounting vulnerability chain involving underflow and overflow. It reports six exploited networks and supplies detailed timelines for MANTRA, TAC, and KiiChain. It does not identify Nesa by name in those detailed timelines; membership in the unnamed subset should not be presented as an explicit Cosmos Labs attribution.
@@ -47,6 +67,7 @@ The supported sequence is funding and Nesa bridge-in, followed by the reported C
 
 Hyperlane relayers, bridge contracts, the mint null address, CoW Protocol, Uniswap, token contracts, and exchange infrastructure remain service or protocol context. They do not inherit attacker labels from processing these flows. Funding linkage to the P2 wallet supports incident monitoring while common control remains an inference.
 
+<a id="section-monitoring"></a>
 ## Monitoring
 
 1. Prioritize the P1 wallet's token and ETH dispersal, bridge interactions, exchange deposits, and reuse.
@@ -54,6 +75,7 @@ Hyperlane relayers, bridge contracts, the mint null address, CoW Protocol, Unisw
 3. Seek a Nesa-side post-mortem, source-chain account, and complete exploit transaction before extending source-chain attribution.
 4. Preserve the dated reporting window. The submitted scan reported no additional qualifying BTC or SOL seed; that is not a claim that no later incident exists.
 
+<a id="section-sources"></a>
 ## Sources
 
 - [Rekt — Nesa investigation, September 8, 2026](https://rekt.news/nesa-rekt)

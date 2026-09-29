@@ -1,0 +1,25 @@
+name: Documentation navigation
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "assets/**"
+      - "scripts/check_docs.py"
+  push:
+    branches: [main]
+    paths:
+      - "**/*.md"
+      - "assets/**"
+      - "scripts/check_docs.py"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check local links, contents, tables, and images
+        run: python scripts/check_docs.py

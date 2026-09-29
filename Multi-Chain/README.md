@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../readme.md">Home</a> · <a href="../wallets.md">Wallet index</a> · <a href="../CATALOG.md">All case files</a></p>
+<!-- doc-nav:end -->
+
 <div align="center">
 <h1>Multi-Chain Threat and Incident Index</h1>
 <p><strong>Incidents and threat campaigns whose exploit execution, treasury compromise, bridge movement, proceeds flow, recovery activity, sanctions attribution, or malicious infrastructure spans more than one blockchain ecosystem.</strong></p>
@@ -18,8 +22,13 @@
   <tbody>
     <tr>
       <td><a href="./September-2026-Security-Sweep/"><code>September-2026-Security-Sweep/</code></a></td>
-      <td>September 11–25 reports across Solana, Ethereum, and mobile-wallet users</td>
-      <td>Seven cases, 36 role-separated indicators, updated FomoPeek and Bitget attribution, resolved ether.fi attribution, and reconciliation of repeated September 4–9 reports</td>
+      <td>September 11–28 reports across Solana, Ethereum, and mobile-wallet users</td>
+      <td>Eight cases, 37 role-separated indicators, updated FomoPeek and Bitget attribution, resolved ether.fi attribution, and reconciliation of repeated September 4–9 reports</td>
+    </tr>
+    <tr>
+      <td><a href="./Duelbits-September-2026/"><code>Duelbits-September-2026/</code></a></td>
+      <td>Solana, Ethereum, BNB Chain, TRON, Bitcoin</td>
+      <td>September 24 hot-wallet compromise; $7M project-reported total, roughly $1M Solana tracing estimate and one P1 Solana seed</td>
     </tr>
     <tr>
       <td><a href="./Bitget-September-2026/"><code>Bitget-September-2026/</code></a></td>
@@ -114,6 +123,17 @@
   </tbody>
 </table>
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-storage-rule">Storage Rule</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-storage-rule"></a>
 <h2>Storage Rule</h2>
 
 <p>
@@ -124,6 +144,7 @@ A case is stored under <code>Multi-Chain/</code> when the full investigation can
 Solana-origin cases are also cross-listed in <a href="../SOL/"><code>SOL/README.md</code></a> so chain-specific incident counts do not omit cross-chain cases such as Across Protocol or Allbridge Core. Multi-victim campaigns such as the SpaceX/FIFA and fake GTA VI drainer waves are cross-referenced there but are not counted as single Solana protocol incidents. Official multi-chain sanctions and law-enforcement attribution cases are cross-linked from the affected chain indexes but are not counted as exploit incidents.
 </p>
 
+<a id="section-attribution-boundaries"></a>
 <h2>Attribution Boundaries</h2>
 <ul>
   <li>Bridge, relayer, exchange, router, protocol, victim, vault, and recovery addresses are not automatically classified as threat-controlled.</li>

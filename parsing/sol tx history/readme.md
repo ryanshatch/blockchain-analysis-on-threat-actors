@@ -4,54 +4,34 @@
 </p>
 <!-- case-visual:end -->
 
-# Parsing from solscan
-## Overview
-This repository contains tools for parsing and merging various file types, particularly focusing on CSV files. It provides a graphical user interface (GUI) for easy file merging and visualizing data loss.
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../readme.md">Parent index</a></p>
+<!-- doc-nav:end -->
 
-## Repository Structure
-- **sol tx history/**: Directory containing historical transaction data.
-- **combined_sol_transfers.txt**: Combined text file of SOL transfers.
-- **combined_values.csv**: Combined CSV file of values.
-- **merge_files.py**: Script to merge various file types into one.
-- **visual_of_data_loss.py**: Script to visualize data loss.
+# Historical Solana Transaction Exports
 
-## Getting Started
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-files">Files</a></li>
+<li><a href="#section-tools-and-combined-data">Tools and Combined Data</a></li>
+</ul>
+</details>
+<!-- contents:end -->
 
-### Prerequisites
-- Python 3.x
-- Required libraries:
-    ```sh
-    pip install tkinter pandas matplotlib seaborn python-docx
-    ```
+<a id="section-files"></a>
+## Files
 
-### Installation
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/ryanshatch/Rugs-and-Scams.db.git
-    ```
-2. Navigate to the `parsing` directory:
-    ```sh
-    cd Rugs-and-Scams.db/parsing
-    ```
+| Export | Description |
+|---|---|
+| [x.sol transfers](./x.sol_sol_transfers.csv) | Historical transfer export |
+| [x.sol second export](./x.sol_2_sol_transfers.csv) | Separate historical export; may overlap the first |
+| [banana.sol transfers](./banana.sol_sol_transfers.csv) | Historical transfer export |
 
-### Usage
+These snapshots are source data, not a current wallet balance or a threat-attribution list. Preserve original timestamps and check transaction identifiers when combining overlapping exports.
 
-#### File Merger
-1. Run the `merge_files.py` script to open the GUI:
-    ```sh
-    python merge_files.py
-    ```
-2. Use the GUI to:
-   - Browse and select multiple files to combine.
-   - Enter a name for the new combined file.
-   - Click "CREATE" to merge the selected files into one.
-   - The combined file will be saved as a `.txt` file, and a CSV file will be created for better readability.
+<a id="section-tools-and-combined-data"></a>
+## Tools and Combined Data
 
-#### Visualize Data Loss
-1. Run the `visual_of_data_loss.py` script to visualize data loss:
-    ```sh
-    python visual_of_data_loss.py
-    ```
-
-## License
-This project was developed and is under copyright by Ryan Hatch
+The scripts reside in the [parent parsing folder](../readme.md), alongside [combined transfers](../combined_sol_transfers.txt) and [combined values](../combined_values.csv). Follow the parent guide to run them from that folder.

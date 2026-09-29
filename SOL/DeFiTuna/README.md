@@ -4,8 +4,30 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center" style="text-align: center;">
-<h1>New SOL Threat-Wallet Alert</h1>
+<h1>DeFiTuna Lending Exploit</h1>
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-defituna-lending-exploit">DeFiTuna Lending Exploit</a></li>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-direct-incident-watch-seeds">Direct Incident-Watch Seeds</a></li>
+<li><a href="#section-protocol-and-victim-infrastructure--do-not-threat-label">Protocol and Victim Infrastructure — Do Not Threat-Label</a></li>
+<li><a href="#section-primary-exploit-transaction">Primary Exploit Transaction</a></li>
+<li><a href="#section-technical-root-cause">Technical Root Cause</a></li>
+<li><a href="#section-classification">Classification</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-in-other-words">In other words:</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-defituna-lending-exploit"></a>
 <h2>DeFiTuna Lending Exploit</h2>
 </div>
 
@@ -24,6 +46,7 @@
   </tbody>
 </table>
 
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <p>
@@ -38,6 +61,7 @@ The swap sent approximately 569,601 USDC into the attacker-controlled pool but r
 The attackers then removed the USDC captured by their malicious liquidity positions, leaving the lending pool with approximately 569,601 USDC in bad debt.
 </p>
 
+<a id="section-direct-incident-watch-seeds"></a>
 <h2>Direct Incident-Watch Seeds</h2>
 
 <h3>Primary Attacker / Orchestration Address</h3>
@@ -74,6 +98,7 @@ The attackers then removed the USDC captured by their malicious liquidity positi
 <p>CertiK reported that bridged proceeds reached Ethereum and that approximately 291,696 DAI and 5 ETH remained in this wallet as of July 20, 2026.</p>
 <p><strong>Recommended use:</strong> Watch directly for dispersal, exchange deposits, bridge reuse, and privacy-protocol interactions.</p>
 
+<a id="section-protocol-and-victim-infrastructure--do-not-threat-label"></a>
 <h2>Protocol and Victim Infrastructure — Do Not Threat-Label</h2>
 
 <table>
@@ -86,9 +111,11 @@ The attackers then removed the USDC captured by their malicious liquidity positi
   </tbody>
 </table>
 
+<a id="section-primary-exploit-transaction"></a>
 <h2>Primary Exploit Transaction</h2>
 <p><a href="https://solscan.io/tx/124ibr7NU7AtJdeZ1WJjJy5YathNiBtCnV554uwJtkc7qEXeF64dmCziv4QoiEEMRG6EmCRx8ec2LkARpWH3kvEG"><code>124ibr7NU7AtJdeZ1WJjJy5YathNiBtCnV554uwJtkc7qEXeF64dmCziv4QoiEEMRG6EmCRx8ec2LkARpWH3kvEG</code></a></p>
 
+<a id="section-technical-root-cause"></a>
 <h2>Technical Root Cause</h2>
 
 <ol>
@@ -104,6 +131,7 @@ The attackers then removed the USDC captured by their malicious liquidity positi
 The core vulnerability was not simply low liquidity or price manipulation. The final security failure was a solvency check that accepted zero assets with outstanding debt as healthy.
 </blockquote>
 
+<a id="section-classification"></a>
 <h2>Classification</h2>
 <ul>
   <li><strong>Incident type:</strong> Solana protocol-logic exploit / flawed health check</li>
@@ -114,6 +142,7 @@ The core vulnerability was not simply low liquidity or price manipulation. The f
   <li><strong>Material unknown:</strong> whether all nine published Solana addresses were controlled by one actor or coordinated actors</li>
 </ul>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 <ul>
   <li><a href="https://www.certik.com/blog/defituna-incident-analysis">CertiK — DeFiTuna Incident Analysis</a></li>
@@ -122,6 +151,7 @@ The core vulnerability was not simply low liquidity or price manipulation. The f
 </ul>
 
 <hr>
+<a id="section-in-other-words"></a>
 <h2>In other words:</h2>
 <p>
 DeFiTuna let the attacker borrow roughly $570,000 with no collateral and choose the swap route. The attacker sent the borrowed USDC into a pool they controlled and returned almost no TUNA to the borrowing position. A rounding step converted the tiny TUNA value to zero, and the protocol mistakenly treated that zero-value position as healthy even though it still owed the full loan.

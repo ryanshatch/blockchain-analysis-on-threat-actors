@@ -4,7 +4,13 @@
 </p>
 <!-- case-visual:end -->
 
-#### User Dustyray11 entered the De/Cap TG and shilled HOPE to the Degods and Y00ts holders. I even recieved a free airdrop for being active during the time. This token I made ~$25 from. Nothing thats too good to be true ends up without some sort of a rug. Never the less, Dustryray11 bought up ~26% of the tokens supply before he entered the TG and began the campaign. Currently his main wallet owns ~10% of the current supply and he has 25k in loans from SharkyFi.
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
+# HOPE Token — Historical Distribution Notes
+
+User Dustyray11 entered the De/Cap Telegram group and promoted HOPE to DeGods and y00ts holders. These historical notes allege that the promoter accumulated approximately 26% of the token supply before the campaign, later retained roughly 10%, and had approximately $25,000 in SharkyFi loans. Treat the wallet relationships below as research leads from the original contributor, not independently verified threat attribution.
 
 - **Main wallet that was used (`26.1%` of 261m tokens)**: `6UWokqQxV4mcK7DeggjQGYMvLJ5HY6zH8AM1Bj6axPGw`
   - Transferred **44,444,444 (`4.4%`)** to: `Cf6hvAoTyqnCCfQzDE9beD3mZwo89MrXSpGb5pUg56Bm` **(sold `1/2` for `$4,500`)**

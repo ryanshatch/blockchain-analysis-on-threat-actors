@@ -4,8 +4,32 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center" style="text-align: center;">
-<h1>New SOL Threat-Wallet Alert</h1>
+<h1>Raydium Legacy AMM V3 Exploit</h1>
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-raydium-legacy-amm-v3-exploit">Raydium Legacy AMM V3 Exploit</a></li>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-direct-incident-watch-seeds">Direct Incident-Watch Seeds</a></li>
+<li><a href="#section-affected-pools">Affected Pools</a></li>
+<li><a href="#section-technical-root-cause">Technical Root Cause</a></li>
+<li><a href="#section-fund-flow">Fund Flow</a></li>
+<li><a href="#section-classification">Classification</a></li>
+<li><a href="#section-impact-and-response">Impact and Response</a></li>
+<li><a href="#section-monitoring-boundaries">Monitoring Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-in-other-words">In other words:</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-raydium-legacy-amm-v3-exploit"></a>
 <h2>Raydium Legacy AMM V3 Exploit</h2>
 </div>
 
@@ -25,6 +49,7 @@
   </tbody>
 </table>
 
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <p>
@@ -39,6 +64,7 @@ The attacker created a counterfeit SPL token mint, minted the fake LP token supp
 By controlling both the amount held and the total supply of the counterfeit mint, the attacker made the program calculate a 100% liquidity share and release real assets from the affected pools. The stolen assets were consolidated on Solana, converted and bridged to Ethereum, after which approximately 810 ETH was reported deposited into Tornado Cash and 7 ETH was sent to FixedFloat.
 </p>
 
+<a id="section-direct-incident-watch-seeds"></a>
 <h2>Direct Incident-Watch Seeds</h2>
 
 <h3>Primary Solana Attacker Address</h3>
@@ -56,6 +82,7 @@ By controlling both the amount held and the total supply of the counterfeit mint
 <p>Independent forensic reporting identifies this address as a bridge-preparation hub after the stolen assets were converted into USDC.</p>
 <p><strong>Recommended use:</strong> Graph-expansion seed. Confirm each inbound and outbound transfer before assigning direct attacker control.</p>
 
+<a id="section-affected-pools"></a>
 <h2>Affected Pools</h2>
 <ul>
   <li>Sollet USDT–RAY</li>
@@ -69,6 +96,7 @@ By controlling both the amount held and the total supply of the counterfeit mint
 The affected pools were deprecated infrastructure and victim liquidity sources. They should not be threat-labeled. Current Raydium programs, active pools, SDK routes, and ordinary users were not reported affected by this incident.
 </blockquote>
 
+<a id="section-technical-root-cause"></a>
 <h2>Technical Root Cause</h2>
 
 <ol>
@@ -85,6 +113,7 @@ The affected pools were deprecated infrastructure and victim liquidity sources. 
 The attacker did not forge authentic Raydium LP tokens. The legacy program was tricked into treating an unrelated mint as the pool's LP token because it failed to bind the mint account to the pool configuration.
 </blockquote>
 
+<a id="section-fund-flow"></a>
 <h2>Fund Flow</h2>
 
 <pre>
@@ -99,6 +128,7 @@ Five deprecated Raydium AMM V3 pools
         └─ approximately 7 ETH → FixedFloat
 </pre>
 
+<a id="section-classification"></a>
 <h2>Classification</h2>
 <ul>
   <li><strong>Primary classification:</strong> Solana smart-contract account-validation exploit</li>
@@ -110,6 +140,7 @@ Five deprecated Raydium AMM V3 pools
   <li><strong>Named actor:</strong> none publicly identified</li>
 </ul>
 
+<a id="section-impact-and-response"></a>
 <h2>Impact and Response</h2>
 <ul>
   <li>Approximately 150,177 RAY, 5,603 SOL, and 893,700 USDC were removed.</li>
@@ -120,6 +151,7 @@ Five deprecated Raydium AMM V3 pools
   <li>No public attacker identity or confirmed recovery of the laundered proceeds was identified in the reviewed sources.</li>
 </ul>
 
+<a id="section-monitoring-boundaries"></a>
 <h2>Monitoring Boundaries</h2>
 <ul>
   <li>Do not threat-label KuCoin solely because it was reported as the initial funding source.</li>
@@ -128,6 +160,7 @@ Five deprecated Raydium AMM V3 pools
   <li>Preserve the distinction between deprecated AMM V3 code and Raydium's active programs.</li>
 </ul>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 <ul>
   <li><a href="https://www.theblock.co/post/404304/raydium-dex-1-34-million-exploit-retired-amm-program-treasury-cover-losses">Raydium incident confirmation and affected-pool scope</a></li>
@@ -137,6 +170,7 @@ Five deprecated Raydium AMM V3 pools
 </ul>
 
 <hr>
+<a id="section-in-other-words"></a>
 <h2>In other words:</h2>
 <p>
 Raydium's old program asked the caller which token mint represented the pool's LP shares, but it did not verify that answer against the pool's real LP mint. The attacker created a fake token with a supply they completely controlled and presented it as the LP token.

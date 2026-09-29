@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # Xinbi Guarantee — OFAC TRON Wallet Disclosure
 
 | Field | Assessment |
@@ -22,6 +26,20 @@
 
 Treasury describes Xinbi as an illicit marketplace supplying scam operators, laundering networks, and cybercriminals with escrow and related services. It reports **over $24 billion in marketplace throughput**. That aggregate includes digital assets and fiat and is neither a theft-loss estimate nor a measured balance across these 52 addresses. [Treasury designation announcement](https://home.treasury.gov/news/press-releases/sb0624/)
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-official-address-set">Official Address Set</a></li>
+<li><a href="#section-enforcement-and-freeze-boundaries">Enforcement and Freeze Boundaries</a></li>
+<li><a href="#section-monitoring-and-attribution">Monitoring and Attribution</a></li>
+<li><a href="#section-reviewed-incident-with-no-wallet-ingest">Reviewed Incident With No Wallet Ingest</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-official-address-set"></a>
 ## Official Address Set
 
 All addresses below have High-confidence official entity association and P1 direct-watch treatment. The order matches the Xinbi entry in OFAC's September 9 publication. The machine-readable set is [addresses.csv](./addresses.csv); its `disclosure_date` is the designation date, not an exploit date.
@@ -81,6 +99,7 @@ TMdZfVVAsxKsbXGmV3kBnEgM69z3QHH3kz
 TZ42sU5kQ2n5rLZ6PhEGkmfLtmHjoi2vpr
 ```
 
+<a id="section-enforcement-and-freeze-boundaries"></a>
 ## Enforcement and Freeze Boundaries
 
 [DOJ's same-day announcement](https://www.justice.gov/usao-dc/pr/scam-center-strike-force-conducts-seizures-chinese-run-illicit-scammer-marketplace-and) describes seizure of Xinbi marketplace infrastructure and approximately **$52 million restrained** across the marketplace and its vendor network. It distinguishes two seized vendor-payment wallets holding approximately $12 million from 47 additional wallets for which restraint was sought. These enforcement counts are not an address-by-address mapping to the OFAC list.
@@ -89,6 +108,7 @@ TZ42sU5kQ2n5rLZ6PhEGkmfLtmHjoi2vpr
 
 Separate [reporting attributed to MistTrack](https://www.cryptotimes.io/2026/09/08/misttrack-reports-39m-usdt-freeze-across-xinbi-linked-wallets/) describes approximately **$39.27 million USDT frozen across ten addresses** and publishes the full identifier `TWPma8xH48AEN93x2krdukV9e1j6sPsBeS`, which also appears in OFAC's set. The remaining nine members are not inferred from the sanctions list. Do not add this reported freeze amount to the DOJ or Elliptic totals: overlap is unresolved.
 
+<a id="section-monitoring-and-attribution"></a>
 ## Monitoring and Attribution
 
 - Watch all 52 listed addresses directly for sanctions exposure, movement, reuse, and replacement infrastructure.
@@ -97,10 +117,12 @@ Separate [reporting attributed to MistTrack](https://www.cryptotimes.io/2026/09/
 - Separate official SDN membership, investigator-derived cluster membership, token-issuer freezes, and judicial seizure or restraint. None should be inferred solely from the other.
 - Preserve the date of this disclosure. The September 9 submitted scan identified no additional qualifying BTC/ETH/SOL address beyond earlier reports; it does not negate the separate September 8 Nesa disclosure or claim an exhaustive later scan.
 
+<a id="section-reviewed-incident-with-no-wallet-ingest"></a>
 ## Reviewed Incident With No Wallet Ingest
 
 The September 9 Nomic / Osmosis nBTC report describes approximately 39.84 nBTC implicated and 22.65 BTC-equivalent frozen. The reviewed material does not provide a complete authoritative attacker identifier suitable for this dataset. It remains a zero-seed entry in the [security sweep](../../Multi-Chain/August-2026-Security-Sweep/), with no inferred Bitcoin-mainnet attacker address. [Reported incident and limitations](https://www.cryptotimes.io/2026/09/09/osmosis-freezes-22-65-btc-after-nomic-exploit-hits-alloyed-btc-backing/)
 
+<a id="section-sources"></a>
 ## Sources
 
 - [OFAC — September 9 SDN update and complete Xinbi TRX identifiers](https://ofac.treasury.gov/recent-actions/20260909)

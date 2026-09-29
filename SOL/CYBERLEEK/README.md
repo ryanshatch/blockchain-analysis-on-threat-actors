@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # CYBERLEEK / GTA VI Leak-and-Token Campaign
 
 | Field | Assessment |
@@ -17,6 +21,32 @@
 
 > This report excludes leaked game files, direct links to the campaign's infrastructure, and unverified real-person identification. Blockchain identifiers are included for defensive monitoring and reproducible analysis. Inclusion of an address does not by itself establish criminal control; consult `addresses.csv` for the attribution scope and threat-label field.
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-executive-assessment">Executive Assessment</a></li>
+<li><a href="#section-key-judgments">Key Judgments</a></li>
+<li><a href="#section-campaign-profile">Campaign Profile</a></li>
+<li><a href="#section-timeline">Timeline</a></li>
+<li><a href="#section-leak-and-access-assessment">Leak and Access Assessment</a></li>
+<li><a href="#section-token-analysis">Token Analysis</a></li>
+<li><a href="#section-indicator-handling">Indicator Handling</a></li>
+<li><a href="#section-key-transaction-evidence">Key Transaction Evidence</a></li>
+<li><a href="#section-observed-behaviors-and-ttps">Observed Behaviors and TTPs</a></li>
+<li><a href="#section-risk-assessment">Risk Assessment</a></li>
+<li><a href="#section-legal-and-investigation-status">Legal and Investigation Status</a></li>
+<li><a href="#section-monitoring-priorities">Monitoring Priorities</a></li>
+<li><a href="#section-intelligence-gaps">Intelligence Gaps</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-source-assessment">Source Assessment</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-tldr">TLDR</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-executive-assessment"></a>
 ## Executive Assessment
 
 CYBERLEEK is an unidentified person or group that began publicly releasing apparent Grand Theft Auto VI development footage on August 18, 2026. The strongest public evidence supports access to a playable build or playable portion: a later clip showed the operator creating the word `LEEK` with bullet impacts in-game. That bespoke action is difficult to reconcile with possession of pre-recorded tester footage alone. It does not establish that CYBERLEEK personally breached Rockstar, possessed the complete game, obtained source code, or retained access to Rockstar systems. The acquisition method remains unknown.
@@ -37,6 +67,7 @@ The campaign also advertised custom gameplay and ad placement. Public reporting 
 
 No credible public evidence currently links CYBERLEEK to the September 2022 LAPSUS$ / `teapotuberhacker` GTA VI breach or the April 2026 ShinyHunters incident. Treat those as separate cases unless new evidence establishes overlap.
 
+<a id="section-key-judgments"></a>
 ## Key Judgments
 
 | Judgment | Confidence | Basis |
@@ -55,6 +86,7 @@ No credible public evidence currently links CYBERLEEK to the September 2022 LAPS
 | Launch funding originated at KuCoin. | Low-to-moderate | Community tracing reports a KuCoin endpoint; Bitquery reproduced the middle hops but could not independently label the exchange terminus. |
 | The operator is in Central Europe. | Low-to-moderate | Wallet-signing and social-posting hours align with UTC+1/+2, but scheduling, teamwork, travel, or deception could produce the same pattern. |
 
+<a id="section-campaign-profile"></a>
 ## Campaign Profile
 
 | Field | Assessment |
@@ -73,6 +105,7 @@ No credible public evidence currently links CYBERLEEK to the September 2022 LAPS
 | Monetization | Solana event token, locked-liquidity fee stream, market-cap-gated content, Monero contact fee, advertising, and custom footage |
 | Operational status | Active as of August 27-28; no confirmed arrest or authoritative public identification |
 
+<a id="section-timeline"></a>
 ## Timeline
 
 | Date and time UTC | Event | Assessment |
@@ -97,6 +130,7 @@ No credible public evidence currently links CYBERLEEK to the September 2022 LAPS
 | 2026-08-25 | Price snapshot near $0.0178-$0.0182 with roughly $12.9M-$13.2M market capitalization. | Approximately 48% below the August 23 high; values are time-sensitive. |
 | 2026-08-27 | Operation-linked wallet claimed approximately 1,442.43 WSOL and 15.4M CYBERLEEK in creator fees, sold the token position for roughly $125K in SOL, and dispersed proceeds across four fresh wallets; at least 91 SOL later moved to KuCoin. | High confidence in the cash-out; medium confidence for confirmed-rug classification. |
 
+<a id="section-leak-and-access-assessment"></a>
 ## Leak and Access Assessment
 
 ### Supported
@@ -115,6 +149,7 @@ No credible public evidence currently links CYBERLEEK to the September 2022 LAPS
 - That every circulated map image is an untouched internal asset.
 - That CYBERLEEK distributed malware. A fake 113 GB GTA VI ISO containing a reported malicious payload appeared after the leak, but no reviewed evidence attributes it to CYBERLEEK; treat it as opportunistic copycat activity.
 
+<a id="section-token-analysis"></a>
 ## Token Analysis
 
 ### Primary Asset
@@ -174,6 +209,7 @@ No credible public evidence currently links CYBERLEEK to the September 2022 LAPS
 
 The $128,809 estimate used approximately $62.316M cumulative pool volume multiplied by a 0.21% LP-fee share and approximately 98.43% ownership of the locked LP position. It remains a historical accrual estimate rather than proof of the exact later net profit. The August 27 activity separately establishes a material creator-fee claim and token sale. The four downstream wallets remain excluded from the direct threat-seed dataset because complete addresses were not published in the reviewed reporting.
 
+<a id="section-indicator-handling"></a>
 ## Indicator Handling
 
 The complete machine-readable set is in [`addresses.csv`](./addresses.csv). Only one row is marked as a direct actor-controlled wallet: the creator / pool-creator wallet. Other entries include campaign infrastructure, historical token accounts, financial-flow pivots, excluded traders, and copycat assets. Use the `attribution_scope`, `monitoring`, and `threat_label` columns before importing data into a threat-wallet system.
@@ -227,6 +263,7 @@ These addresses are retained for market-abuse and timing analysis only. Availabl
 
 These assets shared the ticker or narrative and generated material volume, but the reviewed analysis does not connect them to the primary deployer.
 
+<a id="section-key-transaction-evidence"></a>
 ## Key Transaction Evidence
 
 The machine-readable transaction set is in [`transactions.csv`](./transactions.csv).
@@ -240,6 +277,7 @@ The machine-readable transaction set is in [`transactions.csv`](./transactions.c
 | [`4YgZeKvfvubhzoAebFT4JbbKKBgPAQf5d5j3xLNHQ6mXKf563gpAf68UpK3dCRtmezo6qCvsBN8cfMjbhxLz57V4`](https://solscan.io/tx/4YgZeKvfvubhzoAebFT4JbbKKBgPAQf5d5j3xLNHQ6mXKf563gpAf68UpK3dCRtmezo6qCvsBN8cfMjbhxLz57V4) | August 27 creator-fee claim and cash-out evidence cited by reporting. |
 | [`3CUsT8WL61giDDwrk5sVwXvoXeMstKWLGkS8yc73ZgtegvyqrfjDn3Jamy1Lgj5rEexvJpiGQoy3P2zjMtBWqLqm`](https://solscan.io/tx/3CUsT8WL61giDDwrk5sVwXvoXeMstKWLGkS8yc73ZgtegvyqrfjDn3Jamy1Lgj5rEexvJpiGQoy3P2zjMtBWqLqm) | Reported downstream transfer of at least 91 SOL to KuCoin. |
 
+<a id="section-observed-behaviors-and-ttps"></a>
 ## Observed Behaviors and TTPs
 
 - Pre-positioned financial infrastructure: token, branded name, funding funnels, liquidity pool, and durable hosting were prepared before public disclosure.
@@ -252,6 +290,7 @@ The machine-readable transaction set is in [`transactions.csv`](./transactions.c
 - Real-world mobilization: the campaign encouraged office demonstrations, creating a physical-security and nuisance dimension.
 - Ideological framing: consumer-rights claims supplied moral justification while the operation solicited money.
 
+<a id="section-risk-assessment"></a>
 ## Risk Assessment
 
 | Risk | Rating | Rationale |
@@ -267,10 +306,12 @@ The machine-readable transaction set is in [`transactions.csv`](./transactions.c
 | Physical-security risk | Moderate | The campaign encouraged office demonstrations; no verified threat of violence was found in reviewed reporting. |
 | Attribution-error risk | High | Unverified identity claims, service wallets, bots, copycats, and address poisoning can produce false linkage. |
 
+<a id="section-legal-and-investigation-status"></a>
 ## Legal and Investigation Status
 
 Take-Two filed DMCA-subpoena requests on August 20 seeking information from Microsoft and Discord to identify alleged infringers. The filings sought account and related records and listed a September 4 production date. Orders approving the Microsoft and Discord requests were filed August 21; Take-Two also sought Google and X records. The Verge reported on August 24 that Discord said it had not yet been served and would review validity and scope if served. No confirmed arrest or authoritative public identity announcement was located by the report cutoff.
 
+<a id="section-monitoring-priorities"></a>
 ## Monitoring Priorities
 
 1. **Fee Key activity:** Alert on transfer or fee-harvest interactions involving `44isRZNypWAsseobWTKLcQP56A3STe8Um7XdstgFttrS` and the deployer.
@@ -283,6 +324,7 @@ Take-Two filed DMCA-subpoena requests on August 20 seeking information from Micr
 8. **Disclosure cadence:** Correlate new public media events, token milestones, volume spikes, Fee Key claims, and outbound deployer transfers.
 9. **Expansion pivots:** Monitor `MDBLoJyK6WuymugTKojo9Sg3K3ap9e6xR1jFrjYQo4j` and `FYzoZbGvPsHqXSe8czHgpJPiHXnFUBXoX1z8EBQKSEpA` for follow-on branded tokens.
 
+<a id="section-intelligence-gaps"></a>
 ## Intelligence Gaps
 
 - Original access vector and whether Rockstar itself was breached in this event.
@@ -297,6 +339,7 @@ Take-Two filed DMCA-subpoena requests on August 20 seeking information from Micr
 - Any substantiated link to the 2022 LAPSUS$ breach or April 2026 ShinyHunters activity.
 - Whether the observed address-poisoning transfers were targeted by the operator or generated by unrelated automated services.
 
+<a id="section-attribution-boundaries"></a>
 ## Attribution Boundaries
 
 The September 1 fake GTA VI leaked-copy wallet drainer documented by Malwarebytes is tracked separately in [`Multi-Chain/GTA-VI-Wallet-Drainer/`](../../Multi-Chain/GTA-VI-Wallet-Drainer/). Its hard-coded receiving address and malicious domains are not attributed to CYBERLEEK; shared GTA VI branding is not evidence of common control.
@@ -309,6 +352,7 @@ The September 1 fake GTA VI leaked-copy wallet drainer documented by Malwarebyte
 - Timezone analysis is behavioral inference, not geolocation proof.
 - No malware sample is attributed to CYBERLEEK in this case.
 
+<a id="section-source-assessment"></a>
 ## Source Assessment
 
 - **High reliability for blockchain mechanics:** Solana transaction records, Solscan identifiers, and official Raydium documentation.
@@ -317,6 +361,7 @@ The September 1 fake GTA VI leaked-copy wallet drainer documented by Malwarebyte
 - **Moderate-to-high reliability for public campaign and legal behavior:** PC Gamer, The Verge, Tom's Hardware, and federal court records.
 - **Low reliability unless corroborated:** real-name, age, nationality, prior-handle, exchange-endpoint, and phishing-attribution claims circulating on social media or forums.
 
+<a id="section-sources"></a>
 ## Sources
 
 ### On-Chain and Technical
@@ -347,6 +392,7 @@ The September 1 fake GTA VI leaked-copy wallet drainer documented by Malwarebyte
 
 ---
 
+<a id="section-tldr"></a>
 ## TLDR
 
 CYBERLEEK is best tracked as an active, high-impact IP-disclosure and monetization operation, not yet as a confidently attributed intrusion group. The creator did not dump the retained 270M allocation; it was burned, and the original LP principal remains locked. The August 27 activity nevertheless establishes a material operation-linked creator-fee cash-out, reported near $270,000 in aggregate proceeds, followed by dispersal and a KuCoin route. Classify the event as suspected rug or insider-exit activity with high cash-out confidence and medium confirmed-rug confidence. The four unpublished downstream wallets remain excluded from direct threat seeds.

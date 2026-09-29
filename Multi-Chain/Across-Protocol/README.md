@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center">
 
 <h1>Across Protocol Solana Relayer Exploit</h1>
@@ -19,6 +23,29 @@
 
 <hr>
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-what-was-actually-exploited">What Was Actually Exploited</a></li>
+<li><a href="#section-anchor-event-discriminators">Anchor Event Discriminators</a></li>
+<li><a href="#section-simplified-attack-flow">Simplified Attack Flow</a></li>
+<li><a href="#section-role-of-get_unsafe_deposit_id">Role of get_unsafe_deposit_id</a></li>
+<li><a href="#section-technical-root-cause-classification">Technical Root-Cause Classification</a></li>
+<li><a href="#section-scale-of-the-attack">Scale of the Attack</a></li>
+<li><a href="#section-direct-incident-watch-seeds">Direct Incident-Watch Seeds</a></li>
+<li><a href="#section-fund-recovery-update">Fund-Recovery Update</a></li>
+<li><a href="#section-why-user-funds-were-safe">Why User Funds Were Safe</a></li>
+<li><a href="#section-what-should-have-prevented-the-attack">What Should Have Prevented the Attack</a></li>
+<li><a href="#section-analyst-classification">Analyst Classification</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <p>
@@ -111,6 +138,7 @@
 
 <hr>
 
+<a id="section-what-was-actually-exploited"></a>
 <h2>What Was Actually Exploited</h2>
 
 <p>
@@ -149,6 +177,7 @@
 
 <hr>
 
+<a id="section-anchor-event-discriminators"></a>
 <h2>Anchor Event Discriminators</h2>
 
 <p>
@@ -170,6 +199,7 @@
 
 <hr>
 
+<a id="section-simplified-attack-flow"></a>
 <h2>Simplified Attack Flow</h2>
 
 <h3>Normal Across Flow</h3>
@@ -224,6 +254,7 @@
 
 <hr>
 
+<a id="section-role-of-get_unsafe_deposit_id"></a>
 <h2>Role of get_unsafe_deposit_id</h2>
 
 <p>
@@ -260,6 +291,7 @@
 
 <hr>
 
+<a id="section-technical-root-cause-classification"></a>
 <h2>Technical Root-Cause Classification</h2>
 
 <table>
@@ -322,6 +354,7 @@
 
 <hr>
 
+<a id="section-scale-of-the-attack"></a>
 <h2>Scale of the Attack</h2>
 
 <table>
@@ -392,6 +425,7 @@
 
 <hr>
 
+<a id="section-direct-incident-watch-seeds"></a>
 <h2>Direct Incident-Watch Seeds</h2>
 
 <p>
@@ -469,6 +503,7 @@
 
 <hr>
 
+<a id="section-fund-recovery-update"></a>
 <h2>Fund-Recovery Update</h2>
 
 <p>
@@ -530,6 +565,7 @@
 
 <hr>
 
+<a id="section-why-user-funds-were-safe"></a>
 <h2>Why User Funds Were Safe</h2>
 
 <p>
@@ -557,6 +593,7 @@
 
 <hr>
 
+<a id="section-what-should-have-prevented-the-attack"></a>
 <h2>What Should Have Prevented the Attack</h2>
 
 <p>
@@ -590,6 +627,7 @@
 
 <hr>
 
+<a id="section-analyst-classification"></a>
 <h2>Analyst Classification</h2>
 
 <ul>
@@ -629,6 +667,7 @@
 
 <hr>
 
+<a id="section-attribution-boundaries"></a>
 <h2>Attribution Boundaries</h2>
 
 <ul>
@@ -663,6 +702,7 @@
 
 <hr>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 
 <ul>

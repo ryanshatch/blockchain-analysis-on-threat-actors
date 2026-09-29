@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # Fetch.ai / NuNet / SingularityNET — Privileged-Key and Bridge Compromise
 
 | Field | Assessment |
@@ -20,6 +24,20 @@
 
 The common Ethereum recipient connects the Fetch.ai drain with NuNet's unauthorized mint and the later SingularityNET ecosystem activity. The convergence supports a shared operational cluster. It does not establish that every affected project used the same private key or suffered the same contract-level defect.
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-direct-watch-seeds">Direct-Watch Seeds</a></li>
+<li><a href="#section-initial-transaction-evidence">Initial Transaction Evidence</a></li>
+<li><a href="#section-expanded-scope-and-non-comparable-estimates">Expanded Scope and Non-Comparable Estimates</a></li>
+<li><a href="#section-victim-and-compromised-infrastructure">Victim and Compromised Infrastructure</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-direct-watch-seeds"></a>
 ## Direct-Watch Seeds
 
 | Address | Role | Treatment |
@@ -31,6 +49,7 @@ The common Ethereum recipient connects the Fetch.ai drain with NuNet's unauthori
 
 SlowMist attributes the Fetch.ai drain to a leaked conversion-authorizer key: `conversionIn()` accepted a valid signature without the `checkLimits(amount)` protection present in `conversionOut()` or an independent source-chain burn/lock proof. Bitquery emphasizes that the privileged signatures were valid. The defensible classification combines key compromise with an insufficiently constrained trust path; it does not describe a forged cryptographic signature or prove an unrelated Safe/consensus vulnerability.
 
+<a id="section-initial-transaction-evidence"></a>
 ## Initial Transaction Evidence
 
 | UTC, September 19 | Transaction | Observed event |
@@ -40,6 +59,7 @@ SlowMist attributes the Fetch.ai drain to a leaked conversion-authorizer key: `c
 
 The interval is about 28 minutes. [transactions.csv](./transactions.csv) retains complete hashes and identifies the NTX mint's null address as an event source, not an attacker. NuNet's direct token `mint()` differs from the Fetch.ai converter withdrawal.
 
+<a id="section-expanded-scope-and-non-comparable-estimates"></a>
 ## Expanded Scope and Non-Comparable Estimates
 
 | Source snapshot | Reported measure | Interpretation |
@@ -50,6 +70,7 @@ The interval is about 28 minutes. [transactions.csv](./transactions.csv) retains
 
 The figures are retained with source and cutoff rather than silently substituted for one another. Thin liquidity and extreme price changes make nominal token holdings especially unreliable as a cash-out measure. Bitquery separately measures sale proceeds; neither the $16.77M holdings snapshot nor the 2.31B unit count should be labeled realized theft profit.
 
+<a id="section-victim-and-compromised-infrastructure"></a>
 ## Victim and Compromised Infrastructure
 
 | Address | Role | Handling |
@@ -61,6 +82,7 @@ A compromised deployer is not automatically an attacker-created wallet, and its 
 
 Monitor the initiator backward and the recipient forward. Preserve exact network, asset, event, and custody distinctions when extending into Cardano or BNB Chain. No named person or threat group is established.
 
+<a id="section-sources"></a>
 ## Sources
 
 - [SlowMist alert reproduced verbatim by KuCoin — initiator, recipient, converter, and authorization mechanism](https://www.kucoin.com/news/insight/FET/6aaf6df162cf370007435a3d)

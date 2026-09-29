@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # August 20-September 9, 2026 Crypto Security Sweep
 
 | Field | Details |
@@ -17,6 +21,52 @@
 
 > SlowMist's live tracker listed Maya Protocol as its newest incident at the review cutoff. No protocol exploit dated August 19 or August 20 appeared above it. This is a point-in-time observation, not proof that no undisclosed or later-indexed incident occurred.
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-executive-summary">Executive Summary</a></li>
+<li><a href="#section-1-maya-protocol--newest-confirmed-protocol-exploit">1. Maya Protocol — Newest Confirmed Protocol Exploit</a></li>
+<li><a href="#section-2-fake-amlbot-and-aml-checker-sites">2. Fake AMLBot and AML-Checker Sites</a></li>
+<li><a href="#section-3-foxmarket">3. FoxMarket</a></li>
+<li><a href="#section-4-hyperliquid-impersonation-and-google-ads-phishing">4. Hyperliquid Impersonation and Google Ads Phishing</a></li>
+<li><a href="#section-5-ethereum-whale-wallet-drain">5. Ethereum Whale Wallet Drain</a></li>
+<li><a href="#section-6-harmony-cross-shard-unauthorized-mint">6. Harmony Cross-Shard Unauthorized Mint</a></li>
+<li><a href="#section-7-ody--odyssey--ody-defi">7. ODY / Odyssey / Ody DeFi</a></li>
+<li><a href="#section-8-coldcard-weak-entropy-theft">8. Coldcard Weak-Entropy Theft</a></li>
+<li><a href="#section-9-address-poisoning-theft">9. Address-Poisoning Theft</a></li>
+<li><a href="#section-10-vultisig-related-outflow--investigative-intelligence-only">10. Vultisig-Related Outflow — Investigative Intelligence Only</a></li>
+<li><a href="#section-11-coinsbuy-cross-chain-drain">11. Coinsbuy Cross-Chain Drain</a></li>
+<li><a href="#section-12-allbridge-cctp--base--second-distinct-2026-incident">12. Allbridge CCTP / Base — Second Distinct 2026 Incident</a></li>
+<li><a href="#section-13-bofur-capital-address-poisoning-campaign">13. Bofur Capital Address-Poisoning Campaign</a></li>
+<li><a href="#section-14-term-finance--term-meta-vault-governance-exploit">14. Term Finance / Term Meta Vault Governance Exploit</a></li>
+<li><a href="#section-15-the-sandbox-sand-bridge--ioc-withheld">15. The Sandbox SAND Bridge — IOC Withheld</a></li>
+<li><a href="#section-16-august-24-25-solana-watch--investigative-items">16. August 24-25 Solana Watch — Investigative Items</a></li>
+<li><a href="#section-17-moonwell--mamo-collateral-price-manipulation">17. Moonwell / MAMO Collateral-Price Manipulation</a></li>
+<li><a href="#section-18-august-24-ofac-mois-cyber-actor-attribution">18. August 24 OFAC MOIS Cyber-Actor Attribution</a></li>
+<li><a href="#section-19-rain-legacy-solana-card-contract-exploit">19. Rain Legacy Solana Card-Contract Exploit</a></li>
+<li><a href="#section-20-icon-network-migration-contract-replay-exploit">20. ICON Network Migration-Contract Replay Exploit</a></li>
+<li><a href="#section-21-tectonic--cronos-exploit--zero-seed-review">21. Tectonic / Cronos Exploit — Zero-Seed Review</a></li>
+<li><a href="#section-22-aquifer-solana-amm-exploit">22. Aquifer Solana AMM Exploit</a></li>
+<li><a href="#section-23-injective-binary-options-exploit--zero-seed-review">23. Injective Binary-Options Exploit — Zero-Seed Review</a></li>
+<li><a href="#section-24-dojfbi-hamas--al-qassam-financing-disclosure">24. DOJ/FBI Hamas / Al-Qassam Financing Disclosure</a></li>
+<li><a href="#section-25-fake-gta-vi-leak-wallet-drainer">25. Fake GTA VI Leak Wallet Drainer</a></li>
+<li><a href="#section-26-liquid-network-unauthorized-peg-out">26. Liquid Network Unauthorized Peg-Out</a></li>
+<li><a href="#section-27-redsonic--reddio-vault-exploit">27. RedSonic / Reddio Vault Exploit</a></li>
+<li><a href="#section-28-suspected-gomining-linked-multi-wallet-drain">28. Suspected GoMining-Linked Multi-Wallet Drain</a></li>
+<li><a href="#section-29-dream-health-chain-exploit">29. Dream Health Chain Exploit</a></li>
+<li><a href="#section-30-nesa--cosmos-evm--ethereum-attribution">30. Nesa / Cosmos EVM — Ethereum Attribution</a></li>
+<li><a href="#section-31-xinbi-guarantee--52-official-tron-identifiers">31. Xinbi Guarantee — 52 Official TRON Identifiers</a></li>
+<li><a href="#section-32-nomic--osmosis-nbtc--zero-seed-review">32. Nomic / Osmosis nBTC — Zero-Seed Review</a></li>
+<li><a href="#section-monitoring-priorities">Monitoring Priorities</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-tldr">TLDR</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-executive-summary"></a>
 ## Executive Summary
 
 | Project or target | Incident or report date | Classification | Estimated loss | Confidence |
@@ -52,6 +102,7 @@
 | Address-poisoning theft | Reported August 2026 | Automated look-alike address poisoning | About $100K USDT | High |
 | Vultisig-related outflow | August 11; reported August 18 | Suspicious outflow and Tornado Cash routing; compromise unconfirmed | 1.284M USDC outflow; 1.092M USDC routed into 575.4 ETH | Medium investigative lead |
 
+<a id="section-1-maya-protocol--newest-confirmed-protocol-exploit"></a>
 ## 1. Maya Protocol — Newest Confirmed Protocol Exploit
 
 **Incident date:** August 18, 2026  
@@ -76,6 +127,7 @@ The estimates describe different effects and should remain separate:
 | Bitcoin | `bc1q0hsgwunccczelq05ucpmfz268eyy5jr2y5l646` | Exploit-proceeds consolidation address; approximately 20.83 BTC | Watch directly; high-confidence external-L1 proceeds seed |
 | Arbitrum | `0xa2f246f82995CBcCA8eD0d9F251383881A5E423e` | Secondary exploit-proceeds address; approximately 6.03 ARB.ETH plus other assets | Watch directly; medium-high attribution based on AMLBot monitoring |
 
+<a id="section-2-fake-amlbot-and-aml-checker-sites"></a>
 ## 2. Fake AMLBot and AML-Checker Sites
 
 **Report date:** August 19, 2026  
@@ -87,6 +139,7 @@ Malwarebytes documented professional-looking sites that imitate AMLBot or generi
 
 No complete attacker address set meeting this repository's evidence standard was identified. This entry is therefore retained as a campaign and TTP, not a fabricated wallet cluster.
 
+<a id="section-3-foxmarket"></a>
 ## 3. FoxMarket
 
 **Incident date:** August 15, 2026  
@@ -103,6 +156,7 @@ No complete attacker address set meeting this repository's evidence standard was
 | Victim contract | `0x9fa6d8a13b35e051bfc145918db0111dec13d1a0` | Victim infrastructure; do not threat-label |
 | Exploit transaction | `0x8e1775cbfd44db29744cc6687ff1822d2c47321de6e94062f789ad6181ad5514` | Transaction evidence |
 
+<a id="section-4-hyperliquid-impersonation-and-google-ads-phishing"></a>
 ## 4. Hyperliquid Impersonation and Google Ads Phishing
 
 **Incident date:** August 13, 2026  
@@ -118,6 +172,7 @@ This was **not a Hyperliquid protocol exploit**. FlashRescue co-founder Darcy at
 | `0x93b6B24DC6E6a1D5d72399e3A35498c4DbA1d6D1` | Direct incident-watch seed |
 | `0x6fE314fD4CF845f35fc461eD98e2FB8d9356B566` | Direct incident-watch seed; also observed in other phishing reporting, so do not assume single-campaign exclusivity |
 
+<a id="section-5-ethereum-whale-wallet-drain"></a>
 ## 5. Ethereum Whale Wallet Drain
 
 **Incident date:** August 12, 2026  
@@ -134,6 +189,7 @@ Public reporting described losses including approximately $6.3M aWBTC, $5.1M DAI
 
 The same victim reportedly lost approximately $24.23M in 2023 after malicious approvals, with most of that earlier loss returned. That historical event does not establish the 2026 root cause. The 2026 activity involved closing DeFi positions, withdrawing liquidity, and directly signed transfers. Available on-chain evidence supports effective signing control but cannot distinguish a stolen private key, compromised signer or device, session compromise, or another signing-path failure.
 
+<a id="section-6-harmony-cross-shard-unauthorized-mint"></a>
 ## 6. Harmony Cross-Shard Unauthorized Mint
 
 **Incident window:** August 11-12, 2026  
@@ -158,6 +214,7 @@ The token-creation figure, amount sold, amount frozen, market dilution, and reco
 | `one1a5hur07z5vtvzhr35zkw8tfqedemkz8t88xgd7` | `0xed2fc1bfc2a316c15c71a0ace3ad20cb73bb08eb` | Direct incident-watch seed |
 | `one1h56hkxmua0uzfv07fu04cudvtrl35u96pq47vy` | `0xbd357b1b7cebf824b1fe4f1f5c71ac58ff1a70ba` | Direct incident-watch seed |
 
+<a id="section-7-ody--odyssey--ody-defi"></a>
 ## 7. ODY / Odyssey / Ody DeFi
 
 **Incident date:** July 28, 2026  
@@ -171,6 +228,7 @@ An additional approximately $5.38M associated with KXG reportedly touched the sa
 
 The indexed reports expose the main aggregation address and mint transaction only in truncated form (`0x486f…`, `0xd2c85d49b…`). Neither is added to `addresses.csv` until a complete identifier is verified.
 
+<a id="section-8-coldcard-weak-entropy-theft"></a>
 ## 8. Coldcard Weak-Entropy Theft
 
 **Incident window:** July 30, 2026 onward  
@@ -211,6 +269,7 @@ The `CONFIRMED` tier means an independent source corroborated the address as par
 
 The canonical report and ten machine-readable records are maintained in [`Multi-Chain/Coldcard-Weak-Entropy-Theft/`](../Coldcard-Weak-Entropy-Theft/).
 
+<a id="section-9-address-poisoning-theft"></a>
 ## 9. Address-Poisoning Theft
 
 **Report date:** August 2026  
@@ -227,6 +286,7 @@ GoPlus reported that the victim had received more than 400 poisoning transaction
 | Intended recipient | `0xae7C0ffAB6e77BE2D7d7880a4Ce433F59A4e2c85` | Legitimate counterparty; do not threat-label |
 | Poisoning address | `0xAe7c08afAD91db18666EEAC055D7562c9f4e2c85` | Direct threat seed |
 
+<a id="section-10-vultisig-related-outflow--investigative-intelligence-only"></a>
 ## 10. Vultisig-Related Outflow — Investigative Intelligence Only
 
 **Observed outflow date:** August 11, 2026  
@@ -239,6 +299,7 @@ CertiK reported a suspicious 1.284M USDC outflow from a Vultisig-related address
 
 This item remains investigative intelligence and is intentionally excluded from the confirmed-hack count and machine-readable threat-address file.
 
+<a id="section-11-coinsbuy-cross-chain-drain"></a>
 ## 11. Coinsbuy Cross-Chain Drain
 
 **Incident date:** August 9, 2026  
@@ -257,6 +318,7 @@ Specter published two Ethereum and one TRON theft/proceeds address after wallets
 
 The simultaneous multi-chain activity is consistent with privileged withdrawal or wallet-management access, but it does not prove private-key theft, API compromise, insider access, or any other specific mechanism. Coinsbuy later said the incident was contained and customer losses were covered, but did not disclose the technical cause.
 
+<a id="section-12-allbridge-cctp--base--second-distinct-2026-incident"></a>
 ## 12. Allbridge CCTP / Base — Second Distinct 2026 Incident
 
 **Incident date:** August 19, 2026  
@@ -273,6 +335,7 @@ No complete attacker EOA or contract address was available from the reviewed aut
 
 No new confirmed Solana protocol exploit or complete qualifying Solana threat address was identified in the follow-up scan.
 
+<a id="section-13-bofur-capital-address-poisoning-campaign"></a>
 ## 13. Bofur Capital Address-Poisoning Campaign
 
 **Incident date:** August 22, 2026  
@@ -308,6 +371,7 @@ Spoofed:    0xf0e6a49668de1195b931a3717c9cc36fc19721af
 | `0xf0e67a1896e814e30c011e36174de28caa9ab1af` | Legitimate intended payee | Do not threat-label |
 | `0xe2ebba3e64f25f8badf35d2760473748d673416a` | Separate look-alike reportedly used to poison the attacker's own proceeds wallet | Graph-expansion-only infrastructure pivot; exclude from primary direct-watch CSV |
 
+<a id="section-14-term-finance--term-meta-vault-governance-exploit"></a>
 ## 14. Term Finance / Term Meta Vault Governance Exploit
 
 **Incident date:** August 23, 2026  
@@ -350,6 +414,7 @@ The Term address remains a P1 direct-watch seed. Tornado Cash pool, router, and 
 
 PeckShield traced the incident's initial funding to approximately 2 ETH withdrawn from Tornado Cash. That is useful graph evidence, not attribution to a named person or group. Tornado Cash contracts, Term and Yearn infrastructure, ordinary governance participants, and later exchange or service counterparties must not be threat-labeled merely because they appear in the flow.
 
+<a id="section-15-the-sandbox-sand-bridge--ioc-withheld"></a>
 ## 15. The Sandbox SAND Bridge — IOC Withheld
 
 **Incident date:** August 22, 2026  
@@ -369,6 +434,7 @@ The reviewed high-confidence reports expose only truncated attacker identifiers:
 
 Neither identifier is retained in `addresses.csv`. The case remains documented with zero direct seeds until complete 42-character addresses are independently verified.
 
+<a id="section-16-august-24-25-solana-watch--investigative-items"></a>
 ## 16. August 24-25 Solana Watch — Investigative Items
 
 No new high-confidence Solana protocol exploit, confirmed rug pull, or complete attacker-wallet disclosure cleared the repository's direct-watch threshold in this follow-up. The following items are retained as disputed activity, campaign intelligence, or contextual IOCs rather than threat-wallet attributions.
@@ -415,6 +481,7 @@ The current evidence supports reported social-account compromise and malicious t
 - The earlier statement that no qualifying August 24 OFAC wallet disclosure existed is superseded. OFAC published 30 BTC, ETH, and TRON identifiers for four MOIS-linked cyber actors plus one separate Tsoris USDT/TRON seed; those authoritative attributions are stored in a dedicated case.
 - The August 24 Profit Connect conviction is material criminal-case reporting but publishes no wallet identifiers.
 
+<a id="section-17-moonwell--mamo-collateral-price-manipulation"></a>
 ## 17. Moonwell / MAMO Collateral-Price Manipulation
 
 | Field | Assessment |
@@ -431,12 +498,14 @@ CertiK, Blockaid, and PeckShield reporting described an attacker manipulating th
 
 The truncated identifier is not retained in `addresses.csv` and must not be reconstructed from prefix and suffix fragments. Moonwell and MAMO protocol contracts, oracles, liquidity venues, and affected users remain infrastructure or victim context rather than attacker-controlled seeds.
 
+<a id="section-18-august-24-ofac-mois-cyber-actor-attribution"></a>
 ## 18. August 24 OFAC MOIS Cyber-Actor Attribution
 
 The August 28 review identified a material official disclosure missed by the prior cutoff. OFAC published 30 Bitcoin, Ethereum, and TRON identifiers for Keyvan Fayyaz Ghareh Blagh, Mojtaba Ghal'eh-Kuhi, Arman Kahzadian, and Behzad Mesri. A separate USDT/TRON identifier for Almpertos Tsoris was published under a different Iran-related sanctions authority.
 
 The complete address set, entity roles, monitoring treatment, and attribution boundaries are maintained in [`Iranian-MOIS-Cyber-Network/`](../Iranian-MOIS-Cyber-Network/). These official identifiers are direct sanctions-watch seeds; counterparties remain graph context unless independently attributed.
 
+<a id="section-19-rain-legacy-solana-card-contract-exploit"></a>
 ## 19. Rain Legacy Solana Card-Contract Exploit
 
 | Field | Assessment |
@@ -482,6 +551,7 @@ The canonical report and ten machine-readable records—five P1 seeds and five e
 
 No later Solana protocol exploit or confirmed rug pull cleared the repository's evidence threshold through September 6. The new qualifying Solana-targeting campaign is the separate fake GTA VI wallet drainer documented below.
 
+<a id="section-20-icon-network-migration-contract-replay-exploit"></a>
 ## 20. ICON Network Migration-Contract Replay Exploit
 
 | Field | Assessment |
@@ -512,6 +582,7 @@ The shared EOA is intentionally retained once per network but represents one uni
 
 The canonical report and machine-readable records are maintained in [`Multi-Chain/ICON-Migration-Replay-Exploit/`](../ICON-Migration-Replay-Exploit/).
 
+<a id="section-21-tectonic--cronos-exploit--zero-seed-review"></a>
 ## 21. Tectonic / Cronos Exploit — Zero-Seed Review
 
 | Field | Assessment |
@@ -527,6 +598,7 @@ Tectonic and Cronos acknowledged the incident, and Cronos halted the network dur
 
 The truncated identifiers are not retained in a wallet dataset and must not be reconstructed from prefixes and suffixes. Tectonic contracts, Cronos validators, bridges, exchanges, and other protocol counterparties remain infrastructure or evidence context unless separately attributed.
 
+<a id="section-22-aquifer-solana-amm-exploit"></a>
 ## 22. Aquifer Solana AMM Exploit
 
 | Field | Assessment |
@@ -554,6 +626,7 @@ The Aquifer program `AQU1FRd7papthgdrwPTTq5JacJh8YtwEXaBfKU3bTz45`, affected vau
 
 The canonical report and ten machine-readable role-separated records are maintained in [`SOL/Aquifer/`](../../SOL/Aquifer/). Three rows are P1 attacker or exploit-infrastructure indicators; seven rows preserve explicit victim and recovery exclusions.
 
+<a id="section-23-injective-binary-options-exploit--zero-seed-review"></a>
 ## 23. Injective Binary-Options Exploit — Zero-Seed Review
 
 | Field | Assessment |
@@ -569,6 +642,7 @@ Public reporting describes an attacker creating 299 binary-options markets and e
 
 The truncated identifier is not retained in a machine-readable dataset and must not be reconstructed from prefix and suffix fragments. Injective protocol modules, oracles, bridge infrastructure, and exchange counterparties remain protocol or graph context unless separately attributed.
 
+<a id="section-24-dojfbi-hamas--al-qassam-financing-disclosure"></a>
 ## 24. DOJ/FBI Hamas / Al-Qassam Financing Disclosure
 
 | Field | Assessment |
@@ -586,6 +660,7 @@ The highest-priority seeds are the TRON consolidation wallet `TAZEkqkjuHkYznF3Q8
 
 Two additional submitted TRON strings were withheld after they could not be located in the DOJ release or the five linked warrant packages. The canonical report and 18 verified records are maintained in [`Multi-Chain/Hamas-Al-Qassam-Financing/`](../Hamas-Al-Qassam-Financing/).
 
+<a id="section-25-fake-gta-vi-leak-wallet-drainer"></a>
 ## 25. Fake GTA VI Leak Wallet Drainer
 
 | Field | Assessment |
@@ -603,6 +678,7 @@ The page also loaded an approximately 2.4 MB remotely configurable multi-chain d
 
 This case is separate from CYBERLEEK. A shared GTA VI lure does not establish common control. The canonical report, one address row, and two domain rows are maintained in [`Multi-Chain/GTA-VI-Wallet-Drainer/`](../GTA-VI-Wallet-Drainer/).
 
+<a id="section-26-liquid-network-unauthorized-peg-out"></a>
 ## 26. Liquid Network Unauthorized Peg-Out
 
 | Field | Assessment |
@@ -624,6 +700,7 @@ The source address `bc1qdlld6antmv4xug242ed83q7k4rqw50cwfns38szx4qu2f4jwaxxsuhwx
 
 The canonical report, three role-separated addresses, and four complete transactions are maintained in [`Multi-Chain/Liquid-Network-Peg-Out/`](../Liquid-Network-Peg-Out/). This correction adds no new wallet identifiers.
 
+<a id="section-27-redsonic--reddio-vault-exploit"></a>
 ## 27. RedSonic / Reddio Vault Exploit
 
 | Field | Assessment |
@@ -641,6 +718,7 @@ The RedSonic Diamond `0x4315990d9eeaffdfafd49958b4851f203fa1126f` and vulnerable
 
 The canonical report, three role-separated addresses, and one transaction are maintained in [`EVM/Ethereum/RedSonic/`](../../EVM/Ethereum/RedSonic/).
 
+<a id="section-28-suspected-gomining-linked-multi-wallet-drain"></a>
 ## 28. Suspected GoMining-Linked Multi-Wallet Drain
 
 | Field | Assessment |
@@ -657,6 +735,7 @@ The project-level label remains provisional. Prior GMT exposure and third-party 
 
 The canonical report and machine-readable address record are maintained in [`EVM/Ethereum/Suspected-GoMining-Drain/`](../../EVM/Ethereum/Suspected-GoMining-Drain/).
 
+<a id="section-29-dream-health-chain-exploit"></a>
 ## 29. Dream Health Chain Exploit
 
 | Field | Assessment |
@@ -671,6 +750,7 @@ SlowMist published the attacker wallet `0xd3a8d0a9f55cf679fff6f277e49afc95b49d2b
 
 The canonical report and two machine-readable records are maintained in [`EVM/BNB-Chain/Dream-Health-Chain/`](../../EVM/BNB-Chain/Dream-Health-Chain/).
 
+<a id="section-30-nesa--cosmos-evm--ethereum-attribution"></a>
 ## 30. Nesa / Cosmos EVM — Ethereum Attribution
 
 The September 8 report identifies two complete Ethereum addresses for the August 24 Nesa exploit. The primary recipient `0x9AE755D23Fc948fE94C9364A2398fd508a2AB0d2` is a High-confidence P1 direct-watch seed. The funding/flow-derived liquidation wallet `0xB92dF70F3d25eD25265c7C341C9D2550c42Ff83A` remains Medium confidence and P2.
@@ -679,18 +759,21 @@ The Ethereum Hyperlane transaction records exactly 257,703,733.28857959965202861
 
 The [dedicated case](../Nesa-Cosmos-EVM/) preserves two address rows and one complete transaction. Hyperlane, CoW Protocol, Uniswap, token contracts, and exchange infrastructure remain context. [Rekt investigation](https://rekt.news/nesa-rekt)
 
+<a id="section-31-xinbi-guarantee--52-official-tron-identifiers"></a>
 ## 31. Xinbi Guarantee — 52 Official TRON Identifiers
 
 OFAC's September 9 designation directly associates 52 complete TRON addresses with Xinbi Guarantee. All 52 are High-confidence P1 sanctions-watch records. They were reconciled exactly against the official entry and pass TRON Base58Check validation. The [dedicated case and complete address set](../../TRON/Xinbi-Guarantee/) retain official publication order. [OFAC source](https://ofac.treasury.gov/recent-actions/20260909)
 
 Treasury's over-$24B throughput measure and DOJ's approximately $52M enforcement restraint are different quantities. Neither is a summed balance or loss attributed to these 52 wallets. Separate freeze reports are not mapped onto the OFAC set without address-level evidence. Only the full `TWPma8xH48AEN93x2krdukV9e1j6sPsBeS` identifier is linked to the separately reported ten-address freeze in the reviewed material. [MistTrack reporting and complete overlap identifier](https://www.cryptotimes.io/2026/09/08/misttrack-reports-39m-usdt-freeze-across-xinbi-linked-wallets/)
 
+<a id="section-32-nomic--osmosis-nbtc--zero-seed-review"></a>
 ## 32. Nomic / Osmosis nBTC — Zero-Seed Review
 
 The September 9 report describes approximately 39.84 nBTC implicated and 22.65 BTC-equivalent frozen on Osmosis after a reported Nomic double-spend/false-voucher incident. The reviewed material supplies no complete authoritative attacker identifier suitable for ingestion. The precise exploit date is not assigned from the publication date, and no Bitcoin-mainnet reserve drain or wallet is inferred. [Incident reporting](https://www.cryptotimes.io/2026/09/09/osmosis-freezes-22-65-btc-after-nomic-exploit-hits-alloyed-btc-backing/)
 
 This follow-up adds **54 unique monitoring identifiers: two Nesa ETH wallets and 52 Xinbi TRON addresses**. Nomic adds one incident record and zero addresses. Negative scan statements in the supplied reports describe their September 8-9 cutoffs, not an exhaustive September 11 scan.
 
+<a id="section-monitoring-priorities"></a>
 ## Monitoring Priorities
 
 | Priority | Indicators | Action |
@@ -703,6 +786,7 @@ This follow-up adds **54 unique monitoring identifiers: two Nesa ETH wallets and
 | Case only | Nomic / Osmosis nBTC; ODY; Moonwell / MAMO; Tectonic / Cronos; Injective binary-options exploit | Preserve confirmed incident reporting while withholding truncated identifiers |
 | Investigative | Vultisig-related outflow; FOMO iOS allegations; Kylie Jenner / `$KYLIE` promotion | Monitor for complete IOCs, root-cause evidence, victim confirmation, deployer/proceeds attribution, and authoritative statements |
 
+<a id="section-attribution-boundaries"></a>
 ## Attribution Boundaries
 
 - Nesa contributes one High-confidence P1 bridge recipient and one Medium-confidence P2 liquidation wallet. A complete source-chain attacker account and Nesa-specific exploit call remain unresolved.
@@ -740,6 +824,7 @@ This follow-up adds **54 unique monitoring identifiers: two Nesa ETH wallets and
 - The latest COLDCARD update adds CoinJoin behavior but no new full address. Mixed CoinJoin participants and outputs do not inherit the theft label.
 - ODY and Vultisig identifiers remain withheld where public evidence is truncated or attribution is incomplete.
 
+<a id="section-sources"></a>
 ## Sources
 
 ### Maya Protocol
@@ -908,6 +993,7 @@ This follow-up adds **54 unique monitoring identifiers: two Nesa ETH wallets and
 
 ---
 
+<a id="section-tldr"></a>
 ## TLDR
 
 The September 8-9 reports add two Ethereum monitoring wallets for Nesa and 52 officially listed Xinbi TRON addresses. Nesa's primary recipient remains High confidence/P1 and its liquidation wallet Medium confidence/P2. Xinbi's sanctions set is preserved separately from freeze and seizure subsets. Nomic remains a zero-seed incident review. Earlier Liquid recovery and other case updates remain in place.
