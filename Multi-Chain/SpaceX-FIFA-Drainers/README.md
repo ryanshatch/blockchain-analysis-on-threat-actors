@@ -4,8 +4,31 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center" style="text-align: center;">
 <h1>New Multi-Chain Threat Campaign Alert</h1>
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-spacex--grok--xai-and-2026-fifa-world-cup-wallet-drainers">SpaceX / Grok / xAI and 2026 FIFA World Cup Wallet Drainers</a></li>
+<li><a href="#section-campaign-summary">Campaign Summary</a></li>
+<li><a href="#section-reported-drainer-ecosystem">Reported Drainer Ecosystem</a></li>
+<li><a href="#section-public-domain-indicators">Public Domain Indicators</a></li>
+<li><a href="#section-attack-pattern">Attack Pattern</a></li>
+<li><a href="#section-why-address-only-blocking-is-insufficient">Why Address-Only Blocking Is Insufficient</a></li>
+<li><a href="#section-wallet-and-address-status">Wallet and Address Status</a></li>
+<li><a href="#section-classification">Classification</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-in-other-words">In other words:</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-spacex--grok--xai-and-2026-fifa-world-cup-wallet-drainers"></a>
 <h2>SpaceX / Grok / xAI and 2026 FIFA World Cup Wallet Drainers</h2>
 </div>
 
@@ -24,6 +47,7 @@
   </tbody>
 </table>
 
+<a id="section-campaign-summary"></a>
 <h2>Campaign Summary</h2>
 
 <p>
@@ -38,6 +62,7 @@ The World Cup portion of the campaign included malicious dApps detected across S
 This campaign should not be counted as a single Solana protocol exploit. It is a multi-victim social-engineering and malicious-dApp campaign whose infrastructure is designed to change domains, themes, tokens, and receiving addresses rapidly.
 </p>
 
+<a id="section-reported-drainer-ecosystem"></a>
 <h2>Reported Drainer Ecosystem</h2>
 
 <p>Blockaid attributed the World Cup campaign wave primarily to established drainer operations and kits including:</p>
@@ -53,6 +78,7 @@ This campaign should not be counted as a single Solana protocol exploit. It is a
 These names describe drainer operations or commercial kits reported by Blockaid. They should not be treated as proof that every observed domain or wallet was controlled by one actor.
 </blockquote>
 
+<a id="section-public-domain-indicators"></a>
 <h2>Public Domain Indicators</h2>
 
 <table>
@@ -68,6 +94,7 @@ These names describe drainer operations or commercial kits reported by Blockaid.
   </tbody>
 </table>
 
+<a id="section-attack-pattern"></a>
 <h2>Attack Pattern</h2>
 
 <pre>
@@ -86,6 +113,7 @@ Fresh receiving address / drainer infrastructure
 Rapid domain and address rotation
 </pre>
 
+<a id="section-why-address-only-blocking-is-insufficient"></a>
 <h2>Why Address-Only Blocking Is Insufficient</h2>
 
 <ul>
@@ -95,6 +123,7 @@ Rapid domain and address rotation
   <li>The same campaign family can combine wallet-draining dApps with direct-deposit investment scams.</li>
 </ul>
 
+<a id="section-wallet-and-address-status"></a>
 <h2>Wallet and Address Status</h2>
 
 <blockquote>
@@ -103,6 +132,7 @@ Blockaid's public report did not publish a definitive campaign-wide list of Sola
 
 <p><strong>Monitoring action:</strong> Track the published domains, drainer-kit families, malicious token/dApp behavior, and any future addresses released by Blockaid or corroborated through transaction-level evidence.</p>
 
+<a id="section-classification"></a>
 <h2>Classification</h2>
 <ul>
   <li><strong>Primary classification:</strong> multi-chain wallet-drainer and impersonation campaign</li>
@@ -113,12 +143,14 @@ Blockaid's public report did not publish a definitive campaign-wide list of Sola
   <li><strong>Direct-watch wallet set:</strong> unresolved</li>
 </ul>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 <ul>
   <li><a href="https://www.blockaid.io/blog/wallet-drainers-and-investment-scams-impersonating-spacex-and-the-fifa-world-cup">Blockaid — Wallet Drainers and Investment Scams Impersonating SpaceX and the FIFA World Cup</a></li>
 </ul>
 
 <hr>
+<a id="section-in-other-words"></a>
 <h2>In other words:</h2>
 <p>
 The attackers did not need to discover a new Solana vulnerability. They packaged existing drainer tooling around whatever people were already paying attention to — SpaceX, Grok, xAI, and the World Cup — and pushed victims toward convincing fake sites.

@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # Liquid Network Unauthorized Peg-Out
 
 | Field | Assessment |
@@ -18,6 +22,24 @@
 | Residual holding | Approximately 598.49 BTC at the cited post-return snapshot; not a live balance |
 | Confidence | High incident and address linkage; actor identity and whitehat claim unresolved |
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-executive-assessment">Executive Assessment</a></li>
+<li><a href="#section-direct-watch-bitcoin-seeds">Direct-Watch Bitcoin Seeds</a></li>
+<li><a href="#section-september-7-partial-return">September 7 Partial Return</a></li>
+<li><a href="#section-transaction-evidence">Transaction Evidence</a></li>
+<li><a href="#section-federation-infrastructure--do-not-threat-label">Federation Infrastructure — Do Not Threat-Label</a></li>
+<li><a href="#section-monitoring-priorities">Monitoring Priorities</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-tldr">TLDR</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-executive-assessment"></a>
 ## Executive Assessment
 
 On September 6, approximately 3,996.018 BTC was released from the Liquid Federation's Bitcoin reserve in an unauthorized peg-out. Liquid publicly acknowledged that purported white-hat actors had withdrawn approximately 4,000 BTC and paused new transactions while federation members worked to restore normal operation.
@@ -26,6 +48,7 @@ GoPlus classified the event as an Elements consensus and asset-validation exploi
 
 The actors' self-description as whitehat is not independently established. The September 7 partial return strengthens attribution of the consolidation wallet's operational role, but does not establish the actors' identity or permission to retain the remaining funds.
 
+<a id="section-direct-watch-bitcoin-seeds"></a>
 ## Direct-Watch Bitcoin Seeds
 
 | Address | Role | Confidence | Treatment |
@@ -37,6 +60,7 @@ Both addresses already existed in this case. This update changes their roles and
 
 **Ownership caveat:** Bitquery describes that forwarding transaction as SideSwap paying its customer. This supports a service-intermediary interpretation of the initial recipient and does not establish common attacker control. It remains directly monitored at P2 for incident flows, with `threat_label=false`. The consolidation wallet remains the P1 attacker-proceeds seed. [Bitquery reconstruction](https://bitquery.io/investigations/liquid-network-hack-4000-btc-op-return)
 
+<a id="section-september-7-partial-return"></a>
 ## September 7 Partial Return
 
 The return transaction spends 15 inputs from the consolidation wallet and sends exactly **3,400 BTC** to Liquid's federation reserve. It also sends **598.49955894 BTC** in change back to the consolidation address. The transaction confirmed in Bitcoin block **965,950** on September 7. The return followed Blockstream's on-chain statement that bridge nodes had been patched, as reconstructed by Bitquery. [Return transaction](https://mempool.space/tx/a6d697a25266ce3c78774fd1d75f896b7af522ada209b0f6228ea497bc49a46d), [Bitquery](https://bitquery.io/investigations/liquid-network-hack-4000-btc-op-return)
@@ -45,6 +69,7 @@ The approximately 598.49 BTC residual snapshot was worth roughly $47 million at 
 
 The supported role progression is **exploit consolidation → negotiation → partial-return source → residual holding**. No public agreement establishes that the remaining balance is an authorized bounty. The self-described whitehat status remains unverified.
 
+<a id="section-transaction-evidence"></a>
 ## Transaction Evidence
 
 | Network | Transaction | Event |
@@ -56,6 +81,7 @@ The supported role progression is **exploit consolidation → negotiation → pa
 
 The `incident_date` column in `transactions.csv` remains September 6 for case linkage; the return row's notes state its September 7 event date.
 
+<a id="section-federation-infrastructure--do-not-threat-label"></a>
 ## Federation Infrastructure — Do Not Threat-Label
 
 | Address | Role | Handling |
@@ -64,6 +90,7 @@ The `incident_date` column in `transactions.csv` remains September 6 for case li
 
 Normal peg-outs burn L-BTC and release Bitcoin from the federation reserve to an approved destination. The reserve address is therefore the source of the unauthorized payout, not evidence of attacker control.
 
+<a id="section-monitoring-priorities"></a>
 ## Monitoring Priorities
 
 1. Alert on all spends of residual proceeds from the P1 consolidation address and preserve transaction-level provenance.
@@ -72,6 +99,7 @@ Normal peg-outs burn L-BTC and release Bitcoin from the federation reserve to an
 4. Monitor Liquid's signed on-chain communications and any designated recovery address before classifying later transfers as restitution.
 5. Keep the federation reserve, federation members, SideSwap infrastructure, and ordinary peg-out users outside the threat-controlled set unless separately attributed.
 
+<a id="section-attribution-boundaries"></a>
 ## Attribution Boundaries
 
 - No named person or threat group is established.
@@ -83,6 +111,7 @@ Normal peg-outs burn L-BTC and release Bitcoin from the federation reserve to an
 - Returning funds does not independently verify the whitehat claim or authorize retention of the remaining balance.
 - This update introduces no new wallet identifiers. The scan's newly referenced COLDCARD CoinJoin destinations remain excluded because complete identifiers were not published in the supplied reporting.
 
+<a id="section-sources"></a>
 ## Sources
 
 - [Liquid Network — official incident acknowledgement](https://x.com/Liquid_BTC/status/2096696272447218108)
@@ -96,6 +125,7 @@ Normal peg-outs burn L-BTC and release Bitcoin from the federation reserve to an
 
 ---
 
+<a id="section-tldr"></a>
 ## TLDR
 
 The P1 consolidation wallet `bc1ql4mf...qjlte` returned 3,400 BTC on September 7 and retained approximately 598.49 BTC at the cited snapshot. The initial payout address `bc1qgsls...6wt7p` is a P2 incident-flow intermediary with an ownership caveat. Liquid's reserve remains victim infrastructure. The actors' identity, whitehat claim, and any authorized bounty remain unresolved.

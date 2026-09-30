@@ -4,11 +4,39 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center" style="text-align: center;">
 <h1>Allbridge 2026 Security Case History</h1>
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-two-distinct-incidents-solana-core-and-base-cctp">Two Distinct Incidents: Solana Core and Base CCTP</a></li>
+<li><a href="#section-incident-comparison">Incident Comparison</a></li>
+<li><a href="#section-incident-1--july-19-solana-pool-exploit">Incident 1 — July 19 Solana Pool Exploit</a></li>
+<li><a href="#section-incident-1-summary">Incident 1 Summary</a></li>
+<li><a href="#section-incident-1-direct-incident-watch-seeds">Incident 1 Direct Incident-Watch Seeds</a></li>
+<li><a href="#section-primary-exploit-transaction">Primary Exploit Transaction</a></li>
+<li><a href="#section-protocol-and-victim-infrastructure--do-not-threat-label">Protocol and Victim Infrastructure — Do Not Threat-Label</a></li>
+<li><a href="#section-technical-root-cause">Technical Root Cause</a></li>
+<li><a href="#section-fund-flow">Fund Flow</a></li>
+<li><a href="#section-classification">Classification</a></li>
+<li><a href="#section-response-and-status">Response and Status</a></li>
+<li><a href="#section-incident-2--august-19-base-cctp-message-validation-exploit">Incident 2 — August 19 Base CCTP Message-Validation Exploit</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-incident-1-in-other-words">Incident 1 in other words:</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-two-distinct-incidents-solana-core-and-base-cctp"></a>
 <h2>Two Distinct Incidents: Solana Core and Base CCTP</h2>
 </div>
 
+<a id="section-incident-comparison"></a>
 <h2>Incident Comparison</h2>
 
 <table>
@@ -25,6 +53,7 @@
 These are separate incidents in different implementations. Do not merge their attacker attribution, mechanics, or loss figures.
 </blockquote>
 
+<a id="section-incident-1--july-19-solana-pool-exploit"></a>
 <h2>Incident 1 — July 19 Solana Pool Exploit</h2>
 
 <table>
@@ -43,6 +72,7 @@ These are separate incidents in different implementations. Do not merge their at
   </tbody>
 </table>
 
+<a id="section-incident-1-summary"></a>
 <h2>Incident 1 Summary</h2>
 
 <p>
@@ -57,6 +87,7 @@ After the accounting state had been skewed, the attacker exchanged approximately
 Allbridge paused Core, asked liquidity providers to withdraw from affected pools, requested that positive-arbitrage recipients return funds for LP compensation, and later relaunched Core using CCTP and LayerZero routing without the liquidity-pool model that had been attacked.
 </p>
 
+<a id="section-incident-1-direct-incident-watch-seeds"></a>
 <h2>Incident 1 Direct Incident-Watch Seeds</h2>
 
 <h3>Primary Solana Attacker Address</h3>
@@ -69,9 +100,11 @@ Allbridge paused Core, asked liquidity providers to withdraw from affected pools
 <p>CertiK, PeckShield, GoPlus, and independent investigators linked this address to the Solana-to-Ethereum proceeds flow.</p>
 <p><strong>Recommended use:</strong> Watch directly for asset dispersion, exchange deposits, privacy-protocol interactions, cross-chain routing, and recovery activity.</p>
 
+<a id="section-primary-exploit-transaction"></a>
 <h2>Primary Exploit Transaction</h2>
 <p><a href="https://solscan.io/tx/3LNLaGi36bqoSBFBqcQ3ZvDbnGCxrxu4rqahZrnfHZjKSYxfR1mqiCXtBXjjeBmoRQDeSiKxZ7c1nFb8pBgTY39Q"><code>3LNLaGi36bqoSBFBqcQ3ZvDbnGCxrxu4rqahZrnfHZjKSYxfR1mqiCXtBXjjeBmoRQDeSiKxZ7c1nFb8pBgTY39Q</code></a></p>
 
+<a id="section-protocol-and-victim-infrastructure--do-not-threat-label"></a>
 <h2>Protocol and Victim Infrastructure — Do Not Threat-Label</h2>
 
 <table>
@@ -87,6 +120,7 @@ Allbridge paused Core, asked liquidity providers to withdraw from affected pools
   </tbody>
 </table>
 
+<a id="section-technical-root-cause"></a>
 <h2>Technical Root Cause</h2>
 
 <ol>
@@ -103,6 +137,7 @@ Allbridge paused Core, asked liquidity providers to withdraw from affected pools
 The flash loan supplied temporary capital, but it was not the vulnerability. The security failure was accepting aliased mutable accounts in a swap path whose accounting assumed distinct send and receive states.
 </blockquote>
 
+<a id="section-fund-flow"></a>
 <h2>Fund Flow</h2>
 
 <pre>
@@ -117,6 +152,7 @@ FhffBraZsGn4H2LxLNToEcaHWEfWwT2UcSz4oRHb7Qdc
 Further swaps, dispersion, privacy routes, and exchange-related paths
 </pre>
 
+<a id="section-classification"></a>
 <h2>Classification</h2>
 <ul>
   <li><strong>Primary classification:</strong> Solana protocol-accounting exploit with multi-chain proceeds flow</li>
@@ -128,6 +164,7 @@ Further swaps, dispersion, privacy routes, and exchange-related paths
   <li><strong>Named actor:</strong> none publicly identified</li>
 </ul>
 
+<a id="section-response-and-status"></a>
 <h2>Response and Status</h2>
 <ul>
   <li>Allbridge paused the affected Core system during investigation.</li>
@@ -137,6 +174,7 @@ Further swaps, dispersion, privacy routes, and exchange-related paths
   <li>No confirmed attacker fund return or law-enforcement attribution was identified in the reviewed sources at the time of this report.</li>
 </ul>
 
+<a id="section-incident-2--august-19-base-cctp-message-validation-exploit"></a>
 <h2>Incident 2 — August 19 Base CCTP Message-Validation Exploit</h2>
 
 <table>
@@ -175,6 +213,7 @@ This was not a recurrence of the July Solana pool exploit. July involved aliased
 No complete attacker EOA or contract address was available in the reviewed authoritative reporting. No new direct-watch seed is added to <code>addresses.csv</code> for this incident. Protocol contracts, the Base Router, Circle infrastructure, Aave, and the legitimate user's transfer must not be threat-labeled merely because they appear in the exploit path.
 </p>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 <ul>
   <li><a href="https://x.com/Allbridge_io/status/2078932561036722319">Allbridge — initial security notice</a></li>
@@ -187,6 +226,7 @@ No complete attacker EOA or contract address was available in the reviewed autho
 </ul>
 
 <hr>
+<a id="section-incident-1-in-other-words"></a>
 <h2>Incident 1 in other words:</h2>
 <p>
 The attacker borrowed about $1.12 million for one transaction, repeatedly asked Allbridge to process USDT as both the asset being sent and the asset being received, and supplied overlapping accounts where the program expected separate state. Those calls damaged the pool's internal accounting. The attacker then traded only a few thousand USDT for roughly $2.24 million USDC, repaid the temporary loan, and kept the difference.

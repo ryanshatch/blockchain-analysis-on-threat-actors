@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center">
 
 <h1>Verus–Ethereum Bridge Exploit</h1>
@@ -19,6 +23,27 @@
 
 <hr>
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-direct-threat-wallet-seeds">Direct Threat-Wallet Seeds</a></li>
+<li><a href="#section-infrastructure-and-technical-pivots">Infrastructure and Technical Pivots</a></li>
+<li><a href="#section-simplified-attack-flow">Simplified Attack Flow</a></li>
+<li><a href="#section-technical-root-cause">Technical Root Cause</a></li>
+<li><a href="#section-key-ethereum-transactions">Key Ethereum Transactions</a></li>
+<li><a href="#section-key-verus-transactions">Key Verus Transactions</a></li>
+<li><a href="#section-loss-and-fund-flow-estimates">Loss and Fund-Flow Estimates</a></li>
+<li><a href="#section-relationship-to-the-may-2026-exploit">Relationship to the May 2026 Exploit</a></li>
+<li><a href="#section-analyst-classification">Analyst Classification</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <p>
@@ -113,6 +138,7 @@
 
 <hr>
 
+<a id="section-direct-threat-wallet-seeds"></a>
 <h2>Direct Threat-Wallet Seeds</h2>
 
 <h3>Ethereum Execution Wallet</h3>
@@ -177,6 +203,7 @@
 
 <hr>
 
+<a id="section-infrastructure-and-technical-pivots"></a>
 <h2>Infrastructure and Technical Pivots</h2>
 
 <table>
@@ -224,6 +251,7 @@
 
 <hr>
 
+<a id="section-simplified-attack-flow"></a>
 <h2>Simplified Attack Flow</h2>
 
 <ol>
@@ -269,6 +297,7 @@
 
 <hr>
 
+<a id="section-technical-root-cause"></a>
 <h2>Technical Root Cause</h2>
 
 <h3>Cross-Chain Semantic Inconsistency</h3>
@@ -316,6 +345,7 @@
 
 <hr>
 
+<a id="section-key-ethereum-transactions"></a>
 <h2>Key Ethereum Transactions</h2>
 
 <table>
@@ -366,6 +396,7 @@
 
 <hr>
 
+<a id="section-key-verus-transactions"></a>
 <h2>Key Verus Transactions</h2>
 
 <table>
@@ -429,6 +460,7 @@
 
 <hr>
 
+<a id="section-loss-and-fund-flow-estimates"></a>
 <h2>Loss and Fund-Flow Estimates</h2>
 
 <p>
@@ -472,6 +504,7 @@
 
 <hr>
 
+<a id="section-relationship-to-the-may-2026-exploit"></a>
 <h2>Relationship to the May 2026 Exploit</h2>
 
 <p>
@@ -498,6 +531,7 @@
 
 <hr>
 
+<a id="section-analyst-classification"></a>
 <h2>Analyst Classification</h2>
 
 <ul>
@@ -533,6 +567,7 @@
 
 <hr>
 
+<a id="section-attribution-boundaries"></a>
 <h2>Attribution Boundaries</h2>
 
 <ul>
@@ -567,6 +602,7 @@
 
 <hr>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 
 <ul>

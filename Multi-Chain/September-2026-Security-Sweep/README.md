@@ -4,14 +4,32 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # September 2026 Security Sweep — Submission Reconciliation
 
-**Coverage:** September 11–25 reports plus reconciliation of the resubmitted September 4–9 findings. **Repository check:** September 28, 2026. This is a dated intelligence update, not a claim that every wallet balance or operational status remains current.
+**Coverage:** September 11–28 reports plus reconciliation of the resubmitted September 4–9 findings. **Repository check:** September 29, 2026 UTC. This is a dated intelligence update, not a claim that every wallet balance or operational status remains current.
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-new-case-coverage">New Case Coverage</a></li>
+<li><a href="#section-reports-already-present--preserved-without-duplicate-ingestion">Reports Already Present — Preserved Without Duplicate Ingestion</a></li>
+<li><a href="#section-reviewed-exclusions-and-scope">Reviewed Exclusions and Scope</a></li>
+<li><a href="#section-source-and-classification-corrections">Source and Classification Corrections</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-new-case-coverage"></a>
 ## New Case Coverage
 
 | Submitted report | Canonical case | Dataset treatment |
 |---|---|---|
+| Duelbits multi-chain hot-wallet compromise | [Duelbits-September-2026](../Duelbits-September-2026/) | One P1 Solana proceeds seed; victim total and Solana allocation separately qualified |
 | Bitget exchange wallet backend breach and TRM expansion | [Bitget-September-2026](../Bitget-September-2026/) | Two P1 Ethereum seeds, one P2 provisional proceeds pivot; DPRK/TraderTraitor association Medium and unconfirmed |
 | Dominion SILV incident and expanded SOL/ETH wallet alert | [Dominion-SILV](../../SOL/Dominion-SILV/) | Combined into one incident: seven indicators, including the added signer and victim mint; four complete transaction signatures |
 | FomoPeek malicious iOS releases | [FomoPeek](../FomoPeek/) | Campaign report, four release records, one primary Ethereum attacker seed, and five proceeds pivots; September 24 attribution update |
@@ -20,10 +38,11 @@
 | Fetch.ai / NuNet / SingularityNET | [Fetch-NuNet-SingularityNET](../Fetch-NuNet-SingularityNET/) | Two P1 Ethereum seeds, two victim/compromised infrastructure records, and two transaction hashes |
 | ether.fi AtomicQueue, previously withheld | [Etherfi-AtomicQueue](../../EVM/Ethereum/Etherfi-AtomicQueue/) | Complete attacker address and transaction now resolved; one P1 seed and one victim queue |
 
-[addresses.csv](./addresses.csv) mirrors the seven address-bearing canonical cases: **36 distinct network/address records**, of which **16 have a threat label**, **nine further records are directly monitored for incident proceeds/MEV roles without that label**, and **eleven are contextual only**. These are not 33 attacker wallets. Malicious contracts and the inserted signer are also separate indicator classes.
+[addresses.csv](./addresses.csv) mirrors the eight address-bearing canonical cases: **37 distinct network/address records**, of which **17 have a threat label**, **nine further records are directly monitored for incident proceeds/MEV roles without that label**, and **eleven are contextual only**. These are not 37 attacker wallets. Malicious contracts and the inserted signer are also separate indicator classes.
 
-[incidents.csv](./incidents.csv) contains seven cases, including the updated FomoPeek campaign. `direct_monitor_count` includes directly monitored proceeds and infrastructure; `threat_indicator_count` counts `threat_label=true`. Neither count represents identified people or independently proved common ownership. Canonical and sweep rows are intentional mirrors, deduplicated by case, network, and full address when combined.
+[incidents.csv](./incidents.csv) contains eight cases, including the updated FomoPeek campaign. `direct_monitor_count` includes directly monitored proceeds and infrastructure; `threat_indicator_count` counts `threat_label=true`. Neither count represents identified people or independently proved common ownership. Canonical and sweep rows are intentional mirrors, deduplicated by case, network, and full address when combined.
 
+<a id="section-reports-already-present--preserved-without-duplicate-ingestion"></a>
 ## Reports Already Present — Preserved Without Duplicate Ingestion
 
 | Resubmitted finding | Existing canonical coverage | Preserved boundary |
@@ -40,15 +59,17 @@
 
 The newer Liquid evidence is more conservative than the resubmitted phrase “intermediate attacker-controlled address.” The existing [Bitquery-backed case](../Liquid-Network-Peg-Out/) identifies a SideSwap service interpretation for the initial recipient. It remains `threat_label=false`, P2 incident-flow monitoring. The primary consolidation wallet remains the P1 threat seed. This update does not regress that distinction or infer an authorized bounty from the partial return.
 
+<a id="section-reviewed-exclusions-and-scope"></a>
 ## Reviewed Exclusions and Scope
 
 - **ether.fi AtomicQueue correction:** the submitted truncated-only exclusion is superseded. September 22 inspection resolves the full attacker from the linked explorer, corroborating security-firm alerts, and a successful Blockscout transaction with the same initiator. The [dedicated case](../../EVM/Ethereum/Etherfi-AtomicQueue/) records one P1 seed; the victim queue remains non-threatening context and a truncated exploit contract remains withheld.
-- **Bitget:** the submitted third Ethereum identifier remains P2 and without an attacker label because its direct edge from the main collector has not been independently corroborated. Official Bitget reporting says cold wallets were unaffected; suspected DPRK/TraderTraitor links remain provisional. No truncated Duelbits or unpublished Bitget BTC/XRP addresses are ingested.
+- **Bitget:** the submitted third Ethereum identifier remains P2 and without an attacker label because its direct edge from the main collector has not been independently corroborated. Official Bitget reporting says cold wallets were unaffected; suspected DPRK/TraderTraitor links remain provisional. The former truncated-only Duelbits lead is superseded by a complete Solana identifier in the dedicated case; unpublished Bitget BTC/XRP addresses remain excluded.
 - **OFAC September 10:** the reviewed Iran/counterterrorism action does not supply a digital-currency address set for this update. It is kept separate from the already ingested September 9 Xinbi disclosure. [Official action](https://ofac.treasury.gov/recent-actions/20260910)
 - FomoPeek is distinct from August's disputed FOMO allegation. Salus now supplies six complete Ethereum identifiers and approximately 579,900 USDT in attributed proceeds; no additional wallet, CVE mapping, or victim count is inferred.
 - The submitted “no newer qualifying disclosure” statements describe their respective historical scans, including the September 21 Solana cutoff. They are not presented as an exhaustive negative search through September 24.
 - No new BTC records are needed for this batch; the repeated Liquid and COLDCARD material is already covered. Network-specific monitoring does not transfer threat labels to bridges, exchanges, ordinary counterparties, or recovery infrastructure.
 
+<a id="section-source-and-classification-corrections"></a>
 ## Source and Classification Corrections
 
 Dominion's on-chain history predates the claimed one-day launch interval. The Safe pool had a zero hook, while the defect lay in auxiliary authorization. Fetch/SingularityNET mint quantities and nominal holdings differ by source scope and observation time. Each canonical report preserves these qualifications and links its supporting source evidence.

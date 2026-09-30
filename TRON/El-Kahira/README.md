@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center">
 
 <h1>OFAC Designation — El-Kahira Hamas Financing Network</h1>
@@ -19,6 +23,22 @@
 
 <hr>
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-designation-summary">Designation Summary</a></li>
+<li><a href="#section-officially-designated-tron-addresses">Officially Designated TRON Addresses</a></li>
+<li><a href="#section-why-this-matters">Why This Matters</a></li>
+<li><a href="#section-analyst-classification">Analyst Classification</a></li>
+<li><a href="#section-graph-expansion-targets">Graph-Expansion Targets</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-designation-summary"></a>
 <h2>Designation Summary</h2>
 
 <p>
@@ -95,6 +115,7 @@
 
 <hr>
 
+<a id="section-officially-designated-tron-addresses"></a>
 <h2>Officially Designated TRON Addresses</h2>
 
 <p>
@@ -159,6 +180,7 @@
 
 <hr>
 
+<a id="section-why-this-matters"></a>
 <h2>Why This Matters</h2>
 
 <p>
@@ -190,6 +212,7 @@
 
 <hr>
 
+<a id="section-analyst-classification"></a>
 <h2>Analyst Classification</h2>
 
 <ul>
@@ -222,6 +245,7 @@
 
 <hr>
 
+<a id="section-graph-expansion-targets"></a>
 <h2>Graph-Expansion Targets</h2>
 
 <p>
@@ -241,6 +265,7 @@
 
 <hr>
 
+<a id="section-attribution-boundaries"></a>
 <h2>Attribution Boundaries</h2>
 
 <ul>
@@ -277,6 +302,7 @@
 
 <hr>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 
 <ul>

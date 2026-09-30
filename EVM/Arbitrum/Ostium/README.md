@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../../readme.md">Home</a> · <a href="../../../wallets.md">Wallet index</a> · <a href="../../../CATALOG.md">All case files</a> · <a href="../../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center">
 
 <h1>Ostium Oracle-Manipulation Exploit</h1>
@@ -14,6 +18,22 @@
 
 <hr>
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-direct-threat-seeds">Direct Threat Seeds</a></li>
+<li><a href="#section-infrastructure-pivot">Infrastructure Pivot</a></li>
+<li><a href="#section-confirmed-transaction">Confirmed Transaction</a></li>
+<li><a href="#section-why-it-matters">Why It Matters</a></li>
+<li><a href="#section-analyst-classification">Analyst Classification</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <table>
@@ -37,6 +57,7 @@ On <strong>July 15, 2026</strong>, an attacker exploited Ostium's oracle-deliver
 Broader public loss estimates range from approximately <strong>$18 million</strong> to <strong>$24 million</strong>, depending on which additional flows are counted. These wider totals remain less certain than the confirmed primary transaction.
 </p>
 
+<a id="section-direct-threat-seeds"></a>
 <h2>Direct Threat Seeds</h2>
 
 <table>
@@ -57,6 +78,7 @@ Broader public loss estimates range from approximately <strong>$18 million</stro
   </tbody>
 </table>
 
+<a id="section-infrastructure-pivot"></a>
 <h2>Infrastructure Pivot</h2>
 
 <table>
@@ -72,6 +94,7 @@ Broader public loss estimates range from approximately <strong>$18 million</stro
   </tbody>
 </table>
 
+<a id="section-confirmed-transaction"></a>
 <h2>Confirmed Transaction</h2>
 
 <p>
@@ -82,12 +105,14 @@ The execution wallet submitted the atomic exploit batch through the entry contra
 <a href="https://arbiscan.io/tx/0x359f8c05b86a4409d60cfba02084334313fd94b19f74a294fb7fc4ea7d4870e0"><code>0x359f8c05b86a4409d60cfba02084334313fd94b19f74a294fb7fc4ea7d4870e0</code></a>
 </p>
 
+<a id="section-why-it-matters"></a>
 <h2>Why It Matters</h2>
 
 <p>
 These are not merely adjacent addresses. Both wallets are directly present in the exploit transaction and are explorer-labeled as Ostium exploiters. The payout wallet received the stolen USDC, while the execution wallet initiated the malicious batch through Ostium's price-submission path.
 </p>
 
+<a id="section-analyst-classification"></a>
 <h2>Analyst Classification</h2>
 
 <ul>
@@ -99,6 +124,7 @@ These are not merely adjacent addresses. Both wallets are directly present in th
   <li><strong>Still unresolved:</strong> whether the attacker compromised an oracle signer, abused an already authorized forwarder, or exploited weak validation around registered price reports.</li>
 </ul>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 
 <ul>

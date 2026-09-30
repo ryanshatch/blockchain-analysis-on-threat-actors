@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # Aquifer Solana AMM Exploit
 
 | Field | Assessment |
@@ -19,6 +23,25 @@
 | Ethereum proceeds | 1,000.7956 ETH |
 | Confidence | High incident and address linkage; medium-high precise source-level root cause |
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-executive-assessment">Executive Assessment</a></li>
+<li><a href="#section-direct-attacker-and-proceeds-indicators">Direct Attacker and Proceeds Indicators</a></li>
+<li><a href="#section-exploit-and-proceeds-path">Exploit and Proceeds Path</a></li>
+<li><a href="#section-reconstructed-asset-loss">Reconstructed Asset Loss</a></li>
+<li><a href="#section-victim-and-recovery-infrastructure--do-not-threat-label">Victim and Recovery Infrastructure — Do Not Threat-Label</a></li>
+<li><a href="#section-whitehat-offer-and-residual-risk">Whitehat Offer and Residual Risk</a></li>
+<li><a href="#section-monitoring-priorities">Monitoring Priorities</a></li>
+<li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-tldr">TLDR</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-executive-assessment"></a>
 ## Executive Assessment
 
 Aquifer, a Solana trading venue used by routing infrastructure including Jupiter, was drained of $2,469,729 on August 31, 2026. Bitquery reconstructed 212 one-sided swaps between 03:41 and 04:21 UTC. Across those calls, Aquifer transferred genuine assets from its vaults while the attacker paid no tokens into the venue.
@@ -27,6 +50,7 @@ The supported explanation is an account and program validation failure. The atta
 
 Aquifer has not published source code. The on-chain behavior is consistent across all 212 successful calls, but the exact missing source-level checks are reconstructed rather than confirmed against code. The incident, loss, and address linkage are high confidence; the precise source-level root-cause classification is medium-high confidence.
 
+<a id="section-direct-attacker-and-proceeds-indicators"></a>
 ## Direct Attacker and Proceeds Indicators
 
 | Network | Address | Role | Confidence | Treatment |
@@ -39,6 +63,7 @@ Bitquery reviewed all 379 transactions in the Solana attacker's history and repo
 
 Aquifer's on-chain whitehat offer, authorized through the program's upgrade authority, named the same Solana and Ethereum addresses. That protocol-origin message materially strengthens the original third-party attribution.
 
+<a id="section-exploit-and-proceeds-path"></a>
 ## Exploit and Proceeds Path
 
 The repeated attack pattern was:
@@ -53,6 +78,7 @@ Bitquery reconstructed 24,082 SOL received through 54 fills and 24,084 SOL leavi
 
 At Bitquery's September 1 cutoff, the Ethereum address had received three transfers and sent none. That is a point-in-time observation, not a guarantee that the balance remains unmoved.
 
+<a id="section-reconstructed-asset-loss"></a>
 ## Reconstructed Asset Loss
 
 | Asset group | Approximate value at September 1 prices |
@@ -66,6 +92,7 @@ At Bitquery's September 1 cutoff, the Ethereum address had received three transf
 
 The dollar total uses September 1 spot prices. The exact SOL and ETH quantities are independent of that valuation choice.
 
+<a id="section-victim-and-recovery-infrastructure--do-not-threat-label"></a>
 ## Victim and Recovery Infrastructure — Do Not Threat-Label
 
 | Network | Address | Role | Handling |
@@ -80,12 +107,14 @@ The dollar total uses September 1 spot prices. The exact SOL and ETH quantities 
 
 The affected program, vaults, recovery addresses, routers, bridges, settlement wallets, market makers, and ordinary counterparties must not inherit the attacker label merely because they occur in the transaction path.
 
+<a id="section-whitehat-offer-and-residual-risk"></a>
 ## Whitehat Offer and Residual Risk
 
 At 16:43 UTC on August 31, Aquifer published an on-chain message requesting the return of at least 80% of the assets by September 3 at 14:00 UTC and allowing the controller to retain 20% as a bounty. No return was observed at Bitquery's September 1 verification cutoff.
 
 Bitquery also reported that Aquifer's program had not been upgraded after the exploit and that all 45 vaults held only about $70 at the September 1 cutoff. The public transaction pattern indicated that the same path could remain viable if liquidity returned. This status is time-sensitive and should be revalidated before relying on it operationally.
 
+<a id="section-monitoring-priorities"></a>
 ## Monitoring Priorities
 
 1. Watch the Solana attacker wallet for program reuse, fresh funding, token-account creation, swaps, bridge activity, and recovery transfers.
@@ -95,6 +124,7 @@ Bitquery also reported that Aquifer's program had not been upgraded after the ex
 5. Keep the affected Aquifer program and vaults as transaction-filtering and loss-reconstruction pivots.
 6. Do not ingest the truncated forged-account or transaction identifiers rendered in Bitquery's public article unless their complete values are independently published.
 
+<a id="section-attribution-boundaries"></a>
 ## Attribution Boundaries
 
 - No named person or threat group is established.
@@ -106,6 +136,7 @@ Bitquery also reported that Aquifer's program had not been upgraded after the ex
 - The precise source-code flaw is inferred from the on-chain instruction pattern because Aquifer has not published source code.
 - Injective and Tectonic are documented separately as zero-seed cases until complete attacker identifiers are available.
 
+<a id="section-sources"></a>
 ## Sources
 
 - [Bitquery — complete Aquifer on-chain reconstruction, loss accounting, proceeds path, whitehat offer, and scope limits](https://bitquery.io/investigations/aquifer-solana-hack-2-5-million)
@@ -116,6 +147,7 @@ Bitquery also reported that Aquifer's program had not been upgraded after the ex
 
 ---
 
+<a id="section-tldr"></a>
 ## TLDR
 
 Aquifer lost $2,469,729 through 212 one-sided swaps after accepting forged token-account data and an attacker-supplied fake token program. The direct monitoring set contains the Solana attacker wallet, the malicious Solana program, and the Ethereum proceeds wallet. Aquifer's program, vaults, recovery addresses, routers, bridges, and settlement counterparties remain explicitly non-attacker infrastructure.

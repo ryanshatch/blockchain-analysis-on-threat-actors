@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # Dominion Market / SILV — Multisig and Key Compromise
 
 | Field | Assessment |
@@ -19,6 +23,20 @@
 
 [Bitquery's reconstruction](https://bitquery.io/investigations/dominion-silv-hack-3-million-silver-tokens) supports a key compromise sufficient to authorize ordinary multisig operations. It does not establish a vulnerability in Solana, Squads, or the SILV token contract. Dominion separately reported compromised wallets and cooperation with the Solana Incident Response Network and SEAL 911, as covered by [SolanaFloor](https://solanafloor.com/news/dominion-freezes-silv-bought-after-exploit-as-token-collapses-70).
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-monitoring-indicators">Monitoring Indicators</a></li>
+<li><a href="#section-treasury-drain-and-response">Treasury Drain and Response</a></li>
+<li><a href="#section-cross-chain-proceeds">Cross-Chain Proceeds</a></li>
+<li><a href="#section-evidence-boundaries">Evidence Boundaries</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-monitoring-indicators"></a>
 ## Monitoring Indicators
 
 | Network | Complete identifier | Role | Confidence and treatment |
@@ -33,6 +51,7 @@
 
 The full identifiers resolve from Bitquery's address links. [addresses.csv](./addresses.csv) keeps custody, authorization, and victim roles separate. The inserted signer is a control-plane indicator, not an extra proceeds wallet. Bitquery calls its attacker ownership highly likely; it had not itself signed a transaction at the source cutoff.
 
+<a id="section-treasury-drain-and-response"></a>
 ## Treasury Drain and Response
 
 Proposal 45 executed at **01:50:24 UTC**, transferring **42,181.88 SILV**, approximately 45% of total supply, to the second attacker wallet. Three compromised signers proposed and approved it. The receiving wallet was about 42 minutes old and later sold roughly 43,100 SILV. Other SILV came from collateral positions and compromised-wallet balances. Ten wallets were swept into the first attacker wallet, each leaving exactly **890,880 lamports**, a pattern consistent with scripted control.
@@ -51,6 +70,7 @@ The late withdrawal illustrates the recovery limit: changing multisig membership
 
 Dominion subsequently froze approximately **2,819–2,823 token accounts**, holding around 33% of supply, and announced a USDC refund process for purchases during the compromised window. The account-count range preserves the difference between Bitquery's reconstruction and public response reporting; announcement is not proof that every refund completed.
 
+<a id="section-cross-chain-proceeds"></a>
 ## Cross-Chain Proceeds
 
 Two early swaps delivered approximately **9.25 ETH** to `0x8b3423a3c06ab16484ed2c561a86118f040adaaf`. Its Ethereum history dates to May 2026; its first active day included Chainflip receipts, and its last pre-incident outgoing transaction was less than two hours before the attack. That history is a useful backward lead, without making historical counterparties part of this incident.
@@ -59,6 +79,7 @@ A later direct swap delivered approximately **9.83 ETH** to `0xd13772ef959a4b227
 
 The staging wallet sent most remaining SOL into five Chainflip deposit channels, largely in approximately 400-SOL chunks. Their final payouts require Chainflip-chain evidence; do not assign those proceeds to either known Ethereum destination merely because the routing service matches. Chainflip agents, deposit infrastructure, DEX pools, and unrelated dust/poisoning senders are not attacker wallets by association.
 
+<a id="section-evidence-boundaries"></a>
 ## Evidence Boundaries
 
 - Pre-attack nominal token value, sale proceeds, loan repayment, and net profit are different quantities. The approximately $238,000 figure is the reconstructed proceeds estimate, not the $3M nominal token valuation.
@@ -66,6 +87,7 @@ The staging wallet sent most remaining SOL into five Chainflip deposit channels,
 - The submission described the attack as one day after launch. Bitquery instead records an August launch and August 13–16 minting. This case does not repeat the disputed launch interval.
 - The two submitted Dominion reports describe the same incident and are combined here. The dataset contains seven indicators, including the added signer and victim mint, rather than treating the stated five-wallet subtotal as the entire IOC set.
 
+<a id="section-sources"></a>
 ## Sources
 
 - [Bitquery — transaction reconstruction, full linked identifiers, and ownership caveats](https://bitquery.io/investigations/dominion-silv-hack-3-million-silver-tokens)

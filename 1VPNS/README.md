@@ -4,8 +4,27 @@
 </p>
 <!-- case-visual:end -->
 
-<h1>OFAC Designation:</h1>
+<!-- doc-nav:start -->
+<p><a href="../readme.md">Home</a> · <a href="../wallets.md">Wallet index</a> · <a href="../CATALOG.md">All case files</a></p>
+<!-- doc-nav:end -->
 
+<h1>1VPNS / First VPN Service — OFAC Designation</h1>
+
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-dmytro-rashevskyi-and-first-vpn-service--1vpns">Dmytro Rashevskyi and First VPN Service / 1VPNS</a></li>
+<li><a href="#section-dmytro-rashevskyi--1vpns-administrator">Dmytro Rashevskyi / 1VPNS Administrator</a></li>
+<li><a href="#section-first-vpn-service--1vpns">First VPN Service / 1VPNS</a></li>
+<li><a href="#section-why-this-matters">Why This Matters</a></li>
+<li><a href="#section-cross-chain-high-confidence-alert">Cross-Chain High-Confidence Alert</a></li>
+<li><a href="#section-classification-and-monitoring-guidance">Classification and Monitoring Guidance</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-dmytro-rashevskyi-and-first-vpn-service--1vpns"></a>
 <h2>Dmytro Rashevskyi and First VPN Service / 1VPNS</h2>
 
 <p>
@@ -16,6 +35,7 @@
   Treasury states that 1VPNS sold infrastructure to ransomware operators and other cybercriminals, including groups targeting U.S. businesses, hospitals, financial institutions, and municipal governments.
 </p>
 
+<a id="section-dmytro-rashevskyi--1vpns-administrator"></a>
 <h2>Dmytro Rashevskyi / 1VPNS Administrator</h2>
 
 <table>
@@ -106,6 +126,7 @@
 
 <hr>
 
+<a id="section-first-vpn-service--1vpns"></a>
 <h2>First VPN Service / 1VPNS</h2>
 
 <table>
@@ -166,6 +187,7 @@
   </tbody>
 </table>
 
+<a id="section-why-this-matters"></a>
 <h2>Why This Matters</h2>
 
 <p>
@@ -187,6 +209,7 @@
   Any direct or indirect exposure should be treated as both an attribution signal and a sanctions-risk signal.
 </blockquote>
 
+<a id="section-cross-chain-high-confidence-alert"></a>
 <h2>Cross-Chain High-Confidence Alert</h2>
 
 <p>
@@ -243,6 +266,7 @@
   <li><code>TUuaxBAWfA5nmsqNfycxYrzEvz4a5GJMGY</code></li>
 </ul>
 
+<a id="section-classification-and-monitoring-guidance"></a>
 <h2>Classification and Monitoring Guidance</h2>
 
 <ul>

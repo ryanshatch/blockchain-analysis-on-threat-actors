@@ -62,6 +62,12 @@
       "alt": "Zunami Protocol \u2014 Incident reconstruction and wallet monitoring"
     },
     {
+      "readme": "EVM/README.md",
+      "image": "assets/readme-headers/evm.svg",
+      "kind": "original static SVG document header",
+      "alt": "Ethereum and EVM investigations \u2014 Case reports, monitoring seeds and attribution boundaries"
+    },
+    {
       "readme": "FTX/readme.md",
       "image": "assets/readme-headers/ftx.svg",
       "kind": "original static SVG document header",
@@ -108,6 +114,12 @@
       "image": "assets/readme-headers/multi-chain-coldcard-weak-entropy-theft.svg",
       "kind": "original static SVG document header",
       "alt": "COLDCARD theft \u2014 Weak entropy and cross-chain proceeds monitoring"
+    },
+    {
+      "readme": "Multi-Chain/Duelbits-September-2026/README.md",
+      "image": "assets/readme-headers/multi-chain-duelbits-september-2026.svg",
+      "kind": "original static SVG document header",
+      "alt": "Duelbits September 2026 \u2014 Solana proceeds and a five-network wallet compromise"
     },
     {
       "readme": "Multi-Chain/Fetch-NuNet-SingularityNET/README.md",

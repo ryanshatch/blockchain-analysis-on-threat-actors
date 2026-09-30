@@ -4,6 +4,10 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../../readme.md">Home</a> · <a href="../../../wallets.md">Wallet index</a> · <a href="../../../CATALOG.md">All case files</a> · <a href="../../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 # Safe / rsETH — Auxiliary Authorization Exploit and Yoink Interception
 
 | Field | Assessment |
@@ -18,6 +22,19 @@
 
 The incident affected an unidentified user's Safe through an enabled auxiliary path. The vulnerability is not attributed to Safe's core contracts. [Bitquery's call-trace reconstruction](https://bitquery.io/investigations/rseth-safe-module-drain) corroborates the full identifiers and distinguishes the original exploiter from the Yoink MEV actor that captured the principal proceeds first.
 
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-separate-actors-and-proceeds-roles">Separate Actors and Proceeds Roles</a></li>
+<li><a href="#section-mechanism-and-transaction-evidence">Mechanism and Transaction Evidence</a></li>
+<li><a href="#section-victim-infrastructure--no-threat-label">Victim Infrastructure — No Threat Label</a></li>
+<li><a href="#section-sources">Sources</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-separate-actors-and-proceeds-roles"></a>
 ## Separate Actors and Proceeds Roles
 
 | Address | Role | Treatment |
@@ -29,6 +46,7 @@ The incident affected an unidentified user's Safe through an enabled auxiliary p
 
 The original attacker prepared the extraction. Yoink observed the opportunity and executed first. This does not establish common control between them, a named Yoink operator, or whether the captured assets would be returned. In [addresses.csv](./addresses.csv), the original exploiter has `threat_label=true`; the MEV EOA, bot, and proceeds holder retain `threat_label=false` with explicit direct-monitoring instructions. That flag withholds the original-threat attribution and does not certify benign conduct.
 
+<a id="section-mechanism-and-transaction-evidence"></a>
 ## Mechanism and Transaction Evidence
 
 The public executor accepted a self-referential authorization path and reached modules that the victim Safe had already enabled. It could consequently initiate asset movement without fresh Safe-owner signatures. The trace reconstructs transfer of 2,900 aEthrsETH, use of a Uniswap v4 pool, Aave unwrapping, and Yoink's rsETH split.
@@ -39,6 +57,7 @@ The submission referred to malicious pool/hook infrastructure. Bitquery's recons
 
 The 2,900-rsETH figure covers the initial capture transaction. Bitquery also reports later liquidation and copycat activity; it should not be treated as a reconciled total for every subsequent drain through the same path.
 
+<a id="section-victim-infrastructure--no-threat-label"></a>
 ## Victim Infrastructure — No Threat Label
 
 | Address | Role |
@@ -50,6 +69,7 @@ The 2,900-rsETH figure covers the initial capture transaction. Bitquery also rep
 
 Prioritize the original EOA for attribution history and the holding wallet for asset movement. Keep exchanges, liquidity venues, ordinary counterparties, and the victim's other owners outside the attacker set absent further evidence.
 
+<a id="section-sources"></a>
 ## Sources
 
 - [Bitquery — full call trace, linked addresses, and zero-hook correction](https://bitquery.io/investigations/rseth-safe-module-drain)

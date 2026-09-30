@@ -4,8 +4,30 @@
 </p>
 <!-- case-visual:end -->
 
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
 <div align="center" style="text-align: center;">
-<h1>New SOL Threat-Wallet Alert</h1>
+<h1>SUNUSI Permanent-Delegate Drain</h1>
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-sunusi-permanent-delegate-drain">SUNUSI Permanent-Delegate Drain</a></li>
+<li><a href="#section-incident-summary">Incident Summary</a></li>
+<li><a href="#section-direct-incident-watch-seeds">Direct Incident-Watch Seeds</a></li>
+<li><a href="#section-primary-transactions">Primary Transactions</a></li>
+<li><a href="#section-technical-root-cause">Technical Root Cause</a></li>
+<li><a href="#section-classification">Classification</a></li>
+<li><a href="#section-attribution-limits">Attribution Limits</a></li>
+<li><a href="#section-sources">Sources</a></li>
+<li><a href="#section-in-other-words">In other words:</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-sunusi-permanent-delegate-drain"></a>
 <h2>SUNUSI Permanent-Delegate Drain</h2>
 </div>
 
@@ -25,6 +47,7 @@
   </tbody>
 </table>
 
+<a id="section-incident-summary"></a>
 <h2>Incident Summary</h2>
 
 <p>
@@ -39,6 +62,7 @@ The first interaction attempted to burn approximately 242 million SUNUSI, but on
 The reported on-chain evidence supports malicious authorization abuse rather than a stolen private key. It also does not currently support classifying the event as an insider rug pull.
 </p>
 
+<a id="section-direct-incident-watch-seeds"></a>
 <h2>Direct Incident-Watch Seeds</h2>
 
 <h3>Malicious Burn Contract</h3>
@@ -50,6 +74,7 @@ The reported on-chain evidence supports malicious authorization abuse rather tha
 <p><a href="https://solscan.io/account/Ah4mTqci95qbiydovW8123q2WQzMSCP3MiCzGR2Pje7n"><code>Ah4mTqci95qbiydovW8123q2WQzMSCP3MiCzGR2Pje7n</code></a></p>
 <p><strong>Recommended use:</strong> Highest-priority direct watch for SUNUSI sales, SOL consolidation, exchange deposits, funding relationships, and further delegate-abuse campaigns.</p>
 
+<a id="section-primary-transactions"></a>
 <h2>Primary Transactions</h2>
 
 <table>
@@ -62,6 +87,7 @@ The reported on-chain evidence supports malicious authorization abuse rather tha
   </tbody>
 </table>
 
+<a id="section-technical-root-cause"></a>
 <h2>Technical Root Cause</h2>
 
 <ol>
@@ -78,6 +104,7 @@ The reported on-chain evidence supports malicious authorization abuse rather tha
 The critical failure was not a broken Solana token feature. The victim authorized a malicious contract to receive a legitimate persistent authority, and that authority was then abused exactly as the token system allowed.
 </blockquote>
 
+<a id="section-classification"></a>
 <h2>Classification</h2>
 <ul>
   <li><strong>Primary classification:</strong> phishing / malicious-contract authorization drain</li>
@@ -89,6 +116,7 @@ The critical failure was not a broken Solana token feature. The victim authorize
   <li><strong>Named actor:</strong> none publicly identified</li>
 </ul>
 
+<a id="section-attribution-limits"></a>
 <h2>Attribution Limits</h2>
 <ul>
   <li>The primary research source is an independent research group rather than law enforcement or a major protocol-security firm, so address attribution should remain medium-high rather than absolute.</li>
@@ -97,6 +125,7 @@ The critical failure was not a broken Solana token feature. The victim authorize
   <li>Future evidence could change whether the malicious contract, funding wallets, and proceeds wallet are attributed to one operator or a broader affiliate operation.</li>
 </ul>
 
+<a id="section-sources"></a>
 <h2>Sources</h2>
 <ul>
   <li><a href="https://smcresearchers.com/article/sunusi-compromised-what-we-know-so-far">SMC Researchers — SUNUSI on-chain incident analysis</a></li>
@@ -105,6 +134,7 @@ The critical failure was not a broken Solana token feature. The victim authorize
 </ul>
 
 <hr>
+<a id="section-in-other-words"></a>
 <h2>In other words:</h2>
 <p>
 The SUNUSI dev did not need to hand an attacker the wallet seed phrase. The wallet signed a transaction from a fake burn tool that granted the malicious contract long-lived authority over the token accounts.
