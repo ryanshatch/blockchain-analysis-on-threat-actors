@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+<title id="title">FlashLoopAdapter</title><desc id="desc">ETHEREUM — Third-party Safe-module authorization exploit. Illustrative document header, not transaction evidence.</desc>
+<rect width="1200" height="230" rx="16" fill="#0b192b"/><path d="M0 214h1200" stroke="#65d5c8" stroke-width="3"/><rect x="32" y="35" width="4" height="142" rx="2" fill="#65d5c8"/>
+<text x="58" y="61" font-family="Arial, sans-serif" font-size="16" letter-spacing="2" fill="#65d5c8">ETHEREUM</text><text x="56" y="113" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#f0f6fc">FlashLoopAdapter</text><text x="58" y="156" font-family="Arial, sans-serif" font-size="20" fill="#b9c8d9">Third-party Safe-module authorization exploit</text>
+<g transform="translate(1000 28)" fill="none" stroke="#65d5c8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="30" width="132" height="112" rx="18"/><path d="M48 82h74M85 56v52M42 142v22M126 142v22M60 164h48"/><circle cx="85" cy="82" r="34"/></g></svg>

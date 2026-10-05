@@ -47,6 +47,9 @@
 <li><a href="#section-fomopeek--september-24-ethereum-attribution">FomoPeek — September 24 Ethereum Attribution</a></li>
 <li><a href="#section-bitget--september-2425-cross-chain-breach">Bitget — September 24–25 Cross-Chain Breach</a></li>
 <li><a href="#section-duelbits--september-24-multi-chain-hot-wallet-compromise">Duelbits — September 24 Multi-Chain Hot-Wallet Compromise</a></li>
+<li><a href="#section-malt-swap-function-exploit">MALT Swap-Function Exploit</a></li>
+<li><a href="#section-flashloopadapter-safe-module-exploit">FlashLoopAdapter Safe-Module Exploit</a></li>
+<li><a href="#section-near-intents--returned-funds-historical-iocs">NEAR Intents — Returned-Funds Historical IoCs</a></li>
 </ul>
 </details>
 <!-- contents:end -->
@@ -1190,3 +1193,52 @@ TRM found laundering-network overlap with DPRK-linked incidents but stopped shor
 | Solana | `A3EBrhMBEGzcPgmbwywSPhW39G6PFGrorU8ib99T6yKw` | Attacker / proceeds destination published by CertiK | High incident linkage; P1 direct watch |
 
 Suspected hot-wallet/private-key compromise remains an assessment without a victim technical postmortem. No Solana protocol vulnerability or named operator is established. Service counterparties remain tracing pivots.
+
+---
+
+<a id="section-malt-swap-function-exploit"></a>
+## MALT Swap-Function Exploit
+
+**Network:** Ethereum<br>
+**Disclosure:** October 3, 2026<br>
+**Confidence:** High<br>
+**Case file:** [`EVM/Ethereum/MALT/`](./EVM/Ethereum/MALT/)
+
+| Address | Classification | Monitoring |
+|---|---|---|
+| `0x8F103B6A0aD705bcE6357842A5fefEB49e8D83Ef` | Attacker / exploit seed | P1 direct watch and graph expansion |
+
+The victim `0xF0d3...2AAC` and vulnerable MALT contract `0xfe6C...7A13` are non-attacker context.
+
+---
+
+<a id="section-flashloopadapter-safe-module-exploit"></a>
+## FlashLoopAdapter Safe-Module Exploit
+
+**Network:** Ethereum<br>
+**Incident:** October 1, 2026<br>
+**Confidence:** High<br>
+**Case file:** [`EVM/Ethereum/FlashLoopAdapter/`](./EVM/Ethereum/FlashLoopAdapter/)
+
+| Address | Classification | Monitoring |
+|---|---|---|
+| `0x42c2633438609881c8fBAb82414eb9A0c45F9353` | Attacker EOA / exploit seed | P1 direct watch and graph expansion |
+
+The vulnerable third-party adapter and two affected Safes are non-attacker context. This was not an Aave V3 core compromise.
+
+---
+
+<a id="section-near-intents--returned-funds-historical-iocs"></a>
+## NEAR Intents — Returned-Funds Historical IoCs
+
+**Incident:** October 1, 2026<br>
+**Status update:** Funds returned in full October 2<br>
+**Case file:** [`Multi-Chain/NEAR-Intents-October-2026/`](./Multi-Chain/NEAR-Intents-October-2026/)
+
+| Address | Updated classification | Monitoring |
+|---|---|---|
+| `bc1qjkdzyt845q0vte6sax2nn9j40zdalec3q4zmrc` | Historical exploit-proceeds wallet; funds returned | P2 historical IoC / graph pivot |
+| `bc1qkm5d88p472cg73n7tgw8dpv243v36jjmmnzktz` | Historical exploit-proceeds wallet; funds returned | P2 historical IoC / graph pivot |
+| `bc1q4kddgqsuqmwmzq3qgv0aq2jr9jgdwesx0wljen` | Historical exploit-proceeds wallet; funds returned | P2 historical IoC / graph pivot |
+
+The BTC, EVM, and Solana recovery addresses are excluded from threat labeling. The conflicting largest BTC destination is withheld pending transaction-level reconciliation.

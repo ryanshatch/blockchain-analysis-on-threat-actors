@@ -21,6 +21,16 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="./October-2026-Security-Sweep/"><code>October-2026-Security-Sweep/</code></a></td>
+      <td>October 1–3 reports across Ethereum, BNB Smart Chain, Bitcoin and Solana</td>
+      <td>MALT and FlashLoopAdapter attacker seeds plus the NEAR Intents full-return correction, 14 role-separated network/address records and one disputed BTC destination withheld</td>
+    </tr>
+    <tr>
+      <td><a href="./NEAR-Intents-October-2026/"><code>NEAR-Intents-October-2026/</code></a></td>
+      <td>BNB Smart Chain origin with Ethereum, Base, Arbitrum, Bitcoin and Solana routing or recovery records</td>
+      <td>October 1 cross-chain exploit and October 2 full return; three historical BTC proceeds IoCs, explicit recovery exclusions and one conflicting BTC destination withheld</td>
+    </tr>
+    <tr>
       <td><a href="./September-2026-Security-Sweep/"><code>September-2026-Security-Sweep/</code></a></td>
       <td>September 11–28 reports across Solana, Ethereum, and mobile-wallet users</td>
       <td>Eight cases, 37 role-separated indicators, updated FomoPeek and Bitget attribution, resolved ether.fi attribution, and reconciliation of repeated September 4–9 reports</td>

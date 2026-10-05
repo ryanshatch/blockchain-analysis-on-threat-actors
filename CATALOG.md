@@ -40,7 +40,9 @@ This catalog lists every README in the repository. Case records retain their ori
 | [Ostium Oracle-Manipulation Exploit](./EVM/Arbitrum/Ostium/README.md) | `EVM/Arbitrum/Ostium/` |
 | [Dream Health Chain Exploit](./EVM/BNB-Chain/Dream-Health-Chain/README.md) | `EVM/BNB-Chain/Dream-Health-Chain/` |
 | [ether.fi Legacy AtomicQueue — Full Identifier Resolved](./EVM/Ethereum/Etherfi-AtomicQueue/README.md) | `EVM/Ethereum/Etherfi-AtomicQueue/` |
+| [FlashLoopAdapter Safe-Module Exploit](./EVM/Ethereum/FlashLoopAdapter/README.md) | `EVM/Ethereum/FlashLoopAdapter/` |
 | [REF9334 / KREMLIN — Ethereum Operator and Malware Infrastructure](./EVM/Ethereum/KREMLIN-REF9334/README.md) | `EVM/Ethereum/KREMLIN-REF9334/` |
+| [MALT Swap-Function Exploit](./EVM/Ethereum/MALT/README.md) | `EVM/Ethereum/MALT/` |
 | [RedSonic / Reddio Vault Exploit](./EVM/Ethereum/RedSonic/README.md) | `EVM/Ethereum/RedSonic/` |
 | [Safe / rsETH — Auxiliary Authorization Exploit and Yoink Interception](./EVM/Ethereum/Safe-rsETH-Module/README.md) | `EVM/Ethereum/Safe-rsETH-Module/` |
 | [Suspected GoMining-Linked Multi-Wallet Drain](./EVM/Ethereum/Suspected-GoMining-Drain/README.md) | `EVM/Ethereum/Suspected-GoMining-Drain/` |
@@ -83,7 +85,9 @@ This catalog lists every README in the repository. Case records retain their ori
 | [Iranian MOIS-Linked Cyber-Actor Wallet Network](./Multi-Chain/Iranian-MOIS-Cyber-Network/README.md) | `Multi-Chain/Iranian-MOIS-Cyber-Network/` |
 | [Liquid Network Unauthorized Peg-Out](./Multi-Chain/Liquid-Network-Peg-Out/README.md) | `Multi-Chain/Liquid-Network-Peg-Out/` |
 | [Nesa / Cosmos EVM Exploit — Ethereum Proceeds](./Multi-Chain/Nesa-Cosmos-EVM/README.md) | `Multi-Chain/Nesa-Cosmos-EVM/` |
+| [NEAR Intents — October 2026 Exploit and Full Return](./Multi-Chain/NEAR-Intents-October-2026/README.md) | `Multi-Chain/NEAR-Intents-October-2026/` |
 | [Multi-Chain Threat and Incident Index](./Multi-Chain/README.md) | `Multi-Chain/` |
+| [October 2026 Security Sweep — Initial Reconciliation](./Multi-Chain/October-2026-Security-Sweep/README.md) | `Multi-Chain/October-2026-Security-Sweep/` |
 | [September 2026 Security Sweep — Submission Reconciliation](./Multi-Chain/September-2026-Security-Sweep/README.md) | `Multi-Chain/September-2026-Security-Sweep/` |
 | [High-Confidence OFAC Wallet Alert](./Multi-Chain/Shelbit-Network/README.md) | `Multi-Chain/Shelbit-Network/` |
 | [New Multi-Chain Threat Campaign Alert](./Multi-Chain/SpaceX-FIFA-Drainers/README.md) | `Multi-Chain/SpaceX-FIFA-Drainers/` |

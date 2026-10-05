@@ -115,6 +115,22 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="./Multi-Chain/October-2026-Security-Sweep/"><code>Multi-Chain/October-2026-Security-Sweep/</code></a></td>
+      <td>October 1–3 reconciliation covering new MALT and FlashLoopAdapter attacker seeds plus NEAR Intents returned-funds corrections and recovery exclusions.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/NEAR-Intents-October-2026/"><code>Multi-Chain/NEAR-Intents-October-2026/</code></a></td>
+      <td>October 1 NEAR Intents exploit and October 2 full return, with three historical BTC proceeds IoCs, three unique recovery addresses across four network records and the conflicting largest BTC destination withheld.</td>
+    </tr>
+    <tr>
+      <td><a href="./EVM/Ethereum/MALT/"><code>EVM/Ethereum/MALT/</code></a></td>
+      <td>October 3 MALT swap accounting exploit with one P1 attacker seed and explicit victim/contract exclusions.</td>
+    </tr>
+    <tr>
+      <td><a href="./EVM/Ethereum/FlashLoopAdapter/"><code>EVM/Ethereum/FlashLoopAdapter/</code></a></td>
+      <td>October 1 third-party Safe-module authorization exploit with one P1 attacker seed; victim Safes and vulnerable adapter retained as context.</td>
+    </tr>
+    <tr>
       <td><a href="./Multi-Chain/September-2026-Security-Sweep/"><code>Multi-Chain/September-2026-Security-Sweep/</code></a></td>
       <td>September 11–28 update covering Dominion, FomoPeek, Bitget, Duelbits, Safe/rsETH, KREMLIN, Fetch/NuNet/SingularityNET, and resolved ether.fi attribution, with 37 role-separated indicators and a coverage table for repeated reports.</td>
     </tr>
@@ -225,6 +241,16 @@
     <tr><th align="left">Directory</th><th align="left">Network</th><th align="left">Description</th></tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="./EVM/Ethereum/FlashLoopAdapter/"><code>EVM/Ethereum/FlashLoopAdapter/</code></a></td>
+      <td>Ethereum</td>
+      <td>Third-party Safe-module authorization bypass using a fake Safe; one direct attacker seed and three non-attacker infrastructure/victim records.</td>
+    </tr>
+    <tr>
+      <td><a href="./EVM/Ethereum/MALT/"><code>EVM/Ethereum/MALT/</code></a></td>
+      <td>Ethereum</td>
+      <td>Swap accounting and external rebalance-hook exploit; one direct attacker seed plus victim and vulnerable-contract exclusions.</td>
+    </tr>
     <tr>
       <td><a href="./EVM/Ethereum/Etherfi-AtomicQueue/"><code>EVM/Ethereum/Etherfi-AtomicQueue/</code></a></td>
       <td>Ethereum</td>
