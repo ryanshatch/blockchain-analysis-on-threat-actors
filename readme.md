@@ -7,6 +7,7 @@
 <body>
 
 <div align="center">
+  <hr>
   <img alt="Conceptual illustration of tracing a highlighted path through a blockchain network; not an actual transaction graph" src="./assets/blockchain-investigation-hero.jpg" width="1200">
   <h1>Blockchain Analysis on Threat Actors</h1>
   <p><strong>A defensive on-chain intelligence repository for tracking sanctioned wallets, threat actors, exploit flows, scams, rug pulls, and suspicious cryptocurrency activity.</strong></p>
