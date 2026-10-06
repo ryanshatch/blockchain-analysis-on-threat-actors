@@ -61,7 +61,7 @@
 <hr>
 
 <!-- doc-nav:start -->
-<p><a href="wallets.md">Wallet index</a> · <a href="CATALOG.md">All case files</a></p>
+<p><a href="wallets.md">Wallet index</a> · <a href="CATALOG.md">All case files</a> · <a href="docs/data-model.md">Data model</a> · <a href="docs/roadmap.md">Roadmap</a></p>
 <!-- doc-nav:end -->
 
 <!-- contents:start -->
@@ -69,6 +69,7 @@
 <summary>Contents</summary>
 <ul>
 <li><a href="#section-overview">Overview</a></li>
+<li><a href="#section-data-tooling">Data Tooling</a></li>
 <li><a href="#section-repository-structure">Repository Structure</a></li>
 <li><a href="#section-current-research-coverage">Current Research Coverage</a></li>
 <li><a href="#section-chain-coverage">Chain Coverage</a></li>
@@ -102,6 +103,19 @@
 <blockquote>
   Inclusion in this repository does not independently prove criminal activity. Addresses associated with active investigations, suspected incidents, or third-party reporting should be treated as provisional unless confirmed by an authoritative source.
 </blockquote>
+
+<hr>
+
+<a id="section-data-tooling"></a>
+<h2>Data Tooling</h2>
+
+<p>A dependency-free Python tool validates compatible case address records and builds a local, read-only SQLite search index. The case CSVs and cited reports remain the source of truth. It preserves chain-specific identifiers, evidence, control confidence, and the distinction between threat-labeled wallets and victim or recovery infrastructure.</p>
+
+<pre><code>python -m threatintel validate
+python -m threatintel build --output /tmp/threatintel.sqlite
+python -m threatintel query --db /tmp/threatintel.sqlite --case NEAR-INTENTS-2026-10-01</code></pre>
+
+<p>The validator lists legacy schemas and sweep recaps that it has not imported; its counts are not a total of all repository coverage. See the <a href="docs/data-model.md">data model and usage guide</a>, <a href="docs/roadmap.md">phased roadmap</a>, and <a href="CONTRIBUTING.md">contribution guide</a>.</p>
 
 <hr>
 
