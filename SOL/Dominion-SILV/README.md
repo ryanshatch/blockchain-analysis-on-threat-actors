@@ -19,7 +19,8 @@
 | Impact | Approximately 46,909 SILV; $2.98–3.0M pre-attack nominal value; approximately $238,000 realized proceeds |
 | Other exposed wallets | At least 11 compromised wallets, excluding the two new primary attacker wallets |
 | Confidence | High for incident and transaction linkage; initial key-theft vector and real-world identity unknown |
-| Evidence cutoff | September 11 reconstruction and response; source checks September 22, 2026 |
+| Evidence cutoff | October 7 closure update; September 11 transaction reconstruction |
+| Status | Dominion ceased operations October 7; minting, redemption and product support ended |
 
 [Bitquery's reconstruction](https://bitquery.io/investigations/dominion-silv-hack-3-million-silver-tokens) supports a key compromise sufficient to authorize ordinary multisig operations. It does not establish a vulnerability in Solana, Squads, or the SILV token contract. Dominion separately reported compromised wallets and cooperation with the Solana Incident Response Network and SEAL 911, as covered by [SolanaFloor](https://solanafloor.com/news/dominion-freezes-silv-bought-after-exploit-as-token-collapses-70).
 
@@ -68,7 +69,7 @@ Proposal 45 executed at **01:50:24 UTC**, transferring **42,181.88 SILV**, appro
 
 The late withdrawal illustrates the recovery limit: changing multisig membership does not revoke a copied private key for a standalone wallet. Four complete transaction signatures are retained in [transactions.csv](./transactions.csv).
 
-Dominion subsequently froze approximately **2,819–2,823 token accounts**, holding around 33% of supply, and announced a USDC refund process for purchases during the compromised window. The account-count range preserves the difference between Bitquery's reconstruction and public response reporting; announcement is not proof that every refund completed.
+Dominion subsequently froze approximately **2,819–2,823 token accounts**, holding around 33% of supply, and announced a USDC refund process. The account-count range preserves the difference between Bitquery's reconstruction and public response reporting. On **October 7**, [Dominion's closure notice](https://dominion.investments/) and [SolanaFloor's follow-up](https://solanafloor.com/news/dominion-market-shuts-down) reported that the company had ceased operations after liquidity and working capital collapsed. Dominion says refunds for **eligible participating pre-exploit holders** were completed at **$63 per SILV**; this does not establish reimbursement of every holder. No new attacker address or second exploit follows from the closure.
 
 <a id="section-cross-chain-proceeds"></a>
 ## Cross-Chain Proceeds
@@ -93,3 +94,5 @@ The staging wallet sent most remaining SOL into five Chainflip deposit channels,
 - [Bitquery — transaction reconstruction, full linked identifiers, and ownership caveats](https://bitquery.io/investigations/dominion-silv-hack-3-million-silver-tokens)
 - [SolanaFloor — Dominion response, account freezes, and proposed refunds](https://solanafloor.com/news/dominion-freezes-silv-bought-after-exploit-as-token-collapses-70)
 - [DexPaprika — SILV/SOL market and mint context](https://dexpaprika.com/solana/pool/BJTTnSttBGXAGbjZXbMPH4aKyR2Qiy4EMBZsm37SWJd2)
+- [Dominion — closure and eligibility-limited refund notice](https://dominion.investments/)
+- [SolanaFloor — October 7 shutdown report](https://solanafloor.com/news/dominion-market-shuts-down)

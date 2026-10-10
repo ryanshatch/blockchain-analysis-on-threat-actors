@@ -10,13 +10,14 @@
 
 # October 2026 Security Sweep — Initial Reconciliation
 
-**Coverage:** October 1–3, 2026 reports and material recovery updates. **Repository check:** October 5, 2026 UTC. This is a dated intelligence update; balances and operational status can change.
+**Original coverage:** October 1–3, 2026 reports and material recovery updates. **Follow-up:** October 4–9 disclosures summarized below. This is dated intelligence; balances and operational status can change. The existing CSVs describe the original three-case reconciliation and do not duplicate the follow-up case datasets.
 
 <!-- contents:start -->
 <details>
 <summary>Contents</summary>
 <ul>
 <li><a href="#section-new-case-coverage">New Case Coverage</a></li>
+<li><a href="#section-october-49-follow-up">October 4–9 Follow-up</a></li>
 <li><a href="#section-key-classification-corrections">Key Classification Corrections</a></li>
 <li><a href="#section-attribution-boundaries">Attribution Boundaries</a></li>
 <li><a href="#section-sources">Sources</a></li>
@@ -37,6 +38,23 @@
 [addresses.csv](./addresses.csv) contains **14 network/address records**: four threat-labelled historical or direct seeds and ten victim, protocol, or recovery records. These are not 14 attacker wallets.
 
 [incidents.csv](./incidents.csv) contains three current-state incident records. `direct_monitor_count` describes threat or historical-proceeds seeds requiring direct monitoring; it excludes recovery and victim infrastructure.
+
+<a id="section-october-49-follow-up"></a>
+## October 4–9 Follow-up
+
+| Finding | Canonical location | Treatment |
+|---|---|---|
+| TradeWiz SOL PVP key exposure | [TradeWiz](../../SOL/TradeWiz/) | Three direct Solana seeds; one ownership-uncertain forwarder |
+| Frogman multi-chain wallet drain | [Frogman](../Frogman-October-2026/) | One Solana proceeds seed; suspected victim excluded |
+| Dominion closure and eligible-holder refunds | [Dominion](../../SOL/Dominion-SILV/) | Status update on existing incident; no new exploit seed |
+| September 30 OFAC Tren de Aragua disclosure | [TRON case](../../TRON/Tren-de-Aragua-ATM/) | Seven person-linked, exchange-hosted deposit identifiers |
+| October 5 Bybit laundering investigation | [Bybit leads](../Bybit-Laundering-October-2026/) | Four laundering-network seeds; no automatic DPRK ownership label |
+| October 6 Maker legacy auction keeper drain | [Maker keeper](../../EVM/Ethereum/Maker-Legacy-Keeper/) | Attacker EOA, two malicious contracts, victim keeper excluded |
+| Bitget distribution, cross-chain receiving seeds and actor update | [Bitget](../Bitget-September-2026/) | Three additional ETH distribution wallets; official XRP/Zcash/TRON seeds; Chainalysis incident-level DPRK attribution |
+
+An [October 4 Base vault incident](https://www.blockchainbreaches.com/en/breaches/base-wsteth-vault-2026) reportedly involved about 1,783 wstETH (approximately $6M) after whitelist changes. The reviewed indexed material did not expose an independently verified **complete attacker address**, and the authorization failure remains unresolved. Victim vault `0xD1895f2019c2152FC2b9022D57f19198c4CFCABC` is context, not a threat wallet. No direct-watch address row is added. [Blockonomi's report](https://blockonomi.com/base-defi-vault-exploit-drains-6m-after-attacker-gains-whitelist-access/) supplies further incident context.
+
+The [October 8 UK sanctions package](https://www.trmlabs.com/resources/blog/uk-sanctions-cryptomus-heleket-and-tokenspot-in-new-russia-package-targeting-crypto-and-payment-channels) names services but supplies no new complete designated wallet set in the reviewed report. Additional reported Bitget Bitcoin movements likewise lack complete, confidently linked public destinations in this follow-up. Neither produces invented wallet rows.
 
 <a id="section-key-classification-corrections"></a>
 ## Key Classification Corrections

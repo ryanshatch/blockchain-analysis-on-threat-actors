@@ -35,6 +35,12 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="./Tren-de-Aragua-ATM/"><code>Tren-de-Aragua-ATM/</code></a></td>
+      <td>September 30, 2026</td>
+      <td>Seven individually OFAC-listed exchange-hosted TRON deposit identifiers linked to Tren de Aragua ATM-jackpotting financiers</td>
+      <td>High — official association; exchange custody separated</td>
+    </tr>
+    <tr>
       <td><a href="./Xinbi-Guarantee/"><code>Xinbi-Guarantee/</code></a></td>
       <td>September 9, 2026</td>
       <td>52 OFAC-listed TRON addresses on the Xinbi Guarantee SDN entry; P1 direct sanctions watch</td>
@@ -90,6 +96,7 @@
 <h2>Monitoring Boundaries</h2>
 
 <ul>
+  <li>The seven Tren de Aragua identifiers are sanctioned deposit addresses attributed to named individuals. The exchange's aggregate hot wallet is not labeled by association; aggregate wallet inflow is not identical to ATM-theft proceeds.</li>
   <li>The Xinbi set contains 52 exact official identifiers. Sanctions membership does not establish individual freeze status or membership in a separate seizure subset.</li>
   <li>Addresses directly published by OFAC are treated as high-confidence direct sanctions-watch seeds.</li>
   <li>Counterparties, exchange deposit addresses, bridges, routers, token contracts, and service wallets are not automatically sanctioned or actor-controlled merely because they interact with a designated address.</li>

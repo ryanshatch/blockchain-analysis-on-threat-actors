@@ -33,6 +33,7 @@
 | Ethereum | [FlashLoopAdapter](./Ethereum/FlashLoopAdapter/) |
 | Ethereum | [KREMLIN-REF9334](./Ethereum/KREMLIN-REF9334/) |
 | Ethereum | [MALT](./Ethereum/MALT/) |
+| Ethereum | [Maker-Legacy-Keeper](./Ethereum/Maker-Legacy-Keeper/) |
 | Ethereum | [RedSonic](./Ethereum/RedSonic/) |
 | Ethereum | [Safe-rsETH-Module](./Ethereum/Safe-rsETH-Module/) |
 | Ethereum | [Suspected-GoMining-Drain](./Ethereum/Suspected-GoMining-Drain/) |

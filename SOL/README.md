@@ -16,7 +16,7 @@
 <hr>
 
 <p>
-<strong>Recent tracked set:</strong> Eleven individually identifiable Solana-origin security incidents from June 10 through September 11, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. This includes key compromises as well as protocol incidents. CYBERLEEK, FomoPeek, multi-victim drainer campaigns, and sanctions attributions are tracked separately from this incident count.
+<strong>Recent tracked set:</strong> Twelve individually identifiable Solana-origin security incidents from June 10 through September 30, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. This includes key compromises as well as protocol incidents. CYBERLEEK, FomoPeek, multi-victim drainer campaigns, and sanctions attributions are tracked separately from this incident count.
 </p>
 
 <!-- contents:start -->
@@ -100,7 +100,13 @@
       <td><a href="./Dominion-SILV/"><code>Dominion-SILV/</code></a></td>
       <td>September 11, 2026</td>
       <td>Multisig and standalone-key compromise; treasury theft, liquidation, and Chainflip proceeds tracing</td>
-      <td>Approximately 46,909 SILV; $2.98–3.0M pre-attack nominal value and approximately $238,000 realized proceeds; seven role-separated indicators</td>
+      <td>Approximately 46,909 SILV; $2.98–3.0M pre-attack nominal value and approximately $238,000 realized proceeds; operations ended October 7</td>
+    </tr>
+    <tr>
+      <td><a href="./TradeWiz/"><code>TradeWiz/</code></a></td>
+      <td>September 28–30, 2026</td>
+      <td>SOL PVP private-key exposure and automated customer-wallet sweep</td>
+      <td>20,933 wallets affected; approximately $459,468 total reconstructed loss; three direct seeds and one ownership-uncertain forwarder</td>
     </tr>
     <tr>
       <td><a href="./HOPE/"><code>HOPE/</code></a></td>
@@ -139,7 +145,7 @@
 |---|---|---|
 | [Duelbits](../Multi-Chain/Duelbits-September-2026/) | September 24, 2026 | Approximately $7M across five networks; roughly $1M Solana component; one P1 Solana attacker/proceeds seed |
 
-The compromise affected Solana alongside four other networks. Its initial compromise location is unestablished, so it is cross-listed here and excluded from the eleven **Solana-origin** incidents in `INCIDENTS.csv`.
+The compromise affected Solana alongside four other networks. Its initial compromise location is unestablished, so it is cross-listed here and excluded from the twelve **Solana-origin** incidents in `INCIDENTS.csv`. The [Frogman wallet drain](../Multi-Chain/Frogman-October-2026/) likewise spans three networks; its receiving Solana wallet is a proceeds lead, not evidence of a Solana protocol exploit. The [Bybit laundering case](../Multi-Chain/Bybit-Laundering-October-2026/) contributes three Solana laundering-service seeds and is not a new Solana exploit.
 
 <a id="section-related-solana-sanctions-cases"></a>
 <h2>Related Solana Sanctions Cases</h2>

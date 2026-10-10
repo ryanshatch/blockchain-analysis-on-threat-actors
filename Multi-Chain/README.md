@@ -21,6 +21,16 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="./Frogman-October-2026/"><code>Frogman-October-2026/</code></a></td>
+      <td>October 6–7 wallet drain across three networks, including Solana</td>
+      <td>One high-confidence Solana proceeds seed and one explicitly excluded suspected victim wallet; initial access unknown</td>
+    </tr>
+    <tr>
+      <td><a href="./Bybit-Laundering-October-2026/"><code>Bybit-Laundering-October-2026/</code></a></td>
+      <td>BTC, Ethereum, Solana and TRON laundering paths</td>
+      <td>October 5 undercover disclosure: three Solana and one Ethereum laundering-service seeds, separated from FBI's DPRK attribution of the original Bybit theft</td>
+    </tr>
+    <tr>
       <td><a href="./October-2026-Security-Sweep/"><code>October-2026-Security-Sweep/</code></a></td>
       <td>October 1–3 reports across Ethereum, BNB Smart Chain, Bitcoin and Solana</td>
       <td>MALT and FlashLoopAdapter attacker seeds plus the NEAR Intents full-return correction, 14 role-separated network/address records and one disputed BTC destination withheld</td>
@@ -43,7 +53,7 @@
     <tr>
       <td><a href="./Bitget-September-2026/"><code>Bitget-September-2026/</code></a></td>
       <td>Ethereum, XRP Ledger, five other named EVM chains, downstream Bitcoin and TRON</td>
-      <td>September 24 exchange breach; two P1 TRM-linked wallets, one P2 provisional dispersal pivot; DPRK link remains a Medium-confidence hypothesis</td>
+      <td>September 24 exchange breach; later ~$387.5M reconciliation, six Ethereum indicators and three official XRP/Zcash/TRON receiving seeds; Chainalysis attributes incident to North Korean actors</td>
     </tr>
     <tr>
       <td><a href="./Fetch-NuNet-SingularityNET/"><code>Fetch-NuNet-SingularityNET/</code></a></td>
