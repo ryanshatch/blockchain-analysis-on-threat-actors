@@ -61,7 +61,7 @@
 <hr>
 
 <!-- doc-nav:start -->
-<p><a href="wallets.md">Wallet index</a> · <a href="CATALOG.md">All case files</a> · <a href="docs/data-model.md">Data model</a> · <a href="docs/roadmap.md">Roadmap</a></p>
+<p><a href="wallets.md">Wallet index</a> · <a href="CATALOG.md">All case files</a></p>
 <!-- doc-nav:end -->
 
 <!-- contents:start -->
@@ -130,6 +130,26 @@ python -m threatintel query --db /tmp/threatintel.sqlite --case NEAR-INTENTS-202
   </thead>
   <tbody>
     <tr>
+      <td><a href="./SOL/TradeWiz/"><code>SOL/TradeWiz/</code></a></td>
+      <td>September 30 SOL PVP key exposure: 20,933 affected wallets, three direct monitoring seeds and one ownership-uncertain forwarder.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/Frogman-October-2026/"><code>Multi-Chain/Frogman-October-2026/</code></a></td>
+      <td>October 6–7 multichain wallet drain with one Solana proceeds seed and an explicit suspected-victim exclusion.</td>
+    </tr>
+    <tr>
+      <td><a href="./TRON/Tren-de-Aragua-ATM/"><code>TRON/Tren-de-Aragua-ATM/</code></a></td>
+      <td>September 30 OFAC listing of seven exchange-hosted TRON identifiers associated with Tren de Aragua financiers.</td>
+    </tr>
+    <tr>
+      <td><a href="./Multi-Chain/Bybit-Laundering-October-2026/"><code>Multi-Chain/Bybit-Laundering-October-2026/</code></a></td>
+      <td>October 5 disclosure of three Solana and one Ethereum laundering-service seeds linked to Bybit theft proceeds.</td>
+    </tr>
+    <tr>
+      <td><a href="./EVM/Ethereum/Maker-Legacy-Keeper/"><code>EVM/Ethereum/Maker-Legacy-Keeper/</code></a></td>
+      <td>October 6 third-party auction-keeper drain: attacker EOA and two malicious contracts separated from the victim keeper.</td>
+    </tr>
+    <tr>
       <td><a href="./Multi-Chain/October-2026-Security-Sweep/"><code>Multi-Chain/October-2026-Security-Sweep/</code></a></td>
       <td>October 1–3 reconciliation covering new MALT and FlashLoopAdapter attacker seeds plus NEAR Intents returned-funds corrections and recovery exclusions.</td>
     </tr>
@@ -155,7 +175,7 @@ python -m threatintel query --db /tmp/threatintel.sqlite --case NEAR-INTENTS-202
     </tr>
     <tr>
       <td><a href="./Multi-Chain/Bitget-September-2026/"><code>Multi-Chain/Bitget-September-2026/</code></a></td>
-      <td>September 24 hot/warm wallet breach: two P1 Ethereum incident seeds and one provisional P2 proceeds pivot, with distinct confidence on suspected DPRK involvement.</td>
+      <td>September 24 hot/warm wallet breach: later $387.5M reconciliation, three more Ethereum proceeds seeds, three official cross-chain receiving seeds and updated incident-level DPRK attribution.</td>
     </tr>
     <tr>
       <td><a href="./SOL/Dominion-SILV/"><code>SOL/Dominion-SILV/</code></a></td>

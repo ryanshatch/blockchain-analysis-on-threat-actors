@@ -50,6 +50,11 @@
 <li><a href="#section-malt-swap-function-exploit">MALT Swap-Function Exploit</a></li>
 <li><a href="#section-flashloopadapter-safe-module-exploit">FlashLoopAdapter Safe-Module Exploit</a></li>
 <li><a href="#section-near-intents--returned-funds-historical-iocs">NEAR Intents — Returned-Funds Historical IoCs</a></li>
+<li><a href="#section-tradewiz-sol-pvp--exposed-customer-keys">TradeWiz SOL PVP — Exposed Customer Keys</a></li>
+<li><a href="#section-frogman--multi-chain-wallet-drain">Frogman — Multi-Chain Wallet Drain</a></li>
+<li><a href="#section-tren-de-aragua--ofac-tron-deposit-identifiers">Tren de Aragua — OFAC TRON Deposit Identifiers</a></li>
+<li><a href="#section-bybit--october-laundering-service-leads">Bybit — October Laundering-Service Leads</a></li>
+<li><a href="#section-maker-legacy-auction-keeper-drain">Maker Legacy Auction Keeper Drain</a></li>
 </ul>
 </details>
 <!-- contents:end -->
@@ -1173,15 +1178,18 @@ Only the primary wallet inherits Salus's explicit attacker attribution. The five
 <a id="section-bitget--september-2425-cross-chain-breach"></a>
 ## Bitget — September 24–25 Cross-Chain Breach
 
-**Case:** [Multi-Chain/Bitget-September-2026/](./Multi-Chain/Bitget-September-2026/). Bitget reported approximately $351.6M in hot/warm-wallet losses; the published cause is backend transaction-data spoofing and fraudulent authorization, with initial access still unresolved.
+**Case:** [Multi-Chain/Bitget-September-2026/](./Multi-Chain/Bitget-September-2026/). The initial ~$351.6M hot/warm-wallet loss estimate was revised to about $387.5M for the same incident. Backend transaction-data spoofing and fraudulent authorization remain the reported mechanism; initial access is unresolved.
 
 | Ethereum / EVM identifier | Role | Treatment |
 |---|---|---|
 | `0x770b10b273fC44Fe9197D6bF20F145c2e98463Ee` | Primary collection across Ethereum and other EVM networks | High; P1 direct watch |
 | `0xa6dd3f218b65e32ccc37be30f74884133c655545` | Ethereum distribution hub; incident-linked funds | High; P1 direct watch; avoid attributing all historical outflows |
 | `0x469Ac1406dE92f82C0563477240a3627057425DC` | Reported onward dispersal, direct edge unconfirmed independently | Medium path confidence; P2 watch, no attacker-ownership label |
+| `0x600cfedc6bd65fa79b604dc44964f419e45784b2` | September 29 stolen-ETH convergence and payout | High; P1 historical and forward watch |
+| `0xd2c2f029eff5cacc686f24377cfddcfc82d9f899` | Early stolen-ETH holding wallet to move | High; P1 direct watch |
+| `0xfd5ebe912e2061992437767e24e5bcb52a3f9e54` | Active holding and payout at September 29 snapshot | High; P1 direct watch |
 
-TRM found laundering-network overlap with DPRK-linked incidents but stopped short of formally attributing this theft; actor hypothesis Medium confidence. No full BTC/XRP destinations were available for ingestion at the snapshot.
+Bitget also disclosed P1 primary receiving seeds on XRP Ledger `rwNhefsz1UQEusxhCvHip3RANinWi4CTck`, Zcash `t1WgMdtND8NF7NDUuYmq8MpMj1NTCXkMDVG`, and TRON `TBWNguTTgezw9dVorX441C6nDrZpRxYwKD`. TRM's September 25 actor hypothesis was cautious; Chainalysis explicitly attributed the broader incident to North Korean actors on October 1. That does not establish TraderTraitor custody of every downstream service wallet. No complete downstream BTC or Solana CCTP destinations were ingested.
 
 <a id="section-duelbits--september-24-multi-chain-hot-wallet-compromise"></a>
 ## Duelbits — September 24 Multi-Chain Hot-Wallet Compromise
@@ -1242,3 +1250,30 @@ The vulnerable third-party adapter and two affected Safes are non-attacker conte
 | `bc1q4kddgqsuqmwmzq3qgv0aq2jr9jgdwesx0wljen` | Historical exploit-proceeds wallet; funds returned | P2 historical IoC / graph pivot |
 
 The BTC, EVM, and Solana recovery addresses are excluded from threat labeling. The conflicting largest BTC destination is withheld pending transaction-level reconciliation.
+
+---
+
+<a id="section-tradewiz-sol-pvp--exposed-customer-keys"></a>
+## TradeWiz SOL PVP — Exposed Customer Keys
+
+**Case:** [TradeWiz](./SOL/TradeWiz/). September 30 wallet sweep, approximately $459,468 reconstructed loss. Solana collector `6mmiAPpQmY6YFxecmAyHMi2P8B7CE92Y8E65saE388Hj`, gas wallet `8Fae1SqAWf4isRk7jkZHYdQeiCYLQQMKBbazdnpaHzcY`, and proceeds holder `7iFXCZAg9i54N4vNAEPKBaNB7xQc7SbceEQx75fqMHsc` are direct seeds. `9Jx1rDvCCGLCuyAvuc8MG9bsSE3RdSRajVY85Q54eKCj` forwarded funds toward KuCoin but has unresolved ownership; graph pivot only. Compromised customer accounts remain victims.
+
+<a id="section-frogman--multi-chain-wallet-drain"></a>
+## Frogman — Multi-Chain Wallet Drain
+
+**Case:** [Frogman](./Multi-Chain/Frogman-October-2026/). Solana receiving and liquidation seed `69FnU8vszZSZF6DZCT6VHdsvm3DvvojDgbwqzHJ4cCFS` is P1 for proceeds tracing. The suspected victim `9wMSNoA7TzhwUjqsACVGEvzAxAibCHnsZTgXEAGov8zQ` is explicitly excluded, and the original compromise vector is unknown.
+
+<a id="section-tren-de-aragua--ofac-tron-deposit-identifiers"></a>
+## Tren de Aragua — OFAC TRON Deposit Identifiers
+
+**Case:** [Tren de Aragua ATM network](./TRON/Tren-de-Aragua-ATM/). Seven official September 30 person-address associations are preserved in [addresses.csv](./TRON/Tren-de-Aragua-ATM/addresses.csv). They are exchange-hosted deposit addresses, not a basis for labeling the exchange hot wallet or every transactional neighbor.
+
+<a id="section-bybit--october-laundering-service-leads"></a>
+## Bybit — October Laundering-Service Leads
+
+**Case:** [Bybit laundering investigation](./Multi-Chain/Bybit-Laundering-October-2026/). Directly monitor Solana `9gSwa2Mew9P21Wxs8nFgDujTurKZx1nBEVRv6K5sJP6e`, `EvZJGsDymrSUQyF23HLKEgUpjfd9XN1GTmm8AG6pFS7H`, `8S6T5gL2w5z4M9TCehMgQjxVm3Q6R7WDHp6WFfbtZSAy` and Ethereum `0xbaa551da0ae0c93025d9a983a68025a27dc15337` as laundering-network seeds. Original Bybit theft DPRK attribution does not imply direct DPRK custody of every service wallet; the undercover investigator wallet and Uniswap pool are exclusions.
+
+<a id="section-maker-legacy-auction-keeper-drain"></a>
+## Maker Legacy Auction Keeper Drain
+
+**Case:** [Maker third-party keeper](./EVM/Ethereum/Maker-Legacy-Keeper/). Attacker EOA `0x01EB957E5C7DcDDD60F3C875956cCc6fb9BdA5FA` is P1; `0xEc997d2aD033277913d6002277353368E8321dcF` and `0xf09a13072Ed939B79Bc25B66AA3a836ea6DCC170` are malicious exploit contracts, not proceeds wallets. Victim keeper `0x9c05a05893ada984FC20D0DA0c046De5Cc0e8273` and Maker core contracts are excluded.

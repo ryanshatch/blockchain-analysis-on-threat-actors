@@ -43,6 +43,7 @@ This catalog lists every README in the repository. Case records retain their ori
 | [FlashLoopAdapter Safe-Module Exploit](./EVM/Ethereum/FlashLoopAdapter/README.md) | `EVM/Ethereum/FlashLoopAdapter/` |
 | [REF9334 / KREMLIN — Ethereum Operator and Malware Infrastructure](./EVM/Ethereum/KREMLIN-REF9334/README.md) | `EVM/Ethereum/KREMLIN-REF9334/` |
 | [MALT Swap-Function Exploit](./EVM/Ethereum/MALT/README.md) | `EVM/Ethereum/MALT/` |
+| [Maker Legacy Auction Keeper — Unauthorized Drain](./EVM/Ethereum/Maker-Legacy-Keeper/README.md) | `EVM/Ethereum/Maker-Legacy-Keeper/` |
 | [RedSonic / Reddio Vault Exploit](./EVM/Ethereum/RedSonic/README.md) | `EVM/Ethereum/RedSonic/` |
 | [Safe / rsETH — Auxiliary Authorization Exploit and Yoink Interception](./EVM/Ethereum/Safe-rsETH-Module/README.md) | `EVM/Ethereum/Safe-rsETH-Module/` |
 | [Suspected GoMining-Linked Multi-Wallet Drain](./EVM/Ethereum/Suspected-GoMining-Drain/README.md) | `EVM/Ethereum/Suspected-GoMining-Drain/` |
@@ -75,10 +76,12 @@ This catalog lists every README in the repository. Case records retain their ori
 | [Allbridge 2026 Security Case History](./Multi-Chain/Allbridge-Core/README.md) | `Multi-Chain/Allbridge-Core/` |
 | [August 20-September 9, 2026 Crypto Security Sweep](./Multi-Chain/August-2026-Security-Sweep/README.md) | `Multi-Chain/August-2026-Security-Sweep/` |
 | [Bitget September 2026 — Wallet Backend Breach](./Multi-Chain/Bitget-September-2026/README.md) | `Multi-Chain/Bitget-September-2026/` |
+| [Bybit Theft — October 2026 Laundering-Network Leads](./Multi-Chain/Bybit-Laundering-October-2026/README.md) | `Multi-Chain/Bybit-Laundering-October-2026/` |
 | [COLDCARD Weak-Entropy Theft — Cross-Chain Laundering Update](./Multi-Chain/Coldcard-Weak-Entropy-Theft/README.md) | `Multi-Chain/Coldcard-Weak-Entropy-Theft/` |
 | [Duelbits — September 2026 Multi-Chain Hot-Wallet Compromise](./Multi-Chain/Duelbits-September-2026/README.md) | `Multi-Chain/Duelbits-September-2026/` |
 | [Fetch.ai / NuNet / SingularityNET — Privileged-Key and Bridge Compromise](./Multi-Chain/Fetch-NuNet-SingularityNET/README.md) | `Multi-Chain/Fetch-NuNet-SingularityNET/` |
 | [FomoPeek — Malicious iOS Releases and Wallet-Credential Theft](./Multi-Chain/FomoPeek/README.md) | `Multi-Chain/FomoPeek/` |
+| [Frogman — October 2026 Multi-Chain Wallet Drain](./Multi-Chain/Frogman-October-2026/README.md) | `Multi-Chain/Frogman-October-2026/` |
 | [Fake GTA VI Leak Wallet-Drainer Campaign](./Multi-Chain/GTA-VI-Wallet-Drainer/README.md) | `Multi-Chain/GTA-VI-Wallet-Drainer/` |
 | [Hamas / Al-Qassam Cryptocurrency Financing and Laundering Network](./Multi-Chain/Hamas-Al-Qassam-Financing/README.md) | `Multi-Chain/Hamas-Al-Qassam-Financing/` |
 | [ICON Network Migration-Contract Replay Exploit](./Multi-Chain/ICON-Migration-Replay-Exploit/README.md) | `Multi-Chain/ICON-Migration-Replay-Exploit/` |
@@ -110,6 +113,7 @@ This catalog lists every README in the repository. Case records retain their ori
 | [Rain Legacy Solana Card-Contract Exploit](./SOL/Rain-Legacy-Contracts/README.md) | `SOL/Rain-Legacy-Contracts/` |
 | [Raydium Legacy AMM V3 Exploit](./SOL/Raydium/README.md) | `SOL/Raydium/` |
 | [SUNUSI Permanent-Delegate Drain](./SOL/SUNUSI/README.md) | `SOL/SUNUSI/` |
+| [TradeWiz SOL PVP — Exposed Keys and Automated Wallet Sweep](./SOL/TradeWiz/README.md) | `SOL/TradeWiz/` |
 <a id="section-tron"></a>
 ## TRON
 
@@ -117,6 +121,7 @@ This catalog lists every README in the repository. Case records retain their ori
 |---|---|
 | [Central Bank of Iran — OFAC TRON Address Expansion](./TRON/Central-Bank-of-Iran/README.md) | `TRON/Central-Bank-of-Iran/` |
 | [OFAC Designation — El-Kahira Hamas Financing Network](./TRON/El-Kahira/README.md) | `TRON/El-Kahira/` |
+| [Tren de Aragua ATM Jackpotting — OFAC TRON Disclosure](./TRON/Tren-de-Aragua-ATM/README.md) | `TRON/Tren-de-Aragua-ATM/` |
 | [TRON Threat and Sanctions Index](./TRON/README.md) | `TRON/` |
 | [Xinbi Guarantee — OFAC TRON Wallet Disclosure](./TRON/Xinbi-Guarantee/README.md) | `TRON/Xinbi-Guarantee/` |
 <a id="section-parsing"></a>

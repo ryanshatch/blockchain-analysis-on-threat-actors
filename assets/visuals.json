@@ -44,6 +44,12 @@
       "alt": "KREMLIN / REF9334 \u2014 Banking malware and on-chain C2 infrastructure"
     },
     {
+      "readme": "EVM/Ethereum/Maker-Legacy-Keeper/README.md",
+      "image": "assets/readme-headers/evm-ethereum-maker-legacy-keeper.svg",
+      "kind": "original static SVG document header",
+      "alt": "Legacy Auction Keeper \u2014 Third-party keeper authorization drain"
+    },
+    {
       "readme": "EVM/Ethereum/MALT/README.md",
       "image": "assets/readme-headers/evm-ethereum-malt.svg",
       "kind": "original static SVG document header",
@@ -122,6 +128,12 @@
       "alt": "Bitget September 2026 \u2014 Cross-chain wallet breach and proceeds tracing"
     },
     {
+      "readme": "Multi-Chain/Bybit-Laundering-October-2026/README.md",
+      "image": "assets/readme-headers/multi-chain-bybit-laundering-october-2026.svg",
+      "kind": "original static SVG document header",
+      "alt": "Bybit Laundering Leads \u2014 Service infrastructure and actor attribution boundary"
+    },
+    {
       "readme": "Multi-Chain/Coldcard-Weak-Entropy-Theft/README.md",
       "image": "assets/readme-headers/multi-chain-coldcard-weak-entropy-theft.svg",
       "kind": "original static SVG document header",
@@ -144,6 +156,12 @@
       "image": "assets/readme-headers/multi-chain-fomopeek.svg",
       "kind": "original static SVG document header",
       "alt": "FomoPeek \u2014 Malicious iOS releases and credential-theft proceeds"
+    },
+    {
+      "readme": "Multi-Chain/Frogman-October-2026/README.md",
+      "image": "assets/readme-headers/multi-chain-frogman-october-2026.svg",
+      "kind": "original static SVG document header",
+      "alt": "Frogman Wallet Drain \u2014 Solana proceeds and victim boundary"
     },
     {
       "readme": "Multi-Chain/GTA-VI-Wallet-Drainer/README.md",
@@ -176,28 +194,28 @@
       "alt": "Liquid Network \u2014 Unauthorized peg-out, consolidation and partial return"
     },
     {
-      "readme": "Multi-Chain/Nesa-Cosmos-EVM/README.md",
-      "image": "assets/readme-headers/multi-chain-nesa-cosmos-evm.svg",
-      "kind": "original static SVG document header",
-      "alt": "Nesa / Cosmos EVM \u2014 Bridge evidence and Ethereum liquidation paths"
-    },
-    {
       "readme": "Multi-Chain/NEAR-Intents-October-2026/README.md",
       "image": "assets/readme-headers/multi-chain-near-intents-october-2026.svg",
       "kind": "original static SVG document header",
       "alt": "NEAR Intents October 2026 - Cross-chain exploit proceeds and full return"
     },
     {
-      "readme": "Multi-Chain/README.md",
-      "image": "assets/readme-headers/multi-chain.svg",
+      "readme": "Multi-Chain/Nesa-Cosmos-EVM/README.md",
+      "image": "assets/readme-headers/multi-chain-nesa-cosmos-evm.svg",
       "kind": "original static SVG document header",
-      "alt": "Cross-chain investigations \u2014 Incidents, infrastructure and network-specific attribution"
+      "alt": "Nesa / Cosmos EVM \u2014 Bridge evidence and Ethereum liquidation paths"
     },
     {
       "readme": "Multi-Chain/October-2026-Security-Sweep/README.md",
       "image": "assets/readme-headers/multi-chain-october-2026-security-sweep.svg",
       "kind": "original static SVG document header",
       "alt": "October 2026 security sweep - New exploit seeds and returned-funds corrections"
+    },
+    {
+      "readme": "Multi-Chain/README.md",
+      "image": "assets/readme-headers/multi-chain.svg",
+      "kind": "original static SVG document header",
+      "alt": "Cross-chain investigations \u2014 Incidents, infrastructure and network-specific attribution"
     },
     {
       "readme": "Multi-Chain/September-2026-Security-Sweep/README.md",
@@ -320,6 +338,12 @@
       "alt": "SUNUSI \u2014 Permanent-delegate authority and token extraction"
     },
     {
+      "readme": "SOL/TradeWiz/README.md",
+      "image": "assets/readme-headers/sol-tradewiz.svg",
+      "kind": "original static SVG document header",
+      "alt": "TradeWiz SOL PVP \u2014 Exposed keys and automated wallet sweep"
+    },
+    {
       "readme": "TRON/Central-Bank-of-Iran/README.md",
       "image": "assets/readme-headers/tron-central-bank-of-iran.svg",
       "kind": "original static SVG document header",
@@ -336,6 +360,12 @@
       "image": "assets/readme-headers/tron.svg",
       "kind": "original static SVG document header",
       "alt": "TRON investigations \u2014 Sanctions identifiers and threat-finance attribution"
+    },
+    {
+      "readme": "TRON/Tren-de-Aragua-ATM/README.md",
+      "image": "assets/readme-headers/tron-tren-de-aragua-atm.svg",
+      "kind": "original static SVG document header",
+      "alt": "Tren de Aragua \u2014 Official deposit identifiers and custody boundary"
     },
     {
       "readme": "TRON/Xinbi-Guarantee/README.md",
